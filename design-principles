@@ -1,0 +1,138 @@
+# Game Design And Development Planning Documentation
+
+Status: active reusable documentation index
+Scope: principles, research and a reusable workflow for developing a game idea into a reviewable, evidence-driven Game Planning Draft.
+
+## 1. Purpose
+
+This repository documents how to reason about a game before and during early development without forcing every project into a large document hierarchy.
+
+A concrete game may begin as one note. That note may gradually become a `Game Planning Draft`. New files are created only when separate ownership, review, research, testing, reuse, change tracking or navigation makes them genuinely useful.
+
+```text
+one note
+  → clearer sections
+  → evolving Game Planning Draft
+  → linked detail only where it reduces total complexity
+```
+
+The reusable documentation exists in advance so a new project does not have to rediscover the basic reasoning model every time.
+
+## 2. Core Planning Model
+
+```text
+Audience + Purchase Fantasy
+  ↔ Target Player Experience
+  ↔ Dominant Reference + Controlled Transformation
+  → Mechanics / Rules
+  → Dynamics
+  → Observable Player Behavior
+  → Delivered Player Experience
+  → Playtest, prototype and market evidence
+  → revision.
+```
+
+The model is iterative. Research or evidence may change the audience, promise, reference baseline, mechanics, scope or next development step.
+
+## 3. Start Here
+
+For planning a concrete game, read:
+
+1. [`game-development-planning-workflow.md`](game-development-planning-workflow.md)
+2. the principle owners relevant to the current question;
+3. the linked research when deeper evidence, examples or source context is needed.
+
+The six principle-and-terminology owners are not mandatory sequential phases. They are reusable reasoning systems revisited throughout planning.
+
+## 4. Principles And Terminology
+
+| Owner | Responsibility |
+|---|---|
+| [`Player Experience First`](principles/player-experience-first-principles-and-terminology.md) | What valuable experience the game should make possible and how intent differs from delivered experience |
+| [`Mechanics Create Dynamics`](principles/mechanics-create-dynamics-principles-and-terminology.md) | How rules and mechanics produce system dynamics, player behavior and experience |
+| [`Reference First / Controlled Transformation`](principles/reference-first-and-controlled-transformation-principles-and-terminology.md) | How to analyze references, transfer causes rather than surfaces, transform an existing idea and combine several references |
+| [`Audience Is Part Of The Game`](principles/audience-is-part-of-the-game-principles-and-terminology.md) | Who buys and plays, what promise is read, and what comparison set frames the game |
+| [`Market And Platforms`](principles/market-and-platforms-principles-and-terminology.md) | How Steam, itch.io and store communication help the right audience discover and understand the game |
+| [`Prototypes, Hypotheses And Tests`](principles/prototypes-hypotheses-and-tests-principles-and-terminology.md) | How to turn uncertainty into a minimum test, evidence and a decision update |
+
+## 5. Research Sources
+
+The research files preserve the detailed analytical basis. They are not canonical principle owners and may contain competing models, case-specific evidence and working syntheses.
+
+- [`Player Experience Research`](research/player-experience-research.md)
+- [`Anatomy Of A Game Reference`](research/anatomy-of-a-game-reference.md)
+- [`Audience, Steam And itch.io Research`](research/audience-steam-and-itchio-research.md)
+
+Read them when:
+
+- a principle needs deeper justification;
+- a taxonomy or framework must be compared;
+- an example or source list is needed;
+- the confidence level of a claim matters;
+- the current project exposes a question not resolved by the compact principle owner.
+
+## 6. Evidence States
+
+Keep these meanings distinct:
+
+```text
+confirmed:
+  explicit project decision or checked source fact;
+
+inference:
+  reasoned interpretation requiring review;
+
+question:
+  material unknown;
+
+hypothesis:
+  testable causal, audience, market or production claim;
+
+decision candidate:
+  option being considered;
+
+decision:
+  explicitly selected choice with rationale;
+
+evidence:
+  inspectable result from research, prototype, playtest,
+  telemetry, store experiment or another checked source.
+```
+
+Do not promote a plausible idea into a decision merely because it is technically possible or appears in a template.
+
+## 7. Current Documentation Decisions
+
+- A concrete game may start in one note.
+- A `Game Planning Draft` is the single high-level owner for one game direction.
+- The draft evolves during planning; it is not created only after every analysis stage is complete.
+- Three full-picture views are coordinated inside the draft:
+  - Player Experience And Gameplay;
+  - Implementation And Production;
+  - Questions, Hypotheses And Validation.
+- A `Full Picture Matrix` is a compact cross-view section, not a mandatory separate file.
+- A dominant reference is preferred when a project begins by transforming an existing working idea.
+- Secondary references have limited responsibilities and require compatibility review.
+- Market and audience reasoning begins with the concept rather than being attached after production.
+- Prototypes occur whenever an important uncertainty justifies them; they are not one late project phase.
+- Separate deep documents are optional and must reduce risk or coordination cost.
+
+## 8. Deferred Structure
+
+Not yet defined as mandatory reusable artifacts:
+
+- a Game Planning Draft template;
+- a Planning Item register;
+- a reference bank schema;
+- game-specific system, economy, content or production templates;
+- a universal vertical-slice workflow;
+- release and live-operations workflows;
+- a mandatory hierarchy for gameplay situations, systems or implementation increments.
+
+These may be added after practical use demonstrates a stable need.
+
+## 9. Historical Sources
+
+- `design-principles-answer` preserves the first broad answer.
+- `design-principles-answer2` preserves the question-framing pass.
+- These source files are historical context, not active canonical owners.
