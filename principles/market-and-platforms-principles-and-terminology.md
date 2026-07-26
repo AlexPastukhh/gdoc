@@ -3,7 +3,7 @@
 Status: active reusable principle-and-terminology owner
 Research basis: [`../research/audience-steam-and-itchio-research.md`](../research/audience-steam-and-itchio-research.md)
 
-## 1. Purpose And Authority <img width="259" height="145" alt="image" src="https://github.com/user-attachments/assets/27a275f3-5c98-406d-bbda-3010be329a73" />
+## 1. Purpose And Authority <img width="181" height="102" alt="image" src="https://github.com/user-attachments/assets/27a275f3-5c98-406d-bbda-3010be329a73" />
 
 
 This file owns stable planning principles for market legibility, store communication and platform evidence, initially focused on Steam and itch.io.
