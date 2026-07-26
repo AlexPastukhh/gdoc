@@ -42,7 +42,7 @@ For planning a concrete game, read:
 2. the principle owners relevant to the current question;
 3. the linked research when deeper evidence, examples or source context is needed.
 
-The six principle-and-terminology owners are not mandatory sequential phases. They are reusable reasoning systems revisited throughout planning.
+The seven principle-and-terminology owners are not mandatory sequential phases. They are reusable reasoning systems revisited throughout planning.
 
 ## 4. Principles And Terminology
 
@@ -54,6 +54,7 @@ The six principle-and-terminology owners are not mandatory sequential phases. Th
 | [`Audience Is Part Of The Game`](principles/audience-is-part-of-the-game-principles-and-terminology.md) | Who buys and plays, what promise is read, and what comparison set frames the game |
 | [`Market And Platforms`](principles/market-and-platforms-principles-and-terminology.md) | How Steam, itch.io and store communication help the right audience discover and understand the game |
 | [`Prototypes, Hypotheses And Tests`](principles/prototypes-hypotheses-and-tests-principles-and-terminology.md) | How to turn uncertainty into a minimum test, evidence and a decision update |
+| [`Visual Design, Assets, And AI-Assisted Art`](principles/visual-design-assets-and-ai-assisted-art-principles-and-terminology.md) | How visual language, asset strategy and ChatGPT-assisted image iteration support readability, experience and feasible production |
 
 ## 5. Research Sources
 
@@ -115,6 +116,7 @@ Do not promote a plausible idea into a decision merely because it is technically
 - Secondary references have limited responsibilities and require compatibility review.
 - Market and audience reasoning begins with the concept rather than being attached after production.
 - Prototypes occur whenever an important uncertainty justifies them; they are not one late project phase.
+- Visual direction is treated as player-facing design and production scope; a canonical visual frame should precede broad asset production.
 - Separate deep documents are optional and must reduce risk or coordination cost.
 
 ## 8. Deferred Structure
@@ -124,6 +126,7 @@ Not yet defined as mandatory reusable artifacts:
 - a Game Planning Draft template;
 - a Planning Item register;
 - a reference bank schema;
+- a dedicated visual-design and asset-sourcing research source;
 - game-specific system, economy, content or production templates;
 - a universal vertical-slice workflow;
 - release and live-operations workflows;

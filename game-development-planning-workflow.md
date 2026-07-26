@@ -5,7 +5,7 @@ Scope: from an initial game idea or reference to an evolving, evidence-driven Ga
 
 ## 1. Purpose
 
-This workflow coordinates the six principle-and-terminology owners:
+This workflow coordinates the seven principle-and-terminology owners:
 
 - [`Player Experience First`](principles/player-experience-first-principles-and-terminology.md)
 - [`Mechanics Create Dynamics`](principles/mechanics-create-dynamics-principles-and-terminology.md)
@@ -13,6 +13,7 @@ This workflow coordinates the six principle-and-terminology owners:
 - [`Audience Is Part Of The Game`](principles/audience-is-part-of-the-game-principles-and-terminology.md)
 - [`Market And Platforms`](principles/market-and-platforms-principles-and-terminology.md)
 - [`Prototypes, Hypotheses And Tests`](principles/prototypes-hypotheses-and-tests-principles-and-terminology.md)
+- [`Visual Design, Assets, And AI-Assisted Art`](principles/visual-design-assets-and-ai-assisted-art-principles-and-terminology.md)
 
 It does not require one fixed document sequence or one file per stage.
 
@@ -23,7 +24,7 @@ idea / reference / fantasy / mechanic / market observation
   → initial game note
   → evolving Game Planning Draft
   → coherent audience, promise, experience and reference baseline
-  → reference and causal analysis
+  → reference, causal and visual-direction analysis
   → gameplay, implementation and production picture
   → selected uncertainty
   → minimum evidence
@@ -111,6 +112,7 @@ Game Concept And Current State;
 Audience And Purchase Fantasy;
 Target Player Experience;
 Reference Baseline And Transformation;
+Visual Direction And Asset Strategy;
 Player Experience And Gameplay Full Picture;
 Implementation And Production Full Picture;
 Questions, Hypotheses And Validation Full Picture;
@@ -197,6 +199,8 @@ For a whole-game or large-subsystem baseline, inspect:
 8. Market position and comparables.
 
 Use additional lenses only for specific questions.
+
+When the reference question concerns visual language, asset sourcing, readability or ChatGPT-assisted style exploration, also use the [`Visual Design, Assets, And AI-Assisted Art`](principles/visual-design-assets-and-ai-assisted-art-principles-and-terminology.md) owner.
 
 ### Causal Records
 
@@ -371,6 +375,7 @@ input, camera, UI and feedback;
 save and state;
 economy and balance;
 content requirements;
+visual language and asset strategy;
 art and audio requirements;
 level/content pipeline;
 localization;
@@ -407,6 +412,7 @@ It should expose:
 - assumptions;
 - candidate solutions;
 - production costs;
+- visual and asset-production constraints;
 - dependencies;
 - high-cost unknowns;
 - decisions not yet justified.
@@ -436,6 +442,10 @@ Does the audience recognize the anchor, fantasy and differentiator?
 ### Market Hypotheses
 
 Do assets, tags, page and demo communicate and prove the right promise?
+
+### Visual Direction And Asset Hypotheses
+
+Does the visual language support readability, the player and store promise, style consistency and sustainable asset production?
 
 ### Implementation And Production Hypotheses
 
@@ -521,6 +531,9 @@ session payoff is uncertain
 production is uncertain
   → technical or content-production spike;
 
+visual direction is uncertain
+  → compare style frames in representative gameplay context;
+
 market fit is uncertain
   → store-page, demo or audience test.
 ```
@@ -538,6 +551,7 @@ Collect evidence appropriate to the question:
 - session outcomes;
 - return behavior;
 - store and demo behavior;
+- style-frame and gameplay-context visual comparison;
 - production measurements;
 - technical measurements.
 
@@ -596,6 +610,7 @@ Before more expensive development, understand proportionally:
 - failure and recovery;
 - progression;
 - content and production burden;
+- visual direction, asset sourcing and integration constraints;
 - implementation constraints;
 - comparison set and platform assumptions;
 - evidence for the central gameplay promise;
@@ -609,6 +624,7 @@ Production entry does not require every answer. It requires enough evidence that
 - the intended audience can understand the promise;
 - the reference combination is coherent;
 - the core loop works;
+- the visual language and asset strategy are sustainable;
 - scope is producible;
 - remaining uncertainty can be resolved without repeatedly replacing the entire game.
 
@@ -622,6 +638,7 @@ Possible later details:
 - economy and progression;
 - technical architecture;
 - content architecture;
+- visual design brief and asset strategy;
 - production plan;
 - level/content pipeline;
 - release plan.
@@ -638,6 +655,7 @@ Create them only when they reduce total complexity.
 - Implementation ideas are not accepted automatically.
 - Prototype scope matches the uncertainty.
 - Market claims have evidence labels and freshness where needed.
+- Visual direction supports readability and has a feasible asset strategy.
 - The Game Planning Draft remains the high-level entry point.
 - Additional files were not created mechanically.
 - Current conclusion and next action are explicit.
@@ -653,3 +671,4 @@ Create them only when they reduce total complexity.
 - Do not force every project into many files.
 - Do not treat a matrix as the canonical owner of complete meaning.
 - Do not confuse implementation verification with game validation.
+- Do not treat generated or purchased assets as visually coherent by default.
