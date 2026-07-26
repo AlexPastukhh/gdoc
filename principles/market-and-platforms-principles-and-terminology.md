@@ -49,7 +49,7 @@ This does not mean designing the core game for a secret recommendation algorithm
 > Market Legibility
 > Для визуальной проверки найдите этот ID в загруженном `IMAGE_BOOK.pdf`.
 <!-- image-bridge:end -->
-<img width="470" height="264" alt="Market Legibility" src="https://github.com/user-attachments/assets/0a7f9a11-096f-4cce-aacf-cd245c53fb9b" />
+<img width="1932" height="1085" alt="Market Legibility" src="https://github.com/user-attachments/assets/0a7f9a11-096f-4cce-aacf-cd245c53fb9b" />
 
 Legibility is not the same as generic appeal.
 
