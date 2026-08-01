@@ -1,0 +1,186 @@
+Да, нашёл. Ты вспоминал термин **Crafty Buildy Strategy Simulation Games**, сокращённо **Crafty Buildy** или **CBSS**.
+
+Основная статья Криса Зуковски:
+
+> **What are Crafty Buildy Strategy Simulation Games?**
+> How To Market A Game, 27 декабря 2024 года. ([How To Market A Game][1])
+
+## Что это означает
+
+Это не один традиционный жанр, а **метажанр системных игр**, объединяющий:
+
+```text
+Crafty
++ Buildy
++ Strategy
++ Simulation
+```
+
+К нему относятся, среди прочего:
+
+* city builders;
+* colony sims;
+* base builders;
+* factory automation;
+* open-world survival craft;
+* deckbuilders;
+* strategy и 4X;
+* management и job simulators;
+* farming/relationship sims;
+* некоторые roguelikes;
+* scene и room builders.
+
+Зуковски противопоставляет их играм, которые он называет **Going Around Games**: платформерам, линейным action/adventure, сюжетным RPG, metroidvania, walking simulator и другим играм, где значительная часть времени прохождения требует отдельно созданных уровней, сцен, персонажей, головоломок, анимаций и сюжетных эпизодов. ([How To Market A Game][1])
+
+## Это именно то, что ты описал
+
+В Crafty Buildy игре разработчик создаёт:
+
+```text
+элементы;
+правила;
+ресурсы;
+ограничения;
+взаимодействия;
+цели;
+```
+
+а игрок получает контент через их комбинации:
+
+```text
+элементы + правила
+  → множество возможных состояний
+  → разные стратегии
+  → разные результаты
+  → повторное прохождение
+  → истории, возникшие из системы.
+```
+
+То есть вместо создания двадцати отдельных сюжетных миссий можно добавить:
+
+* новый тип ресурса;
+* новое здание;
+* новую карту;
+* новое правило размещения;
+* нового агента с потребностями;
+* новую карту в колоду;
+* новый способ преобразования ресурсов.
+
+Этот элемент взаимодействует с уже существующими элементами и создаёт сразу много новых игровых ситуаций. Зуковски называет такие игры **systems-based**, в отличие от **content-based** игр. ([How To Market A Game][1])
+
+## Другой, более общий термин
+
+Зуковски связывает свою концепцию с термином Джейсона Рорера:
+
+> **Infinite Unique Situation Generators**
+> «Генераторы бесконечных уникальных ситуаций».
+
+Рорер использовал его в докладе GDC 2019, противопоставляя долгоживущие системные игры законченным consumable games с заранее созданным путём и конечным объёмом контента. ([Game Developer][2])
+
+Поэтому есть три уровня терминологии:
+
+```text
+Crafty Buildy Strategy Simulation
+  → рыночный метажанр Зуковски;
+
+Systems-based / systemic game
+  → более общий дизайнерский термин;
+
+Infinite Unique Situation Generator
+  → производственно-рыночная модель Рорера.
+```
+
+## Почему «они всегда существовали»
+
+Зуковски подчёркивает, что это не кратковременный тренд. В качестве исторических корней он приводит:
+
+```text
+Crafty:
+  Minecraft, Stardew Valley, Don't Starve
+
+Buildy:
+  SimCity, Theme Park, Dwarf Fortress
+
+Simulation:
+  The Sims, Microsoft Flight Simulator
+
+Strategy:
+  Civilization, Europa Universalis, Crusader Kings
+```
+
+В отдельном buyer’s guide он называет такие игры фундаментальной частью PC-культуры и противопоставляет её преимущественно console-oriented традиции платформеров, action и линейных приключений. ([How To Market A Game][3])
+
+## Важное различие
+
+Не всякая игра со строительством является Crafty Buildy.
+
+Зуковски отдельно выделяет **false buildy / puzzly-crafty-buildy games**:
+
+```text
+игрок размещает здания,
+но дизайнер предусмотрел одну правильную последовательность;
+уровень имеет фиксированное решение;
+система не допускает самостоятельной стратегии.
+```
+
+Внешне это builder, но структурно — puzzle game.
+
+Настоящая Crafty Buildy игра обычно даёт:
+
+```text
+несколько допустимых решений;
+комбинацию элементов;
+открытое пространство стратегий;
+непредусмотренные дизайнером результаты;
+желание начать заново с другим build;
+возможность экспериментировать без единственного ответа.
+```
+
+([How To Market A Game][1])
+
+## Как стоит зафиксировать у нас
+
+Предлагаю добавить отдельную классификационную картину:
+
+### Content Production Model
+
+```text
+Bespoke-content game
+  Контент производится отдельными уровнями,
+  сценами, квестами, диалогами, противниками
+  и постановочными ситуациями.
+
+Systemic-content game
+  Контент возникает из комбинации правил,
+  элементов, ресурсов, агентов и состояний.
+
+Player-content game
+  Контент возникает преимущественно
+  из взаимодействия с другими игроками.
+
+Hybrid
+  Системное ядро дополняется
+  авторским сюжетным или постановочным контентом.
+```
+
+А **Crafty Buildy Strategy Simulation** считать не одним жанром, а важным Steam-oriented метажанром внутри `Systemic-content games`.
+
+Рабочая формулировка:
+
+```text
+Crafty Buildy Strategy Simulation Game
+
+Игра, в которой основная продолжительность,
+вариативность и повторяемость создаются
+не преимущественно объёмом отдельно изготовленного контента,
+а комбинацией взаимосвязанных правил, элементов,
+ресурсов, ограничений и создаваемых игроком конфигураций.
+```
+
+Это понятие нужно включить в итоговую жанровую карту: оно объясняет не только **что делает игрок**, но и **каким способом игра производит игровой контент**.
+
+[[CHH_MESSAGE_NUMBER: 36]]
+
+[1]: https://howtomarketagame.com/2024/12/27/what-are-crafty-buildy-strategy-simulation-games/?utm_source=chatgpt.com "What are Crafty Buildy Strategy Simulation Games? – How To Market A Game"
+[2]: https://www.gamedeveloper.com/business/rohrer-make-fewer-consumable-games-more-unique-situation-generators-?utm_source=chatgpt.com "Rohrer: Make fewer consumable games, more 'unique situation generators'"
+[3]: https://howtomarketagame.com/2025/07/02/crafty-buildy-strategy-simulation-buyers-guide/?utm_source=chatgpt.com "Crafty Buildy Strategy Simulation Buyers Guide – How To Market A Game"
