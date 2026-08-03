@@ -44,6 +44,14 @@ For planning a concrete game, read:
 
 The seven principle-and-terminology owners are not mandatory sequential phases. They are reusable reasoning systems revisited throughout planning.
 
+For observing and analyzing an existing game, use the [`Game Analysis Reference`](game-analysis-reference/README.md):
+
+- [`Player Experience And Anti-Experience`](game-analysis-reference/player-experience-and-anti-experience.md) for experience conditions, behavioral indicators and failure modes;
+- [`Observation Flow And Moment Prompts`](game-analysis-reference/observation-flow-and-moment-prompts.md) for optional prompts tied to specific moments of interaction;
+- [`Game Structure Analysis`](game-analysis-reference/game-structure-analysis.md) for detailed questions about the game's promise, loops, systems, information, content and production burden.
+
+The reference files ask reusable questions. Principle owners retain definitions and principles; an analysis of one concrete game owns its observations and conclusions.
+
 ## 4. Principles And Terminology
 
 | Owner | Responsibility |

@@ -200,6 +200,8 @@ For a whole-game or large-subsystem baseline, inspect:
 
 Use additional lenses only for specific questions.
 
+For detailed experience and anti-experience checks, optional prompts tied to specific moments of play, and concern-specific structural questions, use the [`Game Analysis Reference`](game-analysis-reference/README.md). It is a reusable observation aid rather than a mandatory stage sequence or a template that must be completed in full.
+
 When the reference question concerns visual language, asset sourcing, readability or ChatGPT-assisted style exploration, also use the [`Visual Design, Assets, And AI-Assisted Art`](principles/visual-design-assets-and-ai-assisted-art-principles-and-terminology.md) owner.
 
 ### Causal Records

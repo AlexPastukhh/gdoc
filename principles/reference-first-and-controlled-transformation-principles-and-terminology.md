@@ -94,6 +94,8 @@ Use optional lenses only for a real question:
 - store communication;
 - modifiability and replay variance.
 
+For detailed concern questions, moment prompts and experience/anti-experience checks, use the [`Game Analysis Reference`](../game-analysis-reference/README.md). The reference expands the practical observation surface; this file remains the owner of the reference-analysis principles and minimal map.
+
 ## 6. Causal Reference Record
 
 ```text

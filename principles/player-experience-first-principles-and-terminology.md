@@ -147,6 +147,8 @@ No single closed taxonomy is treated as complete. The following families are a p
 
 A project may define another experience family when the current vocabulary is insufficient. It must not silently claim that the internal vocabulary is universal.
 
+For detailed observation conditions, behavioral indicators, possible player reports and anti-experience checks, use [`Player Experience And Anti-Experience`](../game-analysis-reference/player-experience-and-anti-experience.md). That reference applies this vocabulary; it does not replace the definitions and principles owned here.
+
 ## 8. Two-Contour Model
 
 Use two related vocabularies:
