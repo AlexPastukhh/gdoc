@@ -11,7 +11,7 @@ This directory owns project-specific planning for the current **Survivor Base In
 
 The high-level source of truth is [`game-planning-draft.md`](game-planning-draft.md). The files under [`views/`](views/) are derived working views: they reorganize current draft meaning for a particular question, but they do not silently override Planning Items or convert inferences into accepted decisions.
 
-Reusable game-planning principles remain in the repository root workflow and `principles/`; reusable observation questions remain in `game-analysis-reference/`.
+Reusable game-planning principles remain in the repository root workflow and `principles/`; reusable analysis and design-planning lenses remain in `game-analysis-reference/`. Project-local visual planning lives under [`visual/`](visual/).
 
 ## 2. Current document map
 
@@ -21,6 +21,8 @@ Reusable game-planning principles remain in the repository root workflow and `pr
 | [`views/player-experience.md`](views/player-experience.md) | What experience/value the current systems appear intended to create; anti-experience and evidence gaps | Derived working view |
 | [`views/game-building-blocks.md`](views/game-building-blocks.md) | Large systemic building blocks and their interfaces | Derived working view |
 | [`views/gameplay-loop-scenario.md`](views/gameplay-loop-scenario.md) | Core-loop, session-arc and representative-situation synthesis | Derived working view |
+| [`visual/README.md`](visual/README.md) | Visual-planning navigation, ownership and current depth | Project-local detail navigation |
+| [`visual/visual-requirements-matrix.md`](visual/visual-requirements-matrix.md) | Gameplay-situation and element requirements for what the visual system must communicate or support | Project-local visual requirements working owner; does not override Planning Items |
 
 ## 3. Current source state
 
@@ -33,7 +35,7 @@ Important distinctions from that source remain intact:
 - `CHAT-II-*` items remain relation-backed implementation candidates rather than accepted requirements;
 - `CAT-01…CAT-10` remain local analytical labels inside this planning draft and are **not** repository `categories/` definitions;
 - detailed frame-by-frame demo choreography is still deferred in the imported source;
-- visual direction remains a separate planning problem and is not migrated by this package.
+- detailed visual realization and final art direction remain unresolved; the project now has a separate visual-requirements planning layer under `visual/`.
 
 ## 4. Source and provenance boundary
 
@@ -67,3 +69,19 @@ evidence
 ```
 
 The views are allowed to be shorter than the draft. Their job is to make specific planning questions reviewable, not to duplicate the entire 300kB source.
+
+## 6. Visual planning boundary
+
+The visual layer starts from project situations and requirements rather than from an assumed art style.
+
+```text
+gameplay situation / element
+  → required perception and target experience
+  → reusable visual lenses plus project-specific concerns
+  → visual requirement
+  → later realization candidates / references / representative tests.
+```
+
+The reusable visual lenses are not a closed taxonomy. Survivor Base may add project-wide, situation-specific or element-specific concerns when the generic lenses do not describe the real planning problem. A local concern becomes a candidate reusable lens only after broader use justifies that promotion.
+
+The visual requirements owner may carry reference cues such as "vibe like X" without treating them as literal style-copy instructions. A reference must have a named responsibility; visual realization remains separate until it is explicitly selected.

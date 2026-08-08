@@ -99,6 +99,78 @@ generated explanation
   ≠ canonical documentation automatically.
 ```
 
+
+### 4.1 Directional And Incomplete Design Input
+
+A user, game designer or collaborator may provide a useful direction before they can state a complete requirement.
+
+Examples include:
+
+```text
+"I want a vibe like X";
+"this should feel more procedural";
+"I imagine something between A and B, but not exactly either";
+"the base should feel alive, but I do not yet know what visual treatment creates that".
+```
+
+Preserve the exact incoming wording and separate it from interpretation:
+
+```text
+explicit wording
+  → confirmed source fact: the requester expressed this direction;
+
+our interpretation of what the wording means
+  → inference;
+
+material ambiguity
+  → question;
+
+plausible interpretation or realization
+  → decision candidate;
+
+testable expectation
+  → hypothesis;
+
+explicitly selected formulation
+  → decision.
+```
+
+Do not introduce another global evidence state merely to label a directional request. The existing evidence and decision vocabulary is sufficient when source wording and interpretation remain separate.
+
+Not every ambiguity must be resolved immediately by asking for a more precise sentence. When the useful meaning is unclear, it can be appropriate to keep several interpretations open while inspecting references, alternatives or representative examples.
+
+```text
+raw / directional request
+  → preserve wording
+  → expose important ambiguity
+  → form plausible interpretations
+  → inspect references / alternatives when useful
+  → compare what value each interpretation preserves
+  → narrow when evidence or explicit preference justifies it
+  → promote the clearer meaning into the current plan.
+```
+
+A temporarily unresolved search space is not a planning failure. Prematurely converting one interpretation into a requirement is.
+
+Example:
+
+```text
+Incoming:
+  "I want a vibe like Duskers."
+
+Confirmed:
+  Duskers is an explicitly named directional reference.
+
+Not yet confirmed:
+  whether the desired value is palette, interface, sparse information,
+  remote procedural tension, isolation, control distance or another cause.
+
+Useful next work:
+  separate several plausible reference responsibilities and compare transfers.
+```
+
+The clarification process remains iterative. Once a clearer requirement or decision is accepted, update the current planning meaning rather than keeping obsolete ambiguity as a competing current requirement.
+
 ## 5. Game Planning Draft
 
 A `Game Planning Draft` is the single readable high-level owner for one game direction.

@@ -1,11 +1,11 @@
 # Game Analysis Reference
 
 Status: active reusable analysis reference
-Scope: a living set of observation prompts and analytical lenses for studying an existing game before play, during play and after reflection.
+Scope: a living set of reusable observation, analysis and design-elicitation lenses for studying existing games and for turning project questions into reviewable planning requirements.
 
 ## 1. Purpose
 
-This folder helps a designer notice, record and later structure useful information about a game without forcing play into a mandatory questionnaire or one fixed analysis sequence.
+This folder helps a designer notice, record and later structure useful information without forcing analysis or planning into a mandatory questionnaire or one fixed sequence. Most files are observation aids for existing games; selected owners also provide reusable design-elicitation and planning lenses when that responsibility has an independent lifecycle.
 
 The intended working model is:
 
@@ -23,7 +23,7 @@ repository Markdown
   → the durable reviewed analysis and reusable knowledge.
 ```
 
-The reference is consulted while observing or playing. It is not a form that must be completed in full for every game.
+The reference is consulted while observing, playing or clarifying a concrete design question. It is not a form that must be completed in full for every game or project.
 
 ## 2. Parts
 
@@ -32,6 +32,8 @@ The reference is consulted while observing or playing. It is not a form that mus
 | [`Player Experience And Anti-Experience`](player-experience-and-anti-experience.md) | What the player may feel, which design conditions support it, how it appears in behavior and how the experience may fail |
 | [`Observation Flow And Moment Prompts`](observation-flow-and-moment-prompts.md) | Optional prompts for important moments such as first contact, first failure, repetition, session end and return |
 | [`Game Structure Analysis`](game-structure-analysis.md) | Detailed questions about promise, loops, decisions, rules, information, content, pacing, production and transfer |
+| [`Visual Design Analysis And Planning`](visual-design-analysis-and-planning.md) | Reusable visual lenses and a practical method for turning gameplay situations, desired perception and reference directions into visual requirements without confusing requirements with realizations |
+| [`Unrouted Questions And Concerns`](unrouted-questions-and-concerns.md) | Temporary staging for reusable questions whose correct owner, trigger or planning moment is not clear yet |
 
 ## 3. Ownership Boundaries
 
@@ -40,7 +42,7 @@ principle-and-terminology owners
   → stable definitions, distinctions and principles;
 
 this reference folder
-  → detailed reusable questions and observation prompts;
+  → detailed reusable questions, observation prompts and narrowly justified planning lenses;
 
 an analysis of one concrete game
   → observations, interpretations and conclusions about that game;
@@ -91,7 +93,7 @@ notice an interesting moment
   → continue playing.
 ```
 
-A deeper analysis may combine:
+A deeper analysis or planning pass may combine:
 
 - the first-contact expectation;
 - recurring player actions and decisions;
@@ -99,9 +101,10 @@ A deeper analysis may combine:
 - rules, resources and feedback;
 - experience and anti-experience evidence;
 - content-production and production-cost observations;
-- comparison and transfer notes.
+- comparison and transfer notes;
+- visual situation-to-requirement analysis when a project needs it.
 
-Do not stop play merely to fill every section.
+Do not stop play or planning merely to fill every section.
 
 ## 6. Updating The Reference
 
@@ -113,7 +116,9 @@ When practical use reveals a new concern:
 4. Keep experience conditions, behavioral indicators and anti-experience checks in the experience owner.
 5. Check existing principle-and-terminology owners before introducing a new definition.
 6. Avoid maintaining two full copies of the same question set.
-7. Create another file only when independent ownership, reuse, research, review or navigation justifies it.
+7. If a useful reusable question has no clear owner or trigger yet, stage it temporarily in [`Unrouted Questions And Concerns`](unrouted-questions-and-concerns.md).
+8. Move a staged question into its real owner once repeated use makes that responsibility clear; do not keep a permanent duplicate in staging.
+9. Create another file only when independent ownership, reuse, research, review or navigation justifies it.
 
 ## 7. Source Provenance
 
