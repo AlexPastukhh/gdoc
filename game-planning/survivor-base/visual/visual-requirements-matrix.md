@@ -2,14 +2,15 @@
 
 **Status:** active project-local working requirements view\
 **Canonical project source:** [`../game-planning-draft.md`](../game-planning-draft.md)\
-**Gameplay-loop view:** [`../views/gameplay-loop-scenario.md`](../views/gameplay-loop-scenario.md)\
+**Loop-oriented view:** [`../views/gameplay-loops.md`](../views/gameplay-loops.md)\
+**Representative scenarios:** [`../views/scenarios.md`](../views/scenarios.md)\
 **Reusable visual method:** [`../../../game-analysis-reference/visual-design-analysis-and-planning.md`](../../../game-analysis-reference/visual-design-analysis-and-planning.md)
 
 ## 1. Purpose And Authority Boundary
 
 This file asks:
 
-> What must the visual system be able to communicate, preserve or make the player perceive throughout the current Survivor Base gameplay loop?
+> What must the visual system be able to communicate, preserve or make the player perceive across current Survivor Base gameplay contexts and representative Scenarios?
 
 It does not choose the final art style. It does not convert a reference into a literal implementation. It does not override Planning Items.
 
@@ -19,7 +20,7 @@ The matrix may add original project/context/element-specific concerns when the r
 
 ## 2. Current Source Skeleton
 
-The current loop view organizes play approximately as:
+The current loop-oriented view organizes the broad operating cycle approximately as:
 
 ```text
 read operating state

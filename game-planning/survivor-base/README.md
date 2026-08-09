@@ -21,7 +21,8 @@ Reusable game-planning principles remain in the repository root workflow and `pr
 | [`game-planning-draft.md`](game-planning-draft.md) | Complete consolidated current Planning Item set, decisions, candidates, risks, transformations and next passes | Canonical project-local planning owner |
 | [`views/player-experience.md`](views/player-experience.md) | What experience/value the current systems appear intended to create; anti-experience and evidence gaps | Derived working view |
 | [`views/game-building-blocks.md`](views/game-building-blocks.md) | Large systemic building blocks and their interfaces | Derived working view |
-| [`views/gameplay-loop-scenario.md`](views/gameplay-loop-scenario.md) | Broad core/session/long-term loop candidates and representative scenario synthesis | Derived working view |
+| [`views/gameplay-loops.md`](views/gameplay-loops.md) | Broad recurrent operating/session/long-term views plus candidate concrete Gameplay Loops | Derived working view |
+| [`views/scenarios.md`](views/scenarios.md) | Representative Scenarios, Scenario Beats, integration questions and validation checkpoints | Derived working view |
 | [`visual/README.md`](visual/README.md) | Visual-planning navigation, ownership and current depth | Project-local detail navigation |
 | [`visual/visual-requirements-matrix.md`](visual/visual-requirements-matrix.md) | Visual-context and element requirements for what the visual system must communicate or support | Project-local visual requirements working owner; does not override Planning Items |
 
@@ -53,7 +54,7 @@ The raw `S1–S7` provenance owner named by the draft, `survivor-base-planning-i
 
 ## 5. Current gameplay-planning coverage
 
-The repository's reusable gameplay-planning methods now distinguish four related planning/review scales:
+The repository's reusable gameplay-planning methods distinguish four related planning/review scales:
 
 ```text
 Gameplay Situation;
@@ -62,23 +63,39 @@ Gameplay Dynamic;
 Scenario.
 ```
 
-Survivor Base project files were not retroactively normalized into one strict inventory or one file per scale. The canonical project meaning remains in `game-planning-draft.md`, while the existing `views/` are earlier derived syntheses that may use broader loop/situation wording.
-
-Therefore:
+Survivor Base now has separate derived owners for **loop-oriented recurrent structure** and **representative Scenario chronology**:
 
 ```text
-existing derived view
-  ≠ accepted strict Gameplay Loop record automatically;
+views/gameplay-loops.md
+  → broad operating / session / long-term views
+    + candidate concrete Gameplay Loops;
 
-systemic tendency mentioned or implied in a view
-  ≠ accepted Gameplay Dynamic automatically;
-
-representative chronology in a view
-  → may serve as Scenario-style synthesis without becoming
-    the only canonical playthrough.
+views/scenarios.md
+  → representative Scenarios
+    + Scenario Beats
+    + integration / validation questions.
 ```
 
-Create or normalize separate Situation / Loop / Dynamic / Scenario records only when doing so materially improves review, balance, experience planning, validation, implementation or collaboration. Do not create them merely for symmetry with the reusable method map.
+This split is a terminology/navigation normalization, not promotion of the derived material into accepted project decisions.
+
+In particular:
+
+```text
+broad operating cycle / Session Arc / Long-Term Arc
+  ≠ concrete Gameplay Loop automatically;
+
+candidate Gameplay Loop
+  ≠ accepted Loop automatically;
+
+representative Scenario
+  ≠ frozen demo screenplay
+  ≠ the only valid playthrough;
+
+one Scenario manifestation
+  ≠ proof of a stable Gameplay Dynamic.
+```
+
+The project does not currently require a strict standalone Situation inventory or Dynamic inventory. Create additional records only when they materially improve review, balance, experience planning, validation, implementation or collaboration.
 
 ## 6. Working rule for derived views
 
