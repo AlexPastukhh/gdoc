@@ -11,7 +11,7 @@ This directory owns detailed visual-planning work for Survivor Base when that de
 Current depth begins with requirements rather than an accepted art direction:
 
 ```text
-gameplay situations
+Gameplay Situation / Loop or Loop Phase / Scenario or Scenario Beat / Visual Context
   → meaningful elements
   → required perception / target experience
   → reusable visual lenses + Survivor Base-specific concerns
@@ -19,13 +19,15 @@ gameplay situations
   → later realization candidates / references / tests.
 ```
 
+A `Visual Context` is a project-local visual-planning context that may matter even when no new meaningful Gameplay Situation begins there. Routine operation, system execution, waiting and aftermath can therefore remain valid visual inputs without being promoted into Gameplay Situations.
+
 The visual files do not silently override `CHAT-PI-*` meanings. New accepted project decisions should be reflected back into the canonical planning draft when they materially change current game meaning.
 
 ## 2. Current Files
 
 | File | Responsibility | Status |
 |---|---|---|
-| [`visual-requirements-matrix.md`](visual-requirements-matrix.md) | Working situation/element visual requirements and coverage map | Active working owner |
+| [`visual-requirements-matrix.md`](visual-requirements-matrix.md) | Working visual-context/element requirements and coverage map | Active working owner |
 
 ## 3. Current Boundary
 
@@ -49,7 +51,7 @@ Survivor Base may add:
 
 ```text
 project-wide concerns;
-situation-specific concerns;
+context-specific concerns;
 element-specific concerns;
 original requirements that have no reusable category yet.
 ```
@@ -71,4 +73,4 @@ When realization work begins, preserve what value is being taken, what must not 
 
 ## 6. Next Depth Rule
 
-Create a separate file such as `realization-options.md`, `reference-map.md`, `tests.md` or a narrower topic/situation owner only after the requirements matrix reveals a load-bearing question with enough independent material to justify that file.
+Create a separate file such as `realization-options.md`, `reference-map.md`, `tests.md` or a narrower topic/context owner only after the requirements matrix reveals a load-bearing question with enough independent material to justify that file.

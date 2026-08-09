@@ -15,7 +15,7 @@ It does not choose the final art style. It does not convert a reference into a l
 
 Requirements use project-local IDs (`SB-VR-*`). Reusable `V01–V11` labels are analysis tags only.
 
-The matrix may add original project/situation/element-specific concerns when the reusable lenses are insufficient.
+The matrix may add original project/context/element-specific concerns when the reusable lenses are insufficient.
 
 ## 2. Current Source Skeleton
 
@@ -37,11 +37,11 @@ read operating state
 
 The visual plan therefore needs to work across routine, uncertainty, preparation, boundary control, exploration, emergency, tactical contact and recovery — not only during attacks.
 
-## 3. Working Situation Map
+## 3. Working Visual Context Map
 
-These are derived planning situations, not immutable game taxonomy.
+These are project-local visual-planning contexts, not immutable game taxonomy and not automatically Gameplay Situation IDs. The historical `S01–S09` handles are retained for continuity; each row may represent a Gameplay Situation, a Scenario/Beat, a Loop/phase or a broader Visual Context depending on the underlying gameplay meaning.
 
-| ID | Situation | Current role in visual planning |
+| ID | Visual context | Current role in visual planning |
 |---|---|---|
 | `S01` | Routine / living operational base | Establish the normal readable state against which crisis has meaning |
 | `S02` | Information gap / suspicious state | Show uncertainty and evidence without replacing hidden truth with omniscient markers |
@@ -57,7 +57,7 @@ These are derived planning situations, not immutable game taxonomy.
 
 Legend: `●` load-bearing, `○` useful/secondary, `?` currently unresolved, `—` not currently a planning focus.
 
-| Situation | V01 | V02 | V03 | V04 | V05 | V06 | V07 | V08 | V09 | V10 | V11 |
+| Visual context | V01 | V02 | V03 | V04 | V05 | V06 | V07 | V08 | V09 | V10 | V11 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | `S01` Routine | ○ | ● | ● | ● | ● | ● | ● | ● | ○ | ● | ● |
 | `S02` Information gap | ○ | ● | ● | ○ | ○ | ○ | ● | ○ | ○ | ● | ○ |
@@ -123,7 +123,7 @@ Violence, contamination, closure, cleanup and reclaim should leave readable phys
 
 ### `SB-VR-001` — Routine Base Must Read As A Working Place
 
-**Situation:** `S01`\
+**Visual context:** `S01`\
 **Element:** whole facility + people + work objects\
 **Status:** inference / working requirement
 
@@ -141,7 +141,7 @@ Violence, contamination, closure, cleanup and reclaim should leave readable phys
 
 ### `SB-VR-002` — Normal Operation Must Establish The Visual Baseline
 
-**Situation:** `S01`\
+**Visual context:** `S01`\
 **Element:** whole screen state\
 **Status:** inference / working requirement
 
@@ -153,7 +153,7 @@ Violence, contamination, closure, cleanup and reclaim should leave readable phys
 
 ### `SB-VR-003` — People Must Remain Individually Operable At Population Scale
 
-**Situation:** `S01`, `S03`, `S06`\
+**Visual context:** `S01`, `S03`, `S06`\
 **Element:** people\
 **Status:** inference / working requirement
 
@@ -165,7 +165,7 @@ Violence, contamination, closure, cleanup and reclaim should leave readable phys
 
 ### `SB-VR-004` — Uncertainty Must Show Knowledge State, Not Hidden Truth
 
-**Situation:** `S02`\
+**Visual context:** `S02`\
 **Element:** person / report / disease evidence\
 **Status:** source-backed direction + working visual requirement
 
@@ -181,7 +181,7 @@ Violence, contamination, closure, cleanup and reclaim should leave readable phys
 
 ### `SB-VR-005` — Evidence UI Must Preserve Source And Confidence
 
-**Situation:** `S02`, `S03`\
+**Visual context:** `S02`, `S03`\
 **Element:** evidence / dossier / expert assessment\
 **Status:** source-backed direction + working visual requirement
 
@@ -193,7 +193,7 @@ Violence, contamination, closure, cleanup and reclaim should leave readable phys
 
 ### `SB-VR-006` — Planning View Must Connect Intention To Physical Space
 
-**Situation:** `S03`\
+**Visual context:** `S03`\
 **Element:** zones / routes / staffing / rules / contingency\
 **Status:** inference / working requirement
 
@@ -207,7 +207,7 @@ Violence, contamination, closure, cleanup and reclaim should leave readable phys
 
 ### `SB-VR-007` — Boundary State Must Be Readable Before Text Inspection
 
-**Situation:** `S04`, `S06`, `S07`\
+**Visual context:** `S04`, `S06`, `S07`\
 **Element:** door / checkpoint / sluice / threshold\
 **Status:** inference / working requirement
 
@@ -223,7 +223,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-008` — Intake And Transfer Must Read As A Physical Process
 
-**Situation:** `S04`\
+**Visual context:** `S04`\
 **Element:** people + objects + waiting/inspection/decon space\
 **Status:** inference / working requirement
 
@@ -235,7 +235,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-009` — Unknown Space Must Be Local And Physical
 
-**Situation:** `S05`\
+**Visual context:** `S05`\
 **Element:** unexplored room / corridor / doorway\
 **Status:** source-backed direction + working visual requirement
 
@@ -249,7 +249,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-010` — Alarm Starts From A Partial Report
 
-**Situation:** `S06`\
+**Visual context:** `S06`\
 **Element:** alarm/report layer\
 **Status:** source-backed direction + working visual requirement
 
@@ -261,7 +261,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-011` — Emergency Must Transform The Same Familiar Sector
 
-**Situation:** `S06`\
+**Visual context:** `S06`\
 **Element:** whole sector\
 **Status:** explicit project visual-planning requirement from current discussion
 
@@ -275,7 +275,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-012` — Emergency Attention Hierarchy Must Support Rapid Decisions
 
-**Situation:** `S06`\
+**Visual context:** `S06`\
 **Element:** people / route / threshold / threat report / response group\
 **Status:** inference / working requirement
 
@@ -285,7 +285,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-013` — Tactical Control Reuses The World's Visual Grammar
 
-**Situation:** `S07`\
+**Visual context:** `S07`\
 **Element:** response squad / raid squad / doors / cover / threats\
 **Status:** source-backed direction + working visual requirement
 
@@ -297,7 +297,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-014` — Tactical Readability Must Not Erase Material Life
 
-**Situation:** `S07`\
+**Visual context:** `S07`\
 **Element:** room / furniture / props / people\
 **Status:** inference / working requirement
 
@@ -307,7 +307,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-015` — Aftermath Must Persist After The Threat Ends
 
-**Situation:** `S08`\
+**Visual context:** `S08`\
 **Element:** blood / damaged threshold / body / dirty objects / closed room / cleanup activity\
 **Status:** source-backed direction + working visual requirement
 
@@ -321,7 +321,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-016` — Reopening Should Read As Regained Function, Not Cosmetic Cleanup
 
-**Situation:** `S08`\
+**Visual context:** `S08`\
 **Element:** room / route / work function\
 **Status:** inference / working requirement
 
@@ -333,7 +333,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-017` — Outside Scale Must Contrast With Facility Control
 
-**Situation:** `S09`\
+**Visual context:** `S09`\
 **Element:** external route / target / regional threat\
 **Status:** inference / working requirement
 
@@ -347,7 +347,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-018` — Individual Threat And Distant Horde Pressure Need Different Signals
 
-**Situation:** `S06`, `S07`, `S09`\
+**Visual context:** `S06`, `S07`, `S09`\
 **Element:** infected individual / distant mass pressure\
 **Status:** inference / working requirement
 
@@ -359,7 +359,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-019` — Market Screenshot Must Show The Actual Game's Difference
 
-**Situation:** cross-cutting / store first look\
+**Visual context:** cross-cutting / store first look\
 **Element:** representative gameplay frame\
 **Status:** inference / working requirement
 
@@ -371,7 +371,7 @@ Potential states may include open, closed, locked, sealed, jammed, broken, held,
 
 ### `SB-VR-020` — Visual Direction Must Be Sustainable Across All States
 
-**Situation:** all\
+**Visual context:** all\
 **Element:** asset system\
 **Status:** source-backed production principle + project requirement
 

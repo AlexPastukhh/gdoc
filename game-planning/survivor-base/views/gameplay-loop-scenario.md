@@ -3,7 +3,8 @@
 **Status:** derived working view\
 **Canonical source:** [`../game-planning-draft.md`](../game-planning-draft.md)\
 **Related structural view:** [`game-building-blocks.md`](game-building-blocks.md)\
-**Authority boundary:** this is a temporal/causal synthesis. The imported draft explicitly defers a frozen frame-by-frame demo screenplay and final core/session-loop formulation.
+**Authority boundary:** this is a temporal/causal synthesis. The imported draft explicitly defers a frozen frame-by-frame demo screenplay and final core/session-loop formulation.\
+**Terminology boundary:** this view predates the repository's strict Situation / Loop / Dynamic / Scenario planning split. Its `Core loop`, `Session / day arc` and `Long-term adaptation loop` labels are broad scale-oriented candidates, not automatically concrete Gameplay Loop records. Its representative crisis is a Scenario-style synthesis even where older wording calls it a gameplay situation. Systemic tendencies inferred here are not accepted Gameplay Dynamics unless they are explicitly reviewed and recorded as current project meaning.
 
 ## 1. Purpose
 
