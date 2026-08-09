@@ -1,21 +1,21 @@
 # Visual Design Analysis And Planning
 
 Status: active reusable analysis and planning reference
-Scope: practical visual-analysis lenses and a situation-to-requirement method for game planning and reference transfer.
+Scope: practical visual-analysis lenses and a gameplay/context-to-requirement method for game planning and reference transfer.
 
-Canonical definitions and principles remain in [`Visual Design, Assets, And AI-Assisted Art`](../principles/visual-design-assets-and-ai-assisted-art-principles-and-terminology.md). Reference ownership and Controlled Transformation remain in [`Reference First And Controlled Transformation`](../principles/reference-first-and-controlled-transformation-principles-and-terminology.md).
+Canonical visual-design principles remain in [`Visual Design, Assets, And AI-Assisted Art`](../principles/visual-design-assets-and-ai-assisted-art-principles-and-terminology.md). Canonical Gameplay Situation / Loop / Scenario meanings and the repository boundary to the broader working term `Visual Context` remain in [`Gameplay Situations, Loops And Scenarios`](../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md). Reference ownership and Controlled Transformation remain in [`Reference First And Controlled Transformation`](../principles/reference-first-and-controlled-transformation-principles-and-terminology.md).
 
 ## 1. Purpose And Authority
 
 This file helps answer:
 
-> What must the visual layer communicate, support or make the player perceive in a concrete gameplay situation, before choosing one implementation or art style?
+> What must the visual layer communicate, support or make the player perceive in a concrete Gameplay Situation, Loop/phase, Scenario/Beat or broader Visual Context, before choosing one implementation or art style?
 
 It owns a reusable practical method for:
 
-- decomposing gameplay situations into visual planning elements;
+- decomposing Gameplay Situations, Loop/Scenario moments and broader Visual Contexts into visual planning elements;
 - connecting player tasks and desired experience to visual requirements;
-- inspecting a situation with reusable visual lenses;
+- inspecting a planning input with reusable visual lenses;
 - preserving project-specific concerns that do not fit a generic taxonomy;
 - separating a requirement from a realization candidate;
 - decomposing directional requests such as "I want a vibe like X";
@@ -34,8 +34,8 @@ It does not own:
 ## 2. Core Route
 
 ```text
-gameplay situation / loop point
-  → meaningful elements inside the situation
+Gameplay Situation / Loop or Loop Phase / Scenario or Scenario Beat / Visual Context
+  → meaningful elements inside the planning input
   → player task / decision
   → required perception
   → target experience / vibe
@@ -49,6 +49,36 @@ gameplay situation / loop point
 ```
 
 The route is iterative. A directional request may remain unresolved while alternatives are explored.
+
+### 2.1 Planning Inputs And Terminology
+
+Visual planning can start from several gameplay-scale inputs without treating them as synonyms.
+
+```text
+Gameplay Situation
+  = strict meaningful-decision term owned by gameplay terminology.
+
+Gameplay Loop / Loop Phase
+  = recurrent causal process / functional part of that process.
+
+Scenario / Scenario Beat
+  = concrete chronology / chronological part of that Scenario.
+
+Visual Context
+  = broader context that matters for visual planning but does not
+    necessarily contain a new meaningful gameplay decision.
+```
+
+Examples of `Visual Context` can include routine operation, system execution, waiting, aftermath, store-first-look or another stable presentation context.
+
+Therefore:
+
+```text
+Visual Context
+≠ Gameplay Situation automatically.
+```
+
+For Gameplay Situation, Loop and Scenario planning, `V01–V11` may be inspected as a full discovery surface, in the same way that `Game Structure Analysis` and `Player Experience And Anti-Experience` can be walked at those scales. Record only the lenses with material findings; do not fill all eleven mechanically.
 
 ## 3. Requirement Before Realization
 
@@ -99,13 +129,13 @@ The identifiers below are working reusable handles. They are not a claim that ev
 | `V10` | UI / typography / iconography / overlays | Which abstract information needs interface representation and how should it relate to the physical world? |
 | `V11` | Production / asset strategy / consistency | Can the visual solution be produced, reused, modified and kept coherent at the required scale? |
 
-Use only the lenses that clarify the current situation. Do not fill every lens mechanically.
+Use the lenses as a discovery surface for the current planning input. Do not fill every lens mechanically.
 
-## 5. Project-Specific And Situation-Specific Concerns
+## 5. Project-Specific And Context-Specific Concerns
 
 Reusable lenses are a starting analysis surface, not a closed taxonomy.
 
-A concrete project, gameplay situation or visual problem may require an additional original criterion, question or requirement that is not documented in the reusable list.
+A concrete project, Gameplay Situation, Loop/Scenario moment, Visual Context or visual problem may require an additional original criterion, question or requirement that is not documented in the reusable list.
 
 ```text
 If a local concern is real and useful:
@@ -115,7 +145,7 @@ If no reusable lens describes it well:
   do not force it into an unrelated category.
 
 Mark its scope:
-  project-wide / situation-specific / element-specific.
+  project-wide / Situation-specific / Scenario-specific / Visual-Context-specific / element-specific.
 
 If the same concern proves reusable across several projects:
   review it as a candidate addition to this reference.
@@ -125,23 +155,25 @@ A project-specific concern can also cut across several reusable lenses. For exam
 
 The requirement itself should keep its own project-local ID. `V01–V11` are analysis tags, not requirement IDs.
 
-## 6. Start From Gameplay Situations
+## 6. Select The Right Gameplay / Presentation Input
 
-A visual plan should normally begin from situations in which the player perceives, decides and acts.
+A visual plan should begin from a gameplay or presentation context in which perception matters. When detailed gameplay planning already has a Gameplay Situation, Loop or Scenario, use that owner instead of inventing a second visual-only gameplay ontology.
 
 Useful sources include:
 
-- core-loop stages;
-- session escalation or recovery points;
+- Gameplay Situations;
+- Loop stages / Loop Phases;
+- Scenario Beats;
+- routine / execution / recovery Visual Contexts;
 - first readable central interaction;
 - failure and recovery;
 - progression payoff;
 - a representative crisis;
 - a market/store first look when that is the question.
 
-A situation should be stable enough to survive likely implementation changes. Prefer meanings such as "controlled boundary crossing" over narrow implementation names when the latter may disappear.
+The input should be stable enough to survive likely implementation changes. Prefer meanings such as "controlled boundary crossing" over narrow implementation names when the latter may disappear.
 
-For each situation, identify meaningful elements only when they matter:
+For each input, identify meaningful elements only when they matter:
 
 ```text
 space / route / boundary;
@@ -155,13 +187,13 @@ materials / contamination / damage;
 other project-specific elements.
 ```
 
-## 7. Situation-To-Requirement Record
+## 7. Planning-Input-To-Requirement Record
 
 A useful detailed record may contain:
 
 ```text
 Requirement ID:
-Situation:
+Planning input type / ID:
 Element:
 Player task / decision:
 Requirement:
@@ -179,7 +211,7 @@ Status:
 
 Not every field is mandatory. Keep the smallest record that preserves the real design problem.
 
-A compact coverage matrix may summarize `situation × V01–V11`, but it is a navigation view. Detailed requirements own the actual meaning.
+A compact coverage matrix may summarize `planning input × V01–V11`, but it is a navigation view. Detailed requirements own the actual meaning.
 
 ## 8. Experience And Vibe Are Not Purely Visual
 
@@ -214,7 +246,7 @@ Record which contribution is being planned instead of asking color, lighting or 
 
 Useful questions:
 
-- In which gameplay situation should the similarity matter?
+- In which Gameplay Situation, Loop/Scenario moment or Visual Context should the similarity matter?
 - What exactly should the player perceive or feel?
 - Which causes in X appear responsible for that effect?
 - Which causes are visual, and which come from audio, pacing, information, controls or world behavior?
@@ -298,6 +330,21 @@ For each load-bearing visual requirement or realization candidate, review propor
 
 Do not optimize only for cheap production if the result destroys readability or the player promise. Do not choose an attractive style that cannot be sustained.
 
+## 12.1 Scenario-Local And Cross-Scenario Ownership
+
+A concrete Scenario Beat can own exact local visual requirements such as:
+
+```text
+what must be perceived here;
+what should remain uncertain;
+intended understanding / response;
+wrong reading to avoid;
+local reference responsibility;
+representative check.
+```
+
+A project-wide visual owner can instead own recurring/cross-scenario requirements, Visual Context coverage and links to Scenario Beats. Avoid maintaining two competing full copies of the same requirement.
+
 ## 13. Representative Checks
 
 Prefer tests that preserve gameplay context.
@@ -318,6 +365,7 @@ A style frame is useful when it represents the real information and production p
 ## 14. Do Not
 
 - Do not treat `V01–V11` as a mandatory complete form.
+- Do not use `Gameplay Situation` as a broad synonym for routine, execution, aftermath, market-first-look or every visual context.
 - Do not reject a useful project-specific concern because it lacks a reusable category.
 - Do not promote every local concern into the reusable reference.
 - Do not turn a realization candidate into a requirement.

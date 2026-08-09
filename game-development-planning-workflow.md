@@ -1,11 +1,21 @@
 # Game Development Planning Workflow
 
 Status: active reusable workflow
-Scope: from an initial game idea or reference to an evolving, evidence-driven Game Planning Draft and a justified next depth of work.
+Scope: orchestration from an initial game direction to an evolving Game Planning Draft, justified detailed planning, evidence, revision and the next useful depth of work.
 
-## 1. Purpose
+## 1. Purpose And Authority
 
-This workflow coordinates the seven principle-and-terminology owners:
+This is the main reusable entry point for **how game planning proceeds**.
+
+It coordinates, but does not replace, the repository's principle-and-terminology owners and detailed planning/analysis references.
+
+Start here when the question is:
+
+> How should I move from what I currently know about a game to the next useful planning or evidence step?
+
+Stable meta-planning principles remain in [`Game Planning`](principles/game-planning-principles-and-terminology.md). Gameplay Situation / Loop / Scenario terminology remains in [`Gameplay Situations, Loops And Scenarios`](principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md).
+
+The specialized principle owners remain:
 
 - [`Player Experience First`](principles/player-experience-first-principles-and-terminology.md)
 - [`Mechanics Create Dynamics`](principles/mechanics-create-dynamics-principles-and-terminology.md)
@@ -15,34 +25,37 @@ This workflow coordinates the seven principle-and-terminology owners:
 - [`Prototypes, Hypotheses And Tests`](principles/prototypes-hypotheses-and-tests-principles-and-terminology.md)
 - [`Visual Design, Assets, And AI-Assisted Art`](principles/visual-design-assets-and-ai-assisted-art-principles-and-terminology.md)
 
-It does not require one fixed document sequence or one file per stage.
+Detailed reusable planning and analysis methods remain in [`Game Analysis Reference`](game-analysis-reference/README.md).
 
-## 2. Core Route
+## 2. Working Model
+
+Game planning normally maintains one evolving, readable high-level `Game Planning Draft` for the current game direction.
 
 ```text
-idea / reference / fantasy / mechanic / market observation
-  → initial game note
-  → evolving Game Planning Draft
-  → coherent audience, promise, experience and reference baseline
-  → reference, causal and visual-direction analysis
-  → gameplay, implementation and production picture
-  → selected uncertainty
-  → minimum evidence
-  → revision
-  → next-depth decision.
+rough seed / concrete problem / evidence
+        ↓
+Game Planning Draft
+  current high-level picture
+        ↕
+justified detail owners
+        ↕
+analysis / prototypes / research / tests
+        ↓
+revised current meaning
+        ↓
+next useful depth.
 ```
 
-The process is iterative. A later result may revise an earlier stage.
+The Draft has a logical structure, but its headings are flexible. Use the structure that makes the current project easiest to understand and review.
 
-## 3. Start Simple, Structure When Needed
+A separate file is justified only when independent review, linking, reuse, research, testing, change tracking, parallel work or navigation makes the extra owner useful.
 
-Begin with the smallest useful representation.
+Planning is iterative and not append-only. Later evidence or explicit decisions can supersede earlier current meaning while preserving provenance and rationale.
 
-A first note may contain only:
+Start with the smallest useful representation. A first high-level note / Draft may contain only:
 
 ```text
-idea;
-source or reference;
+idea / source / reference;
 why it is interesting;
 current audience guess;
 current experience guess;
@@ -50,183 +63,151 @@ main unknown;
 next action.
 ```
 
-That note is already the beginning of the Game Planning Draft when it serves as the high-level plan.
+That note already serves as the beginning of the Game Planning Draft when it is the current high-level plan.
 
-Create a separate file only when independent review, linking, research, testing, reuse, change tracking, parallel work or navigation justifies the extra coordination.
+Possible later detail owners can include individual reference analyses, prototype plans/results, gameplay systems, economy/progression, technical architecture, content architecture, visual design brief/asset strategy, production planning, level/content pipeline or release planning. Create them only when independent ownership reduces total complexity.
 
-## 4. Evidence And Decision States
+## 3. Valid Starting Points
 
-Keep distinct:
-
-```text
-confirmed:
-  explicit project decision or checked source fact;
-
-inference:
-  reasoned interpretation awaiting review;
-
-question:
-  material unknown;
-
-hypothesis:
-  testable claim;
-
-decision candidate:
-  option under consideration;
-
-decision:
-  explicit selected choice with rationale;
-
-evidence:
-  inspectable result from research, prototype,
-  playtest, telemetry or market behavior.
-```
+A project or planning pass may begin from:
 
 ```text
-suggestion
-  ≠ decision;
-
-risk
-  ≠ proven failure;
-
-implementation idea
-  ≠ accepted architecture;
-
-prototype candidate
-  ≠ build decision;
-
-generated explanation
-  ≠ canonical documentation automatically.
+an idea;
+a game or other reference;
+a fantasy / role;
+a desired Player Experience;
+a mechanic or system;
+a market observation;
+a technical possibility;
+an interesting risk / trade-off;
+a concrete Gameplay Situation;
+a production concern;
+a prototype or playtest result;
+a material unknown.
 ```
 
+There is no requirement to complete a broad concept template before detailed planning can begin.
 
-### 4.1 Directional And Incomplete Design Input
+### Common broad-first route
 
-A user, game designer or collaborator may provide a useful direction before they can state a complete requirement.
+```text
+seed
+→ minimal Game Planning Draft
+→ audience / promise / experience / reference baseline
+→ broad gameplay and feasibility picture
+→ detailed Gameplay Situations / Loops / Scenarios where useful
+→ evidence / validation
+→ Draft revision.
+```
 
-Examples include:
+This is a common route, **not a required ordering**.
+
+### Situation-first / detail-first route
+
+```text
+desired experience
+OR interesting risk
+OR reference moment
+OR mechanic
+OR content need
+OR concrete decision idea
+        ↓
+candidate Gameplay Situation
+        ↓
+detailed Situation planning
+        ↓
+structural + experience + visual review
+        ↓
+mechanics / requirements / Loops / uncertainties become clearer
+        ↓
+create or revise the high-level Game Planning Draft
+        ↓
+integrate through Scenario / evidence when useful.
+```
+
+The two routes can alternate repeatedly in the same project.
+
+## 4. Evidence And Decision Discipline
+
+Use the canonical distinctions from [`Game Planning`](principles/game-planning-principles-and-terminology.md):
+
+```text
+confirmed;
+inference;
+question;
+hypothesis;
+decision candidate;
+decision;
+evidence.
+```
+
+Preserve in particular:
+
+```text
+suggestion ≠ decision;
+risk ≠ proven failure;
+implementation idea ≠ accepted architecture;
+prototype candidate ≠ build decision;
+generated explanation ≠ canonical documentation automatically.
+```
+
+### Directional and incomplete design input
+
+Input such as:
 
 ```text
 "I want a vibe like X";
 "this should feel more procedural";
-"I imagine something between A and B, but not exactly either";
-"the base should feel alive, but I do not yet know what visual treatment creates that".
+"something between A and B, but not exactly either";
 ```
 
-Preserve the exact incoming wording and separate it from interpretation:
+is valid design input.
 
-```text
-explicit wording
-  → confirmed source fact: the requester expressed this direction;
+Preserve the source wording, expose ambiguity and keep interpretations as inference/candidates until review or evidence justifies a narrower current meaning.
 
-our interpretation of what the wording means
-  → inference;
-
-material ambiguity
-  → question;
-
-plausible interpretation or realization
-  → decision candidate;
-
-testable expectation
-  → hypothesis;
-
-explicitly selected formulation
-  → decision.
-```
-
-Do not introduce another global evidence state merely to label a directional request. The existing evidence and decision vocabulary is sufficient when source wording and interpretation remain separate.
-
-Not every ambiguity must be resolved immediately by asking for a more precise sentence. When the useful meaning is unclear, it can be appropriate to keep several interpretations open while inspecting references, alternatives or representative examples.
-
-```text
-raw / directional request
-  → preserve wording
-  → expose important ambiguity
-  → form plausible interpretations
-  → inspect references / alternatives when useful
-  → compare what value each interpretation preserves
-  → narrow when evidence or explicit preference justifies it
-  → promote the clearer meaning into the current plan.
-```
-
-A temporarily unresolved search space is not a planning failure. Prematurely converting one interpretation into a requirement is.
-
-Example:
+For example:
 
 ```text
 Incoming:
   "I want a vibe like Duskers."
 
 Confirmed:
-  Duskers is an explicitly named directional reference.
+  Duskers is a named directional reference.
 
 Not yet confirmed:
-  whether the desired value is palette, interface, sparse information,
-  remote procedural tension, isolation, control distance or another cause.
-
-Useful next work:
-  separate several plausible reference responsibilities and compare transfers.
+  palette, interface, sparse information,
+  remote procedural tension, isolation,
+  control distance or another cause.
 ```
 
-The clarification process remains iterative. Once a clearer requirement or decision is accepted, update the current planning meaning rather than keeping obsolete ambiguity as a competing current requirement.
+Use reference analysis rather than silently converting the visible surface of the reference into a requirement.
 
-## 5. Game Planning Draft
+## 5. Build And Revise The High-Level Game Picture
 
-A `Game Planning Draft` is the single readable high-level owner for one game direction.
+The Game Planning Draft should hold enough current high-level meaning to make the direction reviewable.
 
-It evolves throughout planning. It is not created only after every stage is complete.
-
-It may contain, when useful:
+Depending on the project, useful areas can include:
 
 ```text
 Game Concept And Current State;
-Audience And Purchase Fantasy;
+Audience And Purchase Fantasy / Player Promise;
 Target Player Experience;
-Reference Baseline And Transformation;
+Reference Baseline And Controlled Transformation;
+Broad Gameplay And System Picture;
 Visual Direction And Asset Strategy;
-Player Experience And Gameplay Full Picture;
-Implementation And Production Full Picture;
-Questions, Hypotheses And Validation Full Picture;
-Full Picture Matrix;
+Implementation And Production Picture;
+Questions / Hypotheses / Validation;
 Evidence And Decisions;
 Selected Planning Depth;
 Current Conclusion;
 Next Action.
 ```
 
-Omit sections that do not improve current work.
+These are possible responsibilities, not mandatory headings.
 
-## 6. Stage 0 — Capture The Seed
+### Promise triangle
 
-### Inputs
-
-A project may begin from:
-
-- a game the designer likes;
-- a mechanic;
-- a fantasy;
-- a setting;
-- a market observation;
-- a technical possibility;
-- a desired player experience;
-- a combination or mutation of references.
-
-### Actions
-
-1. Preserve the source and current wording.
-2. State what is attractive about the seed.
-3. Separate known facts from interpretations.
-4. Record the most important unknown.
-5. State the next planning or evidence action.
-
-### Result
-
-An initial game note or minimal Game Planning Draft.
-
-## 7. Stage 1 — Build The Promise Triangle
-
-Develop these meanings together:
+Develop these meanings together when relevant:
 
 ```text
 Audience
@@ -235,50 +216,34 @@ Audience
   ↔ Dominant Reference or other baseline.
 ```
 
-### Questions
+Useful questions:
 
 - Who already values a neighboring promise?
 - What role and activity should be understood before play?
 - What experience is central?
 - What game or pattern proves a related value can work?
-- What makes the new direction meaningfully different?
+- What makes the current direction meaningfully different?
 
-### Gate 1 — Coherent Concept Baseline
+A provisional coherent answer is enough to continue; it remains a hypothesis until supported.
 
-Continue when a provisional answer exists for:
+## 6. Analyze References And Controlled Transformations
 
-- audience;
-- promise;
-- target experience;
-- baseline;
-- intended difference.
+Use [`Reference First And Controlled Transformation`](principles/reference-first-and-controlled-transformation-principles-and-terminology.md) and the [`Game Analysis Reference`](game-analysis-reference/README.md).
 
-The answers remain hypotheses until supported by evidence.
+For a whole-game or large-subsystem baseline, useful structural concerns include:
 
-## 8. Stage 2 — Analyze The Dominant Reference
+```text
+player promise / audience;
+loops;
+player verbs / decisions;
+rules / resources / economy;
+challenge / failure / progression;
+interface / feedback / readability;
+content structure / pacing;
+market position / comparables.
+```
 
-Use the [`Reference First`](principles/reference-first-and-controlled-transformation-principles-and-terminology.md) owner.
-
-For a whole-game or large-subsystem baseline, inspect:
-
-1. Player promise and audience.
-2. Core loop and session loop.
-3. Player verbs and decisions.
-4. Rules, resources and economy.
-5. Challenge, failure and progression.
-6. Interface, feedback and readability.
-7. Content structure and pacing.
-8. Market position and comparables.
-
-Use additional lenses only for specific questions.
-
-For detailed experience and anti-experience checks, optional prompts tied to specific moments of play, and concern-specific structural questions, use the [`Game Analysis Reference`](game-analysis-reference/README.md). It is a reusable observation aid rather than a mandatory stage sequence or a template that must be completed in full.
-
-When the reference question concerns visual language, asset sourcing, readability or ChatGPT-assisted style exploration, also use the [`Visual Design, Assets, And AI-Assisted Art`](principles/visual-design-assets-and-ai-assisted-art-principles-and-terminology.md) owner.
-
-### Causal Records
-
-For load-bearing parts, record:
+For a load-bearing observation, connect visible design to a causal record:
 
 ```text
 Mechanic / Rule
@@ -291,34 +256,30 @@ Mechanic / Rule
   → Transfer Note.
 ```
 
-### Gate 2 — Transferable Design Thesis
+A reference analysis is sufficiently useful for the current decision when it can explain, proportionally:
 
-The analysis is sufficient for the current step when it explains:
+```text
+why the reference works;
+which causal value is actually needed;
+what is transferable;
+which conditions are required;
+what the reference costs / trades off;
+what remains uncertain.
+```
 
-- why the reference works;
-- which cause is needed;
-- what is transferable;
-- which conditions are required;
-- what the reference costs;
-- what remains uncertain.
+When changing a reference baseline, state:
 
-## 9. Stage 3 — Define The Controlled Transformation
+```text
+baseline;
+value to preserve;
+axis being changed;
+useful transformation pattern, when one clarifies the change;
+expected new value;
+inherited conditions and trade-offs;
+minimum evidence that can detect failure.
+```
 
-### Actions
-
-1. Name the baseline.
-2. State the value to preserve.
-3. Name the axis being changed.
-4. Select a useful transformation pattern when it clarifies the change.
-5. State expected new value.
-6. State inherited conditions and trade-offs.
-7. Identify the cheapest evidence that can detect failure.
-
-### Secondary References
-
-Add a secondary reference only for a named responsibility.
-
-For each secondary reference:
+A secondary reference should have a named responsibility. Preserve proportionally:
 
 ```text
 responsibility;
@@ -329,114 +290,168 @@ compatibility questions;
 evidence need.
 ```
 
-### Compatibility Review
-
-Review:
-
-- loop;
-- decisions;
-- economy;
-- session;
-- readability;
-- audience;
-- production;
-- experience.
-
-If a secondary reference changes core loop, audience anchor and session structure together, review it as a candidate new baseline.
-
-## 10. Stage 4 — Build The Gameplay Model
-
-The gameplay model must include enough to explain how the intended experience should emerge.
-
-### Loops
-
-#### Core Loop
-
-What the player repeatedly does over seconds and minutes.
-
-#### Session Loop
-
-How one run, day, mission or session starts, escalates, resolves and motivates another.
-
-#### Long-Term Loop
-
-How mastery, progression, content, relationships or strategy change over time.
-
-Not every game needs all three as separate diagrams. Keep the meaning inline when that is clearer.
-
-### Player Verbs And Decisions
-
-Record:
-
-- recurring actions;
-- important decisions;
-- trade-offs;
-- information available;
-- consequences;
-- feedback.
-
-### Key Gameplay Situations
-
-A `Key Gameplay Situation` is a coherent situation selected for early depth because it affects value, viability, differentiation, risk, audience promise or production.
-
-It may describe:
+When combining references, review at least the affected:
 
 ```text
-player role and context;
-starting state;
-current intention or goal;
-available verbs;
-important decisions;
-rules and constraints;
-system responses;
-branches;
-failure and recovery;
-observable result;
-target experience;
-supporting reference;
-open uncertainty.
+Loops;
+decisions;
+economy;
+session structure;
+readability;
+audience / promise;
+production;
+Player Experience.
 ```
 
-Possible candidates include:
+If a secondary reference changes core gameplay, audience anchor and session structure together, review it as a possible new baseline rather than a harmless addition.
 
-- first readable central interaction;
-- one complete core loop;
-- a session payoff;
-- first meaningful failure and recovery;
-- a progression payoff;
-- a demo proof situation.
+## 7. Detailed Gameplay Planning
 
-Do not select all candidates mechanically.
+Detailed gameplay planning uses three related scales.
 
-### Gate 3 — Coherent Causal Model
+### Gameplay Situation
 
-The current gameplay model should explain why its load-bearing mechanics are expected to create the desired behavior and experience.
+`Gameplay Situation` is the main **local detailed planning unit**: a meaningful player decision with a goal/stake, materially different actions and consequential risk/opportunity.
 
-## 11. Player Experience And Gameplay Full Picture
+Do not treat every event, report, state change or visual context as a Gameplay Situation.
 
-This view answers:
+A project can move into detailed Situation planning as soon as it is useful; the broad Draft does not have to be complete first.
 
-> What does the player do, decide, perceive and experience?
+Any Situation may be selected for deeper work because of frequency, player value, risk, differentiation, balance importance, production importance or validation importance. `Key Gameplay Situation` is not a separate entity type.
 
-It may include:
+Full Situation methodology is in [`Gameplay Planning / Situations`](game-analysis-reference/gameplay-planning/situations.md).
 
-- fantasy and role;
-- target experiences;
-- loops;
-- verbs;
-- decisions;
-- resources;
-- challenge;
-- feedback;
-- failure and recovery;
-- pacing;
-- progression;
-- key situations;
-- unwanted behavior or experience.
+### Gameplay Loop
 
-It is a view inside the Game Planning Draft unless independent detail is justified.
+A `Gameplay Loop` is a recurrent functionally coherent causal process involving Situations, decisions, system execution and state change.
 
-## 12. Stage 5 — Build The Feasibility Picture
+Loops may progress asynchronously. The next Situation belonging to one Loop may occur only after execution and other gameplay, while the player handles Situations from other Loops.
+
+Use [`Gameplay Planning / Loops`](game-analysis-reference/gameplay-planning/loops.md).
+
+`Core Loop`, `Session Loop` and `Long-Term Loop` remain useful broad scale-oriented views when they clarify the game, but they do not replace concrete Situation-derived recurrent processes and do not imply exactly one Loop of each type.
+
+### Scenario
+
+A `Scenario` is a concrete chronological model of play that integrates Situation Instances, one or more Loops and the execution, observation, waiting, transition, consequence, payoff and recovery between meaningful decisions.
+
+A Scenario is useful for planning a representative path deeply enough to implement and test without claiming that every playthrough follows the same path.
+
+Use [`Gameplay Planning / Scenarios`](game-analysis-reference/gameplay-planning/scenarios.md).
+
+### Relationship
+
+```text
+Gameplay Situation
+  → one meaningful local decision problem;
+
+Situations + decisions + execution + state change
+  → recurring Gameplay Loops;
+
+concrete Situation Instances + Loops + time
+  → Scenario;
+
+Scenario
+  → integration review of pacing, challenge,
+     concurrency, causality and cumulative experience.
+```
+
+Loops and Scenarios do not replace Situation-level planning. They add recurrent-causal and chronological/integration views over it.
+
+## 8. Three Reusable Detailed Passes
+
+For a Gameplay Situation, Gameplay Loop or Scenario, consult three reusable review surfaces when useful:
+
+```text
+Game Structure Analysis
+Player Experience And Anti-Experience
+Visual Design Analysis And Planning
+```
+
+Use them as **discovery surfaces**:
+
+```text
+inspect the full available concerns / families / lenses
+→ ask whether anything material exists at the current scale
+→ record the findings that matter
+→ do not invent content merely to fill every item.
+```
+
+The default review rule is therefore broad rather than whitelist-based: a Situation, Loop or Scenario may be checked against the whole reusable set. Scenario planning additionally has a small group of structural concerns that should normally receive explicit review because pacing, concurrency and delayed integration are visible there more strongly than at one isolated Situation.
+
+### Game Structure pass
+
+Use [`Game Structure Analysis`](game-analysis-reference/game-structure-analysis.md) for structural/systemic concerns.
+
+It can be applied at several scales:
+
+```text
+whole game;
+Gameplay Situation;
+Gameplay Loop;
+Scenario;
+concrete demo.
+```
+
+### Player Experience / Anti-Experience pass
+
+Use [`Player Experience And Anti-Experience`](game-analysis-reference/player-experience-and-anti-experience.md).
+
+At Situation scale, inspect experience around the decision. At Loop scale, inspect experience created by repetition and learning. At Scenario scale, inspect the cumulative experience arc, transitions, pressure, relief and anti-experience.
+
+### Visual planning pass
+
+Use [`Visual Design Analysis And Planning`](game-analysis-reference/visual-design-analysis-and-planning.md).
+
+At Situation, Loop and Scenario scales, inspect `V01–V11` and any justified project-specific concerns. Record only material requirements.
+
+`Gameplay Situation` retains its strict meaningful-decision meaning. Broader presentation contexts such as routine, execution, aftermath or store-first-look may be represented as `Visual Contexts` instead of being mislabelled as Gameplay Situations.
+
+## 9. Situation Planning As A Content And System Lens
+
+All detailed Situation Types in a project form the current Situation inventory; there is no separate mandatory “Situation Bank” layer.
+
+Candidate Situations can be generated from:
+
+```text
+desired experience;
+player goal / desire;
+interesting risk / trade-off;
+reference;
+mechanic;
+world/economic state;
+need for gameplay content.
+```
+
+Generation is only an input. Every candidate still needs the normal meaningful-decision, occurrence, state, experience, consequence and evidence review.
+
+A mechanic/system can also be evaluated by asking what **meaningful Situations** it creates, how varied/frequent they are and how much bespoke production is required. More Situations are not automatically better.
+
+## 10. Balance As The Next Depth
+
+Situation planning provides a natural bridge to balance.
+
+Before choosing numbers, ask:
+
+> In which relevant states do different decision options remain genuinely meaningful instead of one option becoming universally correct?
+
+Useful questions can cover:
+
+```text
+balance variables;
+decision-value relations;
+frequency;
+thresholds;
+risk / reward;
+dominant-solution risk;
+later numeric test needs.
+```
+
+Loop-level balance additionally considers recurrence, cycle duration, feedback delay, intervening situations, monotony, causal readability, progression and simultaneous Loop demands.
+
+Scenario-level review exposes temporal interaction between individually reasonable decisions and Loops.
+
+## 11. Feasibility And Production
 
 Game feasibility includes more than code.
 
@@ -444,13 +459,13 @@ Review proportionally:
 
 ```text
 game systems;
-engine and tool assumptions;
-input, camera, UI and feedback;
-save and state;
-economy and balance;
+engine / tools;
+input / camera / UI / feedback;
+save / state;
+economy / balance;
 content requirements;
-visual language and asset strategy;
-art and audio requirements;
+visual language / asset strategy;
+art / audio;
 level/content pipeline;
 localization;
 analytics;
@@ -470,62 +485,23 @@ design requirement
   ≠ accepted technical decision.
 ```
 
-### Gate 4 — Testable Scope
+A minimum prototype or demo scope should genuinely test the central value without pretending to be the complete game.
 
-Identify a minimum scope that can genuinely test the central value without pretending to be the complete game.
+## 12. Build The Validation Picture
 
-## 13. Implementation And Production Full Picture
+Classify material uncertainties proportionally, for example:
 
-This view answers:
+```text
+experience hypothesis;
+causal hypothesis;
+reference-transfer hypothesis;
+audience / promise hypothesis;
+market hypothesis;
+visual-direction hypothesis;
+implementation / production hypothesis.
+```
 
-> What systems, technology, content and production capability would support the planned game?
-
-It should expose:
-
-- necessary capabilities;
-- assumptions;
-- candidate solutions;
-- production costs;
-- visual and asset-production constraints;
-- dependencies;
-- high-cost unknowns;
-- decisions not yet justified.
-
-It should not silently accept architecture.
-
-## 14. Stage 6 — Build The Validation Picture
-
-Classify major uncertainties.
-
-### Experience Hypotheses
-
-Does the game create the intended experience, at the intended level, for the intended audience?
-
-### Causal Hypotheses
-
-Do the mechanics create the expected dynamics and behavior?
-
-### Reference-Transfer Hypotheses
-
-Does the transformed design preserve the value taken from the reference?
-
-### Audience And Promise Hypotheses
-
-Does the audience recognize the anchor, fantasy and differentiator?
-
-### Market Hypotheses
-
-Do assets, tags, page and demo communicate and prove the right promise?
-
-### Visual Direction And Asset Hypotheses
-
-Does the visual language support readability, the player and store promise, style consistency and sustainable asset production?
-
-### Implementation And Production Hypotheses
-
-Can the team build and sustain the design within constraints?
-
-For each important hypothesis:
+For an important hypothesis, preserve:
 
 ```text
 claim;
@@ -533,88 +509,131 @@ why it matters;
 decision affected;
 minimum useful test;
 evidence to observe;
-success interpretation;
-failure interpretation;
-inconclusive interpretation;
+success / failure / inconclusive interpretation;
 current result;
 next decision.
 ```
 
-## 15. Questions, Hypotheses And Validation Full Picture
+Prototype the earliest uncertain link that can change the decision.
+
+One prototype may answer several questions, and one important question may require several tests or sources. Keep the unit of evidence tied to the decision rather than forcing a one-question/one-prototype mapping.
+
+Examples:
+
+```text
+uncertain input feel → interaction prototype;
+uncertain dynamics → system toy;
+uncertain player behavior → observed playtest;
+uncertain experience → observation + player report;
+uncertain long-term process → repeated-session test;
+uncertain production → technical/content-production spike;
+uncertain visual direction → representative gameplay-context comparison.
+```
+
+## 13. Full-Picture Views
+
+Full-picture views are optional views inside the Game Planning Draft unless independent detail ownership is justified.
+
+### Player Experience And Gameplay
+
+This view answers:
+
+> What does the player do, decide, perceive and experience?
+
+It may summarize fantasy/role, target experiences, Situations/Loops, verbs/decisions, resources, challenge, feedback, failure/recovery, pacing, progression and unwanted behavior/experience while linking to deeper owners.
+
+### Implementation And Production
+
+This view answers:
+
+> What systems, technology, content and production capability would support the planned game?
+
+It should expose necessary capabilities, assumptions, candidate solutions, production costs, visual/asset constraints, dependencies, high-cost unknowns and decisions not yet justified. It must not silently accept architecture.
+
+### Questions, Hypotheses And Validation
 
 This view answers:
 
 > What is not known, how can it be learned, and what decision changes afterward?
 
-One prototype may address several questions. One question may require several tests or sources.
-
 Full working logs may remain in separate owners when they have an independent lifecycle.
 
-## 16. Full Picture Matrix
+### Cross-view matrix
 
-A sufficient mature Game Planning Draft should contain a compact cross-view matrix when it improves review.
+A mature Draft may use compact cross-view navigation when it improves review.
 
-| Game / flow point | Player Experience And Gameplay | Implementation And Production | Questions / Hypotheses / Validation | Evidence / status / next action |
+| Game / flow point | Player Experience And Gameplay | Implementation And Production | Questions / Validation | Evidence / status / next action |
 |---|---|---|---|---|
 
-Possible flow points:
+Possible flow points include store first look, first contact, first meaningful decision, routine, repeated Loop, failure/recovery, session payoff, progression payoff, demo proof and content production.
 
-- store first look;
-- first interaction;
-- core loop;
-- failure and recovery;
-- session end;
-- progression payoff;
-- demo proof;
-- content production.
+The matrix is a view, not a second canonical body. Keep cells concise, allow many-to-many links and link to detailed owners rather than copying their complete bodies.
 
-Rules:
+## 14. Select The Next Evidence Or Depth
 
-- keep cells concise;
-- link to complete sections or detail owners;
-- allow many-to-many links;
-- do not copy full research, prototype or implementation bodies into the table;
-- treat the matrix as a view, not a separate canonical artifact;
-- do not require three separate full-picture files.
-
-## 17. Stage 7 — Select The Next Evidence
-
-Choose the uncertainty with the greatest influence on direction, cost or late-change risk.
+Choose the uncertainty with greatest influence on direction, player value, cost or late-change risk.
 
 Possible routing:
 
 ```text
 concept baseline conflicts
-  → revise audience, promise, experience or reference;
+  → revise audience / promise / experience / reference;
 
 promise is unreadable
-  → concept/store readability test;
+  → concept / store readability test;
 
-central action is unclear
-  → interaction prototype;
+central meaningful decision or action is unclear
+  → Situation planning or interaction prototype;
 
-causal chain is uncertain
-  → core-loop or system prototype;
+causal process is unclear
+  → Loop planning / system prototype;
 
 references conflict
-  → prototype the conflict point;
+  → clarify responsibilities and prototype / test the conflict point;
+
+several systems are individually plausible but their timing is unknown
+  → Scenario planning;
 
 session payoff is uncertain
-  → session prototype;
+  → session prototype / Scenario;
+
+session/demo integration is unclear
+  → detailed Scenario / representative demo;
+
+visual communication is uncertain
+  → Situation/Scenario visual-requirement pass;
+
+visual direction is uncertain
+  → compare representative style frames in gameplay context;
 
 production is uncertain
   → technical or content-production spike;
 
-visual direction is uncertain
-  → compare style frames in representative gameplay context;
-
 market fit is uncertain
-  → store-page, demo or audience test.
+  → audience/store/demo evidence.
+```
+
+Possible resulting decisions include:
+
+```text
+revise purchase fantasy / player promise;
+change target audience;
+change dominant reference;
+narrow or remove a secondary reference;
+change a mechanic/system;
+reduce scope;
+run another narrow prototype;
+build a fuller gameplay prototype;
+prepare a demo;
+plan a vertical slice;
+enter production planning;
+freeze the current concept;
+reject the concept.
 ```
 
 Do not generate a large prototype roadmap when only the next evidence choice is needed.
 
-## 18. Stage 8 — Observe And Update
+## 15. Observe And Update
 
 Collect evidence appropriate to the question:
 
@@ -622,127 +641,100 @@ Collect evidence appropriate to the question:
 - focused qualitative report;
 - suitable questionnaire items;
 - telemetry;
-- session outcomes;
-- return behavior;
-- store and demo behavior;
-- style-frame and gameplay-context visual comparison;
-- production measurements;
-- technical measurements.
+- session outcomes / return behavior;
+- store/demo behavior;
+- visual comparisons in representative gameplay context;
+- production or technical measurements.
 
 Then:
 
 1. classify the result;
 2. update affected hypotheses;
 3. update causal records;
-4. update audience or reference interpretation;
-5. update implementation or production direction;
-6. correct the Game Planning Draft;
-7. state the next decision.
+4. update relevant detail owners;
+5. update audience/reference/implementation interpretation where affected;
+6. reconcile accepted cross-cutting changes back into the Game Planning Draft;
+7. state the next decision or depth.
 
-Planning is not append-only. Replace disproven current meaning while preserving evidence and rationale.
+Planning is not append-only. Replace disproven current meaning while preserving evidence, rationale and material historical provenance.
 
-## 19. Stage 9 — Select The Next Depth
+## 16. Proportional Sufficiency And Production Entry
 
-Possible results:
+A Draft may be sufficient for a **first prototype** when it identifies proportionally:
 
 ```text
-revise purchase fantasy;
-change target audience;
-change dominant reference;
-narrow or remove a secondary reference;
-change mechanic;
-reduce scope;
-run another narrow prototype;
-build a fuller gameplay prototype;
-prepare a demo;
-plan a vertical slice;
-create production planning;
-freeze the concept;
-reject the concept.
+provisional audience;
+purchase fantasy / player promise;
+target Player Experience;
+baseline reference or original causal thesis;
+intended transformation;
+main Loop or meaningful Gameplay Situation;
+causal hypothesis;
+key unknown;
+minimum useful test;
+interpretation criteria.
 ```
-
-## 20. Sufficiency For A First Prototype
-
-A Game Planning Draft may be sufficient for a first prototype when it identifies:
-
-- provisional audience;
-- purchase fantasy or player promise;
-- target experience;
-- baseline reference or original causal thesis;
-- intended transformation;
-- main loop or gameplay situation;
-- causal hypothesis;
-- key unknown;
-- minimum test;
-- interpretation criteria.
-
-## 21. Sufficiency For Deeper Development
 
 Before more expensive development, understand proportionally:
 
-- session loop;
-- failure and recovery;
-- progression;
-- content and production burden;
-- visual direction, asset sourcing and integration constraints;
-- implementation constraints;
-- comparison set and platform assumptions;
-- evidence for the central gameplay promise;
-- high-cost unresolved risks.
-
-## 22. Production Entry
+```text
+session structure;
+failure and recovery;
+progression;
+content and production burden;
+visual direction / asset sourcing / integration constraints;
+implementation constraints;
+comparison set / platform assumptions;
+evidence for the central gameplay promise;
+high-cost unresolved risks.
+```
 
 Production entry does not require every answer. It requires enough evidence that:
 
-- the central experience can emerge;
-- the intended audience can understand the promise;
-- the reference combination is coherent;
-- the core loop works;
-- the visual language and asset strategy are sustainable;
-- scope is producible;
-- remaining uncertainty can be resolved without repeatedly replacing the entire game.
+```text
+the central experience can plausibly emerge;
+the intended audience can understand the promise;
+reference responsibilities are coherent;
+load-bearing gameplay works well enough for the next cost level;
+the visual language / asset strategy can be sustained;
+scope is producible;
+remaining uncertainty can be resolved without repeatedly replacing the whole game.
+```
 
-## 23. Optional Deep Documents
+## 17. Checks Before Returning A Planning Result
 
-Possible later details:
+Before treating a planning result as reviewable, check proportionally:
 
-- individual reference analyses;
-- prototype plans and results;
-- gameplay systems;
-- economy and progression;
-- technical architecture;
-- content architecture;
-- visual design brief and asset strategy;
-- production plan;
-- level/content pipeline;
-- release plan.
+- the current source and current game direction are clear;
+- facts, hypotheses, decisions and evidence remain distinct;
+- audience, promise, experience and references do not silently contradict;
+- reference responsibilities are explicit;
+- load-bearing causal claims expose conditions and trade-offs;
+- implementation ideas are not accepted automatically;
+- prototype/evidence scope matches the uncertainty;
+- market/platform claims carry suitable evidence/freshness when they matter;
+- visual direction supports readability and has a feasible asset strategy when relevant;
+- the Game Planning Draft remains the high-level entry point;
+- additional files were not created mechanically;
+- current conclusion and next action/depth are explicit.
 
-Create them only when they reduce total complexity.
+## 18. Do Not
 
-## 24. Checks Before Returning A Planning Result
-
-- Current source and current game direction are clear.
-- Facts, hypotheses, decisions and evidence remain distinct.
-- Audience, promise, experience and reference do not silently contradict.
-- Reference roles are explicit.
-- Causal claims expose conditions and trade-offs.
-- Implementation ideas are not accepted automatically.
-- Prototype scope matches the uncertainty.
-- Market claims have evidence labels and freshness where needed.
-- Visual direction supports readability and has a feasible asset strategy.
-- The Game Planning Draft remains the high-level entry point.
-- Additional files were not created mechanically.
-- Current conclusion and next action are explicit.
-
-## 25. Do Not
-
+- Do not treat the common broad-first route as a mandatory stage sequence.
 - Do not require template-ordered input.
-- Do not wait until the end to consider audience and market.
-- Do not treat scenarios as the only structure of a game.
-- Do not replace loops and causal reasoning with a feature list.
+- Do not require a complete broad Draft before Situation-level work.
+- Do not wait until the end to consider audience and market when they materially affect the direction.
+- Do not turn every event into a Gameplay Situation.
+- Do not treat Scenarios as the only structure of a game.
+- Do not turn a general state effect into an exhaustive Situation graph.
+- Do not replace Loops and causal reasoning with a feature list.
+- Do not treat one broad “core loop” diagram as a substitute for concrete recurring causal processes.
 - Do not mix references without assigned responsibilities.
+- Do not require one reference to solve every design responsibility.
 - Do not build a polished slice to answer a cheap fundamental question.
 - Do not force every project into many files.
 - Do not treat a matrix as the canonical owner of complete meaning.
 - Do not confuse implementation verification with game validation.
 - Do not treat generated or purchased assets as visually coherent by default.
+- Do not invent evidence, deadlines, final mechanics, balance numbers or production certainty.
+- Do not keep disproven current meaning merely because it was documented earlier.

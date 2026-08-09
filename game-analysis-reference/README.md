@@ -1,26 +1,28 @@
 # Game Analysis Reference
 
-Status: active reusable analysis reference
-Scope: a living set of reusable observation, analysis and design-elicitation lenses for studying existing games and for turning project questions into reviewable planning requirements.
+Status: active reusable analysis and planning reference
+Scope: a living set of reusable observation, analysis and design-elicitation lenses for studying games and for turning project questions into reviewable planning requirements.
 
 ## 1. Purpose
 
-This folder helps a designer notice, record and later structure useful information without forcing analysis or planning into a mandatory questionnaire or one fixed sequence. Most files are observation aids for existing games; selected owners also provide reusable design-elicitation and planning lenses when that responsibility has an independent lifecycle.
+This folder helps a designer notice, record and structure useful information without forcing analysis or planning into one mandatory questionnaire or fixed sequence.
 
-The intended working model is:
+Most owners provide reusable question/lens surfaces. The `gameplay-planning/` area provides detailed planning methods for Gameplay Situations, Loops and Scenarios while canonical terms remain in the corresponding principle owner.
+
+The intended working model for reference observation remains:
 
 ```text
 Obsidian Canvas
   → free-form observations, screenshots, links and provisional thoughts;
 
 Game Analysis Reference
-  → reusable questions, lenses and moment prompts;
+  → reusable questions, lenses, moment prompts and planning methods;
 
 AI transformation
-  → a structured analysis of one game;
+  → structured analysis / candidate planning meaning;
 
 repository Markdown
-  → the durable reviewed analysis and reusable knowledge.
+  → durable reviewed analysis and reusable knowledge.
 ```
 
 The reference is consulted while observing, playing or clarifying a concrete design question. It is not a form that must be completed in full for every game or project.
@@ -29,11 +31,12 @@ The reference is consulted while observing, playing or clarifying a concrete des
 
 | Owner | Responsibility |
 |---|---|
-| [`Player Experience And Anti-Experience`](player-experience-and-anti-experience.md) | What the player may feel, which design conditions support it, how it appears in behavior and how the experience may fail |
-| [`Observation Flow And Moment Prompts`](observation-flow-and-moment-prompts.md) | Optional prompts for important moments such as first contact, first failure, repetition, session end and return |
-| [`Game Structure Analysis`](game-structure-analysis.md) | Detailed questions about promise, loops, decisions, rules, information, content, pacing, production and transfer |
-| [`Visual Design Analysis And Planning`](visual-design-analysis-and-planning.md) | Reusable visual lenses and a practical method for turning gameplay situations, desired perception and reference directions into visual requirements without confusing requirements with realizations |
-| [`Unrouted Questions And Concerns`](unrouted-questions-and-concerns.md) | Temporary staging for reusable questions whose correct owner, trigger or planning moment is not clear yet |
+| [`Gameplay Planning`](gameplay-planning/README.md) | Detailed methods for planning Gameplay Situations, Loops and Scenarios and for applying the other reusable passes at those scales |
+| [`Game Structure Analysis`](game-structure-analysis.md) | Structural/systemic questions about promise, loops, decisions, rules, information, pacing, production, causal legibility and transfer |
+| [`Player Experience And Anti-Experience`](player-experience-and-anti-experience.md) | Experience families, supporting conditions, observable indicators and anti-experience checks |
+| [`Visual Design Analysis And Planning`](visual-design-analysis-and-planning.md) | Visual lenses and the route from gameplay/context, desired perception and references to visual requirements |
+| [`Observation Flow And Moment Prompts`](observation-flow-and-moment-prompts.md) | Optional prompts for important moments such as first contact, first meaningful decision, first causal learning, repetition, session end and return |
+| [`Unrouted Questions And Concerns`](unrouted-questions-and-concerns.md) | Temporary staging for reusable questions whose correct owner or trigger is still unclear |
 
 ## 3. Ownership Boundaries
 
@@ -41,24 +44,76 @@ The reference is consulted while observing, playing or clarifying a concrete des
 principle-and-terminology owners
   → stable definitions, distinctions and principles;
 
-this reference folder
-  → detailed reusable questions, observation prompts and narrowly justified planning lenses;
+Game Development Planning Workflow
+  → orchestration: where planning starts, how it changes depth,
+     and how detail/evidence returns to the high-level Draft;
 
-an analysis of one concrete game
+this reference folder
+  → detailed reusable questions, schemas, observation prompts
+     and planning lenses;
+
+analysis of one concrete game
   → observations, interpretations and conclusions about that game;
 
-an Obsidian Canvas
+project planning detail owner
+  → current project-specific Situation / Loop / Scenario /
+     visual / other detailed meaning;
+
+Obsidian Canvas
   → working notes, not automatically canonical documentation.
 ```
 
+Canonical Gameplay Situation / Loop / Scenario meanings are owned by [`Gameplay Situations, Loops And Scenarios`](../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md).
+
 The reference does not replace:
 
+- [`Game Planning`](../principles/game-planning-principles-and-terminology.md);
 - [`Player Experience First`](../principles/player-experience-first-principles-and-terminology.md);
 - [`Reference First And Controlled Transformation`](../principles/reference-first-and-controlled-transformation-principles-and-terminology.md);
 - [`Game Development Planning Workflow`](../game-development-planning-workflow.md);
 - project-specific evidence, decisions or a Game Planning Draft.
 
-## 4. Evidence Discipline
+## 4. Three Reusable Planning Passes
+
+For detailed game planning, three reusable surfaces can be applied to the same planning unit:
+
+```text
+Gameplay Situation
+Gameplay Loop
+Scenario
+        ↓
+
+Game Structure Analysis
+Player Experience And Anti-Experience
+Visual Design Analysis And Planning
+```
+
+Use the complete relevant set as a **discovery surface**, not a mandatory form.
+
+```text
+inspect the questions / families / lenses
+→ ask whether there is material meaning at the current scale
+→ record what matters
+→ leave irrelevant areas empty rather than inventing an answer.
+```
+
+The same concern can reveal different information at different scales:
+
+```text
+Situation
+  → local meaningful decision and its immediate context;
+
+Loop
+  → recurrence, feedback, learning and repeated experience;
+
+Scenario
+  → chronological interaction, overlap, pacing, challenge
+     and cumulative experience.
+```
+
+A project may also apply these surfaces to a whole game, subsystem, demo or another coherent review object when useful.
+
+## 5. Evidence Discipline
 
 When useful, mark working notes with the repository evidence vocabulary:
 
@@ -81,48 +136,51 @@ evidence:
 
 A possible player statement is not sufficient evidence by itself. Observed behavior does not reveal internal experience perfectly. Preserve uncertainty instead of forcing a conclusion.
 
-## 5. How To Use The Reference
+## 6. How To Use The Reference
 
-A lightweight use may be:
+A lightweight reference-analysis use may be:
 
 ```text
 notice an interesting moment
-  → write freely in the Canvas
-  → consult one related section
-  → add another observation or question
-  → continue playing.
+→ write freely in the Canvas
+→ consult one related concern
+→ add another observation or question
+→ continue playing.
 ```
 
-A deeper analysis or planning pass may combine:
+A deeper whole-game pass may combine:
 
-- the first-contact expectation;
+- first-contact expectation;
 - recurring player actions and decisions;
-- core, session and long-term loops;
+- core/session/long-term structures;
 - rules, resources and feedback;
 - experience and anti-experience evidence;
 - content-production and production-cost observations;
 - comparison and transfer notes;
-- visual situation-to-requirement analysis when a project needs it.
+- visual analysis.
+
+A deeper **project-planning** pass may instead begin from one Gameplay Situation, Loop or Scenario and inspect the same reusable surfaces at that scale.
 
 Do not stop play or planning merely to fill every section.
 
-## 6. Updating The Reference
+## 7. Updating The Reference
 
-When practical use reveals a new concern:
+When practical use reveals a new reusable concern:
 
-1. Add the question to the owner that matches its responsibility.
+1. Add it to the owner matching its responsibility.
 2. Keep a question in the moment-flow file only when its main value is knowing **when** to notice it.
-3. Keep detailed structural questions in the structure owner.
-4. Keep experience conditions, behavioral indicators and anti-experience checks in the experience owner.
-5. Check existing principle-and-terminology owners before introducing a new definition.
-6. Avoid maintaining two full copies of the same question set.
-7. If a useful reusable question has no clear owner or trigger yet, stage it temporarily in [`Unrouted Questions And Concerns`](unrouted-questions-and-concerns.md).
-8. Move a staged question into its real owner once repeated use makes that responsibility clear; do not keep a permanent duplicate in staging.
-9. Create another file only when independent ownership, reuse, research, review or navigation justifies it.
+3. Keep structural/systemic questions in `game-structure-analysis.md`.
+4. Keep experience conditions, indicators and anti-experience checks in `player-experience-and-anti-experience.md`.
+5. Keep visual planning questions in `visual-design-analysis-and-planning.md`.
+6. Keep Situation/Loop/Scenario record method in `gameplay-planning/`.
+7. Check principle-and-terminology owners before introducing a new definition.
+8. Avoid maintaining two full copies of the same question set.
+9. If no clear owner exists yet, stage the question temporarily in [`Unrouted Questions And Concerns`](unrouted-questions-and-concerns.md).
+10. Create another file only when independent ownership, reuse, research, review or navigation justifies it.
 
-## 7. Source Provenance
+## 8. Source Provenance
 
-The initial edition is a lossless Markdown migration of the supplied game-analysis reference sheet:
+The initial observation/reference edition was a lossless Markdown migration of the supplied game-analysis reference sheet:
 
 ```text
 source artifact: template(5).svg
@@ -131,4 +189,4 @@ source structure: 54 embedded PNG text blocks
 repository SVG copy: intentionally not included
 ```
 
-The source SVG used rasterized text blocks rather than editable SVG text. The Markdown edition therefore becomes the maintained, searchable and linkable source for future additions.
+The source SVG used rasterized text blocks rather than editable SVG text. The Markdown edition therefore became the maintained, searchable and linkable source for later additions.

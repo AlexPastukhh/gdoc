@@ -1,9 +1,9 @@
 # Player Experience And Anti-Experience
 
-Status: active reusable observation reference
+Status: active reusable observation and planning reference
 Scope: detailed experience families, supporting design conditions, expected dynamics, observable behavior, possible player reports and anti-experience checks.
 
-Canonical definitions and principles remain in [`Player Experience First`](../principles/player-experience-first-principles-and-terminology.md). This file owns the detailed observation surface.
+Canonical definitions and principles remain in [`Player Experience First`](../principles/player-experience-first-principles-and-terminology.md). This file owns the detailed observation/planning surface.
 
 ## 1. How To Read The Records
 
@@ -355,3 +355,60 @@ Systemic consequence evaluation; meaning from alignment between play and fiction
 не воспринимается как последствие решения;
 повторяется дольше, чем сохраняет ценность.
 ```
+
+## 13. Multi-Scale Planning Use
+
+The records above can be used not only to observe an existing game, but also as a reusable planning pass at several gameplay scales.
+
+When Player Experience is being planned, this file is intended to be applied to `Gameplay Situation`, `Gameplay Loop` and `Scenario` in the same discovery-surface spirit as `Game Structure Analysis` and `Visual Design Analysis And Planning`: inspect the available experience/anti-experience records, then keep what is materially relevant at that scale.
+
+### Gameplay Situation
+
+Inspect the experience around one meaningful decision:
+
+```text
+entry / contextual state;
+affective stance toward expectations / plan;
+decision experience;
+anticipated experience;
+outcome / consequence experience;
+residual experience.
+```
+
+Then use the experience-family records above to ask which intended experience or anti-experience is relevant.
+
+### Gameplay Loop
+
+Inspect what **repetition** produces:
+
+```text
+mastery / competence;
+agency / ownership;
+tension / anticipation / relief;
+curiosity / learning;
+meaningful adaptation;
+
+or
+
+monotony;
+opaque failure;
+helplessness;
+exhaustion;
+meaningless repetition.
+```
+
+### Scenario
+
+Inspect the cumulative temporal experience:
+
+```text
+experience arc;
+transitions between emotional / cognitive states;
+pressure and breathing room;
+anticipation and payoff;
+residual effects of earlier loss or success;
+experience of simultaneous Situations / Loops;
+where anti-experience accumulates or resolves.
+```
+
+Use the whole experience set as a discovery surface. Do not mechanically require every experience family at every scale.
