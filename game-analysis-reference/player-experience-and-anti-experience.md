@@ -1,7 +1,7 @@
 # Player Experience And Anti-Experience
 
 Status: active reusable observation and planning reference
-Scope: detailed experience families, supporting design conditions, expected dynamics, observable behavior, possible player reports and anti-experience checks.
+Scope: detailed experience families, supporting design conditions, emergent experience patterns/properties, observable behavior, possible player reports and anti-experience checks.
 
 Canonical definitions and principles remain in [`Player Experience First`](../principles/player-experience-first-principles-and-terminology.md). This file owns the detailed observation/planning surface.
 
@@ -12,7 +12,7 @@ Each experience record follows the structure used in the source sheet:
 ```text
 experience family
   → design conditions
-  → emergent dynamics / property of experience
+  → emergent experience pattern / property
   → observable player behavior
   → possible player report.
 ```
@@ -34,7 +34,7 @@ An unpleasant state is not automatically a defect. Fear, uncertainty, pressure, 
 
 Немедленный input response, сильный audiovisual feedback, impact animation, чёткий timing.
 
-### Возникающая динамика / свойство опыта
+### Возникающий паттерн / свойство опыта
 
 Высокая читаемость импакта, body-feel, ритмичность.
 
@@ -65,7 +65,7 @@ An unpleasant state is not automatically a defect. Fear, uncertainty, pressure, 
 
 Консистентный world-building, role affordances, diegetic framing, intuitive controls.
 
-### Возникающая динамика / свойство опыта
+### Возникающий паттерн / свойство опыта
 
 Снижение трения между намерением и role enactment; усиление presence.
 
@@ -96,7 +96,7 @@ An unpleasant state is not automatically a defect. Fear, uncertainty, pressure, 
 
 Information gaps, mystery breadcrumbs, nonlinear clues, hidden spaces, controlled uncertainty.
 
-### Возникающая динамика / свойство опыта
+### Возникающий паттерн / свойство опыта
 
 Генерация вопросов и гипотез, voluntary exploration.
 
@@ -127,7 +127,7 @@ Information gaps, mystery breadcrumbs, nonlinear clues, hidden spaces, controlle
 
 Scarcity, time pressure, opponent pressure, costly mistakes, visibility of risk.
 
-### Возникающая динамика / свойство опыта
+### Возникающий паттерн / свойство опыта
 
 Stakes, uncertainty, rising tension, relief after resolution.
 
@@ -158,7 +158,7 @@ Stakes, uncertainty, rising tension, relief after resolution.
 
 Escalating difficulty, readable failure, short retry loop, skill-signaling challenges, effort-reward alignment.
 
-### Возникающая динамика / свойство опыта
+### Возникающий паттерн / свойство опыта
 
 Повторение с корректировкой стратегии и навыка.
 
@@ -189,7 +189,7 @@ Escalating difficulty, readable failure, short retry loop, skill-signaling chall
 
 Multiple viable routes, build choices, non-forced cooperation, branching plans, expressive systems.
 
-### Возникающая динамика / свойство опыта
+### Возникающий паттерн / свойство опыта
 
 Divergent paths and ownership of plan.
 
@@ -220,7 +220,7 @@ Divergent paths and ownership of plan.
 
 Personalization, building, world-editing, loadout expression, cosmetic-semantic choices.
 
-### Возникающая динамика / свойство опыта
+### Возникающий паттерн / свойство опыта
 
 Individual mark-making, aesthetic ownership.
 
@@ -251,7 +251,7 @@ Individual mark-making, aesthetic ownership.
 
 Shared goals, partial dependence, restrained communication, helpful affordances, mutual recovery.
 
-### Возникающая динамика / свойство опыта
+### Возникающий паттерн / свойство опыта
 
 Trust, rhythm synchronization, interdependence.
 
@@ -282,7 +282,7 @@ Trust, rhythm synchronization, interdependence.
 
 Adversarial play, clear win conditions, score/rank feedback, visible comparative performance.
 
-### Возникающая динамика / свойство опыта
+### Возникающий паттерн / свойство опыта
 
 Rivalry, attention to standings, social comparison.
 
@@ -313,7 +313,7 @@ Rivalry, attention to standings, social comparison.
 
 Reactive narrative, moral trade-offs inside systems, persistent consequences, character callbacks.
 
-### Возникающая динамика / свойство опыта
+### Возникающий паттерн / свойство опыта
 
 Systemic consequence evaluation; meaning from alignment between play and fiction.
 
@@ -360,7 +360,7 @@ Systemic consequence evaluation; meaning from alignment between play and fiction
 
 The records above can be used not only to observe an existing game, but also as a reusable planning pass at several gameplay scales.
 
-When Player Experience is being planned, this file is intended to be applied to `Gameplay Situation`, `Gameplay Loop` and `Scenario` in the same discovery-surface spirit as `Game Structure Analysis` and `Visual Design Analysis And Planning`: inspect the available experience/anti-experience records, then keep what is materially relevant at that scale.
+When Player Experience is being planned, this file is intended to be applied to `Gameplay Situation`, `Gameplay Loop`, `Gameplay Dynamic` and `Scenario` in the same discovery-surface spirit as `Game Structure Analysis`: inspect the available experience/anti-experience records, then keep what is materially relevant at that scale. Visual planning has its own coverage rules; adding Dynamic here does not imply a generic Dynamic-scale visual pass.
 
 ### Gameplay Situation
 
@@ -397,6 +397,45 @@ exhaustion;
 meaningless repetition.
 ```
 
+### Gameplay Dynamic
+
+Inspect the experience created by living inside, recognizing and trying to influence a recurrent / developing systemic tendency over time.
+
+Ask proportionally:
+
+```text
+What experience does this Dynamic tend to create over time?
+How does that experience change as the Dynamic strengthens, weakens or reverses?
+What does the player begin to want, fear, protect, pursue or avoid because of it?
+Can the player recognize the tendency and build useful expectations around it?
+Can they meaningfully influence its trajectory?
+Does recognition produce understanding / anticipation / agency / ownership?
+Does adaptation produce strategic expression / competence / mastery?
+
+or
+
+does the Dynamic produce inevitability / helplessness?
+does it collapse into rote optimization?
+does it create permanent firefighting or chronic anxiety without agency?
+does long-term repetition become monotonous or exhausting?
+```
+
+Useful scale boundary:
+
+```text
+Loop experience
+  → what repetition of this recurrent process feels like;
+
+Dynamic experience
+  → what living inside / understanding / managing
+     the developing systemic tendency feels like;
+
+Scenario experience
+  → the concrete cumulative temporal arc of one path.
+```
+
+Also ask whether the long-term systemic experience still supports the intended player promise or gradually drifts into a different experience.
+
 ### Scenario
 
 Inspect the cumulative temporal experience:
@@ -411,4 +450,4 @@ experience of simultaneous Situations / Loops;
 where anti-experience accumulates or resolves.
 ```
 
-Use the whole experience set as a discovery surface. Do not mechanically require every experience family at every scale.
+Use the whole experience set as a discovery surface. Do not mechanically require every experience family at every scale. A Dynamic may be structurally coherent and still produce the wrong long-term experience; conversely, a valuable Dynamic may create adaptation or systemic mastery that is not visible in one isolated Situation or one Loop cycle.

@@ -1,9 +1,9 @@
 # Game Structure Analysis
 
 Status: active reusable analysis reference
-Scope: a detailed question set for examining how an existing game or planned gameplay structure creates activity, decisions, dynamics, experience, content and production burden.
+Scope: a shared structural question set for examining and planning Gameplay Situations, Loops, Dynamics, Scenarios, whole games and other coherent gameplay structures.
 
-Canonical reference-analysis principles remain in [`Reference First And Controlled Transformation`](../principles/reference-first-and-controlled-transformation-principles-and-terminology.md). Canonical Gameplay Situation / Loop / Scenario meanings remain in [`Gameplay Situations, Loops And Scenarios`](../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md). This file owns the detailed structural question set.
+Canonical reference-analysis principles remain in [`Reference First And Controlled Transformation`](../principles/reference-first-and-controlled-transformation-principles-and-terminology.md). Canonical Gameplay Situation / Loop / Scenario meanings remain in [`Gameplay Situations, Loops And Scenarios`](../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md). Canonical Dynamic terminology remains in [`Mechanics Create Dynamics`](../principles/mechanics-create-dynamics-principles-and-terminology.md). This file owns the shared detailed structural concern set.
 
 ## 1. How To Use This File
 
@@ -15,11 +15,12 @@ The same concern set may also be inspected at several planning scales:
 whole game;
 Gameplay Situation;
 Gameplay Loop;
+Gameplay Dynamic;
 Scenario;
 concrete demo.
 ```
 
-At Situation/Loop/Scenario scale, inspect the full set as a discovery surface and record only concerns with material meaning. Do not mechanically fill every concern.
+At Situation / Loop / Dynamic / Scenario scale, inspect the same full concern set as a discovery surface and record only concerns with material meaning. The concern keeps the same responsibility while its concrete question is interpreted proportionally at the current scale. Do not mechanically fill every concern.
 
 For a reference analysis, the concrete analysis owns the answers. For a project-planning pass, the appropriate project detail owner owns the answers.
 
@@ -29,11 +30,13 @@ For a reference analysis, the concrete analysis owns the answers. For a project-
 |---|---|---|
 | <a id="concern-player-promise-audience"></a>**Player promise and audience** | Какой опыт обещает игра, кому она понятна, с какими играми сравнивается | Без этого невозможно понять, что в игре является несущим, а что декоративным |
 | <a id="concern-core-session-loop"></a>**Core loop and session loop** | Что игрок делает повторно за секунды/минуты; как устроена одна сессия или ран; какие конкретные recurrent processes реально существуют | Помогает отличить broad loop thesis от конкретных повторяемых causal processes и увидеть структуру сессии |
-| <a id="concern-player-verbs-decisions"></a>**Player verbs and decisions** | Главные действия игрока и повторяющиеся развилки выбора | Помогает отличить “жанровую оболочку” от реальной agency и decision density |
+| <a id="concern-player-verbs-decisions"></a>**Player verbs and decisions** | Главные действия и meaningful decisions; насколько варианты materially different; почему разумный игрок может выбрать разные approaches; достаточно ли требуемого разнообразия решений | Помогает отличить количество кнопок от реальной agency, decision quality и meaningful choice |
 | <a id="concern-rules-resources-economy"></a>**Rules, resources, and economy** | Внутренние ограничения, ресурсы, награды, обмены, cost structure | Экономика часто переносится лучше, чем сеттинг; именно она создаёт многие dynamics |
-| <a id="concern-challenge-failure-progression"></a>**Challenge, failure, and progression** | Как игрок ошибается, восстанавливается, учится и открывает новое | Это ключ к мастерству, pacing и retention; также важный источник конфликтов при смешении референсов |
+| <a id="concern-challenge-failure-progression"></a>**Challenge, failure, and progression** | Как игрок ошибается, восстанавливается, учится и открывает новое; какой диапазон давления сохраняет meaningful agency | Это ключ к мастерству, pacing и retention; также важный источник конфликтов при смешении референсов |
+| <a id="concern-balance-decision-space-strategic-diversity"></a>**Balance, decision space, and strategic diversity** | Basic challenge balance; local decision balance; broader strategic balance; требуемое разнообразие materially different решений и стратегий | Позволяет отличить healthy difficulty от отсутствия выбора и обнаружить universally correct response / dominant meta |
 | <a id="concern-interface-feedback-readability"></a>**Interface, feedback, and readability** | Как игра сообщает состояние системы, опасность, успех, возможности | Многие «необъяснимые» преимущества референса живут не в правилах, а в сигналах и обратной связи |
-| <a id="concern-causal-legibility-strategic-planning"></a>**Causal legibility and strategic planning** | Может ли игрок построить полезную причинную модель, предсказывать направление последствий и использовать её для подготовки/стратегии | Связывает feedback, mental model, repeated Loops и mastery; особенно важно в системных играх с delayed/state-mediated effects |
+| <a id="concern-causal-legibility-strategic-planning"></a>**Causal legibility and strategic planning** | Может ли игрок построить полезную причинную модель, предсказывать направление последствий и использовать её для подготовки/стратегии | Связывает feedback, mental model, repeated Loops / Dynamics и mastery; особенно важно в системных играх с delayed/state-mediated effects |
+| <a id="concern-dynamics-state-opportunity-trajectory"></a>**Dynamics and state / opportunity trajectory** | Какие устойчивые causal tendencies возникают; во что они превращают state/economy/opportunities; как меняют будущие Situations и выгодность стратегий | Показывает широкое поведение системы во времени, которое не видно из одного consequence или одного Loop |
 | <a id="concern-content-structure-pacing"></a>**Content structure and pacing** | Какой контент подаётся, в каком порядке, как меняется ритм сессии и кампании | Позволяет увидеть, не только что игрок делает, но и когда это становится интересным |
 | <a id="concern-market-position-comparables"></a>**Market position and comparables** | Какие теги, жанровые ожидания, якоря и сравнимые игры формируют считывание | Это нужно не только маркетингу: reference bank должен знать, для какого сравнения игра вообще существует |
 
@@ -99,6 +102,10 @@ purchase fantasy
 - какие цели краткосрочные и долгосрочные;
 - как появляется следующая цель;
 - что создаёт ощущение направления;
+- достаточно ли игрок мотивирован участвовать в этом Situation / Loop / Dynamic / Scenario;
+- какое разнообразие целей реально требуется intended game;
+- меняют ли разные цели priorities, decisions или viable strategies;
+- не являются ли несколько внешне разных целей одним hidden optimization target;
 - может ли игрок сформировать собственный план;
 - какие будущие состояния/ситуации игрок ожидает и пытается приблизить или избежать.
 
@@ -108,8 +115,37 @@ Loop объясняет повторение действий, но не все�
 
 > Почему игрок выбирает именно это действие сейчас?
 
+Больше целей не автоматически лучше. Нужен набор целей, который создаёт требуемую для intended experience мотивацию и действительно меняет priorities / plans / decisions.
+
+<a id="concern-player-verbs-decisions-detail"></a>
+### 3.4 Player Verbs And Decisions
+
+#### Что фиксировать
+
+- какие действия игрок реально выполняет;
+- где находится meaningful decision, а где только execution / input;
+- какие варианты materially different по trade-offs, риску, плану или future state;
+- почему разумный игрок может предпочесть каждый meaningful option / approach;
+- когда несколько действий являются только разными кнопками для одного и того же решения;
+- сколько разных способов достижения релевантной цели действительно требуется intended game;
+- где decision density полезна, а где повторение превращается в routine / administration.
+
+#### Зачем
+
+Количество verbs или buttons не равно agency. Likewise:
+
+```text
+more options
+≠ automatically better gameplay;
+
+required meaningful diversity
+> cosmetic choice count.
+```
+
+Этот concern фиксирует **качество и структуру решений**. Их относительная выгодность и dominant-solution risk отдельно проверяются в `Balance, Decision Space And Strategic Diversity`.
+
 <a id="concern-space-camera-control"></a>
-### 3.4 Space, Camera And Control
+### 3.5 Space, Camera And Control
 
 #### Что фиксировать
 
@@ -132,7 +168,7 @@ Loop объясняет повторение действий, но не все�
 ```
 
 <a id="concern-time-attention-information"></a>
-### 3.5 Time, Attention And Information
+### 3.6 Time, Attention And Information
 
 #### Что фиксировать
 
@@ -166,7 +202,7 @@ Loop объясняет повторение действий, но не все�
 - тип мастерства.
 
 <a id="concern-world-ai-system-response"></a>
-### 3.6 World, AI And System Response
+### 3.7 World, AI And System Response
 
 #### Что фиксировать
 
@@ -189,7 +225,7 @@ Loop объясняет повторение действий, но не все�
 ```
 
 <a id="concern-content-production-model"></a>
-### 3.7 Content-Production Model
+### 3.8 Content-Production Model
 
 #### Что фиксировать
 
@@ -219,7 +255,7 @@ social content.
 Большее число Situations не автоматически лучше: ценность зависит от качества решений, вариативности, частоты и production cost.
 
 <a id="concern-return-stopping-exhaustion"></a>
-### 3.8 Return, Stopping And Exhaustion
+### 3.9 Return, Stopping And Exhaustion
 
 #### Что фиксировать
 
@@ -242,7 +278,7 @@ Session loop не полностью описывает:
 ```
 
 <a id="concern-causal-legibility-strategic-planning-detail"></a>
-### 3.9 Causal Legibility And Strategic Planning
+### 3.10 Causal Legibility And Strategic Planning
 
 #### Что фиксировать
 
@@ -252,8 +288,11 @@ Session loop не полностью описывает:
 - может ли предсказывать **направление** результата без знания точных скрытых чисел;
 - различает ли direct consequence и delayed/state-mediated effect;
 - узнаёт ли повторяющиеся Situation chains / Gameplay Loops;
+- может ли отличить one-off consequence от recurrent / developing Dynamic;
+- распознаёт ли направление, в которое система имеет тенденцию развиваться;
 - может ли подготовиться к Situation заранее, а не только исправлять её после появления;
 - может ли формировать желаемый future state;
+- может ли планировать вокруг Dynamic и намеренно менять её trajectory;
 - существуют ли несколько жизнеспособных стратегий / styles;
 - может ли игрок объяснить, почему его собственный стиль работает;
 - после failure обновляет ли игрок модель или вынужден random-trial;
@@ -298,8 +337,125 @@ rules + world response
 
 Perfect information не требуется. Discoverable incomplete causality может поддерживать curiosity, если игрок способен постепенно улучшать модель и использовать её.
 
+<a id="concern-balance-decision-space-strategic-diversity-detail"></a>
+### 3.11 Balance, Decision Space And Strategic Diversity
+
+Use `balance` as several related questions rather than one vague verdict.
+
+#### Basic Challenge Balance
+
+Ask:
+
+```text
+Is there enough pressure / resistance for decisions to matter?
+Is gameplay so easy that choices lose value?
+Is it so hard that meaningful alternatives disappear?
+Does the challenge range support the intended experience?
+```
+
+This overlaps deliberately with `Challenge, Failure And Progression`: that concern owns how challenge/failure/progression works; this lens asks whether the operative pressure preserves meaningful decision space.
+
+#### Decision Balance
+
+At local-decision scale ask:
+
+> **При каких relevant states различные варианты остаются meaningful, вместо того чтобы один вариант становился universally correct?**
+
+Also ask:
+
+```text
+Which options are viable in which states?
+Why might a reasonable player choose each?
+Does one local response dominate across the relevant range?
+```
+
+#### Strategic Balance
+
+At broader scale ask:
+
+```text
+Which strategies / play styles are viable under different
+goals / states / risks / time horizons?
+
+Do several different Mechanics / Loops mainly reward
+the same higher-level strategy?
+
+Does gameplay converge toward one dominant meta-strategy?
+
+Can changing state make a previously strong strategy weaker
+and another strategy more attractive?
+```
+
+Several strategies do not need to be equally strong at every moment. Strategic richness can come from **contextually viable** strategies whose value changes with state, goals and trade-offs.
+
+#### Required Decision / Strategy Diversity
+
+More choices, goals or strategies are not automatically better. Ask:
+
+```text
+How much meaningful diversity does the intended game actually need?
+Are the available approaches materially different in plan / trade-off / future state?
+Are there enough ways to pursue the important goals?
+Is apparent variety only cosmetic or execution-level variation?
+Does extra variety create choice overload without additional value?
+```
+
+The target is **required meaningful diversity**, not maximum option count.
+
+<a id="concern-dynamics-state-opportunity-trajectory-detail"></a>
+### 3.12 Dynamics And State / Opportunity Trajectory
+
+A `Gameplay Dynamic` is defined canonically in [`Mechanics Create Dynamics`](../principles/mechanics-create-dynamics-principles-and-terminology.md). This concern reviews what the operative system tends to become over time.
+
+#### Что фиксировать
+
+- какая recurrent / persistent / directionally developing causal tendency возникает;
+- при каких relevant states / preconditions tendency реально действует;
+- когда она начинается или становится заметной;
+- за какой time horizon / число циклов она становится material;
+- что поддерживает её persistence; достигает ли она saturation / equilibrium;
+- какие условия, state changes или counter-strategies ослабляют, останавливают или разворачивают её;
+- какие Mechanics / Rules / Loops / decisions причинно поддерживают её;
+- как меняются resources, capabilities, territory, population, knowledge, reserves, risk или другие relevant states;
+- какие opportunities появляются / исчезают;
+- какие Gameplay Situations становятся более / менее вероятными или частыми;
+- какие решения эти Situations реально производят: meaningful trade-offs или obvious / administrative responses;
+- как меняются их stakes, option availability, option cost / value / risk;
+- какие broader strategies становятся более / менее выгодными;
+- есть ли positive feedback, negative feedback, stabilization, snowball, loss spiral, overreach или convergence toward one strategy;
+- какие другие Loops / Dynamics tendency усиливает, подавляет или перенаправляет;
+- может ли игрок понять и сознательно повлиять на trajectory.
+
+#### Scale interpretation
+
+Apply the same concern differently by scale:
+
+```text
+Situation
+  → which important Dynamic could repeated / accumulated
+     consequences contribute to?
+
+Loop
+  → which expected / possible Dynamics may recurrence produce?
+
+Dynamic
+  → what is the causal tendency, trajectory and strategic effect itself?
+
+Scenario
+  → which candidate Dynamics manifest in this concrete chronology,
+     and what evidence does the path provide?
+```
+
+A single consequence or metric movement is not automatically a Dynamic. A single Scenario manifestation is not automatically proof of a stable Dynamic. Do not describe a tendency as universal when it only operates in a particular state range or time horizon.
+
+When planning rather than analysing an already-observed game, keep current / accepted Dynamic meaning visibly separate from candidate / hypothesized Dynamics using the repository's existing planning / evidence discipline; do not invent another Dynamic-specific status taxonomy.
+
+#### Зачем
+
+Individually good Situations and Loops can still produce a weak higher-level game if their accumulated incentives and state changes converge toward rote optimization, permanent firefighting, one dominant strategy or another unintended systemic pattern. Conversely, a useful Dynamic can create adaptation, strategic expression and long-term mastery that is invisible in one isolated decision.
+
 <a id="concern-concurrency-loop-overlap-decision-load"></a>
-### 3.10 Concurrency, Loop Overlap And Decision Load
+### 3.13 Concurrency, Loop Overlap And Decision Load
 
 This is primarily a **Content Structure And Pacing** concern. Cross-reference `Time, Attention And Information` when the same structure also creates cognitive or information overload.
 
@@ -382,6 +538,8 @@ Player Verbs And Decisions;
 Goals, Motivation And Direction;
 Rules, Resources And Economy;
 Challenge, Failure And Progression;
+Balance, Decision Space And Strategic Diversity;
+Dynamics And State / Opportunity Trajectory;
 Time, Attention And Information;
 Content Structure And Pacing;
 Concurrency, Loop Overlap And Decision Load;
@@ -412,6 +570,8 @@ Where do Loops overlap?
 How long is decision → feedback delay?
 Does overlap create meaningful prioritization or only overload/noise?
 Does repetition become rote?
+Which candidate Dynamics become visible across the chronology?
+How does viable strategic space differ between entry and exit?
 ```
 
 In `Player Verbs And Decisions`, ask when relevant:

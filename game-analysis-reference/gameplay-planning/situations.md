@@ -20,7 +20,8 @@ which choices are materially different;
 what each choice changes;
 what experience exists around the choice;
 which tight relations connect it to other Situations;
-what future balance questions the decision creates.
+what future balance questions the decision creates;
+which load-bearing Dynamics repeated / accumulated consequences may contribute to.
 ```
 
 Do not use a Situation record merely as an event description.
@@ -433,6 +434,19 @@ Those remain State / Economy Effects unless a later relation is recurrent and lo
 
 Do not add a broad mandatory field such as `what other Active Situations may coexist?` to every Situation record. Situation planning owns only known **specific, tight, decision-relevant** dependencies. Which Situations actually coexist and how their overlap affects pacing/load is primarily Scenario planning.
 
+### Potential Dynamic Contribution
+
+An immediate consequence or state change is **not** itself a Dynamic. When repeated, accumulated or interacting consequences plausibly contribute to a load-bearing systemic tendency, optionally record:
+
+```text
+Potential Dynamic Contribution:
+  which existing / candidate Dynamic may be affected;
+  how this consequence contributes causally;
+  evidence status / uncertainty.
+```
+
+Do not invent a Dynamic for every consequence. Use this field only when the broader tendency matters to planning, balance, experience or validation.
+
 ## 11. Typical / Possible Loop Participation
 
 A Situation Type may note Loops it commonly or possibly participates in.
@@ -476,7 +490,7 @@ Inspect `V01–V11` and any justified project-specific concerns. Record the visu
 
 ## 13. Balance Bridge
 
-Situation planning should prepare for balance without inventing numbers.
+Situation planning should prepare for balance without inventing numbers. Use the shared [`Game Structure Analysis`](../game-structure-analysis.md) balance taxonomy. At Situation scale, `Decision Balance` is usually primary, while `Basic Challenge Balance` and broader strategic/Dynamic implications are inspected when material.
 
 Main question:
 
@@ -547,6 +561,7 @@ Consequences
   Changes To Already-Active Situations
   Specific Tight Dependencies
   Important Recurrent State-Mediated Relations
+  Potential Dynamic Contribution, if material
 
 Typical / Possible Loop Participation
 
@@ -589,5 +604,7 @@ This is a production/design lens, not a rule that “more Situations = better.�
 - Do not equate a rational goal with the player's emotional willingness to execute the plan.
 - Do not force one next Situation per decision.
 - Do not connect every broad downstream effect as an explicit Situation edge.
+- Do not call one consequence or state change a Dynamic.
+- Do not require every Situation to name a Dynamic contribution.
 - Do not fix numeric balance without evidence.
 - Do not fill Game Structure, experience or visual reviews mechanically.

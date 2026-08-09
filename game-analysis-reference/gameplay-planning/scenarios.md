@@ -1,9 +1,9 @@
 # Gameplay Scenario Planning
 
 Status: active reusable detailed-planning method
-Scope: how to plan, inspect and validate one concrete chronological traversal through Gameplay Situations and Loops, including non-decision time and concurrent processes.
+Scope: how to plan, inspect and validate one concrete chronological traversal through Gameplay Situations and Loops, including non-decision time, concurrent processes and concrete manifestations of candidate Dynamics.
 
-Canonical Scenario terminology is owned by [`Gameplay Situations, Loops And Scenarios — Principles And Terminology`](../../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md).
+Canonical Scenario terminology is owned by [`Gameplay Situations, Loops And Scenarios — Principles And Terminology`](../../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md). Canonical Dynamic terminology is owned by [`Mechanics Create Dynamics`](../../principles/mechanics-create-dynamics-principles-and-terminology.md).
 
 ## 1. Purpose
 
@@ -17,6 +17,8 @@ which previous decisions are still executing;
 which other Situations become active;
 which Loops overlap;
 how pressure rises/falls;
+which candidate Dynamics become visible;
+how viable strategic space changes from entry to exit;
 what the player understands and experiences over time.
 ```
 
@@ -266,6 +268,8 @@ Player Verbs And Decisions;
 Goals, Motivation And Direction;
 Rules, Resources And Economy;
 Challenge, Failure And Progression;
+Balance, Decision Space And Strategic Diversity;
+Dynamics And State / Opportunity Trajectory;
 Time, Attention And Information;
 Content Structure And Pacing;
 Concurrency, Loop Overlap And Decision Load;
@@ -323,12 +327,51 @@ Can they distinguish direct from delayed state-mediated effects?
 Is cause distinguishable from correlation strongly enough to learn?
 Can they predict direction without exact hidden numbers?
 Do they recognize a recurring Situation chain / Loop?
+Can they distinguish a one-off consequence from a recurrent / developing Dynamic?
+Can they recognize the direction the system appears to be developing toward?
 Can they prepare before the next occurrence?
 Can they deliberately plan a desired future state?
+Can they deliberately strengthen, counter or redirect a relevant Dynamic?
 After failure, can they revise a model instead of random trial?
 ```
 
-## 14. Player Experience / Anti-Experience Review
+## 14. Dynamic Manifestation And Strategic-Space Review
+
+Scenario chronology is a concrete place to inspect **manifestations** of linked current Dynamics or candidate / hypothesized Dynamics without pretending one branch proves a stable pattern.
+
+At Scenario level, record proportionally:
+
+```text
+Dynamic Manifestations / Candidate Tendencies
+Evidence / Counter-Evidence For The Dynamic
+
+Strategic Space At Entry
+  which goals / approaches / strategies are viable?
+
+Strategic Space At Exit
+  which became more / less viable and why?
+```
+
+Ask:
+
+```text
+Which linked or candidate Dynamics appear to manifest in this Scenario?
+Which concrete decisions / consequences contribute to them?
+Does the path expose a possible unwanted Dynamic?
+What important opportunities / strategies exist at entry?
+What important opportunities / strategies exist at exit?
+Did a previously viable strategy become weak or unavailable?
+Did a new strategy become viable because state changed?
+Does one strategy look universally correct only because of this selected branch,
+or do the underlying rules / balance appear to favour it broadly?
+What alternative Scenario would be useful to test that interpretation?
+```
+
+> **A Scenario can provide a concrete manifestation or evidence candidate for a Dynamic; one selected Scenario does not by itself prove that the Dynamic is stable.**
+
+If repeated Scenarios / prototype runs reveal the same load-bearing tendency, update or create the appropriate project Dynamic record.
+
+## 15. Player Experience / Anti-Experience Review
 
 Use [`Player Experience And Anti-Experience`](../player-experience-and-anti-experience.md) for the cumulative arc.
 
@@ -349,7 +392,7 @@ residual experience at the end.
 
 A Scenario should not be reduced to a graph of mechanics if the purpose is to validate the player's temporal experience.
 
-## 15. Visual Planning Review
+## 16. Visual Planning Review
 
 Use [`Visual Design Analysis And Planning`](../visual-design-analysis-and-planning.md) for the concrete chronology.
 
@@ -368,7 +411,7 @@ Project-wide/cross-scenario visual requirements may remain in a separate project
 
 Scenario owns the required result and local context, not every possible realization study. If one Beat later needs an independently reviewable deep-dive into gameplay realization, visual realization, audio, UI or another production problem, split that study only when its lifecycle justifies a separate owner and keep the link back to the Scenario requirement.
 
-## 16. Demo Scenario
+## 17. Demo Scenario
 
 A full demo Scenario should include the **entire temporal experience**, not only dramatic incidents.
 
@@ -378,7 +421,7 @@ Exact timings remain candidate/open until supported by implementation or evidenc
 
 A detailed demo branch can be selected for implementation/testing while mechanics, screens and alternative playthroughs remain unresolved.
 
-## 17. AI Scenario Exploration
+## 18. AI Scenario Exploration
 
 For a systemic game, literal enumeration of every possible Scenario is normally impossible.
 
@@ -389,6 +432,7 @@ Situation Types
 + Loops
 + relevant state
 + tight dependencies
++ expected / candidate Dynamics, when useful
 ```
 
 to explore many plausible paths, cluster equivalent variants and identify representative cases.
@@ -403,6 +447,8 @@ risky;
 cross-system;
 balance-sensitive;
 dominant-solution;
+dominant-meta / strategic-convergence;
+Dynamic manifestation / counter-example;
 failure / recovery;
 anti-experience;
 edge-case;
@@ -420,6 +466,8 @@ Find a failure whose cause the player cannot read.
 Find individually good mechanics that create bad pacing together.
 Find a recurring chain that becomes rote.
 Find a state-mediated Loop that the player cannot infer.
+Find a Scenario where several locally different systems converge toward one dominant strategy.
+Find a Scenario that appears to manifest an expected Dynamic, then find a counter-Scenario that could falsify it.
 Find a Scenario where several Loops overlap and create a pacing/load problem that is invisible when each Loop is reviewed alone.
 Find two simultaneously Active Situations where resolving A first materially changes B, and compare the reverse order.
 Find representative cases with one versus several simultaneous Active Situations so the designer can judge whether the overlap creates useful prioritization or only noise.
@@ -427,11 +475,13 @@ Find representative cases with one versus several simultaneous Active Situations
 
 Do not describe AI exploration as exhaustive coverage of a combinatorial system.
 
-## 18. Do Not
+## 19. Do Not
 
 - Do not make every Beat a Gameplay Situation.
 - Do not require one chronological track when several Loops are genuinely simultaneous.
 - Do not treat Active Situation / Loop counts as automatic quality scores.
 - Do not duplicate all generic Situation rules in every instance.
+- Do not treat one Scenario manifestation as proof of a stable Dynamic.
+- Do not add Dynamic fields to every Beat when the meaning belongs to Scenario-level synthesis.
 - Do not silently invent exact timing, final mechanics or the only valid playthrough.
 - Do not make a detailed demo equal to a frozen screenplay merely because it is concrete enough to test.

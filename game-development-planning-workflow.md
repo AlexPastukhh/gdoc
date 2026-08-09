@@ -13,7 +13,7 @@ Start here when the question is:
 
 > How should I move from what I currently know about a game to the next useful planning or evidence step?
 
-Stable meta-planning principles remain in [`Game Planning`](principles/game-planning-principles-and-terminology.md). Gameplay Situation / Loop / Scenario terminology remains in [`Gameplay Situations, Loops And Scenarios`](principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md).
+Stable meta-planning principles remain in [`Game Planning`](principles/game-planning-principles-and-terminology.md). Gameplay Situation / Loop / Scenario terminology remains in [`Gameplay Situations, Loops And Scenarios`](principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md). Gameplay / System Dynamic terminology remains in [`Mechanics Create Dynamics`](principles/mechanics-create-dynamics-principles-and-terminology.md).
 
 The specialized principle owners remain:
 
@@ -81,6 +81,7 @@ a market observation;
 a technical possibility;
 an interesting risk / trade-off;
 a concrete Gameplay Situation;
+an observed / expected Gameplay Dynamic;
 a production concern;
 a prototype or playtest result;
 a material unknown.
@@ -95,7 +96,7 @@ seed
 → minimal Game Planning Draft
 → audience / promise / experience / reference baseline
 → broad gameplay and feasibility picture
-→ detailed Gameplay Situations / Loops / Scenarios where useful
+→ detailed Gameplay Situations / Loops / Dynamics / Scenarios where useful
 → evidence / validation
 → Draft revision.
 ```
@@ -118,7 +119,7 @@ detailed Situation planning
         ↓
 structural + experience + visual review
         ↓
-mechanics / requirements / Loops / uncertainties become clearer
+mechanics / requirements / Loops / possible Dynamics / uncertainties become clearer
         ↓
 create or revise the high-level Game Planning Draft
         ↓
@@ -234,10 +235,14 @@ For a whole-game or large-subsystem baseline, useful structural concerns include
 
 ```text
 player promise / audience;
+goals / motivation / direction;
 loops;
 player verbs / decisions;
 rules / resources / economy;
 challenge / failure / progression;
+balance / decision space / strategic diversity;
+Dynamics / state-opportunity trajectory;
+causal legibility / strategic planning;
 interface / feedback / readability;
 content structure / pacing;
 market position / comparables.
@@ -294,7 +299,8 @@ When combining references, review at least the affected:
 
 ```text
 Loops;
-decisions;
+Dynamics;
+decisions / strategic space;
 economy;
 session structure;
 readability;
@@ -307,7 +313,7 @@ If a secondary reference changes core gameplay, audience anchor and session stru
 
 ## 7. Detailed Gameplay Planning
 
-Detailed gameplay planning uses three related scales.
+Detailed gameplay planning uses four related scales.
 
 ### Gameplay Situation
 
@@ -331,6 +337,25 @@ Use [`Gameplay Planning / Loops`](game-analysis-reference/gameplay-planning/loop
 
 `Core Loop`, `Session Loop` and `Long-Term Loop` remain useful broad scale-oriented views when they clarify the game, but they do not replace concrete Situation-derived recurrent processes and do not imply exactly one Loop of each type.
 
+### Gameplay Dynamic
+
+A `Gameplay Dynamic` is a recurrent, persistent or directionally developing causal tendency in what the operative game system tends to become over time as rules, state, events, player decisions and their consequences repeatedly interact.
+
+Dynamic planning is useful when the question is broader than one local decision or one recurrent process, for example:
+
+```text
+what state / economy trajectory develops;
+which future Situations become more / less likely;
+how stakes / options / option value change;
+which player strategies become more / less advantageous;
+whether several Loops jointly create a snowball, loss spiral,
+stabilization pattern, dominant-meta convergence or another tendency.
+```
+
+A Dynamic is not one consequence, one state change, one Loop or one Scenario. One Loop may produce several Dynamics; one Dynamic may emerge across several Loops.
+
+Use [`Gameplay Planning / Dynamics`](game-analysis-reference/gameplay-planning/dynamics.md).
+
 ### Scenario
 
 A `Scenario` is a concrete chronological model of play that integrates Situation Instances, one or more Loops and the execution, observation, waiting, transition, consequence, payoff and recovery between meaningful decisions.
@@ -348,27 +373,32 @@ Gameplay Situation
 Situations + decisions + execution + state change
   → recurring Gameplay Loops;
 
+repeated / interacting rules + state changes + decisions
+  → Gameplay Dynamics;
+
 concrete Situation Instances + Loops + time
   → Scenario;
 
 Scenario
-  → integration review of pacing, challenge,
-     concurrency, causality and cumulative experience.
+  → integration review of pacing, challenge, concurrency, causality
+     and cumulative experience, plus concrete manifestations
+     of linked / candidate Dynamics.
 ```
 
-Loops and Scenarios do not replace Situation-level planning. They add recurrent-causal and chronological/integration views over it.
+Situations, Loops, Dynamics and Scenarios are related planning/review scales, not a mandatory linear hierarchy. Loops, Dynamics and Scenarios do not replace Situation-level planning. A Scenario can show a Dynamic manifestation without proving that the Dynamic is stable.
 
-## 8. Three Reusable Detailed Passes
+## 8. Reusable Detailed Pass Coverage
 
-For a Gameplay Situation, Gameplay Loop or Scenario, consult three reusable review surfaces when useful:
+Use the reusable review surfaces as discovery tools with explicit scale coverage:
 
-```text
-Game Structure Analysis
-Player Experience And Anti-Experience
-Visual Design Analysis And Planning
-```
+| Planning scale | Game Structure Analysis | Player Experience And Anti-Experience | Visual Design Analysis And Planning |
+|---|---:|---:|---:|
+| Gameplay Situation | Yes | Yes | Yes |
+| Gameplay Loop | Yes | Yes | Yes |
+| Gameplay Dynamic | Yes | Yes | Not a default Dynamic-scale pass |
+| Scenario | Yes | Yes | Yes |
 
-Use them as **discovery surfaces**:
+Use the relevant pass as a **discovery surface**:
 
 ```text
 inspect the full available concerns / families / lenses
@@ -377,33 +407,50 @@ inspect the full available concerns / families / lenses
 → do not invent content merely to fill every item.
 ```
 
-The default review rule is therefore broad rather than whitelist-based: a Situation, Loop or Scenario may be checked against the whole reusable set. Scenario planning additionally has a small group of structural concerns that should normally receive explicit review because pacing, concurrency and delayed integration are visible there more strongly than at one isolated Situation.
-
 ### Game Structure pass
 
 Use [`Game Structure Analysis`](game-analysis-reference/game-structure-analysis.md) for structural/systemic concerns.
 
-It can be applied at several scales:
+It intentionally uses **one shared concern set** across:
 
 ```text
 whole game;
 Gameplay Situation;
 Gameplay Loop;
+Gameplay Dynamic;
 Scenario;
 concrete demo.
 ```
+
+The concern keeps the same responsibility while its concrete question is interpreted proportionally at the current scale. Scenario planning additionally has a small group of structural concerns that should normally receive explicit review because pacing, concurrency and delayed integration are visible there more strongly than at one isolated Situation.
 
 ### Player Experience / Anti-Experience pass
 
 Use [`Player Experience And Anti-Experience`](game-analysis-reference/player-experience-and-anti-experience.md).
 
-At Situation scale, inspect experience around the decision. At Loop scale, inspect experience created by repetition and learning. At Scenario scale, inspect the cumulative experience arc, transitions, pressure, relief and anti-experience.
+```text
+Situation
+  → experience around the local decision;
+
+Loop
+  → experience created by repetition and learning;
+
+Dynamic
+  → experience of living inside, recognizing and trying to influence
+     a developing systemic tendency;
+
+Scenario
+  → cumulative temporal experience, transitions, pressure, relief
+     and anti-experience.
+```
 
 ### Visual planning pass
 
 Use [`Visual Design Analysis And Planning`](game-analysis-reference/visual-design-analysis-and-planning.md).
 
 At Situation, Loop and Scenario scales, inspect `V01–V11` and any justified project-specific concerns. Record only material requirements.
+
+Do **not** automatically apply the full visual pass at abstract Dynamic scale. If a Dynamic creates a material visual problem — for example, how a long-term deterioration or transformation becomes legible — route it through representative Scenarios / Visual Contexts or another justified visual study.
 
 `Gameplay Situation` retains its strict meaningful-decision meaning. Broader presentation contexts such as routine, execution, aftermath or store-first-look may be represented as `Visual Contexts` instead of being mislabelled as Gameplay Situations.
 
@@ -420,6 +467,7 @@ interesting risk / trade-off;
 reference;
 mechanic;
 world/economic state;
+observed / expected Dynamic;
 need for gameplay content.
 ```
 
@@ -429,13 +477,31 @@ A mechanic/system can also be evaluated by asking what **meaningful Situations**
 
 ## 10. Balance As The Next Depth
 
-Situation planning provides a natural bridge to balance.
+Use the shared [`Game Structure Analysis`](game-analysis-reference/game-structure-analysis.md) balance taxonomy instead of treating `balance` as one vague question:
 
-Before choosing numbers, ask:
+```text
+Basic Challenge Balance
+  → enough pressure for decisions to matter,
+     without removing meaningful agency;
 
-> In which relevant states do different decision options remain genuinely meaningful instead of one option becoming universally correct?
+Decision Balance
+  → which local options remain meaningful
+     under which relevant states;
 
-Useful questions can cover:
+Strategic Balance
+  → which broader strategies remain contextually viable
+     across states / goals / risks / time horizons;
+
+Required Decision / Strategy Diversity
+  → enough materially different ways to pursue important goals
+     for the intended game, not maximum option count.
+```
+
+Situation planning provides the main local bridge:
+
+> **In which relevant states do different decision options remain genuinely meaningful instead of one option becoming universally correct?**
+
+Useful Situation questions can still cover:
 
 ```text
 balance variables;
@@ -447,9 +513,13 @@ dominant-solution risk;
 later numeric test needs.
 ```
 
-Loop-level balance additionally considers recurrence, cycle duration, feedback delay, intervening situations, monotony, causal readability, progression and simultaneous Loop demands.
+Loop-level balance additionally considers recurrence, cycle duration, feedback delay, intervening Situations, repeated-response risk, causal readability, progression and simultaneous Loop demands.
 
-Scenario-level review exposes temporal interaction between individually reasonable decisions and Loops.
+Dynamic-level balance asks how accumulated incentives and state/opportunity changes affect broader strategy viability, whether different systems converge toward one dominant meta-strategy and whether the player can adapt as state changes.
+
+Scenario-level review exposes integration balance: temporal interaction between individually reasonable decisions / Loops, cumulative pressure, and concrete changes in viable strategic space.
+
+More options, goals or strategies are not automatically better. Aim for the **required meaningful diversity** of the intended game.
 
 ## 11. Feasibility And Production
 
@@ -522,7 +592,7 @@ Examples:
 
 ```text
 uncertain input feel → interaction prototype;
-uncertain dynamics → system toy;
+uncertain Dynamic → system toy / repeated simulation;
 uncertain player behavior → observed playtest;
 uncertain experience → observation + player report;
 uncertain long-term process → repeated-session test;
@@ -540,7 +610,7 @@ This view answers:
 
 > What does the player do, decide, perceive and experience?
 
-It may summarize fantasy/role, target experiences, Situations/Loops, verbs/decisions, resources, challenge, feedback, failure/recovery, pacing, progression and unwanted behavior/experience while linking to deeper owners.
+It may summarize fantasy/role, target experiences, Situations/Loops/Dynamics, verbs/decisions, resources, challenge, feedback, failure/recovery, pacing, progression, strategic space and unwanted behavior/experience while linking to deeper owners.
 
 ### Implementation And Production
 
@@ -565,7 +635,7 @@ A mature Draft may use compact cross-view navigation when it improves review.
 | Game / flow point | Player Experience And Gameplay | Implementation And Production | Questions / Validation | Evidence / status / next action |
 |---|---|---|---|---|
 
-Possible flow points include store first look, first contact, first meaningful decision, routine, repeated Loop, failure/recovery, session payoff, progression payoff, demo proof and content production.
+Possible flow points include store first look, first contact, first meaningful decision, routine, repeated Loop, developing Dynamic, failure/recovery, session payoff, progression payoff, demo proof and content production.
 
 The matrix is a view, not a second canonical body. Keep cells concise, allow many-to-many links and link to detailed owners rather than copying their complete bodies.
 
@@ -588,6 +658,9 @@ central meaningful decision or action is unclear
 causal process is unclear
   → Loop planning / system prototype;
 
+systemic tendency / state trajectory / strategy convergence is unclear
+  → Dynamic planning + representative Scenarios / repeated simulation / prototype;
+
 references conflict
   → clarify responsibilities and prototype / test the conflict point;
 
@@ -601,7 +674,7 @@ session/demo integration is unclear
   → detailed Scenario / representative demo;
 
 visual communication is uncertain
-  → Situation/Scenario visual-requirement pass;
+  → Situation / Loop / Scenario visual-requirement pass;
 
 visual direction is uncertain
   → compare representative style frames in gameplay context;
@@ -668,8 +741,8 @@ purchase fantasy / player promise;
 target Player Experience;
 baseline reference or original causal thesis;
 intended transformation;
-main Loop or meaningful Gameplay Situation;
-causal hypothesis;
+main Loop, meaningful Gameplay Situation or other load-bearing gameplay structure;
+causal / Dynamic hypothesis, when relevant;
 key unknown;
 minimum useful test;
 interpretation criteria.
@@ -710,6 +783,8 @@ Before treating a planning result as reviewable, check proportionally:
 - audience, promise, experience and references do not silently contradict;
 - reference responsibilities are explicit;
 - load-bearing causal claims expose conditions and trade-offs;
+- expected Dynamics are distinguished from observed evidence when they matter;
+- balance review distinguishes basic challenge, local decision and broader strategic concerns when relevant;
 - implementation ideas are not accepted automatically;
 - prototype/evidence scope matches the uncertainty;
 - market/platform claims carry suitable evidence/freshness when they matter;
@@ -727,6 +802,9 @@ Before treating a planning result as reviewable, check proportionally:
 - Do not turn every event into a Gameplay Situation.
 - Do not treat Scenarios as the only structure of a game.
 - Do not turn a general state effect into an exhaustive Situation graph.
+- Do not call one consequence or state change a Gameplay Dynamic.
+- Do not equate a Gameplay Loop with the Dynamics it may produce.
+- Do not treat one Scenario manifestation as proof of a stable Dynamic.
 - Do not replace Loops and causal reasoning with a feature list.
 - Do not treat one broad “core loop” diagram as a substitute for concrete recurring causal processes.
 - Do not mix references without assigned responsibilities.

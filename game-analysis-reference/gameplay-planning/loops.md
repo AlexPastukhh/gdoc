@@ -3,7 +3,7 @@
 Status: active reusable detailed-planning method
 Scope: how to identify, describe and review recurrent causal gameplay processes without collapsing the whole simulation into one Loop.
 
-Canonical Loop terminology is owned by [`Gameplay Situations, Loops And Scenarios — Principles And Terminology`](../../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md).
+Canonical Loop terminology is owned by [`Gameplay Situations, Loops And Scenarios — Principles And Terminology`](../../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md). Canonical Dynamic terminology is owned by [`Mechanics Create Dynamics`](../../principles/mechanics-create-dynamics-principles-and-terminology.md).
 
 ## 1. Purpose
 
@@ -179,7 +179,35 @@ B first → A's options / risk changes.
 
 Record this where it is a specific recurring interaction. Scenario planning is usually the best place to inspect the concrete pacing/challenge effect.
 
-## 9. Loop Timing And Pacing Questions
+## 9. Dynamics Produced By Loop Recurrence
+
+A Gameplay Loop and a Gameplay Dynamic are related but not identical:
+
+```text
+Loop
+  → recurrent functionally coherent causal process;
+
+Dynamic
+  → recurrent / persistent / directionally developing tendency
+     in what one or more operative processes make the game become.
+```
+
+A Loop may produce several Dynamics through different accumulated consequences. A Dynamic may also emerge across several distinct Loops through shared state, incentives or capacity.
+
+For each important Loop, ask proportionally:
+
+```text
+Which current / hypothesized Dynamics may this recurrence contribute to or produce?
+Which desired or unwanted systemic tendencies are plausible?
+Which consequences accumulate across cycles?
+Does recurrence reinforce, stabilize, redirect or reverse a broader tendency?
+Does interaction with another Loop create a Dynamic neither Loop produces alone?
+Do produced Dynamics change which strategies become advantageous later?
+```
+
+Dynamics are **outputs / tendencies of recurrence**, not member nodes or Loop Phases. Shared contribution to one Dynamic does not automatically merge several Loops.
+
+## 10. Loop Timing And Pacing Questions
 
 For each important Loop, ask proportionally:
 
@@ -200,7 +228,7 @@ Does repetition create strategy/mastery or monotony?
 
 Pacing in a systemic game may emerge from several Loops being in different phases at the same time rather than from scripted event timing alone.
 
-## 10. Causal Legibility And Strategic Learning
+## 11. Causal Legibility And Strategic Learning
 
 A Loop can support mastery when the player learns:
 
@@ -218,7 +246,7 @@ Useful adversarial question:
 
 > Is the Loop mechanically valid but causally unreadable, so the player experiences its later consequences as randomness?
 
-## 11. Player Experience / Anti-Experience
+## 12. Player Experience / Anti-Experience
 
 Use [`Player Experience And Anti-Experience`](../player-experience-and-anti-experience.md) at the **repetition** scale.
 
@@ -234,7 +262,7 @@ Does delayed feedback become helplessness?
 Does overlap with other Loops create tension or exhausting noise?
 ```
 
-## 12. Game Structure Review
+## 13. Game Structure Review
 
 Use [`Game Structure Analysis`](../game-structure-analysis.md) as a full discovery pass.
 
@@ -244,6 +272,8 @@ Loop planning often especially benefits from:
 Player Verbs And Decisions;
 Rules / Resources / Economy;
 Challenge / Failure / Progression;
+Balance, Decision Space And Strategic Diversity;
+Dynamics And State / Opportunity Trajectory;
 Time / Attention / Information;
 World / AI / System Response;
 Content Structure / Pacing;
@@ -253,7 +283,7 @@ Content-Production Model.
 
 Do not assume the other concerns are irrelevant; inspect proportionally.
 
-## 13. Visual Planning Review
+## 14. Visual Planning Review
 
 Use [`Visual Design Analysis And Planning`](../visual-design-analysis-and-planning.md) when recurring Loop states/phases have important visual communication or experience requirements.
 
@@ -270,9 +300,9 @@ recovery.
 
 Do not force every Loop phase to become a separate `Visual Context` if the distinction has no visual planning value.
 
-## 14. Loop-Level Balance
+## 15. Loop-Level Balance
 
-Loop balance is not only the sum of balanced individual Situations.
+Loop balance is not only the sum of balanced individual Situations. Use the shared [`Game Structure Analysis`](../game-structure-analysis.md) balance taxonomy; at Loop scale, pay particular attention to how recurrence changes local decision balance and broader strategic incentives.
 
 Review:
 
@@ -286,12 +316,13 @@ repetition / dominant response risk;
 state accumulation;
 recovery cost;
 progression effects;
-simultaneous Loop demands.
+simultaneous Loop demands;
+produced Dynamic / dominant-meta risk.
 ```
 
-A choice can be locally reasonable but become dominant or exhausting because the Loop repeats it too often.
+A choice can be locally reasonable but become dominant or exhausting because the Loop repeats it too often. A Loop can also be locally healthy while its accumulated state effects contribute to a weak broader Dynamic.
 
-## 15. Core / Session / Long-Term Views
+## 16. Core / Session / Long-Term Views
 
 `Core Loop`, `Session Loop` and `Long-Term Loop` remain useful scale-oriented planning concepts.
 
@@ -305,7 +336,7 @@ that one high-level Core Loop diagram replaces concrete Situation-derived Loops.
 
 A broad repeated decision/adaptation pattern may also be useful as a design thesis without being one concrete Gameplay Loop.
 
-## 16. Suggested Loop Record
+## 17. Suggested Loop Record
 
 ```text
 Loop ID / Name
@@ -332,6 +363,10 @@ Intervening Gameplay
 Interactions With Other Loops
 Decision-Order Effects, if recurrent
 
+Linked Current Dynamics, if any
+Dynamic Hypotheses / Desired Or Unwanted Tendencies, if material
+Cross-Loop Dynamic Contributions, if material
+
 Player Causal Understanding
 Strategic Learning / Adaptation
 Progression Effects
@@ -347,11 +382,13 @@ Scenario Coverage
 Evidence / Questions
 ```
 
-## 17. Do Not
+## 18. Do Not
 
 - Do not infer Loop membership from shared state alone.
 - Do not require contiguous Situation nodes.
 - Do not merge overlapping Loops automatically.
+- Do not equate a Loop with the Dynamics its recurrence may produce.
+- Do not merge distinct Loops merely because they contribute to the same Dynamic.
 - Do not call every one-off causal sequence a Loop.
 - Do not balance repeated processes only by balancing each local decision independently.
 - Do not assume the generic `observe → decide → act → consequence` pattern is the only concrete Loop in a game.

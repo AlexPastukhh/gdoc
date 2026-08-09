@@ -1,7 +1,7 @@
 # Gameplay Situations, Loops And Scenarios — Principles And Terminology
 
 Status: active reusable principle-and-terminology owner
-Scope: canonical planning meanings and stable distinctions for meaningful gameplay decisions, recurrent causal processes and concrete chronological scenarios.
+Scope: canonical planning meanings and stable distinctions for meaningful gameplay decisions, recurrent causal processes and concrete chronological scenarios, including their boundary and relationship to Gameplay Dynamics.
 
 ## 1. Purpose And Authority
 
@@ -25,7 +25,9 @@ the terminology boundary between Gameplay Situation and broader Visual Context.
 
 Detailed planning schemas and questions remain in [`Game Analysis Reference / Gameplay Planning`](../game-analysis-reference/gameplay-planning/README.md).
 
-`Gameplay Situation` is a **specific planning term**. It does not redefine every ordinary-language “situation” or every `Dynamic` in [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md). A systemic pattern such as resource starvation may be a Dynamic without itself being a Gameplay Situation.
+The canonical meaning of `Gameplay Dynamic` / `System Dynamic` remains in [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md). This file owns the boundaries between that systemic term and Gameplay Situation / Loop / Scenario.
+
+`Gameplay Situation` is a **specific planning term**. It does not redefine every ordinary-language “situation” or every Dynamic. A systemic pattern such as resource starvation may be a Dynamic without itself being a Gameplay Situation.
 
 ## 2. Gameplay Situation
 
@@ -125,7 +127,7 @@ Previous player decisions may alter later prerequisites, drivers and frequency.
 
 ## 5. State And Economy Are Broader Than Currency
 
-For Situation/Loop reasoning, relevant `state / economy` includes any quantitative or qualitative state that materially affects:
+For Situation / Loop / Dynamic reasoning, relevant `state / economy` includes any quantitative or qualitative state that materially affects:
 
 ```text
 occurrence;
@@ -333,7 +335,37 @@ resolve B first
 
 Record this as a tight dependency when the relation is specific. Do not treat every broad economic interaction as a decision-order relation.
 
-## 12. Scenario
+## 12. Gameplay Dynamic Relationship
+
+`Gameplay Dynamic` is canonically defined in [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md). The operational boundary here is:
+
+```text
+Gameplay Situation
+  → local meaningful decision problem;
+
+Gameplay Loop
+  → recurrent functionally coherent causal process;
+
+Gameplay Dynamic
+  → recurrent / persistent / directionally developing
+     systemic tendency produced as rules, state, events,
+     decisions and consequences interact over time;
+
+Scenario
+  → concrete chronological traversal in which
+     Situations / Loops / consequences occur and
+     linked or candidate Dynamics may manifest.
+```
+
+A Situation consequence may **contribute to** a Dynamic without being the Dynamic itself.
+
+A Loop may produce one or several Dynamics through recurrence. A Dynamic may also emerge across several distinct Loops through shared state, incentives or capacity without merging those Loops.
+
+> **Gameplay Loop describes a recurrent causal process; Gameplay Dynamic describes a recurrent or developing tendency in what one or more operative processes make the game become.**
+
+A Scenario can show a concrete manifestation of a Dynamic, but one selected Scenario does not by itself prove that the Dynamic is stable. Repeated representative Scenarios, simulation, prototype runs, playtests or telemetry can provide stronger evidence.
+
+## 13. Scenario
 
 > **Scenario is a concrete chronological model of play which selects a path through Gameplay Situations and one or more Gameplay Loops, while also preserving the execution, observation, waiting, transition, consequence, payoff and recovery periods between meaningful decisions.**
 
@@ -343,7 +375,7 @@ A Scenario is therefore not only a list of Situation nodes. It may contain routi
 
 A selected Scenario branch is useful for planning, implementation and testing. It does not claim that every valid playthrough follows the same path.
 
-## 13. Scenario Beat
+## 14. Scenario Beat
 
 A `Scenario Beat` is a chronological portion of one concrete Scenario.
 
@@ -372,7 +404,7 @@ new information becomes visible.
 
 Do not split one coherent moment mechanically merely to satisfy a taxonomy.
 
-## 14. Visual Context Boundary
+## 15. Visual Context Boundary
 
 `Visual Context` is the broader planning term used when a presentation context matters visually but does not necessarily contain a new meaningful Gameplay Situation.
 
@@ -396,7 +428,7 @@ Visual Context
 
 The detailed visual method owns how Visual Contexts are analysed. This definition exists here to keep the gameplay ontology and visual-planning terminology from silently using the same word `Situation` for two different concepts.
 
-## 15. Concurrency In A Scenario
+## 16. Concurrency In A Scenario
 
 A Scenario may track:
 
@@ -413,7 +445,7 @@ The counts are observations, not automatic verdicts. Do not introduce another fo
 
 > **The number of simultaneously active Situations and Loops can be used as one indicator of gameplay load, pacing and challenge. The number itself does not prove that the player is overloaded or challenged; interpret it in the concrete Scenario.**
 
-## 16. Causal Understanding And Strategy
+## 17. Causal Understanding And Strategy
 
 A systemic game can support a progression from readable consequences to self-authored strategy:
 
@@ -433,7 +465,7 @@ rules + world response
 
 This principle does not require perfect information or exact hidden numbers. It requires enough causality to learn, predict direction and deliberately prepare.
 
-## 17. Do Not
+## 18. Do Not
 
 - Do not call every event or state a Gameplay Situation.
 - Do not turn every downstream state effect into an explicit Situation edge.
@@ -441,3 +473,6 @@ This principle does not require perfect information or exact hidden numbers. It 
 - Do not require Loop Situations to be adjacent in time.
 - Do not turn execution/waiting into fake Situations solely to keep a Scenario as a decision-node list.
 - Do not infer that one Scenario path is the only valid playthrough.
+- Do not call one consequence, one state change or one metric movement a Dynamic.
+- Do not equate a Gameplay Loop with the Dynamics it may produce.
+- Do not treat one Scenario manifestation as proof of a stable Dynamic.
