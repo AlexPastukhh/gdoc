@@ -1,11 +1,11 @@
-# Survivor Base — Representative Scenarios Working View
+# Survivor Base — Scenarios
 
-**Status:** derived working view\
-**Canonical source:** [`../game-planning-draft.md`](../game-planning-draft.md)\
-**Candidate content input:** [`../content-premises.md`](../content-premises.md)\
-**Related Loop view:** [`gameplay-loops.md`](gameplay-loops.md)\
-**Reusable method:** [`../../../game-analysis-reference/gameplay-planning/scenarios.md`](../../../game-analysis-reference/gameplay-planning/scenarios.md)\
-**Authority boundary:** this file owns project-local representative Scenarios assembled from current source meaning. It may also expand clearly marked candidate Content Premises into working Scenarios, but it does not promote those premises into accepted cross-cutting game rules, override `CHAT-PI-*` states, convert an inference into an accepted decision or claim that one selected chronology is the only valid playthrough.
+**Status:** active project-local Scenario detail owner\
+**Canonical project source:** [`game-planning-draft.md`](game-planning-draft.md)\
+**Candidate content input:** [`content-premises.md`](content-premises.md)\
+**Related Loop detail:** [`gameplay-loops.md`](gameplay-loops.md)\
+**Reusable method:** [`../../game-analysis-reference/gameplay-planning/scenarios.md`](../../game-analysis-reference/gameplay-planning/scenarios.md)\
+**Authority boundary:** this file owns independently useful project-local Scenario chronology and validation work. It may expand clearly marked candidate Content Premises into working Scenarios, but it does not promote those premises into accepted cross-cutting game rules, override `CHAT-PI-*` states, convert an inference into an accepted decision or claim that one selected chronology is the only valid playthrough.
 
 ## 1. Purpose
 
@@ -19,7 +19,7 @@ It is a **working representative Scenario**, not the frozen first-demo screenpla
 
 The chronology is concrete enough to review integration, but some branch details remain unresolved in the source. Keep those branch points explicit instead of silently selecting missing mechanics or content.
 
-`../content-premises.md` now preserves preliminary content units before they are detailed enough for this view. A premise belongs here only after chronology/integration work becomes useful; preserving a premise alone does not require inventing Scenario Beats.
+`content-premises.md` preserves preliminary content units before detailed chronology is useful. A premise belongs here only after chronology/integration work becomes useful; preserving a premise alone does not require inventing Scenario Beats.
 
 ## 2. Scenario And Beat Boundary
 
@@ -70,7 +70,7 @@ Until these are selected or tested, keep them as visible Scenario parameters / b
 
 ### Scenario Beats
 
-| Beat | Working Beat role | What the player receives / what happens | Meaningful decision / working branch | Building blocks | Intended experience contribution |
+| Beat | Working Beat role | What the player receives / what happens | Meaningful decision / working branch | Relevant systems | Intended experience contribution |
 |---|---|---|---|---|---|
 | **1. Partial alarm** | Observation / Information Reveal + Situation Instance | Report such as `WEST RESIDENTIAL — Pavel heard glass / movement — threat UNKNOWN` | Act immediately, gather another signal, or start a prepared response | Information, people, emergency | Curiosity + tension without perfect knowledge |
 | **2. First containment choice** | Situation Instance | People are still working/sleeping in different rooms; shared corridor may be dangerous | Evacuate A/B, shelter in place, seal locally, or call response first | Facility, policy, people, security | Agency under time pressure |
@@ -104,7 +104,7 @@ If the Scenario cannot be made legible and interesting with these blocks, that i
 
 ### Relationship To Recurrent Gameplay
 
-This Scenario traverses part of the broad operating cycle in [`gameplay-loops.md`](gameplay-loops.md):
+For integration review, this Scenario traverses a broad operating-cycle synthesis of current Draft meaning:
 
 ```text
 read current state
@@ -154,7 +154,7 @@ The imported draft still leaves these for later passes:
 10. the exact threat branch selected for the incomplete-alarm Scenario;
 11. frame-by-frame demo choreography.
 
-Do not fill these gaps silently in this view.
+Do not fill these gaps silently in this owner.
 
 ## 6. Current Content-Premise Handoff
 
@@ -164,7 +164,7 @@ The preliminary owner currently contains:
 - `CP-008 — Most Of The Facility Lost`;
 - `CP-009 — First Floor Lost — Descend From Above`.
 
-These are **not yet additional Scenarios in this view**.
+These are **not yet additional Scenarios in this owner**.
 
 When one is selected for deeper work:
 

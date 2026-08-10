@@ -3,12 +3,14 @@
 **Status:** active project-local preliminary content workspace
 **Canonical project owner:** [`game-planning-draft.md`](game-planning-draft.md)
 **Idea workspace:** [`ideas.md`](ideas.md)
-**Detailed Scenario view:** [`views/scenarios.md`](views/scenarios.md)
+**Scenario detail owner:** [`scenarios.md`](scenarios.md)
 **Source ledger:** [`../../chat-history/survivor-base-branch-01.md`](../../chat-history/survivor-base-branch-01.md)
 
 ## 1. Responsibility And Authority
 
-A `Content Premise` is a sufficiently concrete playable/content unit that can be imagined and preliminarily evaluated as its own piece of game content, but is not yet a detailed Scenario.
+Reusable `Content Premise` meaning is owned by [`Game Planning — Principles And Terminology`](../../principles/game-planning-principles-and-terminology.md). This project file applies that meaning to Survivor Base.
+
+A premise here is a sufficiently concrete playable/content unit that can be imagined and preliminarily evaluated as its own piece of game content, but is not yet a detailed Scenario.
 
 A premise may be:
 
@@ -41,7 +43,7 @@ Content Premise
 
 If developing a premise requires new general mechanics/system meaning, discuss and accept that meaning in the appropriate owner and reconcile accepted cross-cutting changes into the Game Planning Draft.
 
-If a premise becomes sufficiently defined to need chronology/integration work, expand it through the reusable Scenario method and place the detailed representative Scenario in [`views/scenarios.md`](views/scenarios.md) or another justified project Scenario owner.
+If a premise becomes sufficiently defined to need chronology/integration work, expand it through the reusable Scenario method and place the detailed representative Scenario in [`scenarios.md`](scenarios.md) or another justified project Scenario owner.
 
 Hybrid incoming ideas remain in [`ideas.md`](ideas.md) by default until their content fragment is useful as an independent unit.
 

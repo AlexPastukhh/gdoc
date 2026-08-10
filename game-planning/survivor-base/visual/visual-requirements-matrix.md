@@ -1,9 +1,9 @@
 # Survivor Base — Visual Requirements Matrix
 
-**Status:** active project-local working requirements view\
+**Status:** active project-local visual requirements owner\
 **Canonical project source:** [`../game-planning-draft.md`](../game-planning-draft.md)\
-**Loop-oriented view:** [`../views/gameplay-loops.md`](../views/gameplay-loops.md)\
-**Representative scenarios:** [`../views/scenarios.md`](../views/scenarios.md)\
+**Gameplay Loop detail:** [`../gameplay-loops.md`](../gameplay-loops.md)\
+**Representative scenarios:** [`../scenarios.md`](../scenarios.md)\
 **Reusable visual method:** [`../../../game-analysis-reference/visual-design-analysis-and-planning.md`](../../../game-analysis-reference/visual-design-analysis-and-planning.md)
 
 ## 1. Purpose And Authority Boundary
@@ -20,7 +20,7 @@ The matrix may add original project/context/element-specific concerns when the r
 
 ## 2. Current Source Skeleton
 
-The current loop-oriented view organizes the broad operating cycle approximately as:
+For visual-coverage purposes, current project planning can be summarized approximately as:
 
 ```text
 read operating state
@@ -35,6 +35,8 @@ read operating state
 → recover / update
 → enter a changed state.
 ```
+
+This summary is context for visual planning, not a separate project-wide Loop/view owner.
 
 The visual plan therefore needs to work across routine, uncertainty, preparation, boundary control, exploration, emergency, tactical contact and recovery — not only during attacks.
 
@@ -70,7 +72,7 @@ Legend: `●` load-bearing, `○` useful/secondary, `?` currently unresolved, `�
 | `S08` Aftermath | ○ | ● | ● | ● | ○ | ● | ● | ● | ○ | ● | ● |
 | `S09` External | ● | ● | ● | ● | ? | ? | ● | ? | ○ | ● | ● |
 
-The table is only a routing view. It is not evidence that every marked cell needs a separate requirement.
+The table is only a coverage/routing map. It is not evidence that every marked cell needs a separate requirement.
 
 ## 5. Project-Specific Cross-Cutting Concerns
 

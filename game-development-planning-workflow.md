@@ -465,6 +465,31 @@ Answers:
 
 A matrix or derived view is not a second canonical body.
 
+### Optional Cross-View Matrix
+
+When it materially improves review, the current Draft may use a compact cross-view matrix rather than several separate projection files:
+
+| Game / flow point | Player Experience And Gameplay | Implementation And Production | Questions / Validation | Evidence / status / next action |
+|---|---|---|---|---|
+
+Possible flow points include:
+
+```text
+store first look;
+first contact;
+first meaningful decision;
+routine;
+repeated Loop;
+developing Dynamic;
+failure / recovery;
+session payoff;
+progression payoff;
+demo proof;
+content production.
+```
+
+Keep cells concise and link to independently useful detail owners rather than duplicating their full bodies. The matrix is optional and remains part of the current high-level planning picture; it does not justify a project-wide `views/` layer by itself.
+
 ## 16. Select The Next Evidence Or Depth
 
 Choose uncertainty with greatest influence on direction, player value, cost or late-change risk.
@@ -502,8 +527,17 @@ references conflict
 systems individually plausible but timing/integration unknown
   → Scenario planning;
 
+session payoff uncertain
+  → session-scale Scenario / representative session test;
+
+session or demo integration unclear
+  → representative detailed Scenario / demo chronology;
+
 visual communication uncertain
   → Situation / Loop / Scenario visual-requirement pass;
+
+visual direction uncertain
+  → compare representative visual realizations in gameplay context;
 
 production uncertain
   → technical/content-production spike;
@@ -511,6 +545,26 @@ production uncertain
 market fit uncertain
   → audience/store/demo evidence.
 ```
+
+Possible resulting decisions include, proportionally:
+
+```text
+revise purchase fantasy / player promise;
+change target audience;
+change dominant reference;
+narrow or remove a secondary reference;
+change or remove a mechanic/system;
+reduce scope;
+run another narrow prototype;
+build a fuller gameplay prototype;
+prepare a demo;
+plan a vertical slice;
+enter production planning;
+freeze/select the current Concept or direction;
+reject the current Concept or direction.
+```
+
+This is example vocabulary, not a mandatory result enum.
 
 Do not generate a large prototype roadmap when only the next evidence choice is needed.
 

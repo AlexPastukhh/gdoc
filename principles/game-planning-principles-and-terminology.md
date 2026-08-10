@@ -14,6 +14,7 @@ It owns:
 - `Design Direction`;
 - `Brainstorm Prompt`;
 - `Variant`;
+- `Content Premise`;
 - `Integration Probe`;
 - Local / Integrated / Combination Evaluation distinctions;
 - high-level owner versus detail-owner boundaries;
@@ -117,6 +118,60 @@ combinations.
 ```
 
 A Variant remains exploratory until it is explicitly selected or otherwise promoted with the appropriate evidence/decision state.
+
+Questions discovered while evaluating a Variant may belong to different scopes:
+
+```text
+Prompt-Level Question
+  → uncertainty about the design question / task / requirement itself;
+
+Variant Question
+  → uncertainty about one particular answer;
+
+Cross-System Question
+  → wider uncertainty exposed by integration.
+```
+
+Use these labels only when the distinction helps. They are not mandatory standalone object types.
+
+### Content Premise
+
+A `Content Premise` is a sufficiently concrete **playable/content unit** worth preserving and evaluating independently before its full chronology is defined.
+
+Examples may include:
+
+```text
+a crisis;
+an encounter;
+a special base/world state;
+a start configuration;
+an event;
+another concrete piece of playable content.
+```
+
+Preserve the boundary:
+
+```text
+Idea
+  → may be one mechanic, rule, direction, world thought or hybrid;
+
+Content Premise
+  → concrete enough to stand as one candidate content unit;
+
+Scenario
+  → concrete chronological traversal with Beats, Situation Instances, execution, observation, waiting, consequences and recovery.
+```
+
+A Content Premise may depend on unresolved mechanics and does not itself accept them.
+
+```text
+Content Premise
+≠ accepted generic mechanic
+≠ accepted cross-cutting Draft meaning
+≠ detailed Scenario.
+```
+
+Project-local owners may keep candidate Content Premises when independent preservation/review is useful. Detailed Scenario chronology belongs to the reusable Scenario method and the justified project Scenario owner.
 
 ## 4. Integration Probe And Evaluation Layers
 
@@ -447,6 +502,7 @@ When a later message says `согласен`, `фиксируй` or otherwise ac
 - Do not require a complete broad Draft before useful detailed planning.
 - Do not require a Brainstorm Prompt before a spontaneous Idea may be saved.
 - Do not call every Idea a Concept.
+- Do not treat a Content Premise as a detailed Scenario or an accepted generic mechanic.
 - Do not rename `Concept` to `Concept Candidate` just to signal uncertainty.
 - Do not allow detail work to drift away from the high-level current direction without reconciliation.
 - Do not create a new file for every heading, Prompt, Variant or temporary concern.

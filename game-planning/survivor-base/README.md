@@ -15,7 +15,7 @@ This directory owns project-specific planning for the current **Survivor Base In
 
 The high-level source of truth is [`game-planning-draft.md`](game-planning-draft.md).
 
-The project also has two current exploratory/detail owners:
+The project also has current exploratory/detail owners when their content has an independent planning responsibility:
 
 ```text
 ideas.md
@@ -24,12 +24,18 @@ ideas.md
 
 content-premises.md
   → preliminary standalone playable/content units
-    that may later be expanded into detailed Scenarios.
+    that may later be expanded into detailed Scenarios;
+
+gameplay-loops.md
+  → independently useful project-local Gameplay Loop candidates/detail;
+
+scenarios.md
+  → independently useful representative Scenario chronology and validation work.
 ```
 
-These are **current working owners**, but neither silently overrides the canonical Draft.
+These are **current working owners**, but none silently overrides the canonical Draft.
 
-The files under [`views/`](views/) are also current derived working views. They reorganize current project meaning for particular questions. A view may include clearly marked candidate/inference material from linked working owners when that helps planning, but it does not silently convert an Idea, Premise or inference into an accepted cross-cutting decision.
+Survivor Base does not maintain a separate project-wide `views/` layer merely to restate the Draft from another angle. If a representation has no independent planning responsibility, keep the current meaning in the Draft or the real detail owner instead of creating a projection file.
 
 Reusable game-planning principles remain in the repository root workflow and `principles/`; reusable analysis and design-planning lenses remain in `game-analysis-reference/`. Project-local visual planning lives under [`visual/`](visual/).
 
@@ -40,10 +46,8 @@ Reusable game-planning principles remain in the repository root workflow and `pr
 | [`game-planning-draft.md`](game-planning-draft.md) | Complete consolidated current Planning Item set, decisions, candidates, risks, transformations and next passes | Canonical project-local planning owner |
 | [`ideas.md`](ideas.md) | Preserved system/world/mechanic/hybrid ideas, Design Directions, Brainstorm Prompts, Variants and unresolved exploratory meaning | Active project-local creative workspace; not automatic Draft meaning |
 | [`content-premises.md`](content-premises.md) | Preliminary standalone content units that can later be evaluated/expanded as Scenarios | Active project-local preliminary content owner |
-| [`views/player-experience.md`](views/player-experience.md) | What experience/value the current systems appear intended to create; anti-experience and evidence gaps | Derived working view |
-| [`views/game-building-blocks.md`](views/game-building-blocks.md) | Large systemic building blocks and their interfaces | Derived working view |
-| [`views/gameplay-loops.md`](views/gameplay-loops.md) | Broad recurrent operating/session/long-term views plus candidate concrete Gameplay Loops | Derived working view |
-| [`views/scenarios.md`](views/scenarios.md) | Representative Scenarios, Scenario Beats, integration questions and validation checkpoints | Derived working view |
+| [`gameplay-loops.md`](gameplay-loops.md) | Independently useful Gameplay Loop candidates/detail; does not mirror the whole Draft | Project-local gameplay detail owner |
+| [`scenarios.md`](scenarios.md) | Representative Scenarios, Scenario Beats, integration questions and validation checkpoints | Project-local Scenario detail owner |
 | [`visual/README.md`](visual/README.md) | Visual-planning navigation, ownership and current depth | Project-local detail navigation |
 | [`visual/visual-requirements-matrix.md`](visual/visual-requirements-matrix.md) | Visual-context and element requirements for what the visual system must communicate or support | Project-local visual requirements working owner; does not override Planning Items |
 
@@ -79,7 +83,7 @@ embedded content fragment
 
 premise developed deeply enough
   → reusable Scenario method
-  → views/scenarios.md or another justified Scenario owner.
+  → scenarios.md or another justified Scenario owner.
 ```
 
 A premise may depend on unresolved mechanics. It does not have to wait for every dependency to be accepted before it can be preserved.
@@ -133,18 +137,19 @@ Gameplay Dynamic;
 Scenario.
 ```
 
-Survivor Base has derived owners for loop-oriented recurrent structure and representative Scenario chronology:
+Survivor Base currently keeps only independently useful gameplay-detail owners:
 
 ```text
-views/gameplay-loops.md
-  → broad operating / session / long-term views
-    + candidate concrete Gameplay Loops;
+gameplay-loops.md
+  → concrete/candidate Gameplay Loop detail when recurrence itself needs review;
 
-views/scenarios.md
+scenarios.md
   → representative Scenarios
     + Scenario Beats
     + integration / validation questions.
 ```
+
+Broad operating/session/long-term summaries do not need separate project files when they merely restate the canonical Draft.
 
 This does not mean:
 
@@ -165,28 +170,26 @@ one Scenario manifestation
 
 The project does not currently require a strict standalone Situation inventory or Dynamic inventory. Create additional records only when they materially improve review, balance, experience planning, validation, implementation or collaboration.
 
-## 8. Working Rule For Current Views
+## 8. Working Rule For Detail Owners
 
-When a current derived view produces or uses a formulation:
+Keep a separate project-local file only when it owns independently useful planning detail.
 
 ```text
-Draft-backed wording
-  → may be summarized with traceability;
+Draft-backed summary with no independent lifecycle
+  → keep in the Draft; do not create a projection file;
 
-Idea / Premise / inference
-  → may appear when useful,
-    but its non-canonical status must stay clear;
+Idea / Premise / candidate detail
+  → keep in the owner matching that responsibility;
 
-new explicit user decision
-  → reconcile accepted cross-cutting meaning
-    into the canonical Game Planning Draft;
+new explicit user decision with cross-cutting impact
+  → reconcile into the canonical Game Planning Draft;
 
 evidence
   → update the affected hypothesis/decision
-    rather than merely accumulate beside it.
+    rather than merely accumulating beside it.
 ```
 
-Views are allowed to be shorter and more selective than the Draft. Their job is to make a specific planning question reviewable.
+A detail owner may be more precise than the Draft, but it must keep candidate/inference status clear and must not become a silent competing high-level source.
 
 ## 9. Visual Planning Boundary
 

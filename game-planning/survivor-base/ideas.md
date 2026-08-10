@@ -170,6 +170,39 @@ This remains an Idea, not a current Content Premise.
 
 Игрок не обязан автоматически знать strain. Различия могут проявляться через evidence: поведение, симптомы, эпидемиологическую историю, животных, response to treatment и другие признаки.
 
+[Research / Evidence provenance]
+
+Биологическая правдоподобность направления проверялась по первичным научным источникам. Эти источники поддерживают отдельные механизмы и ограничения, но **не выбирают** финальную архитектуру вымышленного вируса Survivor Base.
+
+Primary-source provenance IDs:
+
+- within-host mutation / divergence without a new-host transmission step: `PMC9906997`, `PMC12061394`, `PMC7618859`;
+- transmission bottlenecks: influenza `PMC7025719`; SARS-CoV-2 `PMC10239218`;
+- coexistence / coinfection / multiple variants in one host: `PMC9906997`, influenza `PMC3071067`, HIV/RSV/CMV `PMC7668575`;
+- recombination / reassortment-like generation of new combinations: SARS-CoV-2 `PMC8902039`; influenza in pigs `PMC5501944`;
+- genotype-dependent drug/countermeasure sensitivity: influenza `PMC5820429`, `PMC4023734`; SARS-CoV-2 `PMC11213110`, `PMC11411086`;
+- animal circulation / reservoir examples: deer `PMC8833191`, `PMC9712111`; mink `PMC7857398`;
+- caution against assuming animal hosts automatically accelerate adaptation: `PMC9142586`;
+- superinfection-exclusion examples in several viruses: `PMC1075699`, `PMC4768946`, `PMC2772679`, `PMC7660575`.
+
+Interpretation boundary:
+
+```text
+mutation is possible
+≠ every host gets a gameplay-significant unique strain;
+
+coexistence / mixed infection is possible
+≠ stable property stacking is automatic;
+
+animal circulation can create separate ecological branches
+≠ animals necessarily accelerate evolution;
+
+selection / displacement
+≠ directed "improvement" of the virus.
+```
+
+For gameplay, `strain group` therefore remains an authored/simulation abstraction whose exact genome architecture, mutation rate, host range and recombination rules are still open design questions.
+
 [Открытые вопросы для будущей разработки]
 
 - Как быстро новые strain groups способны распространяться и вытеснять старые?

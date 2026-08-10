@@ -401,7 +401,8 @@ Local Evaluation
   Pros
   Cons
   Risks
-  Open Questions
+  Prompt-Level Questions, if this Variant exposes a problem in the Prompt itself
+  Variant Questions
   Evidence
   Refinement Ideas
 
@@ -412,7 +413,9 @@ Integration Probes, if justified
 Integrated Evaluation
   new Pros / Cons
   new Risks
-  new Questions
+  new Prompt-Level Questions
+  new Variant Questions
+  new Cross-System Questions
 
 Combination Evaluation, if useful
 
@@ -436,6 +439,21 @@ example of.
 
 Risk, question, evidence and refinement are not the Variant itself. Keep them distinguishable so the history of evaluation remains readable.
 
+Also keep the scope of a question visible when it matters:
+
+```text
+Prompt-Level Question
+  → the current goal/question/requirement itself may be wrong, incomplete or underspecified;
+
+Variant Question
+  → uncertainty about this particular answer;
+
+Cross-System Question
+  → wider uncertainty discovered only after integration.
+```
+
+These labels are optional clarification, not mandatory new record types.
+
 ## 10. Local Evaluation And Shortlisting
 
 Before spending heavily on Integration Probes, perform a cheap first pass.
@@ -449,6 +467,7 @@ What does it cost?
 What obvious risk or anti-experience appears?
 What evidence/reference supports it?
 What assumptions does it require?
+Does evaluating it expose a problem or missing assumption in the Prompt itself?
 Is it meaningfully different from the other Variants?
 Can it be explained clearly?
 ```

@@ -507,6 +507,24 @@ mechanic-conflict;
 causally unreadable.
 ```
 
+
+Useful adversarial searches include:
+
+```text
+Find a Situation with formally multiple options but only one viable answer.
+Find a failure whose cause the player cannot read.
+Find individually good mechanics that create bad pacing together.
+Find a recurring chain that becomes rote.
+Find a state-mediated Loop that the player cannot infer.
+Find a Scenario where several locally different systems converge toward one dominant strategy.
+Find a Scenario that appears to manifest an expected Dynamic, then find a counter-Scenario that could falsify it.
+Find a Scenario where several Loops overlap and create a pacing/load problem that is invisible when each Loop is reviewed alone.
+Find two simultaneously Active Situations where resolving A first materially changes B, and compare the reverse order.
+Find representative cases with one versus several simultaneous Active Situations so the designer can judge whether the overlap creates useful prioritization or only noise.
+```
+
+These are search prompts, not a claim that AI-generated cases are evidence by themselves.
+
 Do not describe AI exploration as exhaustive coverage of a combinatorial system.
 
 ## 22. Do Not
