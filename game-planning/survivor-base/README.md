@@ -1,24 +1,45 @@
 # Survivor Base — Game Planning
 
-**Status:** active project-local planning entry point\
-**Project-layer map:** [`../README.md`](../README.md)\
-**Canonical planning owner:** [`game-planning-draft.md`](game-planning-draft.md)\
-**Imported source:** `survivor-base-planning-draft-v0.12-tactical-raids-alarms-emergency-response.md`\
+**Status:** active project-local planning entry point
+**Project-layer map:** [`../README.md`](../README.md)
+**Canonical planning owner:** [`game-planning-draft.md`](game-planning-draft.md)
+**Idea workspace:** [`ideas.md`](ideas.md)
+**Content-premise workspace:** [`content-premises.md`](content-premises.md)
+**Source ledger:** [`../../chat-history/survivor-base-branch-01.md`](../../chat-history/survivor-base-branch-01.md)
+**Imported source:** `survivor-base-planning-draft-v0.12-tactical-raids-alarms-emergency-response.md`
 **Imported source SHA-256:** `d866e0d296da25d3377e363657bc6fdde871cc1101bea3e8c1b438dc4c01e933`
 
 ## 1. Responsibility
 
 This directory owns project-specific planning for the current **Survivor Base Infection Concept** direction.
 
-The high-level source of truth is [`game-planning-draft.md`](game-planning-draft.md). The files under [`views/`](views/) are derived working views: they reorganize current draft meaning for a particular question, but they do not silently override Planning Items or convert inferences into accepted decisions.
+The high-level source of truth is [`game-planning-draft.md`](game-planning-draft.md).
+
+The project also has two current exploratory/detail owners:
+
+```text
+ideas.md
+  → preserved Game Ideas, hybrid ideas, Design Directions,
+    Brainstorm Prompts, Variants and unresolved exploratory meaning;
+
+content-premises.md
+  → preliminary standalone playable/content units
+    that may later be expanded into detailed Scenarios.
+```
+
+These are **current working owners**, but neither silently overrides the canonical Draft.
+
+The files under [`views/`](views/) are also current derived working views. They reorganize current project meaning for particular questions. A view may include clearly marked candidate/inference material from linked working owners when that helps planning, but it does not silently convert an Idea, Premise or inference into an accepted cross-cutting decision.
 
 Reusable game-planning principles remain in the repository root workflow and `principles/`; reusable analysis and design-planning lenses remain in `game-analysis-reference/`. Project-local visual planning lives under [`visual/`](visual/).
 
-## 2. Current document map
+## 2. Current Document Map
 
 | File | Responsibility | Authority |
 |---|---|---|
 | [`game-planning-draft.md`](game-planning-draft.md) | Complete consolidated current Planning Item set, decisions, candidates, risks, transformations and next passes | Canonical project-local planning owner |
+| [`ideas.md`](ideas.md) | Preserved system/world/mechanic/hybrid ideas, Design Directions, Brainstorm Prompts, Variants and unresolved exploratory meaning | Active project-local creative workspace; not automatic Draft meaning |
+| [`content-premises.md`](content-premises.md) | Preliminary standalone content units that can later be evaluated/expanded as Scenarios | Active project-local preliminary content owner |
 | [`views/player-experience.md`](views/player-experience.md) | What experience/value the current systems appear intended to create; anti-experience and evidence gaps | Derived working view |
 | [`views/game-building-blocks.md`](views/game-building-blocks.md) | Large systemic building blocks and their interfaces | Derived working view |
 | [`views/gameplay-loops.md`](views/gameplay-loops.md) | Broad recurrent operating/session/long-term views plus candidate concrete Gameplay Loops | Derived working view |
@@ -26,7 +47,54 @@ Reusable game-planning principles remain in the repository root workflow and `pr
 | [`visual/README.md`](visual/README.md) | Visual-planning navigation, ownership and current depth | Project-local detail navigation |
 | [`visual/visual-requirements-matrix.md`](visual/visual-requirements-matrix.md) | Visual-context and element requirements for what the visual system must communicate or support | Project-local visual requirements working owner; does not override Planning Items |
 
-## 3. Current source state
+## 3. Idea / Premise / Scenario Boundary
+
+Use:
+
+```text
+Game Idea
+  → mechanic, rule, system direction, Dynamic direction,
+    world/lore hypothesis or hybrid exploratory meaning;
+
+Content Premise
+  → concrete playable/content unit
+    worth preserving independently
+    but not yet expanded into detailed chronology;
+
+Scenario
+  → concrete chronological planning/test traversal
+    with Beats, Situation Instances, execution,
+    observation, waiting, consequences and recovery.
+```
+
+Current routing rule:
+
+```text
+Hybrid idea
+  → ideas.md by default;
+
+embedded content fragment
+  → content-premises.md only when it becomes useful
+    as an independently evaluated content unit;
+
+premise developed deeply enough
+  → reusable Scenario method
+  → views/scenarios.md or another justified Scenario owner.
+```
+
+A premise may depend on unresolved mechanics. It does not have to wait for every dependency to be accepted before it can be preserved.
+
+## 4. Source And Discussion Provenance
+
+The August 2026 Idea/Content-Premise consolidation uses:
+
+- [`../../chat-history/survivor-base-branch-01.md`](../../chat-history/survivor-base-branch-01.md) for the selected transcript boundary, later-message coverage and destination checking;
+- the incoming numbered gameplay-idea source recorded there as `SB-B01-SRC01`;
+- subsequent user refinements and explicit acceptance recorded in the ledger.
+
+The ledger is provenance/supporting history, not a competing design owner.
+
+## 5. Current Imported Draft State
 
 The imported planning source is version `v0.12-tactical-raids-alarms-emergency-response`, whose source file describes itself as an **accepted working Planning Item set**.
 
@@ -37,11 +105,13 @@ Important distinctions from that source remain intact:
 - `CHAT-II-*` items remain relation-backed implementation candidates rather than accepted requirements;
 - `CAT-01…CAT-10` remain local analytical labels inside this planning draft and are **not** repository `categories/` definitions;
 - detailed frame-by-frame demo choreography is still deferred in the imported source;
-- detailed visual realization and final art direction remain unresolved; the project now has a separate visual-requirements planning layer under `visual/`.
+- detailed visual realization and final art direction remain unresolved; the project has a separate visual-requirements planning layer under `visual/`.
 
-## 4. Source and provenance boundary
+The current Ideas/Premises update does **not** automatically promote every saved idea into this imported accepted Planning Item set.
 
-The historical Survivor Base import package was assembled after checking repository state at `AlexPastukhh/gdoc` HEAD `ef72beb5640683fb9617fa11e92fddcb51bf32a8`. That commit is **package/import provenance**, not a claim about the repository's current HEAD.
+## 6. Earlier Import Provenance
+
+The historical Survivor Base import package was assembled after checking repository state at `AlexPastukhh/gdoc` HEAD `ef72beb5640683fb9617fa11e92fddcb51bf32a8`. That commit is package/import provenance, not a claim about the repository's current HEAD.
 
 Project-content provenance came from the previously supplied source package:
 
@@ -50,11 +120,11 @@ Project-content provenance came from the previously supplied source package:
 - authoritative draft: `survivor-base-planning-draft-v0.12-tactical-raids-alarms-emergency-response.md`;
 - draft SHA-256: `d866e0d296da25d3377e363657bc6fdde871cc1101bea3e8c1b438dc4c01e933`.
 
-The raw `S1–S7` provenance owner named by the draft, `survivor-base-planning-items-review-v0.4-accepted.md`, is **not migrated in this package**. The current draft still records that provenance relationship. Move that historical source into the repository only after it is explicitly selected for migration; do not infer that every historical draft belongs beside the canonical owner.
+The raw `S1–S7` provenance owner named by the draft, `survivor-base-planning-items-review-v0.4-accepted.md`, is not migrated here. The current draft still records that provenance relationship.
 
-## 5. Current gameplay-planning coverage
+## 7. Current Gameplay-Planning Coverage
 
-The repository's reusable gameplay-planning methods distinguish four related planning/review scales:
+The reusable gameplay-planning methods distinguish four related planning/review scales:
 
 ```text
 Gameplay Situation;
@@ -63,7 +133,7 @@ Gameplay Dynamic;
 Scenario.
 ```
 
-Survivor Base now has separate derived owners for **loop-oriented recurrent structure** and **representative Scenario chronology**:
+Survivor Base has derived owners for loop-oriented recurrent structure and representative Scenario chronology:
 
 ```text
 views/gameplay-loops.md
@@ -76,48 +146,49 @@ views/scenarios.md
     + integration / validation questions.
 ```
 
-This split is a terminology/navigation normalization, not promotion of the derived material into accepted project decisions.
-
-In particular:
+This does not mean:
 
 ```text
 broad operating cycle / Session Arc / Long-Term Arc
-  ≠ concrete Gameplay Loop automatically;
+  = one concrete Gameplay Loop;
 
 candidate Gameplay Loop
-  ≠ accepted Loop automatically;
+  = accepted Loop;
 
 representative Scenario
-  ≠ frozen demo screenplay
-  ≠ the only valid playthrough;
+  = frozen demo screenplay
+  = only valid playthrough;
 
 one Scenario manifestation
-  ≠ proof of a stable Gameplay Dynamic.
+  = proof of a stable Gameplay Dynamic.
 ```
 
 The project does not currently require a strict standalone Situation inventory or Dynamic inventory. Create additional records only when they materially improve review, balance, experience planning, validation, implementation or collaboration.
 
-## 6. Working rule for derived views
+## 8. Working Rule For Current Views
 
-When a derived view produces a new formulation:
+When a current derived view produces or uses a formulation:
 
 ```text
-source-backed wording
-  → may be summarized with Planning Item traceability;
+Draft-backed wording
+  → may be summarized with traceability;
 
-inference / synthesis
-  → remains marked as inference or decision candidate;
+Idea / Premise / inference
+  → may appear when useful,
+    but its non-canonical status must stay clear;
 
 new explicit user decision
-  → should be promoted back into the canonical Game Planning Draft;
+  → reconcile accepted cross-cutting meaning
+    into the canonical Game Planning Draft;
 
 evidence
-  → should update the affected hypothesis/decision rather than merely accumulate beside it.
+  → update the affected hypothesis/decision
+    rather than merely accumulate beside it.
 ```
 
-The views are allowed to be shorter than the draft. Their job is to make specific planning questions reviewable, not to duplicate the entire 300kB source.
+Views are allowed to be shorter and more selective than the Draft. Their job is to make a specific planning question reviewable.
 
-## 7. Visual planning boundary
+## 9. Visual Planning Boundary
 
 The visual layer starts from project gameplay/context inputs and requirements rather than from an assumed art style.
 
@@ -132,6 +203,6 @@ Gameplay Situation / Loop or Loop Phase / Scenario or Scenario Beat / Visual Con
 
 A broader `Visual Context` such as routine operation, execution, waiting or aftermath does not become a Gameplay Situation merely because it needs visual planning.
 
-The reusable visual lenses are not a closed taxonomy. Survivor Base may add project-wide, context-specific or element-specific concerns when the generic lenses do not describe the real planning problem. A local concern becomes a candidate reusable lens only after broader use justifies that promotion.
+The reusable visual lenses are not a closed taxonomy. Survivor Base may add project-wide, context-specific or element-specific concerns when the generic lenses do not describe the real planning problem.
 
-The visual requirements owner may carry reference cues such as "vibe like X" without treating them as literal style-copy instructions. A reference must have a named responsibility; visual realization remains separate until it is explicitly selected.
+The visual requirements owner may carry reference cues such as `"vibe like X"` without treating them as literal style-copy instructions. A reference must have a named responsibility; visual realization remains separate until explicitly selected.

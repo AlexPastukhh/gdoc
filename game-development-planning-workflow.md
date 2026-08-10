@@ -1,23 +1,27 @@
 # Game Development Planning Workflow
 
 Status: active reusable workflow
-Scope: orchestration from an initial game direction to an evolving Game Planning Draft, justified detailed planning, evidence, revision and the next useful depth of work.
+Scope: orchestration from Concepts/current game direction through detailed planning, evidence, revision and the next useful depth of work.
 
 ## 1. Purpose And Authority
 
-This is the main reusable entry point for **how game planning proceeds**.
-
-It coordinates, but does not replace, the repository's principle-and-terminology owners and detailed planning/analysis references.
-
-Operational summaries in this file are routing aids. When a term, schema, concern set or checklist has a linked owner, that owner remains canonical and this workflow should not maintain a second complete copy.
+This is the main reusable entry point for **how ongoing game planning proceeds after or alongside creative synthesis**.
 
 Start here when the question is:
 
-> How should I move from what I currently know about a game to the next useful planning or evidence step?
+> Given what I currently know about this game or Concept, what is the next useful planning, analysis or evidence step?
 
-Stable meta-planning principles remain in [`Game Planning`](principles/game-planning-principles-and-terminology.md). Gameplay Situation / Loop / Scenario terminology remains in [`Gameplay Situations, Loops And Scenarios`](principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md). Gameplay / System Dynamic terminology remains in [`Mechanics Create Dynamics`](principles/mechanics-create-dynamics-principles-and-terminology.md).
+Use [`Game Creation Workflow`](game-creation-workflow.md) when the main problem is instead:
 
-The specialized principle owners remain:
+> How do I invent/transform several possible answers or whole-game Concepts?
+
+Use [`Game-Planning Documentation — Use-Case Registry`](game-planning-use-case-registry.md) when the current documentation capability/route itself is unclear.
+
+This workflow coordinates, but does not replace, principle-and-terminology owners and detailed planning/analysis references.
+
+Stable meta-planning meanings remain in [`Game Planning`](principles/game-planning-principles-and-terminology.md). Gameplay Situation / Loop / Scenario terminology remains in [`Gameplay Situations, Loops And Scenarios`](principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md). Gameplay/System Dynamic terminology remains in [`Mechanics Create Dynamics`](principles/mechanics-create-dynamics-principles-and-terminology.md).
+
+Specialized owners remain:
 
 - [`Player Experience First`](principles/player-experience-first-principles-and-terminology.md)
 - [`Mechanics Create Dynamics`](principles/mechanics-create-dynamics-principles-and-terminology.md)
@@ -31,10 +35,18 @@ Detailed reusable planning and analysis methods remain in [`Game Analysis Refere
 
 ## 2. Working Model
 
-Game planning normally maintains one evolving, readable high-level `Game Planning Draft` for the current game direction.
+A project may have several open `Concepts` while comparing possible whole games.
+
+Once one direction is the active current game, planning normally maintains one evolving, readable high-level `Game Planning Draft`.
 
 ```text
-rough seed / concrete problem / evidence
+seed / references / Ideas
+        ↓
+Game Creation Workflow
+        ↓
+one or more Concepts
+        ↓
+select / pursue current direction
         ↓
 Game Planning Draft
   current high-level picture
@@ -48,33 +60,19 @@ revised current meaning
 next useful depth.
 ```
 
-The Draft has a logical structure, but its headings are flexible. Use the structure that makes the current project easiest to understand and review.
+Do not force every exploratory Variant into the Draft.
 
 A separate file is justified only when independent review, linking, reuse, research, testing, change tracking, parallel work or navigation makes the extra owner useful.
 
 Planning is iterative and not append-only. Later evidence or explicit decisions can supersede earlier current meaning while preserving provenance and rationale.
-
-Start with the smallest useful representation. A first high-level note / Draft may contain only:
-
-```text
-idea / source / reference;
-why it is interesting;
-current audience guess;
-current experience guess;
-main unknown;
-next action.
-```
-
-That note already serves as the beginning of the Game Planning Draft when it is the current high-level plan.
-
-Possible later detail owners can include individual reference analyses, prototype plans/results, gameplay systems, economy/progression, technical architecture, content architecture, visual design brief/asset strategy, production planning, level/content pipeline or release planning. Create them only when independent ownership reduces total complexity.
 
 ## 3. Valid Starting Points
 
 A project or planning pass may begin from:
 
 ```text
-an idea;
+an Idea;
+a Concept;
 a game or other reference;
 a fantasy / role;
 a desired Player Experience;
@@ -82,30 +80,43 @@ a mechanic or system;
 a market observation;
 a technical possibility;
 an interesting risk / trade-off;
-a concrete Gameplay Situation;
-an observed / expected Gameplay Dynamic;
+a Gameplay Situation;
+a Gameplay Loop;
+a Gameplay Dynamic;
+a Scenario / Content Premise;
 a production concern;
 a prototype or playtest result;
 a material unknown.
 ```
 
-There is no requirement to complete a broad concept template before detailed planning can begin.
+There is no requirement to complete a broad template before detailed planning can begin.
 
-### Common broad-first route
+### If the task is creative synthesis
+
+Route to [`Game Creation Workflow`](game-creation-workflow.md) when the current problem is:
 
 ```text
-seed
-→ minimal Game Planning Draft
-→ audience / promise / experience / reference baseline
-→ broad gameplay and feasibility picture
-→ detailed Gameplay Situations / Loops / Dynamics / Scenarios where useful
-→ evidence / validation
-→ Draft revision.
+generate several possible answers;
+change a reference;
+compare transformation axes;
+assemble several possible whole games;
+evaluate/integrate Variants.
 ```
 
-This is a common route, **not a required ordering**.
+That workflow may return one or more Concepts or a new Brainstorm Prompt.
 
-### Situation-first / detail-first route
+### Common current-direction route
+
+```text
+current Concept / Game Planning Draft
+→ identify the most influential uncertainty
+→ choose the detailed planning / analysis / evidence scale
+→ record material findings
+→ reconcile accepted cross-cutting changes
+→ select next uncertainty.
+```
+
+### Detail-first route
 
 ```text
 desired experience
@@ -115,20 +126,20 @@ OR mechanic
 OR content need
 OR concrete decision idea
         ↓
-candidate Gameplay Situation
+candidate planning unit
         ↓
-detailed Situation planning
+detailed Situation / Loop / Dynamic / Scenario work
         ↓
-structural + experience + visual review
+structural + experience + visual review as useful
         ↓
-mechanics / requirements / Loops / possible Dynamics / uncertainties become clearer
+mechanics / requirements / questions become clearer
         ↓
-create or revise the high-level Game Planning Draft
+revise Concept / Draft
         ↓
 integrate through Scenario / evidence when useful.
 ```
 
-The two routes can alternate repeatedly in the same project.
+Routes can alternate repeatedly.
 
 ## 4. Evidence And Decision Discipline
 
@@ -144,14 +155,16 @@ decision;
 evidence.
 ```
 
-Preserve in particular:
+Preserve:
 
 ```text
 suggestion ≠ decision;
 risk ≠ proven failure;
 implementation idea ≠ accepted architecture;
 prototype candidate ≠ build decision;
-generated explanation ≠ canonical documentation automatically.
+generated explanation ≠ canonical documentation automatically;
+Idea / Variant ≠ accepted game meaning;
+Integration Probe ≠ accepted planning unit.
 ```
 
 ### Directional and incomplete design input
@@ -166,28 +179,11 @@ Input such as:
 
 is valid design input.
 
-Preserve the source wording, expose ambiguity and keep interpretations as inference/candidates until review or evidence justifies a narrower current meaning.
-
-For example:
-
-```text
-Incoming:
-  "I want a vibe like Duskers."
-
-Confirmed:
-  Duskers is a named directional reference.
-
-Not yet confirmed:
-  palette, interface, sparse information,
-  remote procedural tension, isolation,
-  control distance or another cause.
-```
-
-Use reference analysis rather than silently converting the visible surface of the reference into a requirement.
+Preserve source wording, expose ambiguity and keep interpretations as inference/Variants until review or evidence justifies a narrower meaning.
 
 ## 5. Build And Revise The High-Level Game Picture
 
-The Game Planning Draft should hold enough current high-level meaning to make the direction reviewable.
+The Game Planning Draft should hold enough current high-level meaning to make the active direction reviewable.
 
 Depending on the project, useful areas can include:
 
@@ -196,7 +192,8 @@ Game Concept And Current State;
 Audience And Purchase Fantasy / Player Promise;
 Target Player Experience;
 Reference Baseline And Controlled Transformation;
-Broad Gameplay And System Picture;
+Broad Core Loop / Gameplay Picture;
+Key Systems / State / Dynamics;
 Visual Direction And Asset Strategy;
 Implementation And Production Picture;
 Questions / Hypotheses / Validation;
@@ -206,11 +203,13 @@ Current Conclusion;
 Next Action.
 ```
 
-These are possible responsibilities, not mandatory headings.
+These are responsibilities, not mandatory headings.
+
+The Draft may summarize a broad Core Loop thesis, but concrete Gameplay Loops remain detailed recurrent-causal objects and should be planned separately when their causality matters.
 
 ### Promise triangle
 
-Develop these meanings together when relevant:
+Develop together when relevant:
 
 ```text
 Audience
@@ -222,45 +221,41 @@ Audience
 Useful questions:
 
 - Who already values a neighboring promise?
-- What role and activity should be understood before play?
-- What experience is central?
-- What game or pattern proves a related value can work?
-- What makes the current direction meaningfully different?
+- What role/activity should be understood before play?
+- What Experience is central?
+- What game/pattern proves related value can work?
+- What makes the active direction meaningfully different?
+- Can a feasible representative demo actually prove the promise?
 
 A provisional coherent answer is enough to continue; it remains a hypothesis until supported.
 
-## 6. Route Reference Questions To Their Owners
+## 6. Route Reference Questions
 
-Use [`Reference First And Controlled Transformation`](principles/reference-first-and-controlled-transformation-principles-and-terminology.md) for canonical reference / transformation rules and [`Game Analysis Reference`](game-analysis-reference/README.md) for reusable analysis surfaces.
+Use [`Reference First And Controlled Transformation`](principles/reference-first-and-controlled-transformation-principles-and-terminology.md) for canonical reference/transformation rules.
 
-This workflow owns **when to route into reference work and what planning question should return from it**. It does not duplicate the reference record, transformation record or compatibility checklist.
-
-A useful route is:
+Use [`Game Creation Workflow`](game-creation-workflow.md) when the reference is being used to:
 
 ```text
-a reference materially shapes the direction
-  → identify the smallest responsibility being borrowed / compared
-  → analyze that responsibility through the reference owner
-  → inspect structural / experience / other concerns proportionally
-  → expose transfer assumptions or conflicts
-  → validate the uncertain link when it can change the decision
-  → reconcile accepted cross-cutting meaning back into the Draft.
+decompose a whole-game baseline;
+choose what to change;
+generate alternative Variants;
+combine several references;
+form/revise Concepts.
 ```
 
-Route into deeper reference work when, for example:
+Use deeper reference analysis when:
 
 - it is unclear **why** a reference creates the needed value;
-- a secondary reference has no narrow responsibility;
-- several references appear to conflict in gameplay, audience, session structure, readability, production or experience;
-- a proposed transformation depends on conditions that may not survive the transfer.
+- a reference responsibility is too broad;
+- several references conflict in gameplay, audience, session structure, readability, production or Experience;
+- a proposed transformation depends on conditions that may not survive the transfer;
+- an expensive baseline component might need substitution or deliberate conceptual deletion.
 
-If a supposed secondary reference changes core gameplay, audience anchor and session structure together, review whether the project is actually selecting a new baseline.
-
-Keep detailed causal records, transformation fields and compatibility questions in their linked owners instead of maintaining another complete copy here.
+If a supposed secondary reference changes core gameplay, audience anchor and session structure together, review whether the project is selecting a new baseline.
 
 ## 7. Detailed Gameplay Routing
 
-Use [`Gameplay Planning — Situations, Loops, Dynamics And Scenarios`](game-analysis-reference/gameplay-planning/README.md) as the detailed gameplay method map. Canonical terms remain in their principle-and-terminology owners.
+Use [`Gameplay Planning — Situations, Loops, Dynamics And Scenarios`](game-analysis-reference/gameplay-planning/README.md).
 
 Choose the scale from the current uncertainty:
 
@@ -271,50 +266,87 @@ Choose the scale from the current uncertainty:
 | What systemic tendency / state-opportunity trajectory develops over time? | Gameplay Dynamic | [`Dynamics`](game-analysis-reference/gameplay-planning/dynamics.md) |
 | What concretely happens through time when systems, decisions and consequences interact? | Scenario | [`Scenarios`](game-analysis-reference/gameplay-planning/scenarios.md) |
 
-These scales can be entered in any useful order and revisited as discoveries change the model.
+These scales can be entered in any useful order and revisited.
 
-`Core Loop`, `Session Loop` and `Long-Term Loop` may remain useful broad scale-oriented views, but they do not replace concrete Gameplay Loop analysis when the recurrent causal process itself matters.
+`Core Loop`, `Session Loop` and `Long-Term Loop` remain useful broad views, but one high-level Core Loop thesis does not replace concrete Gameplay Loop analysis.
 
-A Scenario is a selected planning / test chronology, not the only valid playthrough. It may expose a candidate Dynamic manifestation without proving that the Dynamic is stable.
+A Scenario is a selected planning/test chronology, not the only valid playthrough. It may expose a Dynamic manifestation without proving the Dynamic is stable.
 
-## 8. Route Reusable Review Passes
+## 8. Causal-Basis Routing Across Scales
 
-The detailed gameplay method map owns the current scale-coverage matrix. This workflow only routes the review need:
+When a planning unit is difficult to design or evaluate because its causal support is unclear, inspect the relevant scale-specific `Causal Basis`.
+
+```text
+Situation
+  → Occurrence Model already explains
+    enabling/generating causes;
+  → also inspect Decision-Shaping and,
+    when material, Experience-Shaping rules;
+
+Loop
+  → inspect loop-sustaining rules/state:
+    transitions, recurrence, carryover,
+    feedback, recovery/restart, progression;
+
+Dynamic
+  → use the existing Dynamic Causal Basis:
+    rules, state, events/agents, decisions,
+    consequences feeding later conditions, feedback;
+
+Scenario
+  → record only operative mechanics/rules needed
+    to understand this concrete chronology;
+    do not duplicate every generic rule.
+```
+
+The detailed method owners define these fields.
+
+## 9. Route Reusable Review Passes
+
+Use:
 
 | Review need | Reusable owner |
 |---|---|
 | Structure, decisions, economy, balance, pacing, causal legibility, strategic space | [`Game Structure Analysis`](game-analysis-reference/game-structure-analysis.md) |
-| Intended experience, learning, mastery and anti-experience | [`Player Experience And Anti-Experience`](game-analysis-reference/player-experience-and-anti-experience.md) |
+| Intended Experience, learning, mastery and anti-experience | [`Player Experience And Anti-Experience`](game-analysis-reference/player-experience-and-anti-experience.md) |
 | Presentation / visual communication requirements in concrete gameplay contexts | [`Visual Design Analysis And Planning`](game-analysis-reference/visual-design-analysis-and-planning.md) |
 
-Use each owner as a **discovery surface** at the current scale:
+Use each as a discovery surface:
 
 ```text
-inspect the relevant concern set
+inspect relevant concerns
 → record material findings
 → do not invent content merely to fill the surface
-→ return cross-cutting accepted meaning to the Draft when it changes the game direction.
+→ return accepted cross-cutting change to the Draft.
 ```
 
-Do not maintain a second copy of the full pass-coverage matrix or scale-specific checklists in this workflow.
+An abstract Dynamic does not automatically require a full visual pass. Route a real visual-legibility problem through concrete Scenarios/Visual Contexts or another justified study.
 
-An abstract Gameplay Dynamic does not automatically require a full visual pass. Route a real Dynamic-related visual problem through representative Scenarios / Visual Contexts or another justified visual study.
+## 10. Route Content And System Questions
 
-## 9. Route Content And System Questions Through Situations When Useful
+When a mechanic, content element or system is being judged by the gameplay it creates, ask:
 
-When a mechanic, content element or system is being judged by the gameplay it creates, a useful routing question is:
+> Which meaningful Gameplay Situations does this create or materially change?
 
-> **Which meaningful Gameplay Situations does this create or materially change?**
+Also ask when useful:
 
-Candidate Situations may originate from experience goals, risks, references, mechanics, state/economy, observed or expected Dynamics, or content needs. The detailed Situation method owns the actual decision, occurrence, consequence, experience and balance review.
+```text
+Which Loops does it create/change?
+Which Dynamics can it strengthen/weaken?
+Which Scenario chronology exposes the interaction?
+Which Content Premises become possible?
+What does it remove or make redundant?
+```
 
-There is no mandatory separate Situation Bank. More Situations are not automatically better; value depends on the quality, variety, frequency and production cost of the decisions they create.
+A project may maintain a preliminary `Content Premise` owner when concrete content units need preservation before detailed Scenario work.
 
-## 10. Route Balance Questions To Game Structure Analysis
+There is no mandatory separate Situation Bank. More Situations are not automatically better.
 
-When `balance` is too vague to guide the next step, route it to the shared [`Game Structure Analysis`](game-analysis-reference/game-structure-analysis.md) balance concern.
+## 11. Route Balance Questions
 
-Use the current planning scale to locate the problem:
+Use the shared [`Game Structure Analysis`](game-analysis-reference/game-structure-analysis.md) balance concern.
+
+Locate the problem by scale:
 
 ```text
 local option meaning / immediate challenge
@@ -330,9 +362,9 @@ cumulative timing / overlap / integration pressure
   → Scenario.
 ```
 
-The canonical balance taxonomy and detailed questions live in Game Structure Analysis and the gameplay-planning method map. Do not duplicate them here or invent numerical values without evidence.
+Do not invent numbers without evidence.
 
-## 11. Feasibility And Production
+## 12. Feasibility And Production
 
 Game feasibility includes more than code.
 
@@ -366,136 +398,123 @@ design requirement
   ≠ accepted technical decision.
 ```
 
-A minimum prototype or demo scope should genuinely test the central value without pretending to be the complete game.
+For early direction choice, also ask whether a representative demo can reproduce enough **system depth and visual credibility** to prove the central reference/transformation value. Route that question through the Game Creation Workflow.
 
-## 12. Route Uncertainty Into Validation
+## 13. Route Uncertainty Into Validation
 
-Use [`Prototypes, Hypotheses And Tests`](principles/prototypes-hypotheses-and-tests-principles-and-terminology.md) for canonical hypothesis, evidence and prototype distinctions.
-
-This workflow owns the transition from a planning uncertainty to the next useful evidence step:
+Use [`Prototypes, Hypotheses And Tests`](principles/prototypes-hypotheses-and-tests-principles-and-terminology.md).
 
 ```text
 material unknown
-  → state the question / hypothesis
-  → identify the decision it can change
-  → choose the earliest / cheapest useful evidence method
-  → observe and classify the result
-  → update the affected owner
-  → reconcile accepted cross-cutting change into the Draft
-  → choose the next decision or depth.
+  → state question / hypothesis
+  → identify decision it can change
+  → choose earliest / cheapest useful evidence
+  → observe and classify result
+  → update affected owner
+  → reconcile accepted cross-cutting change
+  → choose next decision/depth.
 ```
 
-One prototype may answer several questions and one important question may require several tests or sources. Keep evidence tied to decisions rather than generating a large prototype roadmap by default.
+One prototype may answer several questions and one important question may require several tests/sources.
 
-Detailed prototype forms, test records, fidelity rules and evidence-result classifications remain in their owner instead of being copied into this workflow.
+## 14. Integration Probes As Temporary Planning
 
-## 13. Full-Picture Views
+When a promising Variant needs wider-context inspection, use the `Integration Probe` terminology owned by Game Planning and the process in [`Game Creation Workflow`](game-creation-workflow.md).
 
-Full-picture views are optional views inside the Game Planning Draft unless independent detail ownership is justified.
+A Probe can use a detailed method without claiming that its result is accepted:
+
+```text
+PROBE-SIT
+PROBE-LOOP
+PROBE-DYN
+PROBE-SCN
+PROBE-CONTENT
+PROBE-CONCEPT.
+```
+
+After the Probe:
+
+```text
+Integrated Evaluation
+→ new risks/questions/dependencies
+→ compare / combine / revise / reject
+→ only explicit accepted meaning enters the Draft.
+```
+
+## 15. Full-Picture Views
+
+Full-picture views are optional unless independent ownership is justified.
 
 ### Player Experience And Gameplay
 
-This view answers:
+Answers:
 
 > What does the player do, decide, perceive and experience?
 
-It may summarize fantasy/role, target experiences, Situations/Loops/Dynamics, verbs/decisions, resources, challenge, feedback, failure/recovery, pacing, progression, strategic space and unwanted behavior/experience while linking to deeper owners.
-
 ### Implementation And Production
 
-This view answers:
+Answers:
 
-> What systems, technology, content and production capability would support the planned game?
-
-It should expose necessary capabilities, assumptions, candidate solutions, production costs, visual/asset constraints, dependencies, high-cost unknowns and decisions not yet justified. It must not silently accept architecture.
+> What systems, technology, content and production capability support the planned game?
 
 ### Questions, Hypotheses And Validation
 
-This view answers:
+Answers:
 
 > What is not known, how can it be learned, and what decision changes afterward?
 
-Full working logs may remain in separate owners when they have an independent lifecycle.
+A matrix or derived view is not a second canonical body.
 
-### Cross-view matrix
+## 16. Select The Next Evidence Or Depth
 
-A mature Draft may use compact cross-view navigation when it improves review.
-
-| Game / flow point | Player Experience And Gameplay | Implementation And Production | Questions / Validation | Evidence / status / next action |
-|---|---|---|---|---|
-
-Possible flow points include store first look, first contact, first meaningful decision, routine, repeated Loop, developing Dynamic, failure/recovery, session payoff, progression payoff, demo proof and content production.
-
-The matrix is a view, not a second canonical body. Keep cells concise, allow many-to-many links and link to detailed owners rather than copying their complete bodies.
-
-## 14. Select The Next Evidence Or Depth
-
-Choose the uncertainty with greatest influence on direction, player value, cost or late-change risk.
+Choose uncertainty with greatest influence on direction, player value, cost or late-change risk.
 
 Possible routing:
 
 ```text
+need several possible whole games
+  → Game Creation Workflow / Concepts;
+
+design Prompt has no good answer
+  → Generate Variants / references / future brainstorming method;
+
+promising Variant may have wide consequences
+  → Integration Probe;
+
 concept baseline conflicts
   → revise audience / promise / experience / reference;
 
 promise is unreadable
-  → concept / store readability test;
+  → concept/store readability test;
 
-central meaningful decision or action is unclear
+central meaningful decision unclear
   → Situation planning or interaction prototype;
 
-causal process is unclear
+causal recurrent process unclear
   → Loop planning / system prototype;
 
-systemic tendency / state trajectory / strategy convergence is unclear
-  → Dynamic planning + representative Scenarios / repeated simulation / prototype;
+systemic tendency / strategy convergence unclear
+  → Dynamic planning + representative Scenarios / repeated simulation;
 
 references conflict
-  → clarify responsibilities and prototype / test the conflict point;
+  → clarify responsibilities and test the conflict point;
 
-several systems are individually plausible but their timing is unknown
+systems individually plausible but timing/integration unknown
   → Scenario planning;
 
-session payoff is uncertain
-  → session prototype / Scenario;
-
-session/demo integration is unclear
-  → detailed Scenario / representative demo;
-
-visual communication is uncertain
+visual communication uncertain
   → Situation / Loop / Scenario visual-requirement pass;
 
-visual direction is uncertain
-  → compare representative style frames in gameplay context;
+production uncertain
+  → technical/content-production spike;
 
-production is uncertain
-  → technical or content-production spike;
-
-market fit is uncertain
+market fit uncertain
   → audience/store/demo evidence.
-```
-
-Possible resulting decisions include:
-
-```text
-revise purchase fantasy / player promise;
-change target audience;
-change dominant reference;
-narrow or remove a secondary reference;
-change a mechanic/system;
-reduce scope;
-run another narrow prototype;
-build a fuller gameplay prototype;
-prepare a demo;
-plan a vertical slice;
-enter production planning;
-freeze the current concept;
-reject the concept.
 ```
 
 Do not generate a large prototype roadmap when only the next evidence choice is needed.
 
-## 15. Observe And Update
+## 17. Observe And Update
 
 Collect evidence appropriate to the question:
 
@@ -515,14 +534,14 @@ Then:
 3. update causal records;
 4. update relevant detail owners;
 5. update audience/reference/implementation interpretation where affected;
-6. reconcile accepted cross-cutting changes back into the Game Planning Draft;
+6. reconcile accepted cross-cutting changes into the Game Planning Draft;
 7. state the next decision or depth.
 
-Planning is not append-only. Replace disproven current meaning while preserving evidence, rationale and material historical provenance.
+Planning is not append-only.
 
-## 16. Proportional Sufficiency And Production Entry
+## 18. Proportional Sufficiency And Production Entry
 
-A Draft may be sufficient for a **first prototype** when it identifies proportionally:
+A current direction may be sufficient for a first prototype when it identifies proportionally:
 
 ```text
 provisional audience;
@@ -530,8 +549,8 @@ purchase fantasy / player promise;
 target Player Experience;
 baseline reference or original causal thesis;
 intended transformation;
-main Loop, meaningful Gameplay Situation or other load-bearing gameplay structure;
-causal / Dynamic hypothesis, when relevant;
+broad Core Loop or another load-bearing gameplay structure;
+central Situation/Loop/Dynamic question, when relevant;
 key unknown;
 minimum useful test;
 interpretation criteria.
@@ -547,52 +566,40 @@ content and production burden;
 visual direction / asset sourcing / integration constraints;
 implementation constraints;
 comparison set / platform assumptions;
-evidence for the central gameplay promise;
+evidence for central gameplay promise;
 high-cost unresolved risks.
 ```
 
-Production entry does not require every answer. It requires enough evidence that:
+Production entry does not require every answer. It requires enough evidence that the next cost level is justified.
 
-```text
-the central experience can plausibly emerge;
-the intended audience can understand the promise;
-reference responsibilities are coherent;
-load-bearing gameplay works well enough for the next cost level;
-the visual language / asset strategy can be sustained;
-scope is producible;
-remaining uncertainty can be resolved without repeatedly replacing the whole game.
-```
+## 19. Checks Before Returning A Planning Result
 
-## 17. Checks Before Returning A Planning Result
+Check proportionally:
 
-Before treating a planning result as reviewable, check proportionally:
-
-- the current source and current game direction are clear;
-- facts, hypotheses, decisions and evidence remain distinct;
-- audience, promise, experience and references do not silently contradict;
+- current source and current direction/Concept are clear;
+- facts, hypotheses, decisions, Ideas and evidence remain distinct;
+- audience, promise, Experience and references do not silently contradict;
 - reference responsibilities are explicit;
-- load-bearing causal claims expose conditions and trade-offs;
-- expected Dynamics are distinguished from observed evidence when they matter;
-- balance review distinguishes basic challenge, local decision and broader strategic concerns when relevant;
+- load-bearing causal claims expose conditions/trade-offs;
+- expected Dynamics are distinguished from observed evidence;
 - implementation ideas are not accepted automatically;
-- prototype/evidence scope matches the uncertainty;
-- market/platform claims carry suitable evidence/freshness when they matter;
-- visual direction supports readability and has a feasible asset strategy when relevant;
-- the Game Planning Draft remains the high-level entry point;
-- additional files were not created mechanically;
+- Probes remain hypothetical;
+- prototype/evidence scope matches uncertainty;
+- visual direction supports readability and feasible asset strategy when relevant;
+- the Game Planning Draft remains the active high-level entry point once a direction is selected;
+- extra files were not created mechanically;
 - current conclusion and next action/depth are explicit.
 
-## 18. Do Not
+## 20. Do Not
 
-- Do not treat the common broad-first route as a mandatory stage sequence.
-- Do not require template-ordered input or a complete broad Draft before useful detailed work.
-- Do not use this workflow as a competing terminology, analysis, balance, reference or prototype owner; follow the linked canonical owners.
-- Do not copy complete owner schemas or checklists here merely to make the workflow self-contained.
-- Do not wait until the end to consider audience, market, visual or production questions when they materially affect the direction.
+- Do not treat the common broad-first route as mandatory.
+- Do not require a complete Draft before useful detailed work.
+- Do not use this workflow as a competing terminology/analysis/reference/prototype owner.
+- Do not copy complete owner schemas/checklists here.
 - Do not mix references without assigned responsibilities.
 - Do not build a polished slice to answer a cheap fundamental question.
-- Do not force every project into many files or pre-create detail owners for symmetry.
-- Do not treat a matrix or derived view as a second canonical body of complete project meaning.
+- Do not force every project into many files.
+- Do not treat an Idea workspace, matrix, Probe or derived view as a second canonical Draft.
 - Do not confuse implementation verification with game validation.
 - Do not invent evidence, deadlines, final mechanics, balance numbers or production certainty.
 - Do not keep disproven current meaning merely because it was documented earlier.

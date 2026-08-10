@@ -37,18 +37,18 @@ Scenarios
 
 | Owner | Owns | Does not own |
 |---|---|---|
-| [`situations.md`](situations.md) | Detailed reusable Situation planning method, occurrence/state/decision/experience/dependency/balance fields | One project's actual Situation inventory |
-| [`loops.md`](loops.md) | Detailed Loop planning, recurrence, phases, causal membership, overlap, learning, produced Dynamics and Loop-level balance | A universal fixed Loop taxonomy |
-| [`dynamics.md`](dynamics.md) | Detailed Dynamic planning/review method, causal basis, state/opportunity trajectory, strategy effects, Scenario manifestations and evidence | A mandatory project-wide Dynamic Bank or the canonical definition of Dynamic |
-| [`scenarios.md`](scenarios.md) | Scenario Beats, concrete Situation Instances, concurrency, pacing/challenge integration, Dynamic manifestations and AI scenario exploration | Generic rules of every Situation Type or proof that one observed pattern is a stable Dynamic |
+| [`situations.md`](situations.md) | Detailed Situation planning: occurrence, state, decision, consequences, experience, mechanics/rules relations, dependency and balance fields | One project's actual Situation inventory |
+| [`loops.md`](loops.md) | Detailed Loop planning: recurrence, transitions, loop-sustaining causal basis, overlap, learning, produced Dynamics and Loop-level balance | A universal fixed Loop taxonomy |
+| [`dynamics.md`](dynamics.md) | Detailed Dynamic planning/review: causal basis, operating conditions, state/opportunity trajectory, strategy effects, Scenario manifestations and evidence | A mandatory project-wide Dynamic Bank or the canonical definition of Dynamic |
+| [`scenarios.md`](scenarios.md) | Scenario Beats, concrete Situation Instances, concurrency, operative-rule manifestations, pacing/challenge integration, Dynamic manifestations and AI exploration | Generic rules of every Situation Type or proof that one observed pattern is a stable Dynamic |
 
-Project-specific detailed records belong in project-local owners, for example `game-planning/<game>/gameplay/`.
+Project-specific detailed records belong in project-local owners, for example `game-planning/<game>/gameplay/`, when that split is useful.
 
 ## 3. Shared Planning Rule
 
-`Gameplay Situation` remains the main **local** detailed planning unit.
+`Gameplay Situation` remains the main **local meaningful-decision** unit.
 
-> **Loops, Dynamics and Scenarios do not replace Situation-level planning. They add recurrent-causal, systemic-tendency and chronological/integration views over the gameplay model.**
+> Loops, Dynamics and Scenarios do not replace Situation-level planning. They add recurrent-causal, systemic-tendency and chronological/integration views over the gameplay model.
 
 These scales are related but not a simple hierarchy:
 
@@ -67,9 +67,44 @@ Scenario
      without proving that the Dynamic is stable.
 ```
 
-A project can start at whichever scale makes the current problem clearer. Important findings must still be reconciled into the high-level Game Planning Draft when they change cross-cutting current meaning.
+A project can start at whichever scale makes the current problem clearer. Important accepted cross-cutting findings must still be reconciled into the high-level Game Planning Draft.
 
-## 4. Reusable Pass Coverage
+## 4. Shared Causal-Basis Concern
+
+`Causal Basis` is a useful cross-scale concern, but it should **not** become one identical template copied into every planning unit.
+
+Ask at each scale:
+
+| Scale | Causal-basis question |
+|---|---|
+| **Situation** | Which rules/state make the decision problem possible, and which mechanics/rules shape information, option availability/value, stakes, consequences and intended Experience? |
+| **Loop** | Which mechanics/rules/state relations create transitions, recurrence, carryover, feedback, recovery/restart and progression changes? |
+| **Dynamic** | Which mechanics/rules, recurrent state, events/agents, decisions, consequences and feedback cause the systemic tendency? |
+| **Scenario** | Which operative mechanics/rules are needed to understand why this concrete chronology/Beat goes this way? |
+
+Important boundary:
+
+```text
+Situation Occurrence Model
+  already owns the occurrence/generation causal basis:
+  Hard Preconditions
+  Occurrence Drivers / Alternative Causes
+  Frequency Controls.
+```
+
+Do not add a second duplicate list called `Situation-Enabling Rules`. Instead, add the **remaining rule relations** that explain the decision space and, where material, the Experience.
+
+For Scenario:
+
+```text
+generic rule
+  → belongs in Situation / Loop / Dynamic / system owner;
+
+operative manifestation in this exact chronology
+  → may be recorded in the Scenario.
+```
+
+## 5. Reusable Pass Coverage
 
 Use reusable review surfaces as discovery surfaces, not mandatory forms.
 
@@ -80,37 +115,37 @@ Use reusable review surfaces as discovery surfaces, not mandatory forms.
 | Gameplay Dynamic | Yes | Yes | Not a default Dynamic-scale pass |
 | Scenario | Yes | Yes | Yes |
 
-For `Game Structure Analysis` and `Player Experience And Anti-Experience`, the same concern/family set is inspected proportionally at the current scale and only material findings are recorded.
+For `Game Structure Analysis` and `Player Experience And Anti-Experience`, inspect the same concern/family set proportionally at the current scale and keep only material findings.
 
-For visual planning, do not automatically run the full `V01–V11` pass on an abstract Dynamic. If a Dynamic creates a real visual problem — for example, how a long-term state trajectory becomes legible — route that question through concrete Scenarios / Visual Contexts or another justified visual study rather than inventing a generic Dynamic visual checklist.
+For visual planning, do not automatically run the full visual pass on an abstract Dynamic. Route real Dynamic-related visual questions through concrete Scenarios / Visual Contexts or another justified study.
 
-## 5. Scale Differences
+## 6. Scale Differences
 
 ### Situation
 
 Main question:
 
-> What meaningful decision exists here, why does the player care, what do they expect and experience, which choices are meaningful and what follows?
+> What meaningful decision exists here, why does the player care, what do they know/expect, which choices are meaningful, which rules shape those choices and what follows?
 
 ### Loop
 
 Main question:
 
-> Which recurrent functionally coherent causal process appears across repeated Situations, execution and state change, and what does repetition do to strategy, pacing, balance, Dynamics and experience?
+> Which recurrent functionally coherent causal process appears across repeated Situations, execution and state change, which rules sustain recurrence, and what does repetition do to strategy, pacing, balance, Dynamics and Experience?
 
 ### Dynamic
 
 Main question:
 
-> What causal tendency does gameplay develop toward over time, which rules / state changes / decisions sustain it, what future opportunities and strategies does it make more or less likely, and can the player understand and influence that trajectory?
+> What causal tendency does gameplay develop toward over time, which rules/state changes/decisions sustain it, what future opportunities/strategies does it make more or less likely, and can the player understand/influence that trajectory?
 
 ### Scenario
 
 Main question:
 
-> What actually happens in time when concrete Situation Instances and Loops overlap, earlier decisions continue executing, state changes accumulate, candidate Dynamics manifest and the player experiences one concrete path?
+> What actually happens in time when concrete Situation Instances and Loops overlap, earlier decisions continue executing, state changes accumulate, operative rules manifest, candidate Dynamics appear and the player experiences one concrete path?
 
-## 6. Balance Boundary
+## 7. Balance Boundary
 
 Use the shared balance taxonomy from [`Game Structure Analysis`](../game-structure-analysis.md):
 
@@ -132,7 +167,7 @@ Loop
      frequency, progression and overlap;
 
 Dynamic
-  → which strategies become advantageous over time,
+  → strategies becoming more/less advantageous,
      state/opportunity trajectory and dominant-meta risk;
 
 Scenario
@@ -142,7 +177,7 @@ Scenario
 
 Do not fix numerical balance without evidence merely because a record has a balance field.
 
-## 7. Visual Boundary
+## 8. Visual Boundary
 
 `Gameplay Situation` keeps its strict meaningful-decision meaning.
 
@@ -150,36 +185,31 @@ Visual work may also need a broader `Visual Context` such as routine, execution,
 
 Detailed Scenario Beats may own exact local visual requirements and tests. Cross-scenario/project-wide visual requirements may remain in a separate project visual owner.
 
-A Dynamic does not automatically receive a full visual-planning pass. When a Dynamic creates a material visual-legibility or long-term-state-presentation problem, plan that problem through concrete contexts or a separately justified study.
-
-## 8. Intentional Duplication
+## 9. Intentional Duplication
 
 A small amount of duplication is allowed when it answers a different-scale question.
 
 Example:
 
 ```text
-Situation owner:
-  a tight dependency exists in general.
+Situation:
+  a rule changes option availability in general;
 
-Loop owner:
-  recurrence of this relation may contribute
-  to an expected Dynamic.
+Loop:
+  recurrence of the same relation shapes feedback/carryover;
 
-Dynamic owner:
-  the tendency is hypothesized / observed
-  across repeated state changes.
+Dynamic:
+  the repeated effects create a hypothesized tendency;
 
 Scenario:
-  this concrete branch manifests the tendency here,
-  in this state and order.
+  this exact branch manifests the relation here.
 ```
 
-If a Scenario exposes a general tight dependency missing from the Situation owner, treat that as an audit signal and update the Situation record.
+If a Scenario exposes a general tight dependency or rule relation missing from the Situation owner, treat that as an audit signal and update the more general owner.
 
-If repeated Scenarios expose a load-bearing Dynamic missing from current planning, create or update a Dynamic record only when that separate owner helps review, balance, experience planning or validation.
+If repeated Scenarios expose a load-bearing Dynamic missing from planning, create/update a Dynamic record only when independent review is useful.
 
-## 9. Evidence And Status
+## 10. Evidence And Status
 
 Keep source-backed project meaning, inference, hypotheses, decision candidates and evidence visibly distinct.
 
@@ -190,19 +220,22 @@ expected Dynamic
 ≠ observed Dynamic;
 
 one Scenario manifestation
-≠ proof of a stable Dynamic.
+≠ proof of a stable Dynamic;
+
+Integration Probe
+≠ accepted Situation / Loop / Dynamic / Scenario.
 ```
 
 A reusable method does not authorize promotion of a project inference into a decision.
 
-## 10. When To Split Further
+## 11. When To Split Further
 
 Do not pre-create one file per Situation, Loop, Dynamic or Scenario.
 
-Do not create a mandatory project-wide Dynamic Bank. A separate Dynamic record is justified when the tendency is load-bearing enough to need independent review, balance/experience analysis, comparison across Scenarios, validation or collaboration.
+Do not create a mandatory project-wide Dynamic Bank.
 
-Each planning owner should preserve the **required gameplay / experience result** at its scale. Exact local presentation requirements normally belong to concrete Situation / Scenario / Visual Context work rather than an abstract Dynamic. If a hard realization problem later needs its own lifecycle — for example, how to create the intended feeling through gameplay, visuals, audio, UI or another production discipline — a separate realization deep-dive may be justified and linked back to the requirement.
+Split a detailed owner only when independent review, reuse, navigation, testing, collaboration or production ownership makes the split useful.
 
-Do not create all such realization files preemptively.
+Each planning owner should preserve the **required gameplay / Experience result** at its scale. Exact local presentation requirements normally belong to concrete Situation / Scenario / Visual Context work rather than an abstract Dynamic.
 
-Split a detailed owner only when independent review, reuse, navigation, testing or collaboration makes the split useful. Preserve one clear navigation owner and avoid competing canonical copies.
+Do not create all realization/deep-dive files preemptively.

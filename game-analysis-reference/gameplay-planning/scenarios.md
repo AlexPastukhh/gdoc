@@ -1,13 +1,13 @@
 # Gameplay Scenario Planning
 
 Status: active reusable detailed-planning method
-Scope: how to plan, inspect and validate one concrete chronological traversal through Gameplay Situations and Loops, including non-decision time, concurrent processes and concrete manifestations of candidate Dynamics.
+Scope: how to plan, inspect and validate one concrete chronological traversal through Gameplay Situations and Loops, including non-decision time, concurrent processes, operative rule manifestations and concrete manifestations of candidate Dynamics.
 
 Canonical Scenario terminology is owned by [`Gameplay Situations, Loops And Scenarios — Principles And Terminology`](../../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md). Canonical Dynamic terminology is owned by [`Mechanics Create Dynamics`](../../principles/mechanics-create-dynamics-principles-and-terminology.md).
 
 ## 1. Purpose
 
-A Scenario turns reusable gameplay structure into one concrete chronology detailed enough to plan, implement or test.
+A `Scenario` turns reusable gameplay structure into one concrete chronology detailed enough to plan, implement or test.
 
 It is especially useful when the important question is not one isolated decision but:
 
@@ -16,6 +16,7 @@ what happens before and after it;
 which previous decisions are still executing;
 which other Situations become active;
 which Loops overlap;
+which rules manifest materially in this concrete path;
 how pressure rises/falls;
 which candidate Dynamics become visible;
 how viable strategic space changes from entry to exit;
@@ -45,6 +46,8 @@ breathing room.
 ```
 
 Do not invent fake Gameplay Situations for periods in which no new meaningful decision exists.
+
+A decisionless but important Experience moment can remain a Scenario Beat, Observation, Execution, Consequence, Recovery or Visual Context. Do not broaden `Gameplay Situation` merely to give that moment a planning owner.
 
 ## 3. Situation Instance
 
@@ -82,7 +85,7 @@ Recovery.
 
 The list is not mandatory or closed.
 
-One Beat may contain several simultaneous facts when they form one causal-temporal moment, for example:
+One Beat may contain several simultaneous facts when they form one causal-temporal moment:
 
 ```text
 decision in Situation A
@@ -94,7 +97,7 @@ execution from Loop C continues
 new information becomes visible.
 ```
 
-One Loop Phase may span several Beats. Conversely, one Beat may contribute to or change phases in several Loops when those processes overlap in the same moment.
+One Loop Phase may span several Beats. Conversely, one Beat may contribute to/change phases in several Loops.
 
 ## 5. Scenario Beat Record
 
@@ -123,6 +126,10 @@ Meaningful Decisions, if this is a Situation Instance
 Decision Availability
 Why Each Option May Be Attractive
 Selected Scenario Branch
+
+Operative Mechanics / Rules, if needed
+  only rules whose concrete manifestation is
+  needed to understand this Beat/path
 
 System Response
 Immediate Consequences
@@ -153,7 +160,28 @@ Exit State
 
 Not every Beat needs every field.
 
-## 6. Intended Player Response Is Broader Than Emotion
+## 6. Operative Mechanics / Rules Boundary
+
+Scenario owns **concrete manifestation**, not every generic rule.
+
+Use `Operative Mechanics / Rules` only when the reader needs to know why this exact chronology behaves as described.
+
+Example:
+
+```text
+generic Situation rule:
+  weak barriers can fail after sustained pressure;
+
+Scenario manifestation:
+  this damaged door is expected to hold only long enough
+  for the selected evacuation branch.
+```
+
+The generic rule belongs in the Situation/system owner. The Scenario records its concrete use.
+
+If Scenario work discovers a general mechanic/rule relation missing from the Situation/Loop/Dynamic owner, treat that as an audit signal and update the more general owner after review.
+
+## 7. Intended Player Response Is Broader Than Emotion
 
 A design target may be:
 
@@ -174,7 +202,7 @@ relief.
 
 For example, `the player should themselves want to obtain this capability` is a valid Intended Player Response even though it is not merely an emotion.
 
-## 7. Presentation Is Broader Than Visuals
+## 8. Presentation Is Broader Than Visuals
 
 Scenario presentation requirements can include:
 
@@ -187,9 +215,9 @@ agent/world behavior;
 control feedback.
 ```
 
-Do not ask the visual layer alone to produce an experience whose cause belongs to pacing, audio, information or system behavior.
+Do not ask the visual layer alone to produce an Experience whose cause belongs to pacing, audio, information or system behavior.
 
-## 8. Concurrent Situations And Loops
+## 9. Concurrent Situations And Loops
 
 At a concrete time, the Scenario may have several Active Situations while earlier decisions continue executing.
 
@@ -204,11 +232,11 @@ specific tight dependencies;
 decision-order effects.
 ```
 
-These values are not automatic scores. There is no need to turn them into a universal formula or to solve passive/background-loop counting abstractly before looking at a concrete example.
+These values are not automatic scores.
 
-> **The number of simultaneously active Situations and Loops can be used as one indicator of gameplay load, pacing and challenge. The number itself does not prove that there is too much or too little load; interpret it in the concrete Scenario.**
+> The number of simultaneously active Situations and Loops can be used as one indicator of gameplay load, pacing and challenge. The number itself does not prove that there is too much or too little load; interpret it in the concrete Scenario.
 
-A simple chronology can therefore record:
+Example:
 
 ```text
 00:00  Situations 0 / Loops 1
@@ -217,11 +245,9 @@ A simple chronology can therefore record:
 15:00  Situations 1 / Loops 2
 ```
 
-without pretending those numbers alone determine quality.
+## 10. Parallel Loop Tracks
 
-## 9. Parallel Loop Tracks
-
-When it helps, represent Scenario chronology as several parallel tracks:
+When it helps, represent Scenario chronology as parallel tracks:
 
 ```text
 Time →
@@ -231,36 +257,34 @@ Disease Loop             Situation ─── execution ────
 Raid Loop        Situation / preparation ────────────
 
 Active Situations        1      2       3      1
-Active Loops              1      2       3      2
-Player decisions          ↓      ↓              ↓
+Active Loops             1      2       3      2
+Player decisions         ↓      ↓              ↓
 ```
 
-The representation is optional; the principle is that Loops need not wait for each other sequentially.
+A Scenario may cross several Loops that interact only through shared state. Showing them in one chronology does not merge them into one Loop.
 
-A Scenario may cross several Loops that interact only through shared state. Showing them in the same chronology does **not** merge them into one Loop.
-
-## 10. Tight Dependencies In Scenario
+## 11. Tight Dependencies In Scenario
 
 It is acceptable to repeat a tight dependency already owned by Situation planning if doing so makes the concrete Scenario understandable.
 
 ```text
 Situation owner:
-  dependency exists generally.
+  dependency exists generally;
 
 Scenario:
   resolving A first here removes option B2,
   changing the concrete pacing/challenge problem.
 ```
 
-If the Scenario reveals a general specific dependency that was not recorded in the Situation Type, audit/update the Situation owner.
+If the Scenario reveals a general specific dependency missing from the Situation Type, audit/update the Situation owner.
 
 Broad economy/state effects still do not need exhaustive Situation-to-Situation links.
 
-## 11. Game Structure Review
+## 12. Game Structure Review
 
 A Scenario can use the full [`Game Structure Analysis`](../game-structure-analysis.md) concern set.
 
-For a detailed gameplay Scenario, normally make an **explicit review** of at least:
+For a detailed gameplay Scenario, normally explicitly inspect at least:
 
 ```text
 Core / Session / Long-Term Loops;
@@ -278,7 +302,7 @@ Causal Legibility And Strategic Planning;
 Interface, Feedback And Readability.
 ```
 
-`Explicit review` means look deliberately; `nothing material found` is an acceptable result.
+`Explicit review` means look deliberately; `nothing material found` is acceptable.
 
 For a full-demo / first-play Scenario, also explicitly inspect:
 
@@ -287,11 +311,9 @@ Onboarding And Mental Model;
 Return, Stopping And Exhaustion.
 ```
 
-Use `Content-Production Model` explicitly when the Scenario is also being used to estimate content/production burden.
+Use `Content-Production Model` when the Scenario is also estimating content/production burden.
 
-Other concerns remain available when relevant.
-
-## 12. Pacing / Challenge Review
+## 13. Pacing / Challenge Review
 
 Scenario scale is where concurrency, timing and cumulative pressure become visible.
 
@@ -310,11 +332,9 @@ Does the player have time to understand consequences before the next demand?
 Does repetition become rote?
 ```
 
-Pacing can emerge from overlapping systemic Loops rather than authored event scheduling alone.
+Scenario review is also an integration-balance check. Individually meaningful Situations/Loops can combine into dominant response, deadline pressure, unreadable delayed costs or exhausting overlap.
 
-Scenario review is also an **integration-balance** check. Individually meaningful Situations and individually healthy Loops can combine into a dominant response, excessive deadline pressure, bad resource competition, unreadable delayed costs or exhausting overlap. Do not assume that balancing each Situation independently is enough.
-
-## 13. Causal Legibility Review
+## 14. Causal Legibility Review
 
 Scenario chronology is a strong place to check whether the player can connect earlier choices to later outcomes.
 
@@ -324,22 +344,22 @@ Ask:
 Why does the player think this Situation arose?
 Can they connect it to past state / choices?
 Can they distinguish direct from delayed state-mediated effects?
+Can they infer which operative rule caused the result?
 Is cause distinguishable from correlation strongly enough to learn?
 Can they predict direction without exact hidden numbers?
 Do they recognize a recurring Situation chain / Loop?
-Can they distinguish a one-off consequence from a recurrent / developing Dynamic?
-Can they recognize the direction the system appears to be developing toward?
+Can they distinguish one-off consequence from developing Dynamic?
 Can they prepare before the next occurrence?
 Can they deliberately plan a desired future state?
-Can they deliberately strengthen, counter or redirect a relevant Dynamic?
+Can they strengthen, counter or redirect a relevant Dynamic?
 After failure, can they revise a model instead of random trial?
 ```
 
-## 14. Dynamic Manifestation And Strategic-Space Review
+## 15. Dynamic Manifestation And Strategic-Space Review
 
-Scenario chronology is a concrete place to inspect **manifestations** of linked current Dynamics or candidate / hypothesized Dynamics without pretending one branch proves a stable pattern.
+Scenario chronology can inspect manifestations of current or hypothesized Dynamics without pretending one branch proves a stable pattern.
 
-At Scenario level, record proportionally:
+Record proportionally:
 
 ```text
 Dynamic Manifestations / Candidate Tendencies
@@ -355,23 +375,21 @@ Strategic Space At Exit
 Ask:
 
 ```text
-Which linked or candidate Dynamics appear to manifest in this Scenario?
-Which concrete decisions / consequences contribute to them?
-Does the path expose a possible unwanted Dynamic?
-What important opportunities / strategies exist at entry?
-What important opportunities / strategies exist at exit?
-Did a previously viable strategy become weak or unavailable?
+Which linked/candidate Dynamics appear to manifest?
+Which decisions/consequences contribute?
+Does the path expose an unwanted Dynamic?
+What opportunities/strategies exist at entry?
+What exists at exit?
+Did a viable strategy become weak/unavailable?
 Did a new strategy become viable because state changed?
-Does one strategy look universally correct only because of this selected branch,
-or do the underlying rules / balance appear to favour it broadly?
-What alternative Scenario would be useful to test that interpretation?
+Does one strategy look correct only because of this branch,
+or do rules/balance favor it broadly?
+What alternative Scenario could falsify that interpretation?
 ```
 
-> **A Scenario can provide a concrete manifestation or evidence candidate for a Dynamic; one selected Scenario does not by itself prove that the Dynamic is stable.**
+One Scenario manifestation is not proof of a stable Dynamic.
 
-If repeated Scenarios / prototype runs reveal the same load-bearing tendency, update or create the appropriate project Dynamic record.
-
-## 15. Player Experience / Anti-Experience Review
+## 16. Player Experience / Anti-Experience Review
 
 Use [`Player Experience And Anti-Experience`](../player-experience-and-anti-experience.md) for the cumulative arc.
 
@@ -390,11 +408,11 @@ anti-experience accumulation;
 residual experience at the end.
 ```
 
-A Scenario should not be reduced to a graph of mechanics if the purpose is to validate the player's temporal experience.
+A Scenario should not be reduced to a graph of mechanics if the purpose is to validate temporal Experience.
 
-## 16. Visual Planning Review
+## 17. Visual Planning Review
 
-Use [`Visual Design Analysis And Planning`](../visual-design-analysis-and-planning.md) for the concrete chronology.
+Use [`Visual Design Analysis And Planning`](../visual-design-analysis-and-planning.md) for concrete chronology.
 
 A Scenario Beat can own exact local requirements such as:
 
@@ -407,35 +425,66 @@ how a reference is responsible for this moment;
 what representative check validates the result.
 ```
 
-Project-wide/cross-scenario visual requirements may remain in a separate project visual owner rather than being copied into every Beat.
+Project-wide/cross-scenario visual requirements may remain in a separate project visual owner.
 
-Scenario owns the required result and local context, not every possible realization study. If one Beat later needs an independently reviewable deep-dive into gameplay realization, visual realization, audio, UI or another production problem, split that study only when its lifecycle justifies a separate owner and keep the link back to the Scenario requirement.
+## 18. Content Premise Handoff
 
-## 17. Demo Scenario
+A project-local `Content Premise` may exist before a detailed Scenario.
 
-A full demo Scenario should include the **entire temporal experience**, not only dramatic incidents.
+Useful route:
+
+```text
+Idea
+→ Content Premise
+  concrete enough to preserve independently
+  but chronology still unresolved
+→ Scenario planning when detailed integration is useful.
+```
+
+A premise may depend on unresolved generic mechanics. The Scenario should not silently decide those mechanics merely to fill Beats.
+
+## 19. Demo Scenario
+
+A full demo Scenario should include the **entire temporal Experience**, not only dramatic incidents.
 
 Plan routine/orientation/planning/waiting/recovery as deliberately as crises when they matter to the promise.
 
-Exact timings remain candidate/open until supported by implementation or evidence.
+Exact timings remain candidate/open until supported by implementation/evidence.
 
 A detailed demo branch can be selected for implementation/testing while mechanics, screens and alternative playthroughs remain unresolved.
 
-## 18. AI Scenario Exploration
+## 20. Integration-Probe Use
+
+A `PROBE-SCN` from the Game Creation Workflow may use this method to test a Variant in chronology.
+
+Keep the `PROBE-` status explicit.
+
+A coherent Probe Scenario:
+
+```text
+≠ selected project Scenario;
+≠ accepted generic mechanic;
+≠ evidence that the Variant works.
+```
+
+Use the Probe to discover wider consequences, new risks/questions, interactions and content implications for Integrated Evaluation.
+
+## 21. AI Scenario Exploration
 
 For a systemic game, literal enumeration of every possible Scenario is normally impossible.
 
-AI can instead use:
+AI can use:
 
 ```text
 Situation Types
 + Loops
 + relevant state
 + tight dependencies
++ operative rules
 + expected / candidate Dynamics, when useful
 ```
 
-to explore many plausible paths, cluster equivalent variants and identify representative cases.
+to explore plausible paths, cluster equivalent variants and identify representative cases.
 
 Useful targets include:
 
@@ -458,30 +507,17 @@ mechanic-conflict;
 causally unreadable.
 ```
 
-Useful adversarial searches:
-
-```text
-Find a Situation with formally multiple options but only one viable answer.
-Find a failure whose cause the player cannot read.
-Find individually good mechanics that create bad pacing together.
-Find a recurring chain that becomes rote.
-Find a state-mediated Loop that the player cannot infer.
-Find a Scenario where several locally different systems converge toward one dominant strategy.
-Find a Scenario that appears to manifest an expected Dynamic, then find a counter-Scenario that could falsify it.
-Find a Scenario where several Loops overlap and create a pacing/load problem that is invisible when each Loop is reviewed alone.
-Find two simultaneously Active Situations where resolving A first materially changes B, and compare the reverse order.
-Find representative cases with one versus several simultaneous Active Situations so the designer can judge whether the overlap creates useful prioritization or only noise.
-```
-
 Do not describe AI exploration as exhaustive coverage of a combinatorial system.
 
-## 19. Do Not
+## 22. Do Not
 
 - Do not make every Beat a Gameplay Situation.
-- Do not require one chronological track when several Loops are genuinely simultaneous.
-- Do not treat Active Situation / Loop counts as automatic quality scores.
-- Do not duplicate all generic Situation rules in every instance.
+- Do not broaden Situation to decisionless Experience moments merely for planning convenience.
+- Do not require one chronological track when several Loops are simultaneous.
+- Do not treat Active Situation/Loop counts as automatic quality scores.
+- Do not duplicate all generic Situation/Loop rules in every instance.
+- Do not use `Operative Mechanics / Rules` as a second generic mechanics owner.
 - Do not treat one Scenario manifestation as proof of a stable Dynamic.
-- Do not add Dynamic fields to every Beat when the meaning belongs to Scenario-level synthesis.
 - Do not silently invent exact timing, final mechanics or the only valid playthrough.
 - Do not make a detailed demo equal to a frozen screenplay merely because it is concrete enough to test.
+- Do not promote a `PROBE-SCN` into accepted project meaning without explicit review.

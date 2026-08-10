@@ -2,9 +2,10 @@
 
 **Status:** derived working view\
 **Canonical source:** [`../game-planning-draft.md`](../game-planning-draft.md)\
+**Candidate content input:** [`../content-premises.md`](../content-premises.md)\
 **Related Loop view:** [`gameplay-loops.md`](gameplay-loops.md)\
 **Reusable method:** [`../../../game-analysis-reference/gameplay-planning/scenarios.md`](../../../game-analysis-reference/gameplay-planning/scenarios.md)\
-**Authority boundary:** this file owns project-local representative Scenarios assembled from current source meaning. It does not override `CHAT-PI-*` states, convert an inference into an accepted decision or claim that one selected chronology is the only valid playthrough.
+**Authority boundary:** this file owns project-local representative Scenarios assembled from current source meaning. It may also expand clearly marked candidate Content Premises into working Scenarios, but it does not promote those premises into accepted cross-cutting game rules, override `CHAT-PI-*` states, convert an inference into an accepted decision or claim that one selected chronology is the only valid playthrough.
 
 ## 1. Purpose
 
@@ -17,6 +18,8 @@ The current owner starts with one representative Scenario:
 It is a **working representative Scenario**, not the frozen first-demo screenplay.
 
 The chronology is concrete enough to review integration, but some branch details remain unresolved in the source. Keep those branch points explicit instead of silently selecting missing mechanics or content.
+
+`../content-premises.md` now preserves preliminary content units before they are detailed enough for this view. A premise belongs here only after chronology/integration work becomes useful; preserving a premise alone does not require inventing Scenario Beats.
 
 ## 2. Scenario And Beat Boundary
 
@@ -152,3 +155,26 @@ The imported draft still leaves these for later passes:
 11. frame-by-frame demo choreography.
 
 Do not fill these gaps silently in this view.
+
+## 6. Current Content-Premise Handoff
+
+The preliminary owner currently contains:
+
+- `CP-001 — Prolonged Horde / "Nuclear Winter" Siege`;
+- `CP-008 — Most Of The Facility Lost`;
+- `CP-009 — First Floor Lost — Descend From Above`.
+
+These are **not yet additional Scenarios in this view**.
+
+When one is selected for deeper work:
+
+```text
+Content Premise
+→ identify unresolved generic rules/dependencies
+→ use the reusable Scenario method
+→ create concrete chronology / Beats / Situation Instances
+→ keep unaccepted generic mechanics outside the Scenario
+→ add the resulting working Scenario here.
+```
+
+Hybrid examples still stored only in `ideas.md` should not be pulled into this file until they have first become independent content units or a direct Scenario exploration is explicitly chosen.

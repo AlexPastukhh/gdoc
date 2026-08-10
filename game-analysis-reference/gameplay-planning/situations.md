@@ -15,8 +15,10 @@ Use this method when you need to understand:
 why this decision exists;
 why the player cares;
 when it can occur and how often;
+what rules/state make it possible;
 what the player knows / expects;
 which choices are materially different;
+which mechanics/rules shape those choices;
 what each choice changes;
 what experience exists around the choice;
 which tight relations connect it to other Situations;
@@ -39,10 +41,11 @@ mechanic / rule;
 world or economy state;
 need for more / different gameplay content;
 an observed emergent Dynamic;
-a Scenario gap.
+a Scenario gap;
+an Integration Probe.
 ```
 
-These are **ideation inputs**, not shortcuts around detailed planning.
+These are ideation inputs, not shortcuts around detailed planning.
 
 Example route:
 
@@ -50,12 +53,12 @@ Example route:
 desired experience / content need / risk / reference
 → candidate Situation
 → meaningful-decision check
-→ occurrence / state / choices / experience / consequences
+→ occurrence / state / rules / choices / experience / consequences
 → structural + experience + visual review
 → keep, revise, split or reject.
 ```
 
-A project's collection of detailed Situation Types is already its Situation inventory. Do not create a second “Situation Bank” layer unless a project has a separate justified navigation need.
+A project's collection of detailed Situation Types is already its Situation inventory. Do not create a second “Situation Bank” unless a separate navigation need justifies it.
 
 ## 3. Meaningful-Decision Check
 
@@ -82,25 +85,13 @@ a Visual Context;
 a Scenario Beat.
 ```
 
-### Illustrative example only
+Do not broaden `Gameplay Situation` merely to capture an Experience moment with no decision. Scenario planning already owns observation, waiting, execution, consequence and recovery Beats.
 
-This example explains the distinction; it does **not** introduce a project mechanic.
-
-```text
-sneeze
-≠ Gameplay Situation
-
-sneeze
-+ reason to care
-+ risk / opportunity
-+ meaningful response options
-+ consequences
-= Gameplay Situation.
-```
-
-## 4. Occurrence Model
+## 4. Occurrence Model — The Situation's Generating Causal Basis
 
 Plan occurrence and frequency together.
+
+The `Occurrence Model` already owns the mechanics/rules/state that make a Situation possible or cause it to appear. Do **not** duplicate this in a second `Situation-Enabling Rules` list.
 
 ### Hard Preconditions
 
@@ -122,20 +113,94 @@ other Situations;
 events;
 agent behavior;
 progression;
-external pressure.
+external pressure;
+mechanics / rules.
 ```
 
 ### Frequency Controls
 
 What determines how often the Situation actually appears?
 
-If very few restrictive conditions exist, explicitly ask:
+If very few restrictive conditions exist, ask:
 
 > Why does this Situation not happen constantly?
 
-Frequency itself later becomes a balance, pacing and repetition concern.
+Frequency later becomes a balance, pacing and repetition concern.
 
-## 5. Relevant State / Economy
+## 5. Mechanics / Rules Relations
+
+Occurrence explains **why the decision problem appears**. Also make visible the rules that determine **what kind of decision it becomes**.
+
+Do not dump every game rule into the Situation. Record only relations that materially shape this decision.
+
+### Decision-Shaping Mechanics / Rules
+
+Ask which mechanics/rules materially affect:
+
+```text
+Information;
+Option Availability;
+Option Cost / Value;
+Stakes / Risk;
+Expected Consequences;
+Actual Consequences;
+Wait / Do Nothing;
+Desired Future State / Plan, when material.
+```
+
+A useful compact relation is:
+
+```text
+Rule / Mechanic:
+  <reference or short statement>
+
+Affects:
+  Information;
+  Option Availability;
+  Consequences;
+  Stakes;
+  Wait / Do Nothing.
+```
+
+One rule may affect several facets. Define it once and list its relations rather than copying the full rule under every field.
+
+### Experience-Shaping Mechanics / Rules — If Material
+
+Some rules directly create or sustain intended Experience.
+
+Record this only when the relation is useful.
+
+Possible affected experiences include:
+
+```text
+pressure;
+uncertainty;
+reluctance;
+anticipation;
+ownership;
+relief;
+dread;
+curiosity;
+planning satisfaction.
+```
+
+Example shape:
+
+```text
+Rule:
+  a barrier is temporary rather than absolute.
+
+Decision effect:
+  waiting exposes the player to worsening risk.
+
+Experience effect:
+  safety feels provisional;
+  pressure/anticipation persist.
+```
+
+Do not use an Experience-Shaping field to claim that one mechanic alone causes the complete Player Experience.
+
+## 6. Relevant State / Economy
 
 `State / economy` is intentionally broad.
 
@@ -148,7 +213,8 @@ expectations;
 option availability;
 option cost / value;
 risk;
-consequences.
+consequences;
+rule effects.
 ```
 
 Examples:
@@ -181,7 +247,7 @@ new state
 → changes later motivations / Situations.
 ```
 
-## 6. Information State
+## 7. Information State
 
 Record only information relevant to the decision:
 
@@ -197,11 +263,13 @@ what should remain unknown for the intended decision.
 
 The game does not need perfect information. It does need enough information for the intended kind of choice and later causal learning.
 
-## 7. Player Goals, Stakes, Expectations And Plan
+When a Decision-Shaping Rule changes what can be known, link the relation rather than describing it only as a UI issue.
+
+## 8. Player Goals, Stakes, Expectations And Plan
 
 Do not compress all of this into a vague `motivation` field.
 
-The point of this block is the rational/causal side of the player's current direction: why the decision matters, what future the player predicts, and what state or later Situation they are trying to create or avoid. Emotional willingness to execute that plan is recorded separately in `Player Experience Around The Situation`.
+The point is the rational/causal side of the player's current direction: why the decision matters, what future the player predicts, and what state/later Situation they are trying to create or avoid.
 
 ### Current Goal
 
@@ -232,15 +300,15 @@ What future game state is the player deliberately trying to create?
 
 What broader plan is this decision part of, if one already exists?
 
-Strategic gameplay often begins here: the player acts now because they predict a later Situation or future experience and want to enter it from a better state.
+Strategic gameplay often begins here: the player acts now because they predict a later Situation or future Experience and want to enter it from a better state.
 
-## 8. Player Experience Around The Situation
+## 9. Player Experience Around The Situation
 
 Experience is not only an emotional reward after the decision.
 
-> **A Gameplay Situation may inherit an emotional/mental context from how the player reached it, create an experience during deliberation itself, contain anticipation of a future experience, and create another experience through the result of the choice.**
+> A Gameplay Situation may inherit an emotional/mental context from how the player reached it, create an experience during deliberation, contain anticipation of a future experience, and create another experience through the result.
 
-Keep these concepts distinguishable:
+Keep distinguishable:
 
 ```text
 Goal
@@ -256,45 +324,13 @@ Plan
 = what I intend to do;
 
 Affective Stance
-= whether / how I want the expected path and result;
+= whether/how I want the expected path/result;
 
 Experience
 = what I experience before, during and after the decision.
 ```
 
-Especially preserve:
-
-```text
-I want the outcome
-≠
-I want to perform the action required to get it.
-```
-
-A player may strongly want to save the base while strongly not wanting to perform the sacrifice they believe is necessary.
-
-Illustrative example only — this does not introduce a mechanic into any project:
-
-```text
-Goal:
-  obtain medicine.
-
-Stakes:
-  without it an important person may die.
-
-Expectation:
-  the raid will probably provide medicine,
-  but it will be very dangerous.
-
-Plan:
-  send the best group now while the window is open.
-
-Affective stance:
-  "I really do not want to do this;
-   I am afraid of losing these people;
-   but I think there is no other reasonable option."
-```
-
-This is why:
+Preserve especially:
 
 ```text
 I want the outcome
@@ -304,17 +340,7 @@ I want to perform the action required to get it.
 
 ### Entry / Contextual State
 
-What emotional/mental state does the player carry into the Situation from earlier play?
-
-Illustrative example:
-
-```text
-lost half the base to an outbreak
-→ enters the next Situation already
-  depressed / cautious / angry / tense.
-```
-
-The decision structure can be similar while the experience is very different.
+What emotional/mental state does the player carry in from earlier play?
 
 ### Affective Stance Toward Expectations / Plan
 
@@ -344,35 +370,25 @@ planning satisfaction;
 
 ### Anticipated Experience
 
-What future experience does the player imagine as a reward, loss, threat or relief?
-
-This may overlap with Expectations/Plan for a useful reason:
-
-```text
-Expectations / Plan
-→ anticipated result as a reason for the decision;
-
-Experience
-→ anticipated feeling / value as a design target.
-```
+What future Experience does the player imagine as reward, loss, threat or relief?
 
 ### Outcome / Consequence Experience
 
-What experience should arise when the result becomes legible?
+What Experience should arise when the result becomes legible?
 
 Examples: relief, regret, pride, loss, surprise, validation of a plan, curiosity, desire to repair, mastery.
 
 ### Residual Experience
 
-What emotional/mental state does the player carry out of this Situation into later play?
+What emotional/mental state does the player carry into later play?
 
 ### Anti-Experience / Wrong Response
 
-What local player response would mean that this Situation is producing the wrong experience or the right pressure for the wrong reason?
+What local player response would mean the Situation produces the wrong Experience or the right pressure for the wrong reason?
 
-Examples can include helplessness instead of costly agency, confusion instead of intended uncertainty, indifference instead of meaningful stakes, or rote execution instead of a real decision. This local field describes failure in the context of this Situation; the reusable `Player Experience / Anti-Experience` pass below still checks the broader experience families and anti-experience patterns.
+Examples include helplessness instead of costly agency, confusion instead of intended uncertainty, indifference instead of meaningful stakes, or rote execution instead of a real decision.
 
-## 9. Decision Options
+## 10. Decision Options
 
 For each materially different option, preserve proportionally:
 
@@ -392,9 +408,17 @@ The key question is not merely “can the player click this?” but:
 
 > Why could a reasonable player prefer this option in the current state?
 
-`Wait / do nothing` is an option only when inaction is itself meaningful because it changes exposure, outcome/state or otherwise has meaningful consequences.
+`Wait / do nothing` is an option only when inaction is meaningful because it changes exposure, outcome/state or otherwise has meaningful consequences.
 
-## 10. Consequence Fan-Out
+Cross-check important options against `Decision-Shaping Mechanics / Rules`:
+
+```text
+Which rule makes this option available?
+Which rule makes it costly/valuable?
+Which rule makes its consequence different?
+```
+
+## 11. Consequence Fan-Out
 
 Do not assume one choice has one next node.
 
@@ -407,7 +431,7 @@ shared-state / economy changes;
 delayed conditions for future Situations.
 ```
 
-### Tight dependencies only
+### Tight Dependencies Only
 
 Record an explicit Situation dependency only when it is specific and decision-relevant.
 
@@ -422,42 +446,34 @@ A materially changes B's stakes / risks;
 resolving A before B directly changes B's decision space.
 ```
 
-Do **not** enumerate every future Situation that might be influenced by broad changes such as:
-
-```text
-worker count -1;
-food -20;
-trust changed.
-```
-
-Those remain State / Economy Effects unless a later relation is recurrent and load-bearing enough to record explicitly.
-
-Do not add a broad mandatory field such as `what other Active Situations may coexist?` to every Situation record. Situation planning owns only known **specific, tight, decision-relevant** dependencies. Which Situations actually coexist and how their overlap affects pacing/load is primarily Scenario planning.
+Do not enumerate every future Situation affected by broad changes such as `worker count -1`, `food -20` or `trust changed`.
 
 ### Potential Dynamic Contribution
 
-An immediate consequence or state change is **not** itself a Dynamic. When repeated, accumulated or interacting consequences plausibly contribute to a load-bearing systemic tendency, optionally record:
+An immediate consequence/state change is not itself a Dynamic.
+
+When repeated/accumulated/interacting consequences plausibly contribute to a load-bearing systemic tendency, optionally record:
 
 ```text
 Potential Dynamic Contribution:
-  which existing / candidate Dynamic may be affected;
+  which current / candidate Dynamic may be affected;
   how this consequence contributes causally;
   evidence status / uncertainty.
 ```
 
-Do not invent a Dynamic for every consequence. Use this field only when the broader tendency matters to planning, balance, experience or validation.
+Do not invent a Dynamic for every consequence.
 
-## 11. Typical / Possible Loop Participation
+## 12. Typical / Possible Loop Participation
 
 A Situation Type may note Loops it commonly or possibly participates in.
 
-Do not treat that as immutable membership. A concrete Situation Instance may actually participate in different Loops because current state, stakes and other active problems differ.
+Do not treat that as immutable membership. A concrete Situation Instance may participate in different Loops because current state, stakes and other active problems differ.
 
 Shared state alone is not a reason to assign the Situation to every affected Loop.
 
-## 12. Three Reusable Reviews
+## 13. Three Reusable Reviews
 
-After the local decision is understandable, use the three reusable surfaces as discovery passes.
+After the local decision is understandable, use the reusable surfaces as discovery passes.
 
 ### Game Structure Analysis
 
@@ -469,36 +485,30 @@ Inspect the full concern set and keep the concerns that materially change unders
 
 Use [`Player Experience And Anti-Experience`](../player-experience-and-anti-experience.md).
 
-This is separate from `Player Experience Around The Situation` above:
+This is separate from `Player Experience Around The Situation`:
 
 ```text
 Player Experience Around The Situation
 → temporal/contextual experience of this concrete decision;
 
 reusable experience pass
-→ which experience families, supporting conditions,
-  behaviors and anti-experiences are relevant.
+→ experience families, supporting conditions,
+  behaviors and anti-experiences.
 ```
-
-Purposeful overlap is allowed.
 
 ### Visual Planning
 
 Use [`Visual Design Analysis And Planning`](../visual-design-analysis-and-planning.md).
 
-Inspect `V01–V11` and any justified project-specific concerns. Record the visual requirements that materially affect the Situation.
+Inspect relevant visual concerns and record requirements that materially affect the Situation.
 
-## 13. Balance Bridge
+## 14. Balance Bridge
 
-Situation planning should prepare for balance without inventing numbers. Use the shared [`Game Structure Analysis`](../game-structure-analysis.md) balance taxonomy. At Situation scale, `Decision Balance` is usually primary, while `Basic Challenge Balance` and broader strategic/Dynamic implications are inspected when material.
+Situation planning should prepare for balance without inventing numbers. Use the shared [`Game Structure Analysis`](../game-structure-analysis.md) balance taxonomy.
 
 Main question:
 
-> **При каких relevant states различные варианты остаются meaningful, вместо того чтобы один вариант становился universally correct?**
-
-Equivalent working question:
-
-> **At which relevant states do the different choices remain genuinely meaningful instead of one choice becoming universally correct?**
+> At which relevant states do the different choices remain genuinely meaningful instead of one choice becoming universally correct?
 
 Possible fields:
 
@@ -512,17 +522,17 @@ Dominant-Solution Risk;
 Later Numeric Test Needs.
 ```
 
-A qualitative state such as `only qualified medic available` can be balance-relevant even before an exact numeric model exists.
+A qualitative state such as `only qualified medic available` can be balance-relevant before an exact numeric model exists.
 
-## 14. Scenario Usage
+## 15. Scenario Usage
 
 Record where a Situation Type is expected to be instantiated when that aids validation/navigation.
 
 A Scenario should reference the Situation Type and record the concrete Situation Instance rather than duplicating every generic rule.
 
-If Scenario work discovers a general tight dependency missing here, update the Situation owner.
+If Scenario work discovers a general tight dependency or Decision-/Experience-Shaping rule relation missing here, update the Situation owner.
 
-## 15. Suggested Situation Record
+## 16. Suggested Situation Record
 
 Not every field is mandatory. Use the smallest record that preserves the real design problem.
 
@@ -536,6 +546,23 @@ Occurrence Model
   Hard Preconditions
   Occurrence Drivers / Alternative Causes
   Frequency Controls
+
+Mechanics / Rules Relations
+  Decision-Shaping Mechanics / Rules
+    Rule / Mechanic
+    Affects:
+      Information
+      Option Availability
+      Option Cost / Value
+      Stakes / Risk
+      Expected / Actual Consequences
+      Wait / Do Nothing
+      Plan / Desired Future State, if material
+
+  Experience-Shaping Mechanics / Rules, if material
+    Rule / Mechanic
+    Affects:
+      <intended Experience facets>
 
 Relevant State / Economy
 Information State
@@ -583,13 +610,14 @@ Scenario Usage
 Evidence / Questions / Hypotheses
 ```
 
-## 16. Content-Production Check
+## 17. Content-Production Check
 
 A system/mechanic can be reviewed by asking:
 
 ```text
 Which meaningful Situations can it produce?
 How different are those decisions?
+Which rule relations actually make them different?
 How often can they recur before becoming rote?
 How much bespoke authored content is required?
 Can shared rules/state generate variations cheaply?
@@ -597,14 +625,17 @@ Can shared rules/state generate variations cheaply?
 
 This is a production/design lens, not a rule that “more Situations = better.”
 
-## 17. Do Not
+## 18. Do Not
 
 - Do not call an event a Situation only because something happened.
+- Do not broaden Situation to every decisionless Experience moment.
+- Do not duplicate the Occurrence Model in a second enabling-rules block.
+- Do not list all mechanics/rules of the game in every Situation.
 - Do not list all game state in every Situation.
-- Do not equate a rational goal with the player's emotional willingness to execute the plan.
+- Do not equate a rational goal with emotional willingness to execute the plan.
 - Do not force one next Situation per decision.
 - Do not connect every broad downstream effect as an explicit Situation edge.
-- Do not call one consequence or state change a Dynamic.
+- Do not call one consequence/state change a Dynamic.
 - Do not require every Situation to name a Dynamic contribution.
 - Do not fix numeric balance without evidence.
-- Do not fill Game Structure, experience or visual reviews mechanically.
+- Do not fill Game Structure, Experience or visual reviews mechanically.

@@ -1,1 +1,60 @@
+# Chat History And Source-Ledger Area
 
+Status: supporting provenance / consolidation area
+
+This directory may store chat transcripts, source ledgers and message-level consolidation records used to verify where project or reusable planning meaning came from.
+
+## Authority Boundary
+
+Files here are **supporting provenance**, not canonical game-design owners.
+
+```text
+chat/source history
+  → records what was said, proposed, accepted, questioned or deferred;
+
+project/reusable owner
+  → owns the current meaning after review and consolidation.
+```
+
+A statement appearing in chat history does not automatically become:
+
+```text
+a project decision;
+a reusable principle;
+a Gameplay Situation / Loop / Dynamic / Scenario;
+an implementation decision.
+```
+
+Preserve source status where useful:
+
+```text
+verbatim;
+reconstructed / summarized;
+user statement;
+assistant proposal;
+user acceptance / refinement;
+research finding;
+deferred / unresolved.
+```
+
+## Message References
+
+For long-running work, a branch ledger may assign stable local references such as:
+
+```text
+SB-B01-U049
+SB-B01-A049
+```
+
+or another project-specific scheme.
+
+Use the references to answer:
+
+```text
+Was this source contribution reviewed?
+Where was it consolidated?
+Was it accepted, kept as an idea, turned into a question,
+deferred, rejected or found to add no new meaning?
+```
+
+Do not require a Planning Item for every message. Record only enough routing/provenance to make future completeness checks possible.

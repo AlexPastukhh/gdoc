@@ -5,7 +5,7 @@ Scope: navigation and responsibility boundaries for stable game-planning princip
 
 ## 1. Purpose
 
-Files in this directory that are marked `principle-and-terminology owner` answer two questions:
+Files in this directory marked `principle-and-terminology owner` answer:
 
 ```text
 What does this term mean in the repository?
@@ -20,25 +20,31 @@ Use the repository layers as:
 principles / terminology
   → stable meanings and invariants;
 
+use-case registry
+  → which documentation capability/route is relevant;
+
 workflow
-  → how planning moves between questions and depths;
+  → how creation/planning moves between questions and depths;
 
 analysis / planning references
   → detailed questions, schemas and lenses;
 
 project documents
-  → current project-specific decisions, hypotheses, evidence and detail.
+  → current project-specific decisions,
+    ideas, hypotheses, evidence and detail.
 ```
+
+For zero-to-one creative synthesis, use [`../game-creation-workflow.md`](../game-creation-workflow.md). For ongoing planning orchestration, use [`../game-development-planning-workflow.md`](../game-development-planning-workflow.md).
 
 ## 2. Current Owners
 
 | Owner | Responsibility |
 |---|---|
-| [`Game Planning`](game-planning-principles-and-terminology.md) | The Game Planning Draft, iterative planning, flexible planning depth, evidence/decision discipline and the relationship between high-level and detail owners |
-| [`Gameplay Situations, Loops And Scenarios`](gameplay-situations-loops-and-scenarios-principles-and-terminology.md) | Canonical meanings and stable distinctions for Gameplay Situation, Loop, Scenario, their relations, and the terminology boundary that prevents broader visual/presentation contexts from being mislabeled as Gameplay Situations |
+| [`Game Planning`](game-planning-principles-and-terminology.md) | `Concept`, `Design Direction`, `Brainstorm Prompt`, `Variant`, `Integration Probe`, Local/Integrated/Combination Evaluation, the Game Planning Draft, iterative/flexible planning, evidence/decision discipline and high-level/detail-owner boundaries |
+| [`Gameplay Situations, Loops And Scenarios`](gameplay-situations-loops-and-scenarios-principles-and-terminology.md) | Canonical meanings and stable distinctions for Gameplay Situation, Loop, Scenario, their relations, and the boundary preventing broader visual/presentation contexts from being mislabeled as Gameplay Situations |
 | [`Player Experience First`](player-experience-first-principles-and-terminology.md) | Player Experience, experience goals, experience levels and experience-first design principles |
-| [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md) | Mechanics/rules, dynamics, behavior, feedback, incentives and causal design reasoning |
-| [`Reference First And Controlled Transformation`](reference-first-and-controlled-transformation-principles-and-terminology.md) | Reference responsibilities, transfer, transformation and reference-risk principles |
+| [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md) | Mechanics/rules, Dynamics, behavior, feedback, incentives and causal design reasoning |
+| [`Reference First And Controlled Transformation`](reference-first-and-controlled-transformation-principles-and-terminology.md) | Reference responsibilities, transfer, transformation, transformation-target and reference-risk principles |
 | [`Audience Is Part Of The Game`](audience-is-part-of-the-game-principles-and-terminology.md) | Audience, purchase fantasy and audience-facing promise principles |
 | [`Market And Platforms`](market-and-platforms-principles-and-terminology.md) | Market/platform assumptions and related terminology |
 | [`Prototypes, Hypotheses And Tests`](prototypes-hypotheses-and-tests-principles-and-terminology.md) | Hypothesis/testing/prototype distinctions and evidence logic |
