@@ -1,11 +1,11 @@
 # Gameplay Dynamic Planning
 
 Status: active reusable detailed-planning method
-Scope: how to discover, describe, review and validate load-bearing Gameplay Dynamics without confusing them with one-off consequences, Loops, Scenarios or Player Behavior.
+Scope: how to discover, describe, review and validate load-bearing Gameplay Dynamics without confusing them with one-off consequences, Loops, Scenarios or Player Strategy.
 
 Canonical Dynamic terminology is owned by [`Mechanics Create Dynamics — Principles And Terminology`](../../principles/mechanics-create-dynamics-principles-and-terminology.md).
 
-Canonical Gameplay Situation / Loop / Scenario terminology is owned by [`Gameplay Situations, Loops And Scenarios — Principles And Terminology`](../../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md).
+Canonical Gameplay Situation / Event / Loop / Scenario terminology is owned by [`Gameplay Situations, Loops And Scenarios — Principles And Terminology`](../../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md).
 
 ## 1. Purpose
 
@@ -13,23 +13,13 @@ Use Dynamic planning when the important question is broader than one local decis
 
 > What does the operative game system tend to become over time as rules, state, events and player decisions repeatedly interact?
 
-A Dynamic record is useful when the tendency materially affects:
-
-```text
-state / economy trajectory;
-future opportunity structure;
-which Gameplay Situations recur and with what stakes;
-which options remain available or valuable;
-which player strategies become more / less advantageous;
-long-term Player Experience;
-balance, progression or validation decisions.
-```
+A Dynamic record is useful when the tendency materially affects state/economy trajectory, future opportunity structure, Situation/Event occurrence, option value, Strategy viability, long-term Experience, balance, progression or validation decisions.
 
 Do not create a Dynamic record merely because some quantity changed once.
 
 ## 2. Boundary Check
 
-Before expanding a candidate Dynamic, preserve:
+Preserve:
 
 ```text
 one consequence
@@ -43,18 +33,15 @@ one metric trend without causal interpretation
 
 Gameplay Situation
 ≠ Dynamic;
-
 Gameplay Loop
 ≠ Dynamic;
-
 Scenario
 ≠ Dynamic;
-
-Player Behavior / Strategy
+Player Strategy / Behavior
 ≠ Dynamic.
 ```
 
-A useful Dynamic must describe a recurrent, persistent or directionally developing **causal tendency**, not only an outcome label.
+A useful Dynamic describes a recurrent, persistent or directionally developing **causal tendency**.
 
 ## 3. Ways To Discover A Candidate Dynamic
 
@@ -74,20 +61,20 @@ a reference-game analysis;
 an unwanted dominant strategy or anti-experience.
 ```
 
-A practical sentence test is:
+Sentence test:
 
 > **In this game, over time, the system tends to develop so that…**
 
-If the completion is only `one worker dies`, `food -20` or `a sector closes`, the candidate is probably a consequence/state change rather than a Dynamic.
+If the completion is only `one worker dies`, `food -20` or `a sector closes`, it is probably a consequence/state change rather than a Dynamic.
 
 ## 4. Causal Basis
 
-A Dynamic should be causally grounded proportionally in:
+Ground a Dynamic proportionally in:
 
 ```text
 Mechanics / Rules;
 current / recurrent State;
-important events or agent behavior;
+important Gameplay Events or agent behavior;
 player decisions;
 consequences that become conditions for later decisions;
 feedback structures;
@@ -101,15 +88,13 @@ Rules / State / Events
 → Situations / Decisions
 → Consequences / State Changes
 → later decision conditions change
-→ similar / interacting processes recur
-→ a systemic tendency develops.
+→ similar/interacting processes recur
+→ systemic tendency develops.
 ```
 
 Do not require one simple feedback loop when several systems jointly create the tendency.
 
 ## 5. Operating Conditions And Time Horizon
-
-A Dynamic should be described inside the conditions where it materially operates rather than as an unconditional law of the whole game.
 
 Record proportionally:
 
@@ -135,7 +120,7 @@ Weakening / Reversal / Exit Conditions
   stop or reverse it?
 ```
 
-This boundary matters for strategic balance: a strategy can be strong while one Dynamic operates and weak after the state range or time horizon changes.
+This matters for strategic balance: one Strategy may be strong while a Dynamic operates and weak after the state/time horizon changes.
 
 ## 6. State / Economy / Opportunity Trajectory
 
@@ -151,7 +136,7 @@ risk distribution;
 reserves / redundancy;
 constraints;
 opportunities;
-future Situation frequency;
+future Situation/Event frequency;
 Situation stakes;
 option availability;
 option cost / value / risk.
@@ -172,11 +157,9 @@ repeated high-cost failures
 
 The important planning object is the tendency, not one decrement.
 
-## 7. Relation To Situations And Loops
+## 7. Relation To Situations, Events And Loops
 
 ### Situation contribution
-
-A Situation can contribute to a Dynamic through its consequences.
 
 ```text
 Situation decision
@@ -184,11 +167,13 @@ Situation decision
 → possible Dynamic contribution.
 ```
 
-A single contribution does not prove the Dynamic.
+One contribution does not prove the Dynamic.
+
+### Gameplay Event relation
+
+A Gameplay Event may contribute as a recurrent/important occurrence, signal, pressure or consequence when it has causal relevance. An Event is not itself a Dynamic merely because it repeats.
 
 ### Loop output
-
-A Loop can contribute to or create one or more current / hypothesized Dynamics through recurrence.
 
 ```text
 Loop recurrence
@@ -212,35 +197,71 @@ Loop C
 
 Shared state therefore can be a cause of a Dynamic without merging the Loops.
 
-## 8. Strategy Effects And Player Response
+## 8. Observability / Player Model
 
-A Dynamic may alter which strategies are advantageous by changing future states, opportunities and decision values.
+A Dynamic may be causally real yet poor strategic gameplay if the player cannot form a usable model of it.
 
-Ask:
+Ask proportionally:
 
 ```text
-Which strategies become more advantageous as the Dynamic develops?
-Which become less viable?
-Under what states does that ordering change?
-Does the system converge toward one dominant meta-strategy?
-Can the player deliberately counter, exploit or redirect the tendency?
+What signals reveal the Dynamic?
+How early can it be noticed?
+What is directly known vs inferred?
+Can the player distinguish it from unrelated fluctuation?
+Can its direction be predicted without perfect hidden numbers?
+How can the player tell whether a counter-strategy changed it?
 ```
+
+Observability does not require perfect information. It requires enough causal legibility for intended prediction/adaptation.
+
+## 9. Strategy Effects And Player Response
+
+The canonical causal Dynamic ↔ Player Behavior / Strategy relation remains owned by [`Mechanics Create Dynamics`](../../principles/mechanics-create-dynamics-principles-and-terminology.md). The fields below apply that boundary at Dynamic-record scale.
 
 Keep the boundary:
 
 ```text
 Dynamic
-→ changes the incentive / opportunity structure;
+  → what the system tends to do/become;
+  → changes incentive / opportunity structure;
 
-Player Strategy / Behavior
-→ what the player chooses to do in response.
+Player Strategy
+  → deliberate player-authored plan/policy over decisions/time,
+    based on a model of the system;
+  → what the player chooses to do in response/anticipation.
 ```
 
-Player behavior can then feed back into the system and strengthen, weaken, redirect or reverse the Dynamic.
+Ask:
 
-## 9. Planning State And Evidence Boundary
+```text
+Which Strategies become more/less advantageous?
+Under what states does that ordering change?
+Does the system converge toward one dominant meta-strategy?
+Can the player counter, exploit or redirect the tendency?
+```
 
-Do not create a separate Dynamic-specific status system. Use the repository's existing planning / evidence discipline and keep accepted current meaning visibly separate from unaccepted candidates / hypotheses.
+Player Strategy can feed back and strengthen, weaken, redirect or reverse the Dynamic.
+
+The detailed Strategy methodology/filesystem remains separate and unresolved; do not turn this Dynamic record into a complete Strategy record.
+
+## 10. Downstream Gameplay Effects
+
+When material, record how the Dynamic changes later gameplay:
+
+```text
+Situation occurrence / frequency / stakes;
+Gameplay Event occurrence / intensity;
+Loop occurrence / intensity / structure;
+option availability / cost / value;
+future opportunity structure;
+possible Strategy viability.
+```
+
+Do not create exhaustive links for every broad downstream state effect.
+
+## 11. Planning State And Evidence Boundary
+
+Do not create a separate Dynamic-specific status system. Use the repository's existing planning/evidence discipline and keep accepted current meaning visibly separate from unaccepted candidates/hypotheses.
 
 Practical organization rule:
 
@@ -254,15 +275,13 @@ Candidate / Hypothesized Dynamics
 
 The headings are an organizational boundary, not a new lifecycle taxonomy. A project may use different local headings if the separation remains explicit.
 
-Do not silently move a candidate into current meaning because it appears plausible in one Scenario or causal model. Conversely, a candidate does not need to be discarded merely because it is not yet accepted; keep it in the candidate / hypothesis area while it is useful to planning or testing.
+Do not silently move a candidate into current meaning because it appears plausible in one Scenario or causal model. Conversely, a candidate does not need to be discarded merely because it is not yet accepted; keep it in the candidate/hypothesis area while useful to planning/testing.
 
 Design intent can be noted separately when material: a tendency may be desired, tolerated or unwanted, and it may arise emergently from system interaction. This is not a substitute for evidence or acceptance state.
 
-## 10. Game Structure Analysis Review
+## 12. Game Structure Analysis Review
 
-Use the full [`Game Structure Analysis`](../game-structure-analysis.md) concern set as the structural quality pass.
-
-Especially inspect proportionally:
+Use the full [`Game Structure Analysis`](../game-structure-analysis.md) concern set as the structural quality pass. Especially inspect proportionally:
 
 ```text
 Goals, Motivation And Direction;
@@ -279,9 +298,9 @@ World, AI And System Response.
 
 Do not maintain a second Dynamic-only quality checklist here. If Dynamic work reveals a reusable quality question that also matters at Situation / Loop / Scenario scale, improve the shared Game Structure concern instead.
 
-A systemically interesting Dynamic can still be weak gameplay if it repeatedly produces obvious, administrative or unmotivating Situations. Conversely, individually strong Situations / Loops do not guarantee a strong Dynamic if accumulated incentives collapse into one rote strategy or another unwanted tendency.
+A systemically interesting Dynamic can still be weak gameplay if it repeatedly produces obvious/administrative/unmotivating Situations. Strong individual Situations/Loops do not guarantee a strong Dynamic if accumulated incentives collapse into one rote Strategy.
 
-## 11. Player Experience / Anti-Experience Review
+## 13. Player Experience / Anti-Experience Review
 
 Use [`Player Experience And Anti-Experience`](../player-experience-and-anti-experience.md) at the **developing systemic tendency** scale.
 
@@ -309,9 +328,9 @@ exhaustion.
 
 The Dynamic may be structurally coherent but still create the wrong long-term experience.
 
-## 12. Scenario Manifestation And Evidence
+## 14. Scenario Manifestation And Evidence
 
-A Scenario can show how a candidate Dynamic manifests in one concrete chronology.
+A Scenario can show one concrete manifestation without proving a stable Dynamic.
 
 Record proportionally:
 
@@ -320,7 +339,7 @@ which decisions / consequences contribute;
 what strategic space existed at entry;
 what strategic space exists at exit;
 what tendency appears to be developing;
-what alternative branch could falsify the interpretation.
+what alternative branch could falsify interpretation.
 ```
 
 Evidence ladder:
@@ -328,30 +347,23 @@ Evidence ladder:
 ```text
 causal design reasoning
 → Dynamic hypothesis;
-
 one representative Scenario
 → concrete manifestation candidate;
-
-several representative Scenarios / simulation runs
+several representative Scenarios / simulations
 → stronger structural evidence;
-
 prototype / repeated playtest / telemetry
-→ observed evidence at the appropriate fidelity.
+→ observed evidence at appropriate fidelity.
 ```
 
-One selected Scenario does **not** automatically prove a stable Dynamic.
+## 15. Visual Boundary
 
-## 13. Visual Boundary
+Do not automatically run the full visual-planning pass on an abstract Dynamic.
 
-Gameplay Dynamic planning does **not** automatically run the full reusable visual-planning pass.
+If the Dynamic creates a concrete perception/legibility problem, route it through representative Scenarios / Visual Contexts or another justified visual study.
 
-If a Dynamic creates a concrete visual problem — for example, whether the player can perceive a long-term deterioration or transformation of the world — route that problem through representative Scenarios / Visual Contexts or another justified visual study.
+## 16. Suggested Dynamic Record
 
-Do not invent generic Dynamic visual requirements merely to fill a template.
-
-## 14. Suggested Dynamic Record
-
-Not every field is mandatory. Use the smallest record that preserves the real systemic question.
+Not every field is mandatory.
 
 ```text
 Dynamic ID / Name
@@ -367,22 +379,29 @@ Weakening / Reversal / Exit Conditions
 Causal Basis
   Mechanics / Rules
   Relevant State / Economy
-  Important Events / Agent Behavior
+  Important Gameplay Events / Agent Behavior
   Player Decisions
   Consequences Feeding Later Conditions
   Feedback Structure, if useful
 
 Contributing Situations
+Contributing Events, if material
 Contributing Loops
 Cross-Loop Relations, if material
 
 State / Economy / Opportunity Trajectory
 
-Effects On Future Situations
-  Occurrence / Frequency
-  Stakes
-  Option Availability
-  Option Cost / Value / Risk
+Effects On Future Gameplay
+  Situation Occurrence / Frequency / Stakes
+  Event Occurrence / Intensity, if material
+  Loop Occurrence / Intensity / Structure, if material
+  Option Availability / Cost / Value / Risk
+
+Observability / Player Model
+  Signals
+  Known vs Inferred
+  Predictability
+  Counter-Strategy Feedback
 
 Strategies Made More / Less Advantageous
 Possible Counter-Strategies / Redirections
@@ -395,18 +414,17 @@ Player Experience / Anti-Experience Review
 
 Scenario Manifestations
 Prototype / Simulation / Playtest Evidence
-
 Questions / Hypotheses / Risks
 ```
 
-## 15. Do Not
+## 17. Do Not
 
-- Do not call every consequence or state change a Dynamic.
+- Do not call every consequence/state change a Dynamic.
 - Do not confuse a repeated process with the tendency that process produces.
 - Do not merge Loops merely because they contribute to the same Dynamic.
-- Do not equate a strategy with the Dynamic that makes it advantageous.
-- Do not treat a single Scenario as proof of a stable pattern.
+- Do not equate Player Strategy with the Dynamic that makes it advantageous.
+- Do not treat one Scenario as proof of a stable pattern.
 - Do not create a mandatory Dynamic Bank for every project.
-- Do not mix unaccepted Dynamic candidates into current / accepted project meaning without an explicit boundary.
-- Do not duplicate the full Game Structure quality checklist in every Dynamic record.
+- Do not mix unaccepted candidates into current meaning without explicit boundary.
+- Do not duplicate the full Game Structure checklist in every Dynamic record.
 - Do not automatically run a generic visual pass on an abstract Dynamic.

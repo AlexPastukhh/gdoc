@@ -1,7 +1,7 @@
 # Gameplay Planning — Situations, Loops, Dynamics And Scenarios
 
 Status: active reusable detailed-planning method map
-Scope: responsibility boundaries and routing for detailed Gameplay Situation, Loop, Dynamic and Scenario planning.
+Scope: responsibility boundaries and routing for detailed Gameplay Situation, supporting Gameplay Event, Loop, Dynamic and Scenario planning.
 
 Canonical Situation / Loop / Scenario terms and stable distinctions are owned by [`Gameplay Situations, Loops And Scenarios — Principles And Terminology`](../../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md).
 
@@ -104,7 +104,45 @@ operative manifestation in this exact chronology
   → may be recorded in the Scenario.
 ```
 
-## 5. Reusable Pass Coverage
+## 5. Shared Cross-Scale Concern Audit
+
+Use shared concerns to discover scale-specific questions, not to copy one identical record everywhere.
+
+```text
+shared concern
+→ scale-specific question
+→ scale-specific field only where material
+
+NOT
+one identical template copied everywhere.
+```
+
+Inspect proportionally:
+
+| Concern | Situation | Loop | Dynamic | Scenario |
+|---|---|---|---|---|
+| Identity / Source / Status | identity of decision type/version | process identity | tendency/hypothesis identity | chronology/test identity |
+| Responsibility / Value | why this decision matters | why recurrence is worth grouping | why tendency matters | what chronology/question is being tested |
+| Entry / Preconditions | occurrence model | recurrence/re-entry | operating range/onset | entry conditions/starting state |
+| Causal Basis | occurrence + decision/experience shaping rules | loop-sustaining rules/state | causes/feedback | operative rules needed for this path |
+| Relevant State | decision-relevant state/economy | carried/shared state | state/opportunity trajectory | concrete starting/changed state |
+| Information / Observability | player decision information | feedback/causal legibility | signals/player model | concrete reveals/required understanding |
+| Agency | meaningful options/inaction | decisions sustaining/adapting recurrence | influence/counter-strategy, not fake options | concrete decisions along selected branch |
+| Experience | around one decision | repeated/learning experience | long-term lived tendency | cumulative temporal experience |
+| Consequence / Output | option fan-out/state effect | carried result/feedback | developing tendency/effects | concrete consequences/what changed |
+| Time | decision window/deadline | cycle/frequency/delay | horizon/onset/persistence | chronology/temporal markers |
+| Relations | tight Situation/unit relations | other Loops/units | contributing Loops/Situations | mapped units/beats/events |
+| Resolution / Exit | resolved/expired/transformed | stop/reset/exit conditions | weakening/reversal/exit | exit state |
+| Balance / Intensity | option meaning/local challenge | recurrence/feedback/repetition | strategy viability/meta risk | cumulative overlap/pressure |
+| Causal Legibility / Learning | why options/outcomes make sense | learn recurrent relation | recognize/predict tendency | connect earlier choices to later result |
+| Progression / Adaptation | future-state/plan effect | progression changes recurrence | changing strategic space | concrete before/after adaptation |
+| Evidence / Validation | hypotheses/tests for decision | recurrence evidence | repeated manifestation evidence | findings/counter-examples |
+| Presentation / Visual | required perception of decision | recurrent-state/phase communication | route via representative contexts when needed | concrete presentation requirements |
+| Production / Content Cost | cost of generating meaningful variants | recurrence/content burden | simulation/system burden | concrete authored/integration burden |
+
+`Gameplay Event` remains a lightweight supporting unit. Reuse only the concerns needed by the Event rather than forcing it into a fifth heavy matrix column.
+
+## 6. Reusable Pass Coverage
 
 Use reusable review surfaces as discovery surfaces, not mandatory forms.
 
@@ -119,7 +157,7 @@ For `Game Structure Analysis` and `Player Experience And Anti-Experience`, inspe
 
 For visual planning, do not automatically run the full visual pass on an abstract Dynamic. Route real Dynamic-related visual questions through concrete Scenarios / Visual Contexts or another justified study.
 
-## 6. Scale Differences
+## 7. Scale Differences
 
 ### Situation
 
@@ -145,7 +183,9 @@ Main question:
 
 > What actually happens in time when concrete Situation Instances and Loops overlap, earlier decisions continue executing, state changes accumulate, operative rules manifest, candidate Dynamics appear and the player experiences one concrete path?
 
-## 7. Balance Boundary
+## 8. Balance Boundary
+
+The scale-specific passes below are **local balance lenses / inputs**, not a complete Balance architecture. Broader Balance may aggregate multiple Situations/Versions, Game Domain/economy flows, Player Strategies, Dynamics and representative session/campaign horizons. Do not assume the current Gameplay Loop inventory is automatically the canonical session/balance horizon.
 
 Use the shared balance taxonomy from [`Game Structure Analysis`](../game-structure-analysis.md):
 
@@ -177,15 +217,15 @@ Scenario
 
 Do not fix numerical balance without evidence merely because a record has a balance field.
 
-## 8. Visual Boundary
+## 9. Visual Boundary
 
 `Gameplay Situation` keeps its strict meaningful-decision meaning.
 
 Visual work may also need a broader `Visual Context` such as routine, execution, aftermath, waiting or a store-first-look. Those contexts are not automatically Gameplay Situations.
 
-Detailed Scenario Beats may own exact local visual requirements and tests. Cross-scenario/project-wide visual requirements may remain in a separate project visual owner.
+Detailed Scenario Beats may own exact local visual requirements and tests. Cross-scenario/project-wide visual requirements may remain in a separate project visual/presentation owner. When a reusable realization is accepted, promote it out of local exploratory visual-Idea work into that appropriate owner and keep the gameplay requirement/relation linked.
 
-## 9. Intentional Duplication
+## 10. Intentional Duplication
 
 A small amount of duplication is allowed when it answers a different-scale question.
 
@@ -209,7 +249,7 @@ If a Scenario exposes a general tight dependency or rule relation missing from t
 
 If repeated Scenarios expose a load-bearing Dynamic missing from planning, create/update a Dynamic record only when independent review is useful.
 
-## 10. Evidence And Status
+## 11. Evidence And Status
 
 Keep source-backed project meaning, inference, hypotheses, decision candidates and evidence visibly distinct.
 
@@ -222,13 +262,42 @@ expected Dynamic
 one Scenario manifestation
 ≠ proof of a stable Dynamic;
 
-Integration Probe
-≠ accepted Situation / Loop / Dynamic / Scenario.
+integrated candidate Planning Unit Variant
+≠ accepted Situation / Loop / Dynamic / Scenario automatically.
 ```
 
 A reusable method does not authorize promotion of a project inference into a decision.
 
-## 11. When To Split Further
+## 12. Supporting Gameplay Event Record
+
+Use a separate Gameplay Event only when a decisionless player-facing occurrence has enough independent responsibility to plan/reuse outside one Scenario Beat.
+
+A proportional record may contain:
+
+```text
+Event ID / Name
+Status / Source
+
+What Happens
+Why It Matters
+
+Occurrence / Conditions, if needed
+Player Perception / Information, if needed
+Intended Experience / Response, if needed
+
+Consequences
+  State Changes
+  Triggered / Changed Situations, if any
+
+Loop / Dynamic Relations, if material
+Evidence / Questions
+```
+
+Timing, frequency, presentation and content cost are added only when material.
+
+Do not introduce mandatory Event taxonomy, Event phases, Active Event, Event Bank, a separate `events.md` or mandatory Loop participation.
+
+## 13. When To Split Further
 
 Do not pre-create one file per Situation, Loop, Dynamic or Scenario.
 

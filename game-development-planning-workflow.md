@@ -60,7 +60,7 @@ revised current meaning
 next useful depth.
 ```
 
-Do not force every exploratory Variant into the Draft.
+Do not force every exploratory Variant into the Draft. Scoped Idea work may stay beside the owner whose unresolved question it serves.
 
 A separate file is justified only when independent review, linking, reuse, research, testing, change tracking, parallel work or navigation makes the extra owner useful.
 
@@ -109,12 +109,43 @@ That workflow may return one or more Concepts or a new Brainstorm Prompt.
 
 ```text
 current Concept / Game Planning Draft
-→ identify the most influential uncertainty
+→ identify the most influential uncertainty / underlying need
+→ if the concrete question is unclear, inspect relevant planning surfaces
+→ form the material question / scoped Idea workspace
 → choose the detailed planning / analysis / evidence scale
 → record material findings
 → reconcile accepted cross-cutting changes
 → select next uncertainty.
 ```
+
+### Discover the question before choosing the answer route
+
+If the next answer-seeking question is not yet clear, inspect only relevant planning surfaces/fields as discovery lenses:
+
+```text
+Situation / Loop / Dynamic / Scenario;
+Game Structure Analysis;
+Player Experience;
+Visual;
+Production / Feasibility;
+Reference analysis;
+other justified fields.
+```
+
+Preserve:
+
+```text
+Need / Problem Framing
+→ WHY does this matter?
+
+planning surfaces
+→ WHAT QUESTIONS are material?
+
+scoped Prompt / Idea workspace
+→ WHAT ANSWER is being sought now?
+```
+
+Do not mechanically traverse every surface. Stop when no additional material question is found.
 
 ### Detail-first route
 
@@ -164,7 +195,7 @@ implementation idea ≠ accepted architecture;
 prototype candidate ≠ build decision;
 generated explanation ≠ canonical documentation automatically;
 Idea / Variant ≠ accepted game meaning;
-Integration Probe ≠ accepted planning unit.
+integrated candidate Planning Unit Variant ≠ accepted planning unit.
 ```
 
 ### Directional and incomplete design input
@@ -262,6 +293,7 @@ Choose the scale from the current uncertainty:
 | Current question | Planning scale | Detailed method |
 |---|---|---|
 | What meaningful local decision exists here? | Gameplay Situation | [`Situations`](game-analysis-reference/gameplay-planning/situations.md) |
+| What independently useful player-facing occurrence matters here without requiring a meaningful decision? | Gameplay Event (supporting) | [`Gameplay Planning`](game-analysis-reference/gameplay-planning/README.md) + Scenario/other relevant owner |
 | What recurrent functionally coherent causal process exists? | Gameplay Loop | [`Loops`](game-analysis-reference/gameplay-planning/loops.md) |
 | What systemic tendency / state-opportunity trajectory develops over time? | Gameplay Dynamic | [`Dynamics`](game-analysis-reference/gameplay-planning/dynamics.md) |
 | What concretely happens through time when systems, decisions and consequences interact? | Scenario | [`Scenarios`](game-analysis-reference/gameplay-planning/scenarios.md) |
@@ -338,15 +370,19 @@ Which Content Premises become possible?
 What does it remove or make redundant?
 ```
 
+A decisionless occurrence that is independently useful to plan/reuse may be preserved as a lightweight `Gameplay Event`; a one-off decisionless chronology detail normally remains a Scenario Beat.
+
+Reusable mechanics/rules/state/economic meaning that serves several gameplay contexts should remain in the appropriate named Game Domain owner; a Situation or Scenario references the operative meaning rather than silently becoming a duplicate canonical owner.
+
 A project may maintain a preliminary `Content Premise` owner when concrete content units need preservation before detailed Scenario work.
 
 There is no mandatory separate Situation Bank. More Situations are not automatically better.
 
 ## 11. Route Balance Questions
 
-Use the shared [`Game Structure Analysis`](game-analysis-reference/game-structure-analysis.md) balance concern.
+Use the shared [`Game Structure Analysis`](game-analysis-reference/game-structure-analysis.md) balance concerns as **local review lenses**, but do not treat the scale routing below as the complete Balance methodology.
 
-Locate the problem by scale:
+Useful scale-local questions remain:
 
 ```text
 local option meaning / immediate challenge
@@ -362,7 +398,32 @@ cumulative timing / overlap / integration pressure
   → Scenario.
 ```
 
-Do not invent numbers without evidence.
+Broader Balance work may need to aggregate across:
+
+```text
+multiple Situations / Situation Versions;
+Game Domain / economy state and flows;
+Player Strategies;
+Dynamics;
+representative cases;
+session / campaign horizons.
+```
+
+Situation occurrence/frequency, relevant state, information, options, costs, consequences and timing are balance inputs; their presence does not make one Situation the owner of whole-game balance.
+
+The canonical Dynamic ↔ Player Behavior / Strategy relationship remains owned by [`Mechanics Create Dynamics`](principles/mechanics-create-dynamics-principles-and-terminology.md). Operationally, keep the minimal boundary:
+
+```text
+Dynamic
+  → what the system tends to do / become;
+
+Player Strategy
+  → deliberate player-authored plan/policy across decisions and time.
+```
+
+The complete Balance owner/tables/formulas/simulation workflow, complete Strategy planning schema and the current Loop/session/activity-cycle/Strategy reconciliation remain open methodology work.
+
+Do not invent numbers without evidence. Do not assume current Gameplay Loops are automatically the correct session/balance horizon.
 
 ## 12. Feasibility And Production
 
@@ -417,29 +478,22 @@ material unknown
 
 One prototype may answer several questions and one important question may require several tests/sources.
 
-## 14. Integration Probes As Temporary Planning
+## 14. Integration Through Candidate Planning-Unit Variants
 
-When a promising Variant needs wider-context inspection, use the `Integration Probe` terminology owned by Game Planning and the process in [`Game Creation Workflow`](game-creation-workflow.md).
+When a promising local Idea Variant needs wider-context inspection, use the integration process in [`Game Creation Workflow`](game-creation-workflow.md).
 
-A Probe can use a detailed method without claiming that its result is accepted:
-
-```text
-PROBE-SIT
-PROBE-LOOP
-PROBE-DYN
-PROBE-SCN
-PROBE-CONTENT
-PROBE-CONCEPT.
-```
-
-After the Probe:
+Prefer the **real candidate planning unit at the relevant scale** rather than a separate `candidate *` artifact family:
 
 ```text
-Integrated Evaluation
-→ new risks/questions/dependencies
-→ compare / combine / revise / reject
-→ only explicit accepted meaning enters the Draft.
+local Idea Variant
+→ candidate Situation / Loop / Dynamic / Scenario / other Planning Unit Variant
+→ Integrated Evaluation
+→ compare / combine / revise / reject / select.
 ```
+
+The phrase `integration review` may be used as lightweight activity wording when useful, but it does not create a separate ontology. A candidate unit can use the full detailed method without being accepted project meaning.
+
+Promotion from exploration into a normal candidate owner is not acceptance. Only explicit accepted meaning enters the current Draft.
 
 ## 15. Full-Picture Views
 
@@ -504,7 +558,7 @@ design Prompt has no good answer
   → Generate Variants / references / future brainstorming method;
 
 promising Variant may have wide consequences
-  → Integration Probe;
+  → candidate Planning Unit Variant / integration review;
 
 concept baseline conflicts
   → revise audience / promise / experience / reference;
@@ -558,7 +612,7 @@ reduce scope;
 run another narrow prototype;
 build a fuller gameplay prototype;
 prepare a demo;
-plan a vertical slice;
+plan a post-design Implementation Slice;
 enter production planning;
 freeze/select the current Concept or direction;
 reject the current Concept or direction.
@@ -568,7 +622,38 @@ This is example vocabulary, not a mandatory result enum.
 
 Do not generate a large prototype roadmap when only the next evidence choice is needed.
 
-## 17. Observe And Update
+## 17. Post-Design Implementation Slice Handoff
+
+A post-design `Implementation Slice` is planning for **implementation of already-planned game meaning**, not another place to design the Domain.
+
+Use it when the relevant Domain/gameplay meaning, selected/tuned values and presentation requirements are sufficiently clear to plan an independently implementable/testable end-to-end realization.
+
+```text
+Slice Goal
+→ presentation / visual realization
+→ player/application orchestration
+→ Unity realization / adapters
+→ tests
+→ representative gameplay / readability proof.
+```
+
+The Slice consumes Domain contracts/rules; if implementation work exposes missing Domain semantics, route the question back to Domain planning rather than silently redefining the rule inside the Slice.
+
+The relation is many-to-many:
+
+```text
+one Situation
+→ may require several Implementation Slices;
+
+one Implementation Slice
+→ may support several Situations.
+```
+
+Do not confuse this with the early `demonstrable slice` feasibility question in the Game Creation Workflow, whose purpose is only to judge whether a direction's central value can be proven feasibly.
+
+Exact Implementation Slice record/filesystem and proposed presentation/action/internal-logic subtype taxonomy remain open.
+
+## 18. Observe And Update
 
 Collect evidence appropriate to the question:
 
@@ -593,7 +678,7 @@ Then:
 
 Planning is not append-only.
 
-## 18. Proportional Sufficiency And Production Entry
+## 19. Proportional Sufficiency And Production Entry
 
 A current direction may be sufficient for a first prototype when it identifies proportionally:
 
@@ -626,7 +711,7 @@ high-cost unresolved risks.
 
 Production entry does not require every answer. It requires enough evidence that the next cost level is justified.
 
-## 19. Checks Before Returning A Planning Result
+## 20. Checks Before Returning A Planning Result
 
 Check proportionally:
 
@@ -637,14 +722,14 @@ Check proportionally:
 - load-bearing causal claims expose conditions/trade-offs;
 - expected Dynamics are distinguished from observed evidence;
 - implementation ideas are not accepted automatically;
-- Probes remain hypothetical;
+- integrated candidate Planning Unit Variants remain hypothetical until explicitly accepted;
 - prototype/evidence scope matches uncertainty;
 - visual direction supports readability and feasible asset strategy when relevant;
 - the Game Planning Draft remains the active high-level entry point once a direction is selected;
 - extra files were not created mechanically;
 - current conclusion and next action/depth are explicit.
 
-## 20. Do Not
+## 21. Do Not
 
 - Do not treat the common broad-first route as mandatory.
 - Do not require a complete Draft before useful detailed work.
@@ -653,7 +738,7 @@ Check proportionally:
 - Do not mix references without assigned responsibilities.
 - Do not build a polished slice to answer a cheap fundamental question.
 - Do not force every project into many files.
-- Do not treat an Idea workspace, matrix, Probe or derived view as a second canonical Draft.
+- Do not treat an Idea workspace, matrix, integrated candidate planning unit or derived view as a second canonical Draft.
 - Do not confuse implementation verification with game validation.
 - Do not invent evidence, deadlines, final mechanics, balance numbers or production certainty.
 - Do not keep disproven current meaning merely because it was documented earlier.

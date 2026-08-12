@@ -1251,3 +1251,410 @@ Incoming idea добавляет ключевое правило: **смена �
 
 Помести в текстовый файл мои и твои сообщения начиная после моего  сообщения с файлами промпта и идей, в ответе дай текстовый файл где помечено где я говорю а где ты и в этом ответе укажи кол во сообщений
 ~~~
+
+## 8. Post-`0d059...` Methodology And Filesystem Discussion
+
+Source boundary for this section:
+
+```text
+last assistant-finalized planning documentation update:
+0d059e890842983a5cc970c46989301003952504
+Correct game planning owners and remove derived views
+
+later incidental repository commits:
+c0efb00a59a0ead94252ccc9757a73c0d3f66a7c
+  → created `game-planning/survivor-base/ideas/.gitkeep`;
+9bffdb969985f648eb0218f191c89702290dd20f
+  → created `categories/survivor-base-version1.md`.
+```
+
+The discussion below begins **after** the finalized `0d059...` update. It is preserved as a compact reconciliation span rather than a full transcript. Where exact wording is available in retained discussion sources, the wording is quoted. Earlier portions reconstructed from accepted planning outputs are marked as reconstructed rather than presented as verbatim product messages.
+
+### SB-B01-P01 — Need / Problem Framing before answer generation
+
+Source status: reconstructed from accepted post-`0d059...` planning output and later reconciliation.
+
+Accepted meaning:
+
+```text
+incoming task / observed problem / idea / reference
+→ why is this needed?
+→ what fundamental need does it serve?
+→ does that need still exist?
+→ must this object actually change?
+→ can the need be satisfied another way?
+→ what happens if nothing changes?
+→ what evidence says the problem is here?
+```
+
+When modifying an existing solution, decompose responsibilities, parts, dependencies, value-producing/problem-producing parts and required-vs-accidental structure before generating replacements when useful.
+
+Stable principle: do not lose the fundamental task while solving a local subproblem.
+
+Destination:
+- `Game Planning` principles;
+- `Game Creation Workflow`;
+- `Game Development Planning Workflow`.
+
+### SB-B01-P02 — planning surfaces discover questions
+
+Source status: reconstructed from accepted post-`0d059...` planning output and later reconciliation.
+
+Accepted meaning:
+
+```text
+Need / Problem Framing
+  → WHY;
+
+relevant planning surfaces / fields
+  → WHAT QUESTIONS are material;
+
+Brainstorm Prompt
+  → WHAT ANSWER is sought now.
+```
+
+Situation / Loop / Dynamic / Scenario / Game Structure / Player Experience / Visual / Production / Reference and other justified surfaces are question-discovery lenses, not a mandatory fixed traversal and not mandatory record generation.
+
+Destination:
+- creation/development workflows;
+- gameplay planning map.
+
+### SB-B01-P03 — earlier Game Version / Planning Unit Version work
+
+Source status: reconstructed from the saved `current-plan-file-update-2026-08-11.md`.
+
+Earlier accepted meaning included a lightweight whole-game `Game Version` / generic planning-unit version model for coherent alternative working/test configurations without Cartesian-product enumeration.
+
+Later status:
+- **not rejected as historical accepted meaning**;
+- terminology now conflicts with the later Situation-specific `Variant / Version / Instance` model;
+- generic `Planning Unit Version` and `Game Version / Game Variant` naming remain unresolved and must not be silently redefined.
+
+Destination:
+- provenance + explicit methodology gap; no generic new Version ontology in the current reusable update.
+
+### SB-B01-P04 — earlier Integration Probe model, later superseded artifact family
+
+Source status: earlier model reconstructed from the saved post-`0d059...` plan; later corrections preserved from current discussion.
+
+Earlier accepted model used temporary `PROBE-SIT / PROBE-LOOP / PROBE-DYN / PROBE-SCN / ...` artifacts for wider-context work on an unaccepted Variant.
+
+Later user correction accepted the move of integration work into the real corresponding Situation / Loop / Dynamic / Scenario / other planning-unit alternatives instead of keeping a separate Idea-level Probe family.
+
+Current result:
+
+```text
+local Idea Variant
+→ real candidate Planning Unit Variant at the relevant scale
+→ Integrated Evaluation.
+```
+
+The separate `PROBE-*` artifact family is superseded. The phrase `Integration Probe` itself was not explicitly deleted and may remain only as lightweight activity/review wording until terminology is revisited.
+
+Destination:
+- `Game Planning` principles;
+- creation/development workflows;
+- detailed gameplay methods.
+
+### SB-B01-P05 — Evidence Context + compact Gameplay Event + cross-scale audit
+
+Source status: reconstructed from accepted saved plan; not contradicted later.
+
+Accepted Evidence Context for substantial Idea/Variant work:
+
+```text
+References / Analogues
+Research Evidence
+Prototype / Simulation / Playtest Results
+What This Evidence Supports
+What It Does Not Establish
+Conflicting Evidence
+Remaining Assumptions
+Current Evidence-Based Conclusion
+```
+
+Accepted compact supporting term:
+
+```text
+Gameplay Event
+= independently useful player-facing occurrence
+  without a mandatory meaningful player decision.
+```
+
+Event remains lightweight: no Stage, Event Bank, mandatory Event taxonomy/file, Active Event lifecycle or mandatory Loop participation.
+
+Cross-scale rule retained:
+
+```text
+shared concern
+→ scale-specific question
+→ field only where material
+```
+
+with previously identified Situation Timing/Resolution, Dynamic Observability/Player Model and top-level Scenario-record gaps.
+
+Destination:
+- creation workflow;
+- gameplay terminology;
+- gameplay-planning map and scale-specific methods.
+
+### SB-B01-P06 — recursive Ideas; explicit rejection of `work/`
+
+User wording available from current discussion:
+
+> «стоит отойти от того что воркспейс у нас только в идеях... везде он может быть»
+
+Assistant temporarily proposed a generic `work/` container.
+
+User correction:
+
+> «никаких ворк, я под воркспейсом имел ввиду то что является идеяи у нас сейчас»
+
+Accepted meaning:
+- `Ideas` itself is the recursive question/problem exploration mechanism;
+- it may exist beside Domain / Situation / Loop / Dynamic / Scenario / other meaningful owners;
+- project-level Ideas remain useful for cross-cutting/unrouted work;
+- one primary Idea home should be used for one question, with links/categories for cross-cutting relevance.
+
+Destination:
+- Game Planning principles;
+- project-local ownership guidance;
+- creation/development workflows.
+
+### SB-B01-P07 — semantic Idea categories and scoped overrides
+
+User requested separate Idea folders for meaningful categories of lower-level questions, including Situation-record components and analysis/Experience/Visual concerns, while explicitly rejecting mechanical filesystem expansion for every tiny detail.
+
+Later user clarification:
+
+> «если отличаются идеи для схожих версий или вариантов - делал бы отдельные папки для таких идей/единиц проделанной планировочной низкой работы. чтобы как оверрай для того, что не общее.»
+
+Accepted scope rule:
+
+```text
+shared across Situation family
+  → Situation-level ideas/;
+Variant-specific
+  → Variant-level ideas/;
+Version-specific
+  → Version-level ideas/.
+```
+
+Exact category tree, names and `record/` nesting remain unresolved.
+
+Destination:
+- Game Planning principles;
+- `game-planning/README.md`.
+
+### SB-B01-P08 — Idea Variant vs whole Planning Unit Variant
+
+Accepted by discussion continuity and later filesystem clarification:
+
+```text
+Idea Variant
+  → candidate answer to one scoped question/problem;
+
+Planning Unit Variant
+  → integrated alternative design of the whole planning unit.
+```
+
+A whole-unit Variant may combine several local Idea Variants and may be useful for Situation / Loop / Dynamic / Scenario / other meaningful planning units.
+
+This generic Variant distinction does **not** automatically create a contextual Version concept at every scale.
+
+Destination:
+- Game Planning principles;
+- creation/development workflows;
+- project-local ownership guidance.
+
+### SB-B01-P09 — Situation Variant / Version / Instance correction
+
+User explicitly agreed to `Variants` for alternative designs, then introduced a narrower new `Version` meaning for different reusable circumstances.
+
+Later user corrections:
+
+> «у нас по идее нет мейн ситуатион файла если у нас несколько вариантов»
+
+> «файл версии это тот же самый файл ситуации, только другая версия»
+
+> «то что было изначально - летняя - это тоже версия»
+
+Accepted Situation-specific distinction:
+
+```text
+Situation Variant
+  = alternative design;
+
+Situation Version
+  = full Situation record for a materially different
+    reusable context/configuration of that design/Variant;
+
+Situation Instance
+  = one concrete occurrence in Scenario/playthrough.
+```
+
+A Version is not a delta. When several Variants exist, each Version is unambiguously scoped to its Variant. No canonical main Situation record is required merely to sit above several Variants; an optional navigation file is created only when useful. A simple one-Version case need not materialize a `versions/` folder.
+
+Destination:
+- gameplay terminology;
+- Situation method;
+- project-local ownership guidance.
+
+### SB-B01-P10 — named Game Domains and DDD-like semantic consistency
+
+User direction:
+- reusable mechanics/rules/economic/state meaning should exist outside individual Situations;
+- Situation is an orchestration/gameplay-decision view over that reusable meaning;
+- named semantic Domain areas are preferable;
+- planning definitions and future C#/Unity meanings should not silently diverge.
+
+Accepted high-level Domain record direction:
+
+```text
+state / quantities / relations;
+operations / actions;
+mechanics / rules;
+constraints / invariants;
+allowed transitions / results.
+```
+
+State-level invariants belong near owned state/model; operation-specific preconditions/transitions/postconditions belong near the operation; meaningful mutable state should preferably change through owned operations that preserve invariants.
+
+Destination:
+- Game Planning principles;
+- development handoff;
+- project-local ownership guidance.
+
+### SB-B01-P11 — Domain → Situation → Balance → Domain link flow
+
+User explicit desired flow:
+
+```text
+Domain owns rule/value
+→ Situation reads/displays relevant value by link
+→ Situation aggregates the relevant data for its decision problem
+→ Balance compares wider gameplay/system state
+→ accepted balance decision changes canonical Domain rule/value
+→ linked Situation representation updates/reconciles.
+```
+
+Later model is stronger than the earlier hash-only idea for simple canonical values. Source/hash reconciliation remains useful for copied/derived summaries that cannot be live-linked safely.
+
+Destination:
+- Game Planning ownership principle;
+- Situation method;
+- Balance boundary in development/gameplay map.
+
+### SB-B01-P12 — Visual / information / presentation boundary
+
+Accepted distinction:
+
+```text
+Domain truth
+→ what actually exists/happens;
+
+Situation information/perception requirement
+→ what the player must/can perceive for gameplay;
+
+presentation realization
+→ how visual/UI/audio/camera/animation/VFX communicates it.
+```
+
+Situation may be reviewed through visual lenses across occurrence recognition, state readability, options/affordances, stakes, timing, consequences and Experience, not only an Information field.
+
+Accepted reusable visual realization should leave a local exploratory `ideas/visual/` workspace and move to an appropriate project visual/presentation owner when such ownership is independently useful. Exact filesystem naming remains open.
+
+Destination:
+- Game Planning principles;
+- Situation method / project ownership guidance.
+
+### SB-B01-P13 — Player Strategy and broader Balance boundary
+
+Accepted minimal distinction:
+
+```text
+Dynamic
+  = what the system tends to do/become;
+
+Player Strategy
+  = deliberate player-authored plan/policy over decisions and time,
+    based on a model of the system.
+```
+
+User emphasized that balance often cannot be evaluated inside one Situation. Situation exposes balance-relevant data, while broader Balance may aggregate multiple Situations, Domain/economy flows, Strategies, Dynamics and session/campaign horizons.
+
+Detailed Balance owner/tables/formulas/simulation methodology remain deferred/open.
+
+Destination:
+- canonical Dynamic ↔ Player Behavior / Strategy relationship remains in `Mechanics Create Dynamics`;
+- Game Planning / development workflow keep only the operational routing boundary;
+- gameplay-planning map/Situation bridge.
+
+### SB-B01-P14 — Implementation Slice correction
+
+User correction:
+
+> «слайс это именно планирование имплементации, т е в него не входит планирование домена»
+
+Accepted meaning:
+- Domain/gameplay meaning is planned before the Slice;
+- Implementation Slice consumes Domain contracts and planned gameplay/presentation requirements;
+- it plans implementation from presentation/interaction through orchestration and Unity realization to tests;
+- one Situation may require several Slices and one Slice may support several Situations.
+
+This post-design object is distinct from an early concept-stage demonstrable slice used only to judge feasibility. Exact Slice filesystem/subtype taxonomy remains unresolved.
+
+Destination:
+- creation workflow terminology boundary;
+- development workflow implementation handoff.
+
+### SB-B01-P15 — cross-unit conflicts and many-to-many Situation navigation
+
+Accepted relation need:
+- independent Situations/other units may conflict without becoming Variants of one common identity;
+- relations such as `conflicts-with`, `incompatible-with`, `mutually-exclusive-with`, `alternative-to`, `requires`, `enables`, `supersedes` should preserve condition/reason when material.
+
+A formal Alternative Set/configuration object remains unresolved.
+
+Project-specific Situation grouping should support many-to-many category navigation rather than forcing one physical category parent. Exact Survivor Base taxonomy and physical-category mapping remain unresolved.
+
+Destination:
+- Game Planning principles;
+- project-local ownership guidance.
+
+### SB-B01-P16 — explicit deferral: Balance / current Loops / Strategy architecture
+
+User wording:
+
+> «баланс ... давай потом разбираться»
+
+and:
+
+> «текущие наши лупы ... похожи на стратегии или че то типо того»
+
+Current boundary:
+- do not build the next Balance architecture around current Loop records as if their ontology were already stable;
+- later review must distinguish true Gameplay Loop, broad activity/session structure and Player Strategy;
+- no `balance/` or `strategies/` filesystem is accepted by this discussion alone.
+
+Destination:
+- explicit methodology gap / boundary only.
+
+## 9. Post-`0d059...` Consolidation Destination Summary
+
+| Meaning family | Current reusable destination |
+|---|---|
+| Need / question discovery | `Game Planning` principles + creation/development workflows |
+| scoped Ideas / Idea Variants / Planning Unit Variants | `Game Planning` principles + workflows + `game-planning/README.md` |
+| Evidence Context | Game Planning + Creation Workflow, with prototype/test owner retained |
+| Integration without `PROBE-*` ontology | Game Planning + creation/development + detailed gameplay owners |
+| supporting Gameplay Event | gameplay terminology + gameplay planning map / routing |
+| Situation Variant / Version / Instance | gameplay terminology + Situation method + project ownership grammar |
+| cross-scale concern audit | gameplay-planning map + scale-specific detail methods |
+| Game Domain ownership / links | Game Planning + development/Situation boundaries |
+| Visual truth/information/realization boundary | Game Planning + Situation/project ownership guidance |
+| Balance / Strategy boundary | development + gameplay map; detailed method deferred |
+| Implementation Slice boundary | development workflow; detailed method/filesystem deferred |
+| cross-unit conflicts / categories | Game Planning + project ownership guidance |
+
+The post-`0d059...` discussion does **not** authorize physical Survivor Base migration in this package. Existing Survivor Base project files remain current until a separate migration plan resolves exact Idea categories, collection navigation and Loop/Strategy/session structure.

@@ -40,10 +40,10 @@ For zero-to-one creative synthesis, use [`../game-creation-workflow.md`](../game
 
 | Owner | Responsibility |
 |---|---|
-| [`Game Planning`](game-planning-principles-and-terminology.md) | `Concept`, `Design Direction`, `Brainstorm Prompt`, `Variant`, `Integration Probe`, Local/Integrated/Combination Evaluation, the Game Planning Draft, iterative/flexible planning, evidence/decision discipline and high-level/detail-owner boundaries |
-| [`Gameplay Situations, Loops And Scenarios`](gameplay-situations-loops-and-scenarios-principles-and-terminology.md) | Canonical meanings and stable distinctions for Gameplay Situation, Loop, Scenario, their relations, and the boundary preventing broader visual/presentation contexts from being mislabeled as Gameplay Situations |
+| [`Game Planning`](game-planning-principles-and-terminology.md) | `Concept`, `Design Direction`, `Brainstorm Prompt`, scoped Idea workspaces, Idea / Planning-Unit `Variant`, integration review, Local/Integrated/Combination Evaluation, `Game Domain` ownership boundaries, the Game Planning Draft, iterative/flexible planning, evidence/decision discipline and high-level/detail-owner boundaries |
+| [`Gameplay Situations, Loops And Scenarios`](gameplay-situations-loops-and-scenarios-principles-and-terminology.md) | Canonical meanings and stable distinctions for Gameplay Situation, Situation Variant / Version / Instance, supporting Gameplay Event, Loop, Scenario, their relations, and the boundary preventing broader visual/presentation contexts from being mislabeled as Gameplay Situations |
 | [`Player Experience First`](player-experience-first-principles-and-terminology.md) | Player Experience, experience goals, experience levels and experience-first design principles |
-| [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md) | Mechanics/rules, Dynamics, behavior, feedback, incentives and causal design reasoning |
+| [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md) | Mechanics/rules, Dynamics, Player Behavior / Strategy causal relationship, feedback, incentives and causal design reasoning |
 | [`Reference First And Controlled Transformation`](reference-first-and-controlled-transformation-principles-and-terminology.md) | Reference responsibilities, transfer, transformation, transformation-target and reference-risk principles |
 | [`Audience Is Part Of The Game`](audience-is-part-of-the-game-principles-and-terminology.md) | Audience, purchase fantasy and audience-facing promise principles |
 | [`Market And Platforms`](market-and-platforms-principles-and-terminology.md) | Market/platform assumptions and related terminology |

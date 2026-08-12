@@ -42,7 +42,7 @@ world or economy state;
 need for more / different gameplay content;
 an observed emergent Dynamic;
 a Scenario gap;
-an Integration Probe.
+a broader integrated candidate Planning Unit Variant.
 ```
 
 These are ideation inputs, not shortcuts around detailed planning.
@@ -200,7 +200,22 @@ Experience effect:
 
 Do not use an Experience-Shaping field to claim that one mechanic alone causes the complete Player Experience.
 
-## 6. Relevant State / Economy
+## 6. Domain Ownership And Relevant State
+
+A Situation aggregates the game truth needed to understand one meaningful decision problem; it does not become the second canonical owner of reusable Domain rules/values merely because those values are shown here.
+
+```text
+Game Domain owner
+  → canonical reusable rule / state / quantity / operation;
+
+Situation
+  → reference / projection of the Domain meaning
+    that is relevant to this decision.
+```
+
+When a canonical Domain value changes after accepted design/balance work, update the Domain owner and refresh/reconcile the Situation representation. For copied/derived prose that cannot be live-linked safely, keep enough source relation to know when the summary needs review.
+
+### Relevant State / Economy
 
 `State / economy` is intentionally broad.
 
@@ -247,7 +262,26 @@ new state
 → changes later motivations / Situations.
 ```
 
-## 7. Information State
+## 7. Information State And Perception Boundary
+
+Keep three responsibilities distinct:
+
+```text
+Domain Truth
+  → what is actually true in the game;
+
+Information State
+  → what the player knows, is told, infers,
+    remains uncertain about or may be wrong about;
+
+Visual / Presentation Review
+  → how the relevant state, options, stakes,
+    timing and consequences are made perceivable.
+```
+
+The visual/presentation layer does not own the gameplay truth it communicates.
+
+### Information State
 
 Record only information relevant to the decision:
 
@@ -418,7 +452,35 @@ Which rule makes it costly/valuable?
 Which rule makes its consequence different?
 ```
 
-## 11. Consequence Fan-Out
+
+## 11. Timing / Decision Window — If Material
+
+Record timing only when it changes the decision:
+
+```text
+When does the decision become active?
+How long can it remain unresolved?
+Does waiting change the option space?
+Is there deadline / decay / escalation?
+```
+
+Do not invent a timing field for a Situation with no material decision window.
+
+## 12. Resolution / Exit Conditions — If Material
+
+A Situation Instance may end because it is:
+
+```text
+resolved through a decision;
+expired;
+cancelled / superseded;
+removed by state change;
+transformed into another Situation.
+```
+
+A reusable contextual Version can differ in timing/exit behavior without becoming a different Situation Type when the fundamental decision responsibility remains the same.
+
+## 13. Consequence Fan-Out
 
 Do not assume one choice has one next node.
 
@@ -463,7 +525,7 @@ Potential Dynamic Contribution:
 
 Do not invent a Dynamic for every consequence.
 
-## 12. Typical / Possible Loop Participation
+## 14. Typical / Possible Loop Participation
 
 A Situation Type may note Loops it commonly or possibly participates in.
 
@@ -471,7 +533,7 @@ Do not treat that as immutable membership. A concrete Situation Instance may par
 
 Shared state alone is not a reason to assign the Situation to every affected Loop.
 
-## 13. Three Reusable Reviews
+## 15. Three Reusable Reviews
 
 After the local decision is understandable, use the reusable surfaces as discovery passes.
 
@@ -502,9 +564,9 @@ Use [`Visual Design Analysis And Planning`](../visual-design-analysis-and-planni
 
 Inspect relevant visual concerns and record requirements that materially affect the Situation.
 
-## 14. Balance Bridge
+## 16. Balance Bridge
 
-Situation planning should prepare for balance without inventing numbers. Use the shared [`Game Structure Analysis`](../game-structure-analysis.md) balance taxonomy.
+Situation planning should prepare **balance-relevant inputs** without pretending one Situation owns the complete Balance methodology or inventing numbers. Use the shared [`Game Structure Analysis`](../game-structure-analysis.md) balance taxonomy.
 
 Main question:
 
@@ -522,9 +584,9 @@ Dominant-Solution Risk;
 Later Numeric Test Needs.
 ```
 
-A qualitative state such as `only qualified medic available` can be balance-relevant before an exact numeric model exists.
+A qualitative state such as `only qualified medic available` can be balance-relevant before an exact numeric model exists. Broader Balance may compare several Situation Versions/Situations together with Domain/economy flows, Strategies, Dynamics and representative session/campaign horizons.
 
-## 15. Scenario Usage
+## 17. Scenario Usage
 
 Record where a Situation Type is expected to be instantiated when that aids validation/navigation.
 
@@ -532,7 +594,29 @@ A Scenario should reference the Situation Type and record the concrete Situation
 
 If Scenario work discovers a general tight dependency or Decision-/Experience-Shaping rule relation missing here, update the Situation owner.
 
-## 16. Suggested Situation Record
+## 18. Situation Variants, Versions And Instances
+
+Use the canonical gameplay distinctions:
+
+```text
+Situation Variant
+  → alternative design of the whole Situation;
+
+Situation Version
+  → complete Situation Record for a materially different
+    reusable context/configuration of one design/Variant;
+
+Situation Instance
+  → one concrete occurrence in a Scenario/playthrough.
+```
+
+A Version uses the **full Situation record**; do not model it as an override-only/delta document that requires an obligatory main Situation file to be understood.
+
+The first/original context is also a Version once the Version distinction is useful. When several design Variants coexist, scope each Version unambiguously to its Variant.
+
+Do not generalize this contextual Version meaning to Loop/Dynamic/Scenario without separate review.
+
+## 19. Suggested Situation Record
 
 Not every field is mandatory. Use the smallest record that preserves the real design problem.
 
@@ -564,6 +648,7 @@ Mechanics / Rules Relations
     Affects:
       <intended Experience facets>
 
+Domain References / Projected Canonical Values, if material
 Relevant State / Economy
 Information State
 
@@ -580,6 +665,13 @@ Decision Options
   Why Attractive
   Expected Benefit
   Expected Risk / Cost
+
+Timing / Decision Window, if material
+  Activation / Start
+  Decision Window
+  Waiting / Deadline / Escalation Effects
+
+Resolution / Exit Conditions, if material
 
 Consequences
   Immediate Result
@@ -610,7 +702,7 @@ Scenario Usage
 Evidence / Questions / Hypotheses
 ```
 
-## 17. Content-Production Check
+## 20. Content-Production Check
 
 A system/mechanic can be reviewed by asking:
 
@@ -625,7 +717,7 @@ Can shared rules/state generate variations cheaply?
 
 This is a production/design lens, not a rule that “more Situations = better.”
 
-## 18. Do Not
+## 21. Do Not
 
 - Do not call an event a Situation only because something happened.
 - Do not broaden Situation to every decisionless Experience moment.
@@ -638,4 +730,6 @@ This is a production/design lens, not a rule that “more Situations = better.�
 - Do not call one consequence/state change a Dynamic.
 - Do not require every Situation to name a Dynamic contribution.
 - Do not fix numeric balance without evidence.
+- Do not use a Situation Version as a partial delta against an obligatory main Situation record.
+- Do not duplicate canonical Domain values/rules as independent Situation truth.
 - Do not fill Game Structure, Experience or visual reviews mechanically.

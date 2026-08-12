@@ -70,7 +70,7 @@ It is a navigation/exploration container, not a decision state and not the same 
 
 ### Brainstorm Prompt
 
-A `Brainstorm Prompt` is a bounded piece of answer-seeking work inside a Design Direction.
+A `Brainstorm Prompt` is a bounded piece of answer-seeking work. It may live inside a Design Direction or arise directly from a material local question/problem owned by another planning unit.
 
 Useful prompt types include:
 
@@ -103,7 +103,9 @@ An Idea can appear before a Prompt exists. Do not block spontaneous ideation by 
 
 ### Variant
 
-A `Variant` is one possible answer, rule, mechanic, transformation, combination or causal model for a Prompt.
+An `Idea Variant` is one possible answer, rule, mechanic, transformation, combination or causal model for one scoped Prompt/problem.
+
+A `Planning Unit Variant` is an integrated alternative design of a whole planning unit. It may combine several local Idea Variants and is used when the combined Situation / Loop / Dynamic / Scenario / other unit itself must be compared.
 
 Variants can be:
 
@@ -116,24 +118,21 @@ conflicts;
 combinations.
 ```
 
-### Integration Probe
+### Integration Review / Integrated Planning-Unit Variant
 
-An `Integration Probe` is a temporary hypothetical planning artifact:
+Integration asks:
 
-> If this Variant were accepted, what would the wider game look like?
+> If this local answer were used, what would the relevant wider planning unit become?
 
-Useful labels include:
+Prefer a **real candidate Planning Unit Variant at the scale being tested** instead of a separate `candidate *` artifact family.
 
 ```text
-PROBE-SIT;
-PROBE-LOOP;
-PROBE-DYN;
-PROBE-SCN;
-PROBE-CONTENT;
-PROBE-CONCEPT.
+local Idea Variant
+→ candidate Situation / Loop / Dynamic / Scenario / other Planning Unit Variant
+→ Integrated Evaluation.
 ```
 
-A Probe is **not** accepted project meaning.
+`integration review` may still be used as a lightweight name for the temporary review activity, but it does not create a separate artifact ontology. A coherent integrated candidate remains exploratory until explicitly selected.
 
 ### Evaluation Types
 
@@ -175,7 +174,52 @@ prototype result.
 
 Do not force the seed through a universal broad template before useful exploration can begin.
 
-## 4. Preferred Early Anchor: Idea + Reference + Feasible Proof
+## 4. Need / Problem Framing And Question Discovery
+
+Before generating answers to a local task, check the underlying need proportionally:
+
+```text
+Why is this needed?
+What more fundamental need does it serve?
+Does that need still exist?
+Must this object actually change?
+Could the need be satisfied another way?
+What happens if nothing changes?
+What evidence says the problem is here?
+```
+
+When changing an existing solution/reference, decompose responsibilities, parts, dependencies, value-producing/problem-producing parts and required-vs-accidental parts before choosing a transformation target when that decomposition is material.
+
+Do not turn this into a mandatory formal Need record.
+
+If the next answer-seeking question is not obvious, inspect only relevant planning surfaces/fields as **question-discovery lenses**:
+
+```text
+Situation / Loop / Dynamic / Scenario;
+Game Structure Analysis;
+Player Experience;
+Visual;
+Production / Feasibility;
+Reference analysis;
+other justified fields.
+```
+
+Preserve:
+
+```text
+Need
+→ WHY?
+
+planning surfaces
+→ WHAT QUESTIONS?
+
+Prompt
+→ WHAT ANSWER now?
+```
+
+Stop when no additional material question is found. Do not force a fixed scale traversal.
+
+## 5. Preferred Early Anchor: Idea + Reference + Feasible Proof
 
 When choosing a direction from scratch, prefer a seed that can be attached to a real working reference or clearly stated novelty hypothesis.
 
@@ -200,6 +244,8 @@ The question is:
 
 > Can I build a demonstrable slice deep enough and visually credible enough to prove the central value of this direction?
 
+This early demonstrable-slice feasibility check is **not** the later post-design `Implementation Slice`. The latter assumes Domain/gameplay meaning is already sufficiently planned and focuses on implementation realization/testing.
+
 Check proportionally:
 
 ```text
@@ -214,7 +260,7 @@ time needed before the interesting decision appears.
 
 A design may be creatively attractive but still be a poor initial direction when its value depends on a production layer the team cannot realistically demonstrate.
 
-## 5. Reference Decomposition
+## 6. Reference Decomposition
 
 When starting from a reference, do not treat the whole game as one indivisible object.
 
@@ -246,7 +292,7 @@ Which parts could change independently?
 Which parts only work because another part exists?
 ```
 
-## 6. Select The Transformation Target
+## 7. Select The Transformation Target
 
 If the part to change is already obvious, choose it and continue.
 
@@ -331,14 +377,14 @@ What happens if agency moves to another actor or another control level?
 What happens if a secondary system becomes the main system?
 ```
 
-## 7. Form The Brainstorm Prompt
+## 8. Form The Brainstorm Prompt
 
 After selecting the current transformation/design target, state the answer-seeking task.
 
 A useful Prompt often contains only:
 
 ```text
-Design Direction;
+Design Direction, if useful;
 Prompt type;
 Question / task / requirement / problem;
 relevant current context;
@@ -350,7 +396,7 @@ what must not be assumed.
 
 Do not over-specify the Prompt so strongly that only the first imagined answer remains possible.
 
-## 8. Answer Discovery
+## 9. Answer Discovery
 
 Use multiple possible sources of answers.
 
@@ -383,7 +429,7 @@ Novelty remains valid when the Prompt cannot be solved well by known references.
 
 This section only defines answer sources. Detailed brainstorming techniques are intentionally deferred to a future methodology owner.
 
-## 9. Capture Variants Without Premature Commitment
+## 10. Capture Variants Without Premature Commitment
 
 A Variant may begin as one line.
 
@@ -403,12 +449,20 @@ Local Evaluation
   Risks
   Prompt-Level Questions, if this Variant exposes a problem in the Prompt itself
   Variant Questions
-  Evidence
+  Evidence Context, proportionally
+    References / Analogues
+    Research Evidence
+    Prototype / Simulation / Playtest Results
+    What This Evidence Supports
+    What It Does Not Establish
+    Conflicting Evidence
+    Remaining Assumptions
+    Current Evidence-Based Conclusion
   Refinement Ideas
 
 Dependencies / Conflicts / Relations
 
-Integration Probes, if justified
+Integrated Planning-Unit Variant / integration review, if justified
 
 Integrated Evaluation
   new Pros / Cons
@@ -439,6 +493,17 @@ example of.
 
 Risk, question, evidence and refinement are not the Variant itself. Keep them distinguishable so the history of evaluation remains readable.
 
+Preserve evidence scope:
+
+```text
+reference exists ≠ Variant validated;
+prototype works technically ≠ gameplay value proven;
+one Scenario manifestation ≠ Dynamic proven;
+evidence supports one claim ≠ whole Variant proven.
+```
+
+Use the existing prototype/evidence owner for detailed test classification rather than inventing a second evidence ontology here.
+
 Also keep the scope of a question visible when it matters:
 
 ```text
@@ -454,9 +519,9 @@ Cross-System Question
 
 These labels are optional clarification, not mandatory new record types.
 
-## 10. Local Evaluation And Shortlisting
+## 11. Local Evaluation And Shortlisting
 
-Before spending heavily on Integration Probes, perform a cheap first pass.
+Before spending heavily on wider integration work, perform a cheap first pass.
 
 Ask:
 
@@ -483,27 +548,27 @@ many Variants
 
 Do not require one winner. Several answers may remain open.
 
-## 11. Integration Probes
+## 12. Integration Through Real Planning-Unit Variants
 
-For a promising Variant, inspect wider consequences by constructing only the planning units that are useful.
+For a promising local Idea Variant, inspect wider consequences by constructing only the **real candidate planning unit(s)** useful for the question.
 
 Examples:
 
 ```text
-mechanic affecting local choice
-  → PROBE-SIT;
+local mechanic/rule answer affecting one decision
+  → candidate whole Situation Variant;
 
-economy/process change
-  → PROBE-LOOP + PROBE-DYN;
+economy/process answer affecting recurrence
+  → candidate Loop and/or Dynamic Variant when whole-unit comparison is useful;
 
-large structural change
-  → PROBE-SCN + PROBE-CONCEPT;
+large structural answer
+  → candidate Scenario / Concept alternative when that is the review object;
 
 content rule
-  → PROBE-CONTENT + representative PROBE-SCN.
+  → candidate Content Premise / representative Scenario alternative.
 ```
 
-A deep probe may use several scales:
+A deep integration review may inspect several scales:
 
 ```text
 Situation;
@@ -516,7 +581,7 @@ Visual;
 Production / Feasibility.
 ```
 
-Do not mechanically create all of them.
+Do not mechanically create all of them. Do not create a separate `candidate *` artifact merely to mark hypothetical status; normal evidence/decision status and candidate Variant ownership already preserve that boundary.
 
 ### Integration Questions
 
@@ -540,21 +605,11 @@ What previously promising idea becomes weaker?
 What previously weak idea becomes stronger when combined with this one?
 ```
 
-Integration is not only about additions. Explicitly look for:
+Integration is not only about additions. Explicitly look for deletion, simplification, redundancy, lost meaning, new dominant solutions, systems that can merge and old requirements that no longer apply.
 
-```text
-deletion;
-simplification;
-redundancy;
-lost meaning;
-new dominant solutions;
-systems that can merge;
-old requirements that no longer apply.
-```
+## 13. Integrated Evaluation
 
-## 12. Integrated Evaluation
-
-After the Probe, re-evaluate the Variant.
+After the integration review, re-evaluate the Variant.
 
 Keep local and integrated findings separate.
 
@@ -571,7 +626,7 @@ Integrated Risk:
 
 A Variant can move from promising to weak after integration, or become more valuable because it connects several systems.
 
-## 13. Cross-Variant Synergy / Conflict Search
+## 14. Cross-Variant Synergy / Conflict Search
 
 Do not compare Variants only against the current game.
 
@@ -589,7 +644,7 @@ Does one Variant create the missing condition another Variant needed?
 
 This can produce Combination Evaluation rather than a single-answer selection.
 
-## 14. Build Or Revise Concepts
+## 15. Build Or Revise Concepts
 
 When enough compatible meaning exists, assemble one or more Concepts.
 
@@ -625,7 +680,7 @@ Can a representative demo actually prove this?
 What is the most dangerous unresolved dependency?
 ```
 
-## 15. Choose The Next Uncertainty, Not A Fixed Scale Order
+## 16. Choose The Next Uncertainty, Not A Fixed Scale Order
 
 Do not impose:
 
@@ -668,16 +723,16 @@ value still uncertain after planning
   → Prototype / test.
 ```
 
-Detailed work creates new questions. Return those questions to Design Directions / Brainstorm Prompts and repeat the cycle.
+Detailed work creates new questions. Return those questions to the appropriate scoped Idea workspace / Design Direction / Brainstorm Prompt and repeat the cycle.
 
-## 16. Relationship To The Game Planning Draft
+## 17. Relationship To The Game Planning Draft
 
 Several Concepts may exist while comparing possible games.
 
 Once one direction becomes the active current game, maintain its cross-cutting current meaning in the project `Game Planning Draft`.
 
 ```text
-Ideas / Variants / Probes
+Ideas / Idea Variants / candidate Planning Unit Variants
   ≠ accepted Draft meaning;
 
 selected cross-cutting decision
@@ -687,9 +742,9 @@ detail owner discovers a project-wide accepted change
   → reconcile into Draft.
 ```
 
-Do not use an Idea workspace or Probe folder as a competing canonical Game Planning Draft.
+Do not use an Idea workspace or an integration-review candidate as a competing canonical Game Planning Draft.
 
-## 17. Discussion / Source Consolidation
+## 18. Discussion / Source Consolidation
 
 Long creative conversations can create useful meaning faster than canonical owners should be edited.
 
@@ -707,7 +762,7 @@ A source ledger preserves provenance; it does not itself accept game meaning.
 
 Explicit acceptance such as `согласен`, `фиксируй` or a user edit should be linked to the specific prior proposal it accepts or refines.
 
-## 18. Do Not
+## 19. Do Not
 
 - Do not call every spontaneous idea a Concept.
 - Do not require a Brainstorm Prompt before a useful idea is allowed to exist.
@@ -717,7 +772,7 @@ Explicit acceptance such as `согласен`, `фиксируй` or a user edi
 - Do not prefer novelty merely because it has no reference.
 - Do not copy a reference feature without understanding the responsibility/value being borrowed.
 - Do not remove an expensive reference component while silently depending on its missing Experience.
-- Do not treat a Probe as accepted Situation/Loop/Dynamic/Scenario content.
+- Do not treat an integrated candidate Planning Unit Variant as accepted Situation/Loop/Dynamic/Scenario content merely because the integration is coherent.
 - Do not evaluate only locally when the Variant materially changes wider gameplay.
 - Do not force every shortlisted Variant through every planning scale.
 - Do not turn the Idea workspace into a second canonical Draft.

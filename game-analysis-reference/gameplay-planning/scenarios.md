@@ -31,6 +31,7 @@ A concrete Scenario may include:
 
 ```text
 orientation;
+independently useful Gameplay Events;
 routine;
 observation;
 meaningful decisions;
@@ -49,7 +50,35 @@ Do not invent fake Gameplay Situations for periods in which no new meaningful de
 
 A decisionless but important Experience moment can remain a Scenario Beat, Observation, Execution, Consequence, Recovery or Visual Context. Do not broaden `Gameplay Situation` merely to give that moment a planning owner.
 
-## 3. Situation Instance
+## 3. Top-Level Scenario Record
+
+A Scenario needs a compact owner-level record in addition to detailed Beats when independent review/testing is useful.
+
+Use proportionally:
+
+```text
+Scenario ID / Name
+Purpose / Question Being Tested
+Source / Status
+
+Entry Conditions
+Starting State
+Initial Knowledge
+Relevant Units / Configurations
+
+Chronology / Beats
+
+Dynamic Hypotheses Being Tested
+Integration Questions
+
+Exit State
+What Changed
+Evidence / Findings
+```
+
+This record owns the concrete chronology/test responsibility; it does not duplicate generic rules already owned by Situation / Loop / Dynamic / Game Domain owners.
+
+## 4. Situation Instance
 
 A Scenario normally references a reusable Situation Type and records the concrete `Situation Instance`:
 
@@ -67,7 +96,7 @@ specific consequences.
 
 Do not duplicate every generic Situation rule when a reference is sufficient.
 
-## 4. Scenario Beat
+## 5. Scenario Beat
 
 A `Scenario Beat` is a chronological portion of the Scenario.
 
@@ -75,6 +104,7 @@ Useful roles include:
 
 ```text
 Situation Instance;
+Gameplay Event occurrence / reference;
 System Execution;
 Observation / Information Reveal;
 Routine / Waiting;
@@ -99,7 +129,7 @@ new information becomes visible.
 
 One Loop Phase may span several Beats. Conversely, one Beat may contribute to/change phases in several Loops.
 
-## 5. Scenario Beat Record
+## 6. Scenario Beat Record
 
 Use proportionally:
 
@@ -109,6 +139,7 @@ Temporal Marker
 Beat Role
 
 Situation Type Reference, if any
+Gameplay Event Reference, if any
 Loop / Loop Phase Mapping, if useful
 
 Starting / World State
@@ -160,7 +191,7 @@ Exit State
 
 Not every Beat needs every field.
 
-## 6. Operative Mechanics / Rules Boundary
+## 7. Operative Mechanics / Rules Boundary
 
 Scenario owns **concrete manifestation**, not every generic rule.
 
@@ -181,7 +212,7 @@ The generic rule belongs in the Situation/system owner. The Scenario records its
 
 If Scenario work discovers a general mechanic/rule relation missing from the Situation/Loop/Dynamic owner, treat that as an audit signal and update the more general owner after review.
 
-## 7. Intended Player Response Is Broader Than Emotion
+## 8. Intended Player Response Is Broader Than Emotion
 
 A design target may be:
 
@@ -202,7 +233,7 @@ relief.
 
 For example, `the player should themselves want to obtain this capability` is a valid Intended Player Response even though it is not merely an emotion.
 
-## 8. Presentation Is Broader Than Visuals
+## 9. Presentation Is Broader Than Visuals
 
 Scenario presentation requirements can include:
 
@@ -217,7 +248,7 @@ control feedback.
 
 Do not ask the visual layer alone to produce an Experience whose cause belongs to pacing, audio, information or system behavior.
 
-## 9. Concurrent Situations And Loops
+## 10. Concurrent Situations And Loops
 
 At a concrete time, the Scenario may have several Active Situations while earlier decisions continue executing.
 
@@ -245,7 +276,7 @@ Example:
 15:00  Situations 1 / Loops 2
 ```
 
-## 10. Parallel Loop Tracks
+## 11. Parallel Loop Tracks
 
 When it helps, represent Scenario chronology as parallel tracks:
 
@@ -263,7 +294,7 @@ Player decisions         ↓      ↓              ↓
 
 A Scenario may cross several Loops that interact only through shared state. Showing them in one chronology does not merge them into one Loop.
 
-## 11. Tight Dependencies In Scenario
+## 12. Tight Dependencies In Scenario
 
 It is acceptable to repeat a tight dependency already owned by Situation planning if doing so makes the concrete Scenario understandable.
 
@@ -280,7 +311,7 @@ If the Scenario reveals a general specific dependency missing from the Situation
 
 Broad economy/state effects still do not need exhaustive Situation-to-Situation links.
 
-## 12. Game Structure Review
+## 13. Game Structure Review
 
 A Scenario can use the full [`Game Structure Analysis`](../game-structure-analysis.md) concern set.
 
@@ -313,7 +344,7 @@ Return, Stopping And Exhaustion.
 
 Use `Content-Production Model` when the Scenario is also estimating content/production burden.
 
-## 13. Pacing / Challenge Review
+## 14. Pacing / Challenge Review
 
 Scenario scale is where concurrency, timing and cumulative pressure become visible.
 
@@ -334,7 +365,7 @@ Does repetition become rote?
 
 Scenario review is also an integration-balance check. Individually meaningful Situations/Loops can combine into dominant response, deadline pressure, unreadable delayed costs or exhausting overlap.
 
-## 14. Causal Legibility Review
+## 15. Causal Legibility Review
 
 Scenario chronology is a strong place to check whether the player can connect earlier choices to later outcomes.
 
@@ -355,7 +386,7 @@ Can they strengthen, counter or redirect a relevant Dynamic?
 After failure, can they revise a model instead of random trial?
 ```
 
-## 15. Dynamic Manifestation And Strategic-Space Review
+## 16. Dynamic Manifestation And Strategic-Space Review
 
 Scenario chronology can inspect manifestations of current or hypothesized Dynamics without pretending one branch proves a stable pattern.
 
@@ -389,7 +420,7 @@ What alternative Scenario could falsify that interpretation?
 
 One Scenario manifestation is not proof of a stable Dynamic.
 
-## 16. Player Experience / Anti-Experience Review
+## 17. Player Experience / Anti-Experience Review
 
 Use [`Player Experience And Anti-Experience`](../player-experience-and-anti-experience.md) for the cumulative arc.
 
@@ -410,7 +441,7 @@ residual experience at the end.
 
 A Scenario should not be reduced to a graph of mechanics if the purpose is to validate temporal Experience.
 
-## 17. Visual Planning Review
+## 18. Visual Planning Review
 
 Use [`Visual Design Analysis And Planning`](../visual-design-analysis-and-planning.md) for concrete chronology.
 
@@ -427,7 +458,7 @@ what representative check validates the result.
 
 Project-wide/cross-scenario visual requirements may remain in a separate project visual owner.
 
-## 18. Content Premise Handoff
+## 19. Content Premise Handoff
 
 A project-local `Content Premise` may exist before a detailed Scenario.
 
@@ -443,7 +474,7 @@ Idea
 
 A premise may depend on unresolved generic mechanics. The Scenario should not silently decide those mechanics merely to fill Beats.
 
-## 19. Demo Scenario
+## 20. Demo Scenario
 
 A full demo Scenario should include the **entire temporal Experience**, not only dramatic incidents.
 
@@ -453,23 +484,23 @@ Exact timings remain candidate/open until supported by implementation/evidence.
 
 A detailed demo branch can be selected for implementation/testing while mechanics, screens and alternative playthroughs remain unresolved.
 
-## 20. Integration-Probe Use
+## 21. Event And Integration Boundary
 
-A `PROBE-SCN` from the Game Creation Workflow may use this method to test a Variant in chronology.
+A one-off decisionless chronology detail remains a Scenario Beat. Reference a reusable Gameplay Event when the occurrence has independent planning responsibility outside this chronology.
 
-Keep the `PROBE-` status explicit.
+When an Idea Variant needs chronology-level integration, use a real candidate Scenario Variant and this normal Scenario method instead of a separate `PROBE-SCN` artifact family.
 
-A coherent Probe Scenario:
+A coherent candidate Scenario Variant:
 
 ```text
-≠ selected project Scenario;
+≠ accepted project Scenario;
 ≠ accepted generic mechanic;
 ≠ evidence that the Variant works.
 ```
 
-Use the Probe to discover wider consequences, new risks/questions, interactions and content implications for Integrated Evaluation.
+Use Integrated Evaluation to decide what, if anything, is later accepted/promoted.
 
-## 21. AI Scenario Exploration
+## 22. AI Scenario Exploration
 
 For a systemic game, literal enumeration of every possible Scenario is normally impossible.
 
@@ -527,7 +558,7 @@ These are search prompts, not a claim that AI-generated cases are evidence by th
 
 Do not describe AI exploration as exhaustive coverage of a combinatorial system.
 
-## 22. Do Not
+## 23. Do Not
 
 - Do not make every Beat a Gameplay Situation.
 - Do not broaden Situation to decisionless Experience moments merely for planning convenience.
@@ -538,4 +569,4 @@ Do not describe AI exploration as exhaustive coverage of a combinatorial system.
 - Do not treat one Scenario manifestation as proof of a stable Dynamic.
 - Do not silently invent exact timing, final mechanics or the only valid playthrough.
 - Do not make a detailed demo equal to a frozen screenplay merely because it is concrete enough to test.
-- Do not promote a `PROBE-SCN` into accepted project meaning without explicit review.
+- Do not promote a coherent candidate Scenario Variant into accepted project meaning without explicit review.

@@ -24,7 +24,7 @@ Then follow the layer that owns the current question:
 |---|---|---|
 | Stable principles and terminology | Canonical reusable meanings, distinctions and invariants | [`principles/README.md`](principles/README.md) |
 | Reusable creation/planning workflows | How work moves from seeds/references through Concepts, detailed planning and evidence | [`game-creation-workflow.md`](game-creation-workflow.md), [`game-development-planning-workflow.md`](game-development-planning-workflow.md) |
-| Reusable analysis and detailed planning methods | Structural, experience, visual and Situation / Loop / Dynamic / Scenario methods | [`game-analysis-reference/README.md`](game-analysis-reference/README.md) |
+| Reusable analysis and detailed planning methods | Structural, experience, visual and Situation / Loop / Dynamic / Scenario methods, with lightweight supporting Gameplay Events where independently useful | [`game-analysis-reference/README.md`](game-analysis-reference/README.md) |
 | Project-local planning | Current game-specific drafts, ideas, decisions, hypotheses, evidence and justified detail owners | [`game-planning/README.md`](game-planning/README.md) |
 
 ## Repository Layers
@@ -77,4 +77,4 @@ When meanings disagree or seem duplicated:
 1. start from the relevant README, Use-Case Registry or workflow entry point;
 2. follow the named owner for the term, method or project meaning;
 3. preserve project evidence/status distinctions;
-4. do not promote supporting notes, Ideas, Probes, examples or derived views into canonical meaning without explicit review.
+4. do not promote supporting notes, Ideas, exploratory variants, examples or derived views into canonical meaning without explicit review.

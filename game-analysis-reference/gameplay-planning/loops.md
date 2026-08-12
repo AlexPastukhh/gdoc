@@ -13,6 +13,7 @@ A Loop can contain:
 
 ```text
 Gameplay Situations;
+Gameplay Events as supporting triggers/feedback/payoffs when material;
 player decisions;
 system execution;
 state accumulation / change;
@@ -379,6 +380,7 @@ Status / Source
 
 Function / Player Value
 Member Situation Types
+Relevant Gameplay Events, if material
 Relevant Loop Phases, if useful
 
 Causal Basis / Loop-Sustaining Mechanics And Rules
@@ -427,11 +429,21 @@ Scenario Coverage
 Evidence / Questions
 ```
 
-## 19. Integration-Probe Use
+## 19. Event And Integration Boundary
 
-A `PROBE-LOOP` may temporarily instantiate this schema to test a Variant from the Game Creation Workflow.
+A Gameplay Event may participate as a trigger, feedback, payoff or pressure occurrence when it contributes to the recurrent process.
 
-Keep the Probe marker visible. Do not add it to a project's accepted Loop inventory merely because the hypothetical causal process is coherent.
+Preserve:
+
+```text
+Event → Event → Event
+without load-bearing player agency
+≠ Gameplay Loop automatically.
+```
+
+When a local Idea Variant needs whole-Loop integration, use a real candidate Loop Variant and normal Loop planning/evaluation rather than creating a separate `PROBE-LOOP` artifact family. Candidate coherence does not imply acceptance.
+
+Current broad Core/Session/Long-Term views remain useful, but this method does not settle the separate open question of which existing project records are true Gameplay Loops versus Player Strategies or broad/session activity structures.
 
 ## 20. Do Not
 
@@ -441,6 +453,8 @@ Keep the Probe marker visible. Do not add it to a project's accepted Loop invent
 - Do not equate a Loop with the Dynamics its recurrence may produce.
 - Do not merge distinct Loops merely because they contribute to the same Dynamic.
 - Do not call every one-off causal sequence a Loop.
+- Do not call a decisionless Event chain a Gameplay Loop merely because it recurs.
+- Do not assume current Loop records are automatically the canonical session/balance horizon.
 - Do not duplicate every local Situation mechanic in the Loop Causal Basis.
 - Do not balance repeated processes only by balancing each local decision independently.
 - Do not assume the generic `observe → decide → act → consequence` pattern is the only concrete Loop in a game.
