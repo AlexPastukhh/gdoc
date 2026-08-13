@@ -4,6 +4,8 @@ Status: active repository navigation entry point
 
 This repository contains reusable game-planning principles and methods, supporting research/reference material, and project-local planning documents.
 
+For the **current active planning direction, open concerns and next validation work**, use [`active-planning-goal-map.md`](active-planning-goal-map.md). The Goal Map is operational/current-work navigation, not a canonical terminology owner or historical backlog.
+
 ## Start Here
 
 Use [`game-planning-use-case-registry.md`](game-planning-use-case-registry.md) when the question is:

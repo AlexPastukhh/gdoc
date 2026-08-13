@@ -172,6 +172,30 @@ integrate through Scenario / evidence when useful.
 
 Routes can alternate repeatedly.
 
+### Scenario-driven Spine route
+
+When chronology is the clearest way to expose low-level design dependencies, use one concrete Scenario as a `Spine Scenario`:
+
+```text
+current planning question / Draft
+→ choose a concrete Scenario as Spine
+→ set one relevant Player Context
+→ select one concrete path
+→ identify concrete Events / decisions / executions /
+  state-information-player changes
+→ hand independently useful meaning to low-level owners
+→ develop those owners with reusable alternatives / variants / depth
+→ feed clarified meaning back into the Spine
+→ continue until the current planning question is answered
+→ derive Loops/Dynamics later only from sufficient recurrent/tendency evidence.
+```
+
+`Spine Scenario` is a planning role of a normal Scenario, not a new gameplay scale and not a synonym for a short Scenario. The selected branch is concrete; the local owner expands alternatives that one chronology cannot exhaustively contain.
+
+For a selected decision in the Spine, preserve why **this concrete Player Context** selected it. If two choices are genuinely similarly plausible, both may be noted, but one branch is still selected to continue chronology.
+
+Use [`active-planning-goal-map.md`](active-planning-goal-map.md) as the operational current-work surface. When a concern closes, preserve durable meaning in its real owner and remove it from the active Goal Map.
+
 ## 4. Evidence And Decision Discipline
 
 Use the canonical distinctions from [`Game Planning`](principles/game-planning-principles-and-terminology.md):
@@ -294,6 +318,7 @@ Choose the scale from the current uncertainty:
 |---|---|---|
 | What meaningful local decision exists here? | Gameplay Situation | [`Situations`](game-analysis-reference/gameplay-planning/situations.md) |
 | What independently useful player-facing occurrence matters here without requiring a meaningful decision? | Gameplay Event (supporting) | [`Gameplay Planning`](game-analysis-reference/gameplay-planning/README.md) + Scenario/other relevant owner |
+| How does an initiated action/process unfold through game time when intermediate state, interruption, concurrency, information or feedback delay matter independently? | Execution Unit (provisional supporting) | [`Executions`](game-analysis-reference/gameplay-planning/executions.md) |
 | What recurrent functionally coherent causal process exists? | Gameplay Loop | [`Loops`](game-analysis-reference/gameplay-planning/loops.md) |
 | What systemic tendency / state-opportunity trajectory develops over time? | Gameplay Dynamic | [`Dynamics`](game-analysis-reference/gameplay-planning/dynamics.md) |
 | What concretely happens through time when systems, decisions and consequences interact? | Scenario | [`Scenarios`](game-analysis-reference/gameplay-planning/scenarios.md) |
@@ -340,6 +365,7 @@ Use:
 | Review need | Reusable owner |
 |---|---|
 | Structure, decisions, economy, balance, pacing, causal legibility, strategic space | [`Game Structure Analysis`](game-analysis-reference/game-structure-analysis.md) |
+| Project-specific Experience / Motivation, availability/expectation, candidate Promise/Doubt planning | [`Player Experience / Motivation Planning`](game-analysis-reference/player-experience-motivation-planning.md) |
 | Intended Experience, learning, mastery and anti-experience | [`Player Experience And Anti-Experience`](game-analysis-reference/player-experience-and-anti-experience.md) |
 | Presentation / visual communication requirements in concrete gameplay contexts | [`Visual Design Analysis And Planning`](game-analysis-reference/visual-design-analysis-and-planning.md) |
 

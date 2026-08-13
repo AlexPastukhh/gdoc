@@ -64,6 +64,7 @@ Source / Status
 Entry Conditions
 Starting State
 Initial Knowledge
+Assumed Player Context, when material
 Relevant Units / Configurations
 
 Chronology / Beats
@@ -152,11 +153,19 @@ Intended Player Response
 Information Available
 Required Understanding
 What Should Remain Unknown
+Player Model / Expertise Change, if material
+
+Project Experience / Motivation, if material
+Experience Promise / Doubt, if material
 
 Meaningful Decisions, if this is a Situation Instance
 Decision Availability
 Why Each Option May Be Attractive
 Selected Scenario Branch
+Why This Player Context Selected It
+Similarly Plausible Alternative, only when genuinely useful
+Why A Visible Opportunity Was Not Taken, if material
+  not perceived / not understood / not salient / deferred / attention-crowded
 
 Operative Mechanics / Rules, if needed
   only rules whose concrete manifestation is
@@ -175,6 +184,10 @@ Time-Sensitive Decisions
 Specific Tight Dependencies
 Decision-Order Effects
 
+Foreground Focus / Background Monitoring, if material
+Attention Competition / Missable Signals, if material
+Pacing / Load Note, if material
+
 Player Experience
 Gameplay Requirements
 Presentation Requirements
@@ -190,6 +203,29 @@ Exit State
 ```
 
 Not every Beat needs every field.
+
+## 6A. Spine Scenario Planning Role
+
+A `Spine Scenario` is a normal concrete Scenario deliberately used as the temporal/integration spine of a planning pass.
+
+```text
+Spine → concrete chronology / selected branch / temporal changes
+  ↕
+low-level owners → reusable alternatives / variants / prerequisites / full local design.
+```
+
+Rules: one selected chronology; not necessarily short; not a claim about all playthroughs; selected decisions preserve why this Player Context chose them; if several choices are similarly plausible, note them when useful but select one branch; preserve as much concrete selected-branch detail as useful; local owners expand reusable alternative-space.
+
+Preferred representation:
+
+```text
+A. readable Timeline / chronology;
+B. expandable Beat / Step / Interval detail where useful.
+```
+
+Temporal-change tracks may include World/Domain State, Economy/Capacity, Information, Player Model/Expertise, Experience, Motivation/Doubt, Active Situation changes and Execution progress. These are chronology facts, not automatically new unit types.
+
+Optional qualitative reachability/salience labels: `Mandatory`, `path-inevitable`, `Conditional`, `Player-initiated/optional`, `Discoverability-dependent`, `Attention-dependent`. One Scenario does not establish numeric probability.
 
 ## 7. Operative Mechanics / Rules Boundary
 
@@ -356,6 +392,9 @@ How do Active Situation / Loop counts rise and fall?
 Where are peaks and breathing room?
 How many previous decisions are still executing?
 How many decisions are time-sensitive?
+How long have important unresolved decisions remained open?
+How quickly is new decision-relevant information arriving?
+How many interruptions compete for attention?
 How long is decision → feedback delay?
 Do several individually good Loops create bad pacing together?
 Does overlap create meaningful prioritization or only noise?
@@ -422,7 +461,7 @@ One Scenario manifestation is not proof of a stable Dynamic.
 
 ## 17. Player Experience / Anti-Experience Review
 
-Use [`Player Experience And Anti-Experience`](../player-experience-and-anti-experience.md) for the cumulative arc.
+Use [`Player Experience And Anti-Experience`](../player-experience-and-anti-experience.md) for the cumulative arc and [`Player Experience / Motivation Planning`](../player-experience-motivation-planning.md) when Project Experience/Motivation/Promise/Doubt changes need independent links.
 
 Inspect:
 

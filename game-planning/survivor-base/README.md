@@ -5,6 +5,7 @@
 **Canonical planning owner:** [`game-planning-draft.md`](game-planning-draft.md)
 **Idea workspace:** [`ideas.md`](ideas.md)
 **Content-premise workspace:** [`content-premises.md`](content-premises.md)
+**Experience / Motivation planning:** [`experience-motivation/README.md`](experience-motivation/README.md)
 **Source ledger:** [`../../chat-history/survivor-base-branch-01.md`](../../chat-history/survivor-base-branch-01.md)
 **Imported source:** `survivor-base-planning-draft-v0.12-tactical-raids-alarms-emergency-response.md`
 **Imported source SHA-256:** `d866e0d296da25d3377e363657bc6fdde871cc1101bea3e8c1b438dc4c01e933`
@@ -31,6 +32,10 @@ gameplay-loops.md
 
 scenarios.md
   → independently useful representative Scenario chronology and validation work.
+
+experience-motivation/README.md
+  → project-local qualitative/detail ownership for Project Experience,
+    Project Motivation and candidate Promise/Doubt planning; exact schemas remain provisional.
 ```
 
 These are **current working owners**, but none silently overrides the canonical Draft.
@@ -48,6 +53,7 @@ Reusable game-planning principles remain in the repository root workflow and `pr
 | [`content-premises.md`](content-premises.md) | Preliminary standalone content units that can later be evaluated/expanded as Scenarios | Active project-local preliminary content owner |
 | [`gameplay-loops.md`](gameplay-loops.md) | Independently useful Gameplay Loop candidates/detail; does not mirror the whole Draft | Project-local gameplay detail owner |
 | [`scenarios.md`](scenarios.md) | Representative Scenarios, Scenario Beats, integration questions and validation checkpoints | Project-local Scenario detail owner |
+| [`experience-motivation/README.md`](experience-motivation/README.md) | Qualitative/detail planning responsibility and working templates for Project Experience/Motivation and candidate Promise/Doubt units; no concrete units are accepted merely because this owner exists | Active project-local working owner; does not override Draft |
 | [`visual/README.md`](visual/README.md) | Visual-planning navigation, ownership and current depth | Project-local detail navigation |
 | [`visual/visual-requirements-matrix.md`](visual/visual-requirements-matrix.md) | Visual-context and element requirements for what the visual system must communicate or support | Project-local visual requirements working owner; does not override Planning Items |
 

@@ -7,7 +7,7 @@ Scope: a living set of reusable observation, analysis and design-elicitation len
 
 This folder helps a designer notice, record and structure useful information without forcing analysis or planning into one mandatory questionnaire or fixed sequence.
 
-Most owners provide reusable question/lens surfaces. The `gameplay-planning/` area provides detailed planning methods for Gameplay Situations, supporting Gameplay Events, Loops, Dynamics and Scenarios while canonical terms remain in the corresponding principle owners.
+Most owners provide reusable question/lens surfaces. The `gameplay-planning/` area provides detailed planning methods for Gameplay Situations, supporting Gameplay Events, provisional Execution Units, Loops, Dynamics and Scenarios while canonical terms remain in the corresponding principle owners. Project-specific Experience/Motivation planning has its own provisional detailed method while Experience-family quality checks remain separate.
 
 The intended working model for reference observation remains:
 
@@ -34,6 +34,7 @@ The reference is consulted while observing, playing or clarifying a concrete des
 | [`Gameplay Planning`](gameplay-planning/README.md) | Detailed methods for planning Situations, lightweight Events, Loops, Dynamics and Scenarios and for applying reusable passes at supported scales |
 | [`Game Structure Analysis`](game-structure-analysis.md) | Shared structural/systemic concern set for Situation / Loop / Dynamic / Scenario and whole-game review, including decisions, balance, state/opportunity trajectory, pacing, causal legibility, production and transfer |
 | [`Player Experience And Anti-Experience`](player-experience-and-anti-experience.md) | Experience families, supporting conditions, observable indicators and anti-experience checks |
+| [`Player Experience / Motivation Planning`](player-experience-motivation-planning.md) | Provisional project-specific Experience/Motivation records, availability/expectation relations, candidate Experience Promise/Doubt units and Player Context/Expertise links |
 | [`Visual Design Analysis And Planning`](visual-design-analysis-and-planning.md) | Visual lenses and route from gameplay/context, desired perception and references to visual requirements/realization candidates |
 | [`Observation Flow And Moment Prompts`](observation-flow-and-moment-prompts.md) | Optional prompts for important moments such as first contact, first meaningful decision, first causal learning, repetition, session end and return |
 | [`Unrouted Questions And Concerns`](unrouted-questions-and-concerns.md) | Temporary staging for reusable questions whose correct owner/trigger is still unclear |
@@ -56,8 +57,8 @@ analysis of one concrete game
   → observations, interpretations and conclusions about that game;
 
 project planning detail owner
-  → current project-specific Situation / Event / Loop / Dynamic /
-    Scenario / visual / other detailed meaning;
+  → current project-specific Situation / Event / Execution / Loop / Dynamic /
+    Scenario / Experience / Motivation / visual / other justified detailed meaning;
 
 Obsidian Canvas
   → working notes, not automatically canonical documentation.
@@ -85,6 +86,8 @@ Detailed gameplay planning uses shared reusable surfaces with explicit scale cov
 | Scenario | Yes | Yes | Yes |
 
 Gameplay Event is a lightweight supporting unit. Apply only the concerns actually needed for the Event rather than treating it as a fifth heavy matrix row.
+
+`Execution Unit` is currently a **provisional supporting detailed-planning unit**, not another canonical gameplay scale. Use [`Gameplay Execution Planning`](gameplay-planning/executions.md) only when unfolding through game time has independent planning responsibility.
 
 `Game Structure Analysis` intentionally uses one shared concern set across Situation / Loop / Dynamic / Scenario. The concern keeps the same responsibility while its concrete question is interpreted at the current scale.
 
@@ -172,13 +175,14 @@ When practical use reveals a new reusable concern:
 1. Add it to the owner matching its responsibility.
 2. Keep a question in moment-flow only when its main value is knowing **when** to notice it.
 3. Keep structural/systemic questions in `game-structure-analysis.md`.
-4. Keep experience conditions/indicators/anti-experience checks in `player-experience-and-anti-experience.md`.
-5. Keep visual planning questions in `visual-design-analysis-and-planning.md`.
-6. Keep Situation / Event-support / Loop / Dynamic / Scenario record methods in `gameplay-planning/`.
-7. Check principle owners before introducing a new definition.
-8. Avoid maintaining two full copies of the same question set.
-9. If no clear owner exists, stage the question in [`Unrouted Questions And Concerns`](unrouted-questions-and-concerns.md).
-10. Create another file only when independent ownership/reuse/research/review/navigation justifies it.
+4. Keep reusable Experience-family conditions/indicators/anti-experience checks in `player-experience-and-anti-experience.md`.
+5. Keep project-specific Experience/Motivation, availability/expectation and candidate Promise/Doubt detailed planning in `player-experience-motivation-planning.md` while that provisional responsibility remains useful.
+6. Keep visual planning questions in `visual-design-analysis-and-planning.md`.
+7. Keep Situation / Event-support / provisional Execution / Loop / Dynamic / Scenario record methods in `gameplay-planning/`.
+8. Check principle owners before introducing a new definition.
+9. Avoid maintaining two full copies of the same question set.
+10. If no clear owner exists, stage the question in [`Unrouted Questions And Concerns`](unrouted-questions-and-concerns.md).
+11. Create another file only when independent ownership/reuse/research/review/navigation justifies it.
 
 ## 8. Source Provenance
 

@@ -33,8 +33,11 @@ Do not use a Situation record merely as an event description.
 A candidate may start from:
 
 ```text
-desired Player Experience;
+desired / anticipated Player Experience;
 player goal / desire;
+player Motivation;
+player Strategy / Plan;
+value / expression / role-enactment concern;
 interesting risk or trade-off;
 reference moment;
 mechanic / rule;
@@ -63,6 +66,8 @@ A project's collection of detailed Situation Types is already its Situation inve
 ## 3. Meaningful-Decision Check
 
 Before expanding a record, ask:
+
+`Decision Situation` may be used descriptively when it helps emphasize the meaningful player-decision problem. Canonical terminology remains `Gameplay Situation` until separately reviewed.
 
 ```text
 What does the player want, protect, obtain or avoid?
@@ -126,6 +131,24 @@ If very few restrictive conditions exist, ask:
 > Why does this Situation not happen constantly?
 
 Frequency later becomes a balance, pacing and repetition concern.
+
+### Activation / Salience — If Material
+
+Occurrence conditions may exist before the decision becomes meaningfully active for this player.
+
+```text
+objective decision opportunity
+≠ player awareness
+≠ player understanding
+≠ player salience / caring
+≠ Active Gameplay Situation.
+```
+
+Inspect proportionally: `Accumulating Conditions`; `Activation Threshold / Salience Shift`; and relevant Domain/economy/prior-Situation/Event/Information/Player-Expertise/Motivation/Goal/Strategy/capability/social/time conditions. This is a discovery checklist, not a mandatory taxonomy.
+
+If an opportunity exists but is not engaged, distinguish when useful: not perceived; perceived but not understood; understood but insufficiently salient; intentionally deferred/waiting; crowded out by competing attention.
+
+A single Trigger Event is not required; several weak changes may accumulate before salience crosses a useful threshold.
 
 ## 5. Mechanics / Rules Relations
 
@@ -299,6 +322,21 @@ The game does not need perfect information. It does need enough information for 
 
 When a Decision-Shaping Rule changes what can be known, link the relation rather than describing it only as a UI issue.
 
+### Player Context / Expertise Boundary — If Material
+
+```text
+Information State
+= decision-relevant known/reported/inferred/uncertain information;
+
+Player Context / Expertise
+= prior familiarity / learned mental model changing what is noticed,
+  inferred, predicted or recognized as an option.
+```
+
+Useful dimensions may include Rules Familiarity, Causal-Model Accuracy, Pattern Familiarity, Option Awareness, Strategic Repertoire, Execution Fluency and Content Familiarity. Expertise itself may be a prerequisite for later deeper Situations without a formal simulation unlock.
+
+When material, compare qualitatively newcomer confusion/hidden options, competent-player adaptation/mastery and highly-familiar solved/rote/dominant-pattern risk. This is a lens, not a required three-tier taxonomy.
+
 ## 8. Player Goals, Stakes, Expectations And Plan
 
 Do not compress all of this into a vague `motivation` field.
@@ -335,6 +373,10 @@ What future game state is the player deliberately trying to create?
 What broader plan is this decision part of, if one already exists?
 
 Strategic gameplay often begins here: the player acts now because they predict a later Situation or future Experience and want to enter it from a better state.
+
+### Related Project Motivation — If Material
+
+Do not compress Goal / Stake / Expectation / Desired Future State / Plan into one Motivation field. A Project Motivation may explain why this decision becomes salient and why an option is attractive to this Player Context. Keep meta/experiential Motivation, in-play Motivation and concrete Situation Goal distinct when useful.
 
 ## 9. Player Experience Around The Situation
 
@@ -435,7 +477,8 @@ Immediate Result;
 State / Economy Effects;
 Direct Next Situations;
 Specific Tight Situation Dependencies;
-Important Recurrent State-Mediated Relations.
+Important Recurrent State-Mediated Relations;
+Related Project Motivation / Experience relation, if useful.
 ```
 
 The key question is not merely “can the player click this?” but:
@@ -465,6 +508,10 @@ Is there deadline / decay / escalation?
 ```
 
 Do not invent a timing field for a Situation with no material decision window.
+
+### Active Situation Evolution — If Material
+
+A Situation may remain Active while Events/state/information/execution change stakes, options, urgency, expectations, Motivation, predicted consequences or waiting value. This does not automatically create a new Situation; create a new candidate only when the fundamental decision responsibility genuinely changes.
 
 ## 12. Resolution / Exit Conditions — If Material
 
@@ -545,7 +592,7 @@ Inspect the full concern set and keep the concerns that materially change unders
 
 ### Player Experience / Anti-Experience
 
-Use [`Player Experience And Anti-Experience`](../player-experience-and-anti-experience.md).
+Use [`Player Experience And Anti-Experience`](../player-experience-and-anti-experience.md). For independently useful project-specific Experience/Motivation relations, also use [`Player Experience / Motivation Planning`](../player-experience-motivation-planning.md).
 
 This is separate from `Player Experience Around The Situation`:
 
@@ -631,6 +678,12 @@ Occurrence Model
   Occurrence Drivers / Alternative Causes
   Frequency Controls
 
+Activation / Salience, if material
+  Accumulating Conditions
+  Activation Threshold / Salience Shift
+  Relevant prerequisite/driver dimensions
+  Why Not Active / Why Not Engaged, if useful
+
 Mechanics / Rules Relations
   Decision-Shaping Mechanics / Rules
     Rule / Mechanic
@@ -651,6 +704,9 @@ Mechanics / Rules Relations
 Domain References / Projected Canonical Values, if material
 Relevant State / Economy
 Information State
+Player Context / Expertise, if material
+
+Related Project Motivation(s), if material
 
 Player Goals, Stakes, Expectations And Plan
   Current Goal
@@ -663,6 +719,7 @@ Player Goals, Stakes, Expectations And Plan
 Decision Options
   Availability
   Why Attractive
+  Related Motivation / Experience Relation, if useful
   Expected Benefit
   Expected Risk / Cost
 
@@ -670,6 +727,10 @@ Timing / Decision Window, if material
   Activation / Start
   Decision Window
   Waiting / Deadline / Escalation Effects
+
+Active Situation Evolution, if material
+  Events / State / Information / Execution changes
+  Stakes / Options / Urgency / Motivation / Expectations changes
 
 Resolution / Exit Conditions, if material
 

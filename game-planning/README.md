@@ -14,7 +14,8 @@ hypotheses and evidence;
 project-wide and owner-local Ideas / Variants;
 Content Premises;
 Game Domains;
-Situation / Loop / Dynamic / Scenario detail;
+Situation / Event / Execution / Loop / Dynamic / Scenario detail;
+Project Experience / Motivation and other justified player-context detail;
 visual / presentation, production or other justified detail owners.
 ```
 
@@ -46,8 +47,10 @@ named Game Domain owners, when useful
   → reusable project truth: state, relations, operations,
     rules/invariants and economic/resource meaning;
 
-planning-unit owners
-  → Situation / Loop / Dynamic / Scenario / other justified units;
+planning-unit / detail owners
+  → Situation / Event / Execution / Loop / Dynamic / Scenario /
+    Project Experience / Motivation / candidate Promise/Doubt /
+    other independently justified units;
 
 Content-Premise workspace, when justified
   → concrete candidate content units before
@@ -80,6 +83,11 @@ Variant/ideas/
 Loop/ideas/
 Dynamic/ideas/
 Scenario/ideas/
+Experience/ideas/
+Motivation/ideas/
+Experience-Promise/ideas/
+Doubt/ideas/
+Execution/ideas/
 ...
 ```
 
@@ -101,6 +109,8 @@ specific to one contextual Situation Version
 Ideas may be grouped into semantic categories derived from the current owner's meaningful components or reusable analysis surfaces, for example record concerns, analysis, Experience, Visual, Balance or Production. Materialize only categories that simplify planning.
 
 The exact category tree is project- and owner-specific. This repository does **not** require `ideas/record/...` or any other universal nesting scheme.
+
+A typed temporal change inside a Scenario (state changed, information changed, Motivation changed, Execution progressed, etc.) is **not automatically a planning-unit owner**. Create a separate owner only when independent review/reuse/change responsibility justifies it.
 
 ## 5. Variants And Situation Versions
 

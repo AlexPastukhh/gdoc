@@ -80,6 +80,24 @@ valuable experience
   ≠ uninterrupted positive emotion.
 ```
 
+### Experience, Motivation And Goal Planning Boundary
+
+The broad `Player Experience` definition may include a felt motivational state. Detailed planning still benefits from separating responsibilities:
+
+```text
+Project Experience planning
+  → what concrete subjective Experience is being supported;
+Project Motivation planning
+  → what the player wants to seek / continue / preserve /
+    restore / resolve / avoid / validate and may act on;
+in-play Goal
+  → what concrete future result/state the player is trying to achieve now.
+```
+
+Desired/anticipated Experience can be upstream of engagement and decisions as well as a downstream result. A player may seek a tense/uncertain/serious game while their in-play Motivation is to avoid the loss or danger producing that tension.
+
+The player also needs some basis to understand/expect that an intended Experience is available. Exact `Opportunity / Legibility / Experiential Expectation / Experience Promise` planning remains in the provisional detailed method.
+
 ## 5. Experience Goal, Essential Experience And Player Promise
 
 ### Experience Goal
@@ -99,6 +117,8 @@ It helps distinguish load-bearing design elements from decorative or replaceable
 The experience and activity the game claims it will deliver to the player.
 
 The promise is partly communicated before play and must be confirmed by actual play.
+
+`Player Promise` is a reusable game-level term. It does **not** require a standalone low-level project record. A separately justified project-local `Experience Promise` candidate is a different detailed-planning responsibility.
 
 ### Target Player Experience
 
@@ -147,7 +167,9 @@ No single closed taxonomy is treated as complete. The following families are a p
 
 A project may define another experience family when the current vocabulary is insufficient. It must not silently claim that the internal vocabulary is universal.
 
-For detailed observation conditions, behavioral indicators, possible player reports and anti-experience checks, use [`Player Experience And Anti-Experience`](../game-analysis-reference/player-experience-and-anti-experience.md). That reference applies this vocabulary; it does not replace the definitions and principles owned here.
+A concrete Project Experience may use **0..N families as classification/quality lenses**. Classification may remain candidate/unresolved; the project-specific formulation may precede classification, or a reusable family may be used top-down to discover a concrete project manifestation.
+
+For project-specific Experience/Motivation planning, use [`Player Experience / Motivation Planning`](../game-analysis-reference/player-experience-motivation-planning.md). For family conditions, behavioral indicators, possible player reports and anti-experience checks, use [`Player Experience And Anti-Experience`](../game-analysis-reference/player-experience-and-anti-experience.md).
 
 ## 8. Two-Contour Model
 
@@ -185,6 +207,8 @@ decision affected.
 ```
 
 Small hypotheses may remain inline in a Game Planning Draft.
+
+A project-specific Experience planning unit and an `Experience Hypothesis` are related but not identical: the first describes the concrete Experience being designed; the second owns a testable delivery/evidence claim. Keep them combined proportionally when simple, but do not maintain competing evidence owners.
 
 ## 10. Evidence Principles
 

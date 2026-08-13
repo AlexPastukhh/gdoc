@@ -1,7 +1,7 @@
 # Gameplay Planning — Situations, Loops, Dynamics And Scenarios
 
 Status: active reusable detailed-planning method map
-Scope: responsibility boundaries and routing for detailed Gameplay Situation, supporting Gameplay Event, Loop, Dynamic and Scenario planning.
+Scope: responsibility boundaries and routing for detailed Gameplay Situation, supporting Gameplay Event, provisional Execution Unit, Loop, Dynamic and Scenario planning.
 
 Canonical Situation / Loop / Scenario terms and stable distinctions are owned by [`Gameplay Situations, Loops And Scenarios — Principles And Terminology`](../../principles/gameplay-situations-loops-and-scenarios-principles-and-terminology.md).
 
@@ -18,6 +18,9 @@ Use:
 ```text
 Situations
   → meaningful local decision problems;
+
+Executions (provisional supporting)
+  → independently useful action/process unfolding through game time;
 
 Loops
   → recurrent causal processes through decisions,
@@ -38,6 +41,7 @@ Scenarios
 | Owner | Owns | Does not own |
 |---|---|---|
 | [`situations.md`](situations.md) | Detailed Situation planning: occurrence, state, decision, consequences, experience, mechanics/rules relations, dependency and balance fields | One project's actual Situation inventory |
+| [`executions.md`](executions.md) | Provisional Execution planning: initiation, intermediate states, interruption, concurrency, information, feedback delay, Experience and presentation relations | Canonical Domain operations/rates or a fifth canonical gameplay scale |
 | [`loops.md`](loops.md) | Detailed Loop planning: recurrence, transitions, loop-sustaining causal basis, overlap, learning, produced Dynamics and Loop-level balance | A universal fixed Loop taxonomy |
 | [`dynamics.md`](dynamics.md) | Detailed Dynamic planning/review: causal basis, operating conditions, state/opportunity trajectory, strategy effects, Scenario manifestations and evidence | A mandatory project-wide Dynamic Bank or the canonical definition of Dynamic |
 | [`scenarios.md`](scenarios.md) | Scenario Beats, concrete Situation Instances, concurrency, operative-rule manifestations, pacing/challenge integration, Dynamic manifestations and AI exploration | Generic rules of every Situation Type or proof that one observed pattern is a stable Dynamic |
@@ -141,6 +145,8 @@ Inspect proportionally:
 | Production / Content Cost | cost of generating meaningful variants | recurrence/content burden | simulation/system burden | concrete authored/integration burden |
 
 `Gameplay Event` remains a lightweight supporting unit. Reuse only the concerns needed by the Event rather than forcing it into a fifth heavy matrix column.
+
+`Execution Unit` likewise remains provisional/supporting. Reference it from Situations/Loops/Scenarios only when unfolding through time has independent responsibility; otherwise execution can remain inline.
 
 ## 6. Reusable Pass Coverage
 
@@ -277,27 +283,48 @@ A proportional record may contain:
 ```text
 Event ID / Name
 Status / Source
-
 What Happens
 Why It Matters
-
-Occurrence / Conditions, if needed
-Player Perception / Information, if needed
-Intended Experience / Response, if needed
-
-Consequences
-  State Changes
-  Triggered / Changed Situations, if any
-
-Loop / Dynamic Relations, if material
+Occurrence: Hard Preconditions / Drivers / Frequency, when material
+Cause / Source, if useful
+State / Economy Effects
+Information Produced: source / confidence / visibility, when material
+Player Perception / Presentation
+Situation Relations: activates / modifies / resolves / cancels
+Execution Relations: starts / modifies / interrupts / stops
+Experience / Motivation Effects, if material
+Loop Relations, if material
+  trigger / re-entry / interruption / feedback / carryover / pressure change
+Delayed / Accumulating Contribution, if material
+Timing / Duration, if material
+Visual / Audio / UI Requirements, if material
 Evidence / Questions
+Ideas / Variants
 ```
 
-Timing, frequency, presentation and content cost are added only when material.
+A gradual state/information/motivation change is not automatically a Gameplay Event. An Event may contribute to a later Situation only after further accumulation.
 
 Do not introduce mandatory Event taxonomy, Event phases, Active Event, Event Bank, a separate `events.md` or mandatory Loop participation.
 
-## 13. When To Split Further
+## 13. Supporting / Provisional Execution Planning
+
+Use [`Gameplay Execution Planning`](executions.md) when an initiated process unfolding through time has independent planning responsibility.
+
+```text
+Domain Operation / systemic state-rates
+→ canonical reusable truth;
+Execution Unit
+→ unfolding through time, information, interruption, concurrency,
+  attention, Situation and Experience relations;
+Scenario occurrence
+→ one concrete execution;
+Visual
+→ presentation/animation/feedback, not canonical systemic speed/rate truth.
+```
+
+Execution existing during a Loop does not create Loop membership automatically.
+
+## 14. When To Split Further
 
 Do not pre-create one file per Situation, Loop, Dynamic or Scenario.
 

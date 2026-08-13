@@ -3,7 +3,7 @@
 Status: active reusable observation and planning reference
 Scope: detailed experience families, supporting design conditions, emergent experience patterns/properties, observable behavior, possible player reports and anti-experience checks.
 
-Canonical definitions and principles remain in [`Player Experience First`](../principles/player-experience-first-principles-and-terminology.md). This file owns the detailed observation/planning surface.
+Canonical definitions and principles remain in [`Player Experience First`](../principles/player-experience-first-principles-and-terminology.md). This file owns the reusable Experience-family conditions, indicators and anti-experience quality surface. Project-specific Experience/Motivation, availability/expectation and candidate Promise/Doubt planning use [`Player Experience / Motivation Planning`](player-experience-motivation-planning.md).
 
 ## 1. How To Read The Records
 
@@ -26,6 +26,8 @@ anti-experience / failure mode
 ```
 
 An unpleasant state is not automatically a defect. Fear, uncertainty, pressure, loss or temporary frustration may support a valuable experience. The important question is whether the state participates in a coherent payoff, learning process or intended promise, or instead dominates as accidental friction.
+
+A concrete Project Experience may map to **several** records in this file. Use every relevant family as a quality-analysis lens rather than forcing one primary family. Also distinguish anti-experience/design failure from coherent gameplay that is merely a poor audience/genre fit.
 
 <a id="experience-sensory-pleasure"></a>
 ## 2. Сенсорное удовольствие
