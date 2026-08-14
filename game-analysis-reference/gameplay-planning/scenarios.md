@@ -60,6 +60,8 @@ Use proportionally:
 Scenario ID / Name
 Purpose / Question Being Tested
 Source / Status
+Target Game Version / Scope
+Document Revision, when independently useful
 
 Entry Conditions
 Starting State
@@ -78,6 +80,10 @@ Evidence / Findings
 ```
 
 This record owns the concrete chronology/test responsibility; it does not duplicate generic rules already owned by Situation / Loop / Dynamic / Game Domain owners.
+
+`Target Game Version / Scope` states which coherent game configuration the chronology assumes. By default a project Scenario belongs to the project's current target game version; write the field explicitly when version/scope ambiguity is material. `Document Revision` only tracks revision of the Scenario document and must not be used as a substitute for the game version being planned.
+
+If a useful finding belongs to another or still-undefined future game version, mark that departure instead of silently mixing incompatible assumptions into the current chronology. Prefer a separate Scenario pass when the future version needs its own coherent chronology. This narrow Scenario field does not establish a generic `Planning Unit Version` ontology or resolve broader `Game Version / Game Variant` terminology.
 
 ## 4. Situation Instance
 
@@ -130,6 +136,8 @@ new information becomes visible.
 
 One Loop Phase may span several Beats. Conversely, one Beat may contribute to/change phases in several Loops.
 
+A project may also use a `Scenario Phase` or similarly named section as a readable chronological grouping of several Beats. That label is presentation/chronology inside one Scenario, not a new gameplay scale and not evidence that the grouped material is a Gameplay Loop. A recurrent Loop may cross several Scenario sections, and one Scenario section may contain manifestations of several Loops.
+
 ## 6. Scenario Beat Record
 
 Use proportionally:
@@ -143,8 +151,8 @@ Situation Type Reference, if any
 Gameplay Event Reference, if any
 Loop / Loop Phase Mapping, if useful
 
-Starting / World State
-What Happens
+Relevant State Before
+What Happens / Causal Work Inside
 
 Player Goals / Stakes / Expectations / Plan, as relevant
 Developer Purpose
@@ -199,10 +207,20 @@ Assumptions
 Hypotheses
 Risks
 Validation Questions
-Exit State
+Relevant State After / Handoff
 ```
 
 Not every Beat needs every field.
+
+For a sufficiently detailed Beat/Step, preserve the causal continuity proportionally:
+
+```text
+relevant state BEFORE
+→ concrete occurrence / decision / execution / causality INSIDE
+→ relevant state AFTER / HANDOFF.
+```
+
+Possible state dimensions include World/Domain state, Economy/Capacity, Information, ongoing Execution, Situation state and player-side state. Do not copy the complete game state into every Beat. Record only what is needed to understand why the Beat unfolds as written and why the next chronological condition follows.
 
 ## 6A. Spine Scenario Planning Role
 
@@ -215,6 +233,8 @@ low-level owners → reusable alternatives / variants / prerequisites / full loc
 ```
 
 Rules: one selected chronology; not necessarily short; not a claim about all playthroughs; selected decisions preserve why this Player Context chose them; if several choices are similarly plausible, note them when useful but select one branch; preserve as much concrete selected-branch detail as useful; local owners expand reusable alternative-space.
+
+For a first-play Spine, First Contact / pre-play material may establish expectations and feed a gameplay-entry state without automatically becoming Gameplay Phase 0. Keep the handoff explicit and state where gameplay chronology begins.
 
 Preferred representation:
 

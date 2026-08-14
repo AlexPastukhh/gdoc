@@ -52,7 +52,11 @@ For a reference analysis, the concrete analysis owns the answers. For a project-
 - какую игру представил по capsule, трейлеру или стриму;
 - что вызвало желание посмотреть дальше;
 - что вызвало недоверие;
-- насколько первое обещание совпало с реальной игрой.
+- насколько первое обещание совпало с реальной игрой;
+- какой контекст формируется до начала gameplay: мир, угроза, роль игрока, масштаб и важные ожидания;
+- что именно First Contact / pre-play меняет в Promise, Expectation, Doubt или Motivation;
+- в какое gameplay-entry state этот материал передаёт игрока;
+- где начинается собственно gameplay chronology.
 
 #### Зачем
 
@@ -65,6 +69,31 @@ purchase fantasy
 ```
 
 Это нельзя надёжно восстановить задним числом после десятков часов.
+
+Не смешивайте два связанных, но разных этапа:
+
+```text
+External discovery / First Contact
+  → store, capsule, trailer, stream
+  → первое Promise / Expectation / Doubt / Motivation;
+
+In-product pre-play / gameplay entry
+  → opening presentation, launch/setup
+  → дальнейшее изменение ожиданий и мотивации
+  → gameplay-entry state.
+```
+
+Один этап может причинно продолжать другой, но внешний контакт с игрой и внутриигровой pre-play не являются одной точкой player journey. Ни один из них не становится Gameplay Phase 0 автоматически. Для first-play Scenario сохраняйте явный handoff:
+
+```text
+Baseline Player Context
+→ External discovery / First Contact
+→ initial Promise / Expectation / Doubt / Motivation
+→ In-product pre-play / launch/setup
+→ changed Promise / Expectation / Doubt / Motivation
+→ gameplay-entry state
+→ Gameplay T0.
+```
 
 <a id="concern-onboarding-mental-model"></a>
 ### 3.2 Onboarding And Mental Model
@@ -265,7 +294,13 @@ social content.
 - когда повторение начинает утомлять;
 - когда игрок чувствует насыщение;
 - что изменяется между сессиями;
-- насколько удобно вернуться после перерыва.
+- насколько удобно вернуться после перерыва;
+- где по ходу gameplay Motivation, current Experience, Doubt, friction или fatigue ослабляют желание продолжать;
+- какие уже выполненные Promises/цели создают естественную точку остановки;
+- какие незавершённые цели, ожидания и anticipated payoffs продолжают тянуть вперёд;
+- какие конкретные моменты являются material potential exit points;
+- что после такой точки поддерживает возвращение;
+- может ли игрок после перерыва восстановить mental model, current state и прежний Plan.
 
 #### Зачем
 
@@ -276,6 +311,23 @@ Session loop не полностью описывает:
 почему возвращается;
 когда игра исчерпывается.
 ```
+
+Сохраняйте две связанные, но разные ответственности:
+
+```text
+Continuous continuation lens
+  → по всему Scenario/session проверять Motivation,
+    Promise / Expectation, Doubt, current Experience,
+    fatigue, friction, unresolved goals и anticipated payoff;
+
+Material potential exit / return point
+  → в правдоподобном месте остановки проверять,
+    что только что закрылось, что осталось открытым,
+    почему возвращение имеет ценность
+    и насколько легко восстановить контекст.
+```
+
+Не считать любую остановку design failure. Различайте как минимум healthy stopping, motivation collapse, friction abandonment и external interruption. Конкретная причина определяет, нужно ли менять pacing/Promise/Motivation, снижать friction или лишь улучшать return-context recovery.
 
 <a id="concern-causal-legibility-strategic-planning-detail"></a>
 ### 3.10 Causal Legibility And Strategic Planning

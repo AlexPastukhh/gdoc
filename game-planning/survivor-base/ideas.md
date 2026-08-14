@@ -33,6 +33,8 @@ When an Idea becomes an explicit accepted cross-cutting game rule, reconcile it 
 
 When an embedded content example becomes useful as an independently reviewable playable/content unit, it may be copied or moved to [`content-premises.md`](content-premises.md). Hybrid entries stay here by default until that split is useful.
 
+When one Idea genuinely spans several planning levels, keep one primary project-scope record here first. Specialize or split it into lower-level owners only when the meaning or independently reviewable responsibility actually differs; do not duplicate one unresolved cross-level Idea merely to mirror several planning levels.
+
 ## 2. Organizing Several Ideas Around One Question
 
 Use this structure when it helps; do not require it for every spontaneous thought:
@@ -69,8 +71,9 @@ These relations help exploration; they are not new decision-status types.
 
 | Direction | Preserved ideas / questions |
 |---|---|
+| **OPEN-FIRST — First-Play Context And Gameplay Entry** | selected context order; virus/world presentation variants; animal observation example; fixed-character-story vs customizable trusted-core conflict |
 | **INF-EVO — Infection Evolution** | 2+5 strain groups and displacement; 4A/4B infection-history variants; 12 long-term biological/demographic change |
-| **INF-PHYS — Infected Physiology And Ecology** | 3 energy reserve/body mass/fatigue; 6 fake-dead / low-activity behavior |
+| **INF-PHYS — Infected Physiology And Ecology** | 3 energy reserve/body mass/fatigue; animal approach causal refinement; infected-resident hunting idea; 6 fake-dead / low-activity behavior |
 | **SOC-TRAJ — Social Trajectories** | 13 post-infection persistent change; 14 raids/base types; 16 slavery/forced status |
 | **GOV — Governance And Leadership** | 17 regime change / internal conflict; open questions about leadership, authority and player continuity |
 | **WORLD — Major World Events** | 1.1 nuclear/chemical major event and optional run-level enable/disable idea |
@@ -81,6 +84,8 @@ The original incoming numbering is preserved from `SB-B01-SRC01` in the source l
 
 | Incoming item | Main owner here | Source / later clarification |
 |---|---|---|
+| First-play context / entry | OPEN-FIRST | current continuation; `SB-B01-P18` |
+| Animal approach / group observation / hunting | INF-PHYS + OPEN-FIRST presentation use | current continuation; `SB-B01-P19` |
 | 1.1 | WORLD | `SB-B01-SRC01`; routing confirmed in `SB-B01-U055` |
 | 2 + 5 | INF-EVO | `SB-B01-SRC01`; researched/fixed in `SB-B01-C01` |
 | 3 | INF-PHYS | `SB-B01-SRC01`; clarification in `SB-B01-C01` |
@@ -313,6 +318,178 @@ For gameplay, `strain group` therefore remains an authored/simulation abstractio
 - Насколько масса сама по себе помогает физическому воздействию, а насколько мешает скорости / манёвренности?
 - Какие признаки этих состояний игрок реально может увидеть и использовать для решения?
 
+### INF-PHYS-P01 — Почему заражённое животное приближается к заражённым?
+
+**Type:** Brainstorm Prompt — Problem
+**Status:** open refinement of existing Idea/current accepted baseline; no causal mechanism selected.
+**Source:** `SB-B01-P19`.
+
+#### Existing meaning that this Prompt must preserve
+
+Current `ideas.md` already preserves:
+
+> infected animals may be attracted by infected smell and approach without normal fear.
+
+Current `CHAT-PI-052` already accepts the stronger ordinary-run boundary:
+
+```text
+reduced normal avoidance of infected
+≠ conscious self-sacrifice;
+
+direct pain / aggression / chase
+→ ordinary fear, resistance or escape may return.
+```
+
+The unresolved problem is not whether approach was ever imagined, but what causal model can support approach/reduced avoidance without turning every animal into a permanently suicidal food-delivery mechanism or ignoring learning from prior attacks.
+
+#### INF-PHYS-V01 — infection-cue threat/social-recognition failure
+
+**Proposed Answer**
+
+An infection-associated smell or other cue may cause an affected animal to under-process threat and classify an infected human/animal as conspecific, socially familiar or otherwise insufficiently dangerous. The cue may attract the animal or suppress normal avoidance before overt aggression begins. It does not give the animal a goal of being eaten.
+
+When an infected attacks, chases or causes pain, stronger immediate danger signals may override the cue enough for resistance, panic or escape. Exact response depends on strain, species, individual state, distance and attack conditions.
+
+**Local Evaluation**
+
+Pros:
+
+- gives a causal reason for approach beyond arbitrary fear deletion;
+- preserves the existing non-suicidal baseline;
+- helps explain why accumulated experience may not fully restore normal avoidance while the cue remains active;
+- can produce readable pre-attack approach followed by a sharply different escape response.
+
+Cons:
+
+- may require more animal perception/behavior detail than the game needs;
+- `conspecific/familiar` can become misleading anthropomorphic wording if treated as literal biology;
+- an overly strong cue can still make animals functionally suicidal despite the stated boundary.
+
+Risks:
+
+- universalizing one behavior across every strain/species;
+- making animal feeding too reliable for infected ecology;
+- presentation failing to distinguish infection-driven approach from ordinary curiosity, injury, trapping or random movement;
+- teaching the player a rule through a historical strain that does not apply to the current playable strain.
+
+Prompt-Level Questions:
+
+- Does the design need an explicit neurological/social-recognition explanation, or is a strain-specific behavioral rule sufficient?
+- Is active attraction required, or does reduced avoidance already create the intended ecology?
+
+Variant Questions:
+
+- What cue is involved: smell, sound, behavior, several signals or an abstract authored rule?
+- Which species/strains are affected?
+- Can experience weaken the effect, and under what conditions?
+- At what signal does the animal switch from approach/non-avoidance to fear/escape?
+- Can unaffected herd/group members detect that something is wrong with the affected animal?
+
+**Evidence Context**
+
+- No new research evidence is added by this discussion.
+- The existing project baseline supports reduced avoidance and pain/chase response; it does not establish the proposed brain/cue mechanism.
+- Biological/reference research should later separate plausible animal sensory/learning mechanisms from authored gameplay simplification.
+
+**Dependencies / Conflicts / Relations**
+
+- refines `item 3` animal-attraction meaning;
+- must remain compatible with `CHAT-PI-052` strain/species discovery boundary;
+- may support the `OPEN-FIRST` animal observation example;
+- may enable or weaken `INF-PHYS-P02` infected-resident hunting depending on whether a functional person emits the relevant cue;
+- conflicts with any realization that makes direct aggression irrelevant to escape.
+
+**Integrated Evaluation**
+
+Cross-system questions:
+
+- How does this affect infected energy ecology, hunting, animal husbandry, animal intake and carcass sanitation?
+- What evidence can the player collect to distinguish current-strain behavior from historical knowledge?
+- Does the rule create meaningful decisions or only a lore explanation for infected feeding?
+
+**Combination Evaluation**
+
+The Variant can combine with visible historical-strain presentation without requiring the current strain to produce the same appearance or cue strength. That combination needs explicit communication so the player does not infer a universal current rule.
+
+**Current Conclusion**
+
+Preserve as a causal refinement candidate. The accepted/current baseline remains reduced avoidance without conscious self-sacrifice, with pain/aggression/chase capable of restoring fear/resistance/escape. Exact cue, cognition, attraction strength and strain/species scope remain open.
+
+### INF-PHYS-P02 — Могут ли заражённые члены убежища эффективнее охотиться на животных?
+
+**Type:** Brainstorm Prompt — Gameplay Idea / Cross-System Question
+**Status:** open Idea Variant; not an accepted worker role or hunting rule.
+**Source:** `SB-B01-P19`.
+
+#### INF-PHYS-V02 — delayed-avoidance hunter
+
+**Proposed Answer**
+
+An eligible infected/functional shelter member may approach an affected animal more effectively than an ordinary hunter because the animal detects the relevant infection cue and delays avoidance until overt aggression begins.
+
+**Local Evaluation**
+
+Pros:
+
+- converts infection status into a situational economic capability rather than only a penalty;
+- links functional infected population planning to animal ecology and food acquisition;
+- can create a reason to employ a risky person in work where their condition matters causally.
+
+Cons:
+
+- may collapse ordinary hunting, bait/trap and stealth decision space;
+- the advantage may be inconsistent if functional people do not emit the same cue as turned infected;
+- the hunter still needs a method to act before aggression triggers flight.
+
+Risks:
+
+- injury/exposure during close approach;
+- return of contaminated blood/tissue/equipment to the base;
+- a dominant optimal policy of using every eligible infected person as a hunter;
+- social/political consequences being reduced to a simple numeric buff.
+
+Variant Questions:
+
+- Which exact states qualify: persistent carrier, intermittent shedder, symptomatic functional infected, recovered person or another state?
+- Does the animal respond to that state with attraction, reduced avoidance or no special behavior?
+- What happens at the first weapon movement, chase, trap trigger or attack?
+- Is the advantage useful for capture, killing, herding, baiting or only initial approach?
+- Which species/strains make the role viable?
+
+**Evidence Context**
+
+- Current `CHAT-PI-016` supports functional carrier labor generally; it does not establish an animal-hunting advantage.
+- Current `CHAT-PI-052` supports animal reduced avoidance generally; it does not establish that a functional shelter resident presents the same cue as turned infected.
+- No prototype, simulation, playtest or new biological evidence currently validates the combined mechanic.
+
+**Dependencies / Conflicts / Relations**
+
+- depends on `CHAT-PI-016` state/worker boundaries;
+- depends on `CHAT-PI-052` current-strain animal behavior;
+- depends on `CHAT-PI-053` for current carcass, blood, meat and animal-sanitation consequences;
+- depends on or combines with `INF-PHYS-V01` only if the eligible hunter emits the relevant cue;
+- affects hunting Situation/Execution design, livestock/biosecurity, food/carcass handling and social treatment of infected workers;
+- conflicts with balance where ordinary hunting alternatives become redundant.
+
+**Integrated Evaluation**
+
+Before promotion, construct only the useful real planning-unit candidates and inspect:
+
+- the meaningful hunting/capture decision, not only physical execution;
+- chosen approach/attack/carcass-return Execution;
+- infection/exposure and sanitation consequences;
+- labor allocation and opportunity cost;
+- social/political reaction to deliberately using an infected person this way;
+- whether the resulting hunting gameplay remains legible and has several viable approaches.
+
+**Combination Evaluation**
+
+The role may combine with animal observation/research: the base first learns that a current strain reduces avoidance, then considers a risky hunting policy. Historical footage alone should not unlock/validate the current-strain mechanic.
+
+**Current Conclusion**
+
+Preserve as an open gameplay Idea. Do not promote it into `CHAT-PI-016`, `CHAT-PI-052`, a Hunting Loop or accepted workforce architecture until eligible infection state, current-strain behavior, balance and sanitation consequences are integrated and reviewed.
+
 ### Source refs
 
 `SB-B01-SRC01 item 6`. Hybrid rule/content example remains in Ideas by current routing rule.
@@ -516,10 +693,133 @@ A violent internal struggle where two forces contest the shelter and the player 
 
 It is **not yet** a separate Content Premise under the current `Hybrid → Ideas` rule.
 
-## 10. Current Consolidation Notes
+## 10. OPEN-FIRST — First-Play Context And Gameplay Entry
+
+**Source:** `SB-B01-P18` and `SB-B01-P19`.
+**Status:** the context order is a selected current-working direction; concrete presentation/lore/narrative realizations remain Ideas/Variants.
+
+### OPEN-FIRST-P01 — Какой контекст нужен до Gameplay T0?
+
+**Type:** Brainstorm Prompt — Requirement / Presentation Problem
+
+#### Selected current-working direction
+
+```text
+shallow virus/world context
+→ concrete game/base context
+→ gameplay-entry handoff
+→ Gameplay T0: newcomers arrive / are detected.
+```
+
+The pre-play/context material should orient rather than become a deep exposition layer. It needs to communicate enough scale and character of the infection for the player to understand the world they are entering, then establish the concrete Survivor Base context. Pre-play may change expectations, doubts and motivations, but is not automatically Gameplay Phase 0.
+
+The virus/world layer should make clear that infection is not only a bite mechanism and can spread through virus-like routes. Exact transmission routes and what is known about the current strain remain project/system questions; presentation must not invent a universal route merely to make the point.
+
+The opening may hint that infection changed or behaved heterogeneously. Existing `INF-EVO item 4A` already owns the lore Variant in which an early form was highly transmissible, some infected stayed outwardly human-like and later obvious mass turning appeared. First Contact may use that Variant as an example only if it is selected/reconciled; this workspace does not copy it into accepted world history.
+
+#### OPEN-FIRST-V01 — light contextual presentation
+
+**Proposed Answer**
+
+Use a short, relatively shallow opening presentation—cinematic, in-engine observation or another medium—to establish scale, non-bite viral spread and possible heterogeneity/change before moving to the base-specific context.
+
+**Local Evaluation**
+
+Pros:
+
+- gives the player a usable world model before local rules demand decisions;
+- can communicate scope without tying the whole game to fixed playable protagonists.
+
+Cons / Risks:
+
+- exposition may delay the actual colony-sim decision space;
+- a cinematic can promise rules that the current strain/gameplay does not support;
+- fixed dramatic identities can conflict with customizable trusted-core ownership.
+
+Variant Questions:
+
+- What minimum information must be explicit, and what should remain only a hint?
+- Which medium supports the responsibility without making Scenario semantics depend on presentation tooling?
+- Does the material depict the current strain, historical evidence or several periods?
+
+**Current Conclusion**
+
+The responsibility/order is selected; exact medium and content are open.
+
+#### OPEN-FIRST-V02 — affected animal leaves a group
+
+**Proposed Answer**
+
+Show an observably altered animal leaving a group and approaching infected. The rest of the group does not follow automatically; when the approached animal is attacked/eaten, the others become frightened and flee.
+
+The alteration/behavior may belong to an earlier or otherwise different visible strain. A later animal mini-mission/tutorial may explain that previous strains showed what the player saw in the opening. The presentation is not automatically a cutscene.
+
+**Local Evaluation**
+
+Pros:
+
+- shows non-human infection ecology and the non-suicidal aggression boundary through action;
+- the fleeing group prevents the scene from implying that every animal endlessly offers itself to infected;
+- historical framing can preserve current-strain discovery.
+
+Cons / Risks:
+
+- visible infection may teach the player that all affected animals are visually obvious;
+- historical framing may be forgotten or misunderstood;
+- one authored scene does not establish frequency, universality or exact causal mechanism;
+- the scene can overpromise animal-system depth.
+
+**Evidence Context**
+
+- Existing `INF-PHYS item 3` supports smell attraction/approach as an Idea.
+- Current `CHAT-PI-052` supports reduced avoidance plus pain/chase response as baseline direction.
+- Neither establishes this exact group scene, visible transformation, historical-strain wrapper or tutorial.
+
+**Dependencies / Conflicts / Relations**
+
+- is an example of the existing `INF-PHYS item 3` / `CHAT-PI-052` reduced-avoidance direction;
+- may exemplify `INF-PHYS-V01` only if that causal model is selected;
+- may use `INF-EVO item 4A` as historical context but does not accept it;
+- conflicts with any presentation that implies the observed appearance/behavior is universal for the current strain;
+- remains embedded here until independent content-unit development justifies a Content Premise.
+
+**Current Conclusion**
+
+Preserve as a presentation Variant. Exact medium, strain, species, visible signs, timing and later tutorial use remain open.
+
+### OPEN-FIRST-P02 — Как совместить narrative identity с customizable trusted core?
+
+**Type:** Brainstorm Prompt — Conflict
+**Status:** open; no narrative architecture selected.
+
+Current `CHAT-PI-040` preliminarily accepts that the player may create/configure a limited trusted core. A deep opening story built around fixed playable personalities may contradict that direction or make the created characters feel secondary.
+
+Questions:
+
+- Does opening context need named playable protagonists at all?
+- Can historical/world context use people who are not the player's eventual trusted core?
+- Can the authored story attach to roles, relationships, events or generated/customized characters instead of fixed identities?
+- Which facts must be stable for gameplay causality, and which identity details can vary by run?
+- Does trusted-core setup occur before Gameplay T0, and how much story/context does it carry?
+
+Relations:
+
+- conflicts with a fixed-protagonist opening when identity continuity is required;
+- depends on `CHAT-PI-040` customizable trusted-core direction;
+- connects to the active Goal Map's open trusted-core-setup handoff.
+
+**Current Conclusion**
+
+Preserve the conflict explicitly. Do not select fixed protagonists, story-light presentation or a generated-character narrative solution by implication.
+
+## 11. Current Consolidation Notes
 
 - Item `1` is owned by [`content-premises.md`](content-premises.md) because the prolonged siege is currently treated as a standalone content unit; its unresolved system questions stay attached to that premise.
 - Items `8` and `9` are owned by [`content-premises.md`](content-premises.md).
 - Item `1.1` stays here even though it could later generate a Content Premise.
 - Mixed-strain encounter, fake-dead encounter, prison start and violent takeover stay embedded in Ideas until separate content development justifies promotion.
+- `OPEN-FIRST` preserves the selected context order and its presentation/narrative alternatives; it does not yet create the detailed opening Spine.
+- The affected-animal group scene remains an embedded presentation example, not a Content Premise.
+- `INF-PHYS-P01` refines already-preserved smell attraction/reduced avoidance rather than duplicating it as a new rule.
+- `INF-PHYS-P02` remains an open cross-system gameplay Idea and does not update the accepted Draft/workforce/ecology owners.
 - Detailed brainstorming techniques are intentionally not defined in this project file; use the reusable [`Game Creation Workflow`](../../game-creation-workflow.md) and future brainstorming-method owners.

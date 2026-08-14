@@ -43,6 +43,32 @@ SHA-256: `4f543c1c03b842c63694bc4a073b45dcd0ec9c1a9aebb27e67c96b08c75b49c4`
 
 This is the gameplay/world/mechanic/content/scenario-premise source whose numbering `1, 1.1, 2, 3, 4, 5, 6, 8, 9, 12, 13, 14, 16, 17` is preserved in the project Idea/Content-Premise workspaces.
 
+### SB-B01-SRC02 — later Spine / Linked Notes migration package
+
+`survivor-base-chat-migration-package(1).zip`
+
+SHA-256: `63c4fd60978580fd6466f0760841523472f84f10f441eb52a415e18825f616b4`
+
+Selected files inside the package:
+
+```text
+01-MIGRATION-START-HERE.md
+SHA-256: 966088e936476b77dc882b1d7127ee445c3a90377dbeaab169f1e88813c2a0ee
+
+02-VERBATIM-EVIDENCE.txt
+SHA-256: 24a7531bcff87a8a0ceaaa0c428ea719bc7f20e8c9006be754cf91d3d78288e6
+```
+
+The migration overview is supporting reconciliation context, not repository truth or user evidence by itself. Direct decisions below rely on the preserved verbatim evidence/current user messages where available. History-backed decisions remain labelled as such.
+
+### SB-B01-SRC03 — external assimilation review
+
+`Вставленная ​​уценка(20260814-200839).md`
+
+SHA-256: `c05f438353e069379cc019664502d049837219861fcca04b003439304e10f6fe`
+
+This file critically reviewed another chat's assimilation of `SB-B01-SRC02`. It is useful for finding status/sequence/ownership mistakes, but its assistant conclusions do not become user decisions automatically. Later user instructions in the current continuation remain stronger.
+
 ## 3. Coverage Rule
 
 The selected boundary is `SB-B01-SRC00`.
@@ -1640,6 +1666,132 @@ Current boundary:
 Destination:
 - explicit methodology gap / boundary only.
 
+### SB-B01-P17 — staged current Spine pass and current-stage owner discovery
+
+Source status: mixed. Direct user decisions are supported by `SB-B01-SRC02` verbatim evidence; the selected sequence/backbone is history-backed working state reviewed through `SB-B01-SRC03` and accepted as the current continuation context. Do not present the history-backed parts as user quotes.
+
+Direct decisions/directions preserved:
+
+- current low-level unit/entity boundaries are still being discovered;
+- a material responsibility must not be discarded only because its final unit/field/owner is absent, but this is scoped to the current discovery stage;
+- a sufficiently detailed Step preserves relevant `Before → Inside → After / Handoff` continuity;
+- Stopping/Continuation has both a continuous planning-lens role and a material exit/return-point role;
+- repository templates should later support fast creation of useful unit/entity files; exact inventory and repository ownership remain open;
+- the Spine representation should be reconsidered against actual Linked Notes Reference Object behavior without inventing placements/IDs;
+- specialized Reference Research is a later reference-search/research pass, not a required heavy section in every current Step.
+
+History-backed current-pass decisions:
+
+```text
+coherent detailed selected Spine
+→ capture candidate responsibilities / handoffs
+→ separate reusable low-level expansion
+→ compare clarified owners back against the Spine.
+```
+
+- Baseline Player Context and evolving temporal player-side responsibility remain distinct; exact owner stays open and `Player State` is not accepted as a canonical unit;
+- First Contact / pre-play may feed gameplay entry without becoming Gameplay Phase 0;
+- Scenario Phase/section and Gameplay Loop are different responsibilities;
+- the selected opening backbone is `newcomers → intake → admission → integration/work → people become known → ambiguous evidence → response → investigation → assessment → persistent procedure/policy change`;
+- Mira, exact newcomer count, exact symptom, exact work task, diagnosis and final policy remain Scenario Assumptions/open details.
+
+Destinations:
+
+- [`../active-planning-goal-map.md`](../active-planning-goal-map.md);
+- [`../game-analysis-reference/gameplay-planning/scenarios.md`](../game-analysis-reference/gameplay-planning/scenarios.md);
+- [`../game-analysis-reference/game-structure-analysis.md`](../game-analysis-reference/game-structure-analysis.md).
+
+### SB-B01-P18 — current first-play context direction and Scenario version scope
+
+Source status: mixed. The virus/world → game/base → gameplay-entry order and Scenario version/scope direction come from direct current-continuation user statements; `Gameplay T0 newcomers` is inherited from the history-backed current-pass decision in `SB-B01-P17`. Presentation details retain the user's tentative/candidate wording.
+
+Short direct source excerpts:
+
+> «сначала мы показываем что то , что вводит игрока в контекст вируса, не особо глубоко»
+>
+> «потом надо показать контекст игровой, вот тут очень важно.»
+>
+> «по умолчанию сценарий для игровой версии пишется»
+
+Selected current-working direction:
+
+```text
+shallow virus/world context
+→ concrete game/base context
+→ gameplay-entry handoff
+→ Gameplay T0 newcomers.
+```
+
+Preserved responsibilities:
+
+- communicate enough scale/character of the virus to orient the player without beginning with a deep exposition layer;
+- make clear that infection is not only a bite mechanism and can spread through virus-like routes, while exact routes/current-strain knowledge remain open;
+- the opening may hint that the infection changed/behaved heterogeneously, but the specific early-high-transmission/later-turning history remains the existing `INF-EVO` lore Variant rather than accepted world history;
+- establish the concrete game/base context after the broader virus/world context;
+- preserve the conflict between fixed/deeply authored protagonist identities and the existing customizable trusted-core direction as an explicit design problem rather than silently selecting one side.
+
+Scenario scope direction:
+
+- a Scenario/Spine should identify its target game version/scope when ambiguity is material;
+- document revision and target game version are different;
+- material that belongs to another/future version should be marked;
+- a materially different future version should normally receive a separate Scenario pass rather than being mixed into one chronology;
+- this does not resolve the older generic `Game Version / Planning Unit Version` terminology gap from `SB-B01-P03`.
+
+Destinations:
+
+- [`../active-planning-goal-map.md`](../active-planning-goal-map.md);
+- [`../game-analysis-reference/gameplay-planning/scenarios.md`](../game-analysis-reference/gameplay-planning/scenarios.md);
+- [`../game-planning/survivor-base/ideas.md`](../game-planning/survivor-base/ideas.md).
+
+### SB-B01-P19 — project-scope Idea home and animal approach/hunting refinements
+
+Source status: direct current-continuation user statements. These meanings are accepted for preservation as Ideas/refinements, not as accepted cross-cutting game rules.
+
+Short direct source excerpts:
+
+> «если несколько уровней захватываются идеей, имеет смысл поместить в какое то общее место»
+>
+> «зараженные члены убежища могут быть эффективны в охоте за животными»
+
+Scope decision:
+
+- when one Idea question genuinely spans several planning levels, keep one primary home at project scope first;
+- specialize/split lower only when the meaning or independent owner responsibility actually differs;
+- use the existing detailed Idea/Variant evaluation structure for substantial additions.
+
+Current repository reconciliation:
+
+- `ideas.md` already preserves that infected animals may be attracted by infected smell and approach without normal fear;
+- `CHAT-PI-052` already accepts reduced avoidance without conscious self-sacrifice and preserves direct pain/chase reaction;
+- the incoming material refines these meanings rather than introducing smell attraction from zero.
+
+New refinement candidates:
+
+- an infection-associated cue may impair threat/social recognition so an affected animal treats infected presence as conspecific/familiar/insufficiently dangerous;
+- the cue may attract or reduce avoidance without giving the animal a goal of self-sacrifice;
+- overt aggression, pain or chase can still trigger fear, resistance and escape;
+- exact mechanism, affected strains/species, cue strength and learning interaction remain open.
+
+Embedded first-contact/presentation candidate:
+
+- one visibly altered animal leaves a group and approaches infected;
+- the group does not follow automatically and flees when the approached animal is attacked/eaten;
+- visible alteration may belong to a historical/earlier strain rather than the current playable strain;
+- a later animal mini-mission/tutorial may contextualize the observation as an earlier-strain fact;
+- exact medium is open and is not automatically a cutscene.
+
+Gameplay Idea candidate:
+
+- an eligible infected/functional shelter member may gain a hunting advantage against affected animals because they delay avoidance;
+- exact eligible infection state, whether the relevant cue exists on a functional person, hunting balance, aggression threshold, injury/exposure, carcass sanitation and social consequences remain open.
+
+Destination:
+
+- [`../game-planning/survivor-base/ideas.md`](../game-planning/survivor-base/ideas.md).
+
+The current user's intermediate acceptance/consistency response rule is applied as a chat-working contract. It is not added to a repository workflow by this package because the user said they would preserve it as a prompt for chats.
+
 ## 9. Post-`0d059...` Consolidation Destination Summary
 
 | Meaning family | Current reusable destination |
@@ -1657,4 +1809,4 @@ Destination:
 | Implementation Slice boundary | development workflow; detailed method/filesystem deferred |
 | cross-unit conflicts / categories | Game Planning + project ownership guidance |
 
-The post-`0d059...` discussion does **not** authorize physical Survivor Base migration in this package. Existing Survivor Base project files remain current until a separate migration plan resolves exact Idea categories, collection navigation and Loop/Strategy/session structure.
+The post-`0d059...` material preserved through `SB-B01-P01`–`SB-B01-P16` did **not by itself** authorize physical Survivor Base migration. The current package is separately authorized by the reviewed file-update plan and the later current-continuation decisions preserved in `SB-B01-P17`–`SB-B01-P19`. It updates only their scoped current-work/method/Idea owners. Exact broader Idea-category migration, collection navigation and Loop/Strategy/session structure remain unresolved and outside this package.
