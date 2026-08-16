@@ -6,19 +6,21 @@
 **Candidate content input:** [`content-premises.md`](content-premises.md)\
 **Related Loop detail:** [`gameplay-loops.md`](gameplay-loops.md)\
 **Reusable method:** [`../../game-analysis-reference/gameplay-planning/scenarios.md`](../../game-analysis-reference/gameplay-planning/scenarios.md)\
+**Active opening Spine:** [`scenarios/opening-spine.md`](scenarios/opening-spine.md)\
 **Authority boundary:** this file owns independently useful project-local Scenario chronology and validation work. It may expand clearly marked candidate Content Premises into working Scenarios, but it does not promote those premises into accepted cross-cutting game rules, override `CHAT-PI-*` states, convert an inference into an accepted decision or claim that one selected chronology is the only valid playthrough.
 
 ## 1. Purpose
 
 A Scenario asks what **actually happens through time** when concrete decisions, system execution, information reveals, consequences and recovery interact.
 
-The current owner starts with one representative Scenario:
+Current Scenario work includes:
 
-- **Incomplete Alarm In A Working Sector**.
+- [`scenarios/opening-spine.md`](scenarios/opening-spine.md) — the active cumulative first-play Spine for the current planning pass;
+- **Incomplete Alarm In A Working Sector** below — a separate working representative Scenario.
 
-It is a **working representative Scenario**, not the frozen first-demo screenplay.
+Neither is the frozen first-demo screenplay, and neither claims to be the only valid playthrough.
 
-The chronology is concrete enough to review integration, but some branch details remain unresolved in the source. Keep those branch points explicit instead of silently selecting missing mechanics or content.
+The representative alarm chronology below is concrete enough to review integration, but some branch details remain unresolved in the source. Keep those branch points explicit instead of silently selecting missing mechanics or content.
 
 `content-premises.md` preserves preliminary content units before detailed chronology is useful. A premise belongs here only after chronology/integration work becomes useful; preserving a premise alone does not require inventing Scenario Beats.
 
@@ -178,4 +180,4 @@ Content Premise
 → add the resulting working Scenario here.
 ```
 
-Hybrid examples still stored only in `ideas.md` should not be pulled into this file until they have first become independent content units or a direct Scenario exploration is explicitly chosen.
+Hybrid examples still represented only by their individual Idea records under the [`ideas/` workspace](ideas/README.md) should not be pulled into this file until they have first become independent content units or a direct Scenario exploration is explicitly chosen.

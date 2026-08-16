@@ -4,8 +4,8 @@
 **Project-layer map:** [`../README.md`](../README.md)
 **Current legacy consolidated source:** [`game-planning-draft.md`](game-planning-draft.md)
 **Current Scenario detail owner:** [`scenarios.md`](scenarios.md)
-**Current opening-Spine working owner:** [`../../active-planning-goal-map.md`](../../active-planning-goal-map.md) until the detailed chronology is ready for `scenarios.md`
-**Idea workspace:** [`ideas.md`](ideas.md)
+**Current opening-Spine working owner:** [`scenarios/opening-spine.md`](scenarios/opening-spine.md)
+**Idea workspace:** [`ideas/README.md`](ideas/README.md)
 **Content-premise workspace:** [`content-premises.md`](content-premises.md)
 **Experience / Motivation planning:** [`experience-motivation/README.md`](experience-motivation/README.md)
 **Source ledger:** [`../../chat-history/survivor-base-branch-01.md`](../../chat-history/survivor-base-branch-01.md)
@@ -57,10 +57,11 @@ Do not discard the Draft until still-useful meaning/provenance has been safely r
 | File | Responsibility | Current authority/status boundary |
 |---|---|---|
 | [`game-planning-draft.md`](game-planning-draft.md) | Legacy consolidated Planning Item set, decisions, candidates, risks and imported current-source context | Active migration/source artifact; not target permanent integration center |
-| [`ideas.md`](ideas.md) | Preserved system/world/mechanic/hybrid ideas, Design Directions, Brainstorm Prompts, Variants and unresolved exploratory meaning | Active creative workspace; not automatic accepted game meaning |
+| [`ideas/README.md`](ideas/README.md) | Navigation for separate standalone Idea and Brainstorm Prompt workspace files, grouped by optional Design Direction | Active creative workspace navigation; child records retain their own status |
 | [`content-premises.md`](content-premises.md) | Preliminary standalone content units before detailed chronology | Active preliminary content owner |
 | [`gameplay-loops.md`](gameplay-loops.md) | Independently useful Gameplay Loop candidates/detail | Project-local gameplay detail owner |
-| [`scenarios.md`](scenarios.md) | Representative Scenarios, Scenario Beats, integration questions and validation checkpoints | Project-local Scenario detail owner; selected chronology is not the only playthrough |
+| [`scenarios.md`](scenarios.md) | Project-local Scenario navigation, representative Scenario material and validation checkpoints | Active Scenario owner/navigation |
+| [`scenarios/opening-spine.md`](scenarios/opening-spine.md) | Cumulative selected first-play Spine chronology from First Contact through persistent adaptation | Active working Spine Scenario; concrete details remain working/open unless separately established |
 | [`experience-motivation/README.md`](experience-motivation/README.md) | Project Experience/Motivation and candidate Promise/Doubt planning | Active working owner; concrete units retain their own statuses |
 | [`visual/README.md`](visual/README.md) | Visual-planning navigation, ownership and current depth | Project-local detail navigation |
 | [`visual/visual-requirements-matrix.md`](visual/visual-requirements-matrix.md) | What visual system must communicate/support across current contexts | Working visual requirements owner; does not override gameplay/project source status |
@@ -90,7 +91,7 @@ Scenario / Spine ↔ reusable owners ↔ Ideas / Variants / Versions ↔ new Sce
 
 ## 5. High-Level Example Of The Current Opening Spine
 
-**Illustrative working backbone, not frozen project choreography:**
+**Current working backbone, accumulated in [`scenarios/opening-spine.md`](scenarios/opening-spine.md); concrete choreography/details are not frozen project truth:**
 
 ```text
 newcomers arrive / are detected

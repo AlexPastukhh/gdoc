@@ -3,7 +3,7 @@
 **Status:** active project-local preliminary content workspace
 **Project entry point:** [`README.md`](README.md)
 **Legacy source/status context:** [`game-planning-draft.md`](game-planning-draft.md)
-**Idea workspace:** [`ideas.md`](ideas.md)
+**Idea workspace:** [`ideas/README.md`](ideas/README.md)
 **Scenario detail owner:** [`scenarios.md`](scenarios.md)
 **Source ledger:** [`../../chat-history/survivor-base-branch-01.md`](../../chat-history/survivor-base-branch-01.md)
 
@@ -46,7 +46,7 @@ If developing a premise requires new general mechanics/system meaning, discuss a
 
 If a premise becomes sufficiently defined to need chronology/integration work, expand it through the reusable Scenario method and place the detailed representative Scenario in [`scenarios.md`](scenarios.md) or another justified project Scenario owner.
 
-Hybrid incoming ideas remain in [`ideas.md`](ideas.md) by default until their content fragment is useful as an independent unit.
+Hybrid incoming ideas remain in their individual records under the [`ideas/` workspace](ideas/README.md) by default until their content fragment is useful as an independent unit.
 
 ## 2. Current Premises
 
@@ -182,18 +182,16 @@ These are candidate questions, not a frozen Situation list.
 
 ## 3. Not Yet Promoted From Ideas
 
-The following remain embedded in [`ideas.md`](ideas.md) under the current `Hybrid → Ideas` rule:
+The following content examples remain unpromoted under the current `Hybrid → Ideas` rule. Their current related Idea records are:
 
-```text
-Mixed-Strain Encounter;
-Fake-Dead / Sleeping Infected Encounter;
-Prison Start — Guards Need Prisoners;
-Revolt / Violent Change Of Power.
-```
+- `Mixed-Strain Encounter` — [`INF-EVO item 2+5`](ideas/infection-evolution/item-2-5-strain-groups-and-line-displacement.md);
+- `Fake-Dead / Sleeping Infected Encounter` — [`INF-PHYS item 6`](ideas/infected-physiology-and-ecology/item-6-sleeping-infected.md);
+- `Prison Start — Guards Need Prisoners` — [`SOC-TRAJ item 14`](ideas/social-trajectories/item-14-raids-and-base-types.md);
+- `Revolt / Violent Change Of Power` — [`GOV item 17`](ideas/governance-and-leadership/item-17-regime-change-and-internal-conflict.md).
 
-Move one here only when it becomes useful to evaluate and develop it as an independent content unit.
+These links identify the current Idea records that preserve or ground the examples; they do not promote the examples into standalone Content Premises. Move one here only when it becomes useful to evaluate and develop it as an independent content unit.
 
-Item `1.1` — major nuclear/chemical event — also remains in `ideas.md` by explicit current routing.
+Item `1.1` — major nuclear/chemical event — remains in its standalone Idea record [`WORLD item 1.1`](ideas/world/idea-1.1-major-nuclear-chemical-event.md) by explicit current routing.
 
 ## 4. Preliminary Review Questions
 

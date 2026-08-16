@@ -58,13 +58,13 @@ Do not turn this file into a second methodology document or historical backlog. 
 
 **Status:** active working selection; backbone selected for current methodology pass, concrete details not frozen project truth.
 **Why it matters:** current pass needs one stable chronology to expose real low-level boundaries without repeatedly reopening its basic path.
-**Current working owner:** this Goal Map until detailed chronology is ready for `game-planning/survivor-base/scenarios.md`.
+**Current working owner:** `game-planning/survivor-base/scenarios/opening-spine.md`; this Goal Map now tracks the concern/next validation rather than owning the chronology.
 **Selected backbone:** `newcomers arrive / are detected → intake → admission decision → integration / work → people become more known → ambiguous evidence → response → investigation → assessment → persistent procedure / policy change`.
 **Entry boundary:** First Contact / pre-play may establish virus/world context, game/base context and gameplay-entry player-side state, but is not automatically Gameplay Phase 0. Gameplay T0 for this Spine is arrival/detection of newcomers. Existing base and clean trusted core are Starting State.
 **Open:** whether explicit trusted-core setup occurs between launch and Gameplay T0; exact presentation of virus/world and game/base context; exact newcomers, symptoms, work, diagnosis and final policy.
 **Legacy Draft check:** consult relevant Planning Items/status/provenance in `game-planning/survivor-base/game-planning-draft.md` while constructing the Spine. Treat the Draft as migration/source context, not the permanent target owner. Do not require back-writing every new owner-local clarification into it; write back only when explicit migration compatibility/provenance responsibility requires it.
 **Closed when:** detailed selected chronology reaches persistent operating adaptation and remaining Scenario Assumptions, owner handoffs and source relationships are explicit.
-**Next check:** continue this selected opening Spine rather than choosing another backbone.
+**Next check:** continue this selected opening Spine in `game-planning/survivor-base/scenarios/opening-spine.md` rather than choosing another backbone.
 
 ### Spine Role / Handoff
 
@@ -287,7 +287,7 @@ These are recognized gaps. They do not block current staged Spine pass unless th
 Current next planning sequence:
 
 ```text
-continue selected non-branching opening Spine
+continue selected non-branching opening Spine in game-planning/survivor-base/scenarios/opening-spine.md
 → consult relevant legacy Draft Planning Items/status/provenance
 → state Target Game Version / Scope
 → set one explicit Player Context
