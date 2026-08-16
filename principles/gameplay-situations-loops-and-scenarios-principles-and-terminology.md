@@ -11,7 +11,7 @@ This file owns the canonical working meanings of:
 Gameplay Situation;
 Situation Type / Family;
 Situation Variant;
-Situation Version;
+Situation Version application;
 Situation Instance;
 Active Situation;
 Direct Situation Transition;
@@ -26,11 +26,13 @@ Scenario Beat;
 the terminology boundary between Gameplay Situation and broader Visual Context.
 ```
 
-Detailed planning schemas and questions remain in [`Game Analysis Reference / Gameplay Planning`](../game-analysis-reference/gameplay-planning/README.md).
+General `Variant`, reusable contextual `Version`, `Low-Level Element`, Idea and planning-owner meanings are owned by [`Game Planning`](game-planning-principles-and-terminology.md). This file applies those general meanings to gameplay structures and owns Situation-specific semantics.
 
-The canonical meaning of `Gameplay Dynamic` / `System Dynamic` remains in [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md). This file owns the boundaries between that systemic term and Gameplay Situation / Event / Loop / Scenario.
+Detailed planning schemas/questions remain in [`Game Analysis Reference / Gameplay Planning`](../game-analysis-reference/gameplay-planning/README.md).
 
-`Gameplay Situation` is a **specific planning term**. It does not redefine every ordinary-language “situation” or every Dynamic.
+The canonical meaning of `Gameplay Dynamic` / `System Dynamic` remains in [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md).
+
+`Gameplay Situation` is a specific planning term. It does not redefine every ordinary-language “situation” or every Dynamic.
 
 ## 2. Gameplay Situation
 
@@ -45,7 +47,7 @@ event / trigger / observation / state
 ≠ Gameplay Situation automatically.
 ```
 
-A useful test is:
+Useful test:
 
 ```text
 What does the player care about here?
@@ -54,7 +56,7 @@ Why might a reasonable player choose each one?
 What can change because of the choice or because the player waits?
 ```
 
-One Gameplay Situation can contain many materially different options. The number of options does not by itself imply several Situations.
+One Gameplay Situation can contain many materially different options. Number of options alone does not imply several Situations.
 
 ### Illustrative example only
 
@@ -72,15 +74,15 @@ sneeze
 = Gameplay Situation.
 ```
 
-Likewise, `resource starvation` may be an emergent Dynamic. It becomes a Gameplay Situation when the current state creates a meaningful player decision with stakes and materially different responses.
+Likewise, `resource starvation` may be an emergent Dynamic. It becomes a Gameplay Situation when current state creates a meaningful player decision with stakes and materially different responses.
 
-A state such as `Food = Low` is state/information. It becomes a Gameplay Situation when the player perceives/reasons about it inside a meaningful decision problem with stakes and materially different responses such as ration / trade / raid / wait.
+A state such as `Food = Low` is state/information. It becomes a Gameplay Situation when the player perceives/reasons about it inside a meaningful decision problem with choices such as ration / trade / raid / wait.
 
 ### Situation boundary
 
 If one decision resolves and a new meaningful decision appears with substantially changed state, motivation, stakes, uncertainty or available options, treat that as a candidate **next Situation Instance** instead of extending one occurrence indefinitely.
 
-Do not infer that every reusable change of circumstances requires a different Situation Type. A materially different reusable context/configuration may instead be a `Situation Version` when the fundamental meaningful-decision responsibility remains the same.
+Do not infer that every reusable change of circumstances requires a different Situation Type. A materially different reusable context/configuration may instead be a Situation Version when the fundamental meaningful-decision responsibility remains the same.
 
 ## 3. Situation Type / Family, Variant, Version, Instance And Active Situation
 
@@ -94,13 +96,13 @@ A Situation family does not require one canonical main record merely to sit abov
 
 ### Situation Variant
 
-A `Situation Variant` is an **alternative design of the whole Situation**.
+A `Situation Variant` is an alternative integrated design of the whole Situation.
 
-Different Variants may use different mechanics, option structures, causal models or integrated combinations of lower-level Idea Variants while still addressing the same fundamental Situation responsibility.
+Different Variants may use different mechanics, option structures, causal models or combinations of lower-level Idea Variants while still addressing the same fundamental Situation responsibility.
 
 ### Situation Version
 
-A `Situation Version` is a **complete Situation Record** for one materially different reusable context/configuration of one Situation design/Variant.
+A `Situation Version` applies the general planning `Version` concept to a Situation: it is a **complete Situation Record for one materially different reusable context/configuration of one Situation design/Variant**.
 
 Examples can include stable contextual packages such as Summer, Winter or Siege when they materially change occurrence/state/information/options/stakes/consequences while the fundamental decision responsibility remains the same.
 
@@ -113,13 +115,16 @@ Situation Version
 Situation Version
 ≠ alternative design merely renamed;
 
+Situation Version
+≠ document revision;
+
 first/original contextual form
 = also a Version once the Version distinction is useful.
 ```
 
 When several Situation Variants coexist, each Version is scoped unambiguously to its Variant through ownership/location and/or naming.
 
-This contextual `Version` meaning is Situation-specific until other planning scales are reviewed explicitly.
+The same general `Version = contextual/configurational form of the same design` distinction may be used at other planning scales where it is materially useful. Each detailed method remains responsible for how that Version is represented at its own scale.
 
 ### Situation Instance
 
@@ -127,9 +132,26 @@ One concrete occurrence of a Situation Type/Variant/Version in an actual Scenari
 
 It carries the specific current people, resources, history, knowledge, concurrent problems, available options, chosen branch and actual Loop participation of that occurrence.
 
+Illustrative boundary:
+
+```text
+Reusable Situation:
+  Admission Under Uncertain Risk
+  → several possible entry paths / options / consequences.
+
+Situation Instance in one Spine:
+  these newcomers
+  + this evidence
+  + these available options
+  + restricted admission selected
+  + this concrete aftermath.
+```
+
+The reusable owner expands broader possibility-space. The Instance remains part of the selected Scenario chronology.
+
 ### Active Situation
 
-An `Active Situation` is a **currently unresolved meaningful decision problem available, relevant or pressing to the player**.
+An `Active Situation` is a currently unresolved meaningful decision problem available, relevant or pressing to the player.
 
 ```text
 state changed
@@ -147,7 +169,7 @@ At one moment there may be zero, one or several Active Situations.
 
 Use a separate Event only when the occurrence has enough independent planning responsibility to be reused/reviewed outside one chronology.
 
-Preserve the boundary:
+Preserve:
 
 ```text
 one-off decisionless chronology detail
@@ -163,14 +185,7 @@ meaningful player decision problem
 
 A Gameplay Event is a supporting local unit, not a fifth equal heavy planning scale.
 
-Do not require:
-- `Stage`;
-- Event phases;
-- `Active Event` lifecycle;
-- Event Bank;
-- mandatory Event taxonomy;
-- mandatory project-wide `events.md`;
-- mandatory Loop participation.
+Do not require Event stages/phases, Active Event lifecycle, Event Bank, mandatory taxonomy, mandatory project-wide `events.md` or mandatory Loop participation.
 
 ## 5. Occurrence And Frequency Principle
 
@@ -181,8 +196,8 @@ Hard Preconditions
   → without them the unit cannot occur;
 
 Occurrence Drivers / Alternative Causes
-  → non-mandatory causes/states that can create it
-     or make it more likely;
+  → non-mandatory causes/states that create it
+    or make it more likely;
 
 Frequency Controls
   → what determines how often it actually appears.
@@ -194,7 +209,7 @@ Previous player decisions may alter later prerequisites, drivers and frequency.
 
 ## 6. State And Economy Are Broader Than Currency
 
-For Situation / Loop / Dynamic reasoning, relevant `state / economy` includes any quantitative or qualitative state that materially affects:
+Relevant `state / economy` includes any quantitative or qualitative state that materially affects:
 
 ```text
 occurrence;
@@ -207,13 +222,13 @@ consequences;
 future decision conditions.
 ```
 
-Examples can include labor availability, capacity, time, evidence confidence, stock, distance, preparedness, route availability, the value of a particular person or an authority/relationship consequence.
+Examples include labor availability, capacity, time, evidence confidence, stock, distance, preparedness, route availability, value of a particular person or authority/relationship consequence.
 
 Do not automatically record the entire game state.
 
 ## 7. One Decision May Fan Out
 
-A decision does not have exactly one “next node.” It may cause:
+A decision does not have exactly one next node. It may cause:
 
 ```text
 0..N direct next Situations
@@ -225,16 +240,16 @@ shared-state / economy changes
 delayed conditions for future Situations / Events.
 ```
 
-Example shape:
+Example:
 
 ```text
 seal sector
 → trapped-people Situation
 AND
-→ production-route-loss Situation
+→ production-route-loss Situation.
 ```
 
-At the same time it may change the options of a raid-preparation Situation that was already active. The direct next Situations may belong to different Loops, and one decision may therefore affect several Loops without automatically merging them.
+At the same time it may change options of a raid-preparation Situation already active. Direct next Situations may belong to different Loops without merging those Loops automatically.
 
 ## 8. Situation Relations
 
@@ -258,7 +273,7 @@ Situation A
 → changed state recurrently creates Situation B.
 ```
 
-The relation is delayed but recurrent and load-bearing enough to analyse explicitly.
+The relation is delayed but recurrent/load-bearing enough to analyse explicitly.
 
 ### General Downstream Effect
 
@@ -288,11 +303,7 @@ Broader canonical definition:
 
 > **Gameplay Loop is a recurrent, functionally coherent causal process involving Gameplay Situations, player decisions, system execution and state change. Its progression may be asynchronous; its Situations need not be adjacent in time; and it may interact with other Loops through shared Situations, shared state, concurrent execution and decision-order effects.**
 
-The first wording is a useful special case. The second prevents a Loop from being reduced to adjacent decision nodes when execution, delay or other gameplay occurs between its Situations.
-
-`Chain` may describe a simple local example, but a Gameplay Loop is not required to be a contiguous chain of decision nodes.
-
-For example:
+Example:
 
 ```text
 Situation A
@@ -301,10 +312,10 @@ Situation A
 → state changes
 
 while that execution continues:
-  the player resolves Situation B from another Loop
+  player resolves Situation B from another Loop
 
 later:
-  the changed state contributes to the next Situation in Loop A.
+  changed state contributes to next Situation in Loop A.
 ```
 
 Gameplay Events may participate as triggers, feedback, payoff or pressure occurrences when useful. But:
@@ -329,8 +340,6 @@ one shared Situation
 ```
 
 Loop membership requires recurrent functional/causal coherence useful to analyse as one process.
-
-> **Two Situations are not members of the same Loop merely because they influence the same shared state. Two Loops are not merged merely because they overlap in time, share one Situation, or affect each other. Loop membership requires recurrent functional/causal coherence.**
 
 ## 10. Loop Phase
 
@@ -357,11 +366,26 @@ Scenario Beat
 
 Concrete Loops do not have to use one universal phase taxonomy.
 
-One Loop Phase may occupy several Scenario Beats. One Scenario Beat may also contribute to or change phases in several Loops when several recurrent processes are unfolding in the same causal-temporal moment.
+One Loop Phase may occupy several Scenario Beats. One Scenario Beat may contribute to phases in several Loops when recurrent processes unfold in the same causal-temporal moment.
+
+A project may group Scenario Beats under a readable `Scenario Phase`, but that chronology grouping is not automatically a Gameplay Loop.
+
+Example:
+
+```text
+Scenario Phase: Intake
+  → detection
+  → contact
+  → examination
+  → admission decision.
+
+This groups chronology.
+It does not prove a recurrent Intake Loop exists.
+```
 
 ## 11. Parallel And Interacting Loops
 
-> **Loops may run in parallel while their previous decisions are still being executed. A player can make a decision in another Loop during that execution. Multiple Situations may be active at once, and resolving one may change the conditions, options, stakes or risks of another before it is resolved.**
+Loops may run in parallel while previous decisions are still executing. A player can decide in another Loop during that execution. Multiple Situations may be active at once, and resolving one may change conditions/options/stakes of another before it resolves.
 
 Illustrative structure:
 
@@ -369,18 +393,17 @@ Illustrative structure:
 Situation A — staffing decision
 → player assigns workers
 
-Execution A continues:
-  workers move / work / produce
+Execution A continues
 
 WHILE THAT HAPPENS:
 
 Situation B — another Loop
-→ player makes another decision
+→ another decision
 
 Situation C may already remain unresolved.
 ```
 
-A Situation Instance can therefore participate in several Loops without collapsing them into one large Loop.
+A Situation Instance can participate in several Loops without collapsing them into one large Loop.
 
 ## 12. Decision-Order Interaction
 
@@ -391,11 +414,13 @@ resolve A first
 → B changes
 ```
 
-may differ materially from resolving B first. Record this as a tight dependency when the relation is specific/recurrent; do not treat every broad economic interaction as a decision-order relation.
+may differ materially from resolving B first. Record as a tight dependency when relation is specific/recurrent; do not treat every broad economic interaction as a decision-order relation.
 
 ## 13. Gameplay Dynamic Relationship And Player Strategy Boundary
 
-`Gameplay Dynamic` and the canonical causal relation between Dynamics and Player Behavior / Strategy are owned by [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md). The summary below is an operational boundary for gameplay planning.
+`Gameplay Dynamic` and canonical Dynamic ↔ Player Behavior / Strategy relation remain owned by [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md).
+
+Operational boundary:
 
 ```text
 Gameplay Situation
@@ -405,39 +430,54 @@ Gameplay Loop
   → recurrent functionally coherent causal process;
 
 Gameplay Dynamic
-  → recurrent / persistent / directionally developing
-     systemic tendency produced as rules, state, events,
-     decisions and consequences interact over time;
+  → recurrent / persistent / directionally developing systemic tendency;
 
 Player Strategy
-  → deliberate player-authored plan/policy across decisions/time,
-     based on the player's model of the system;
+  → deliberate player-authored plan/policy across decisions/time;
 
 Scenario
-  → concrete chronological traversal in which
-     Situations / Events / Loops / consequences occur and
-     linked or candidate Dynamics may manifest.
+  → concrete chronological traversal where Situations / Events /
+    Loops / consequences occur and candidate Dynamics may manifest.
 ```
 
-A Situation consequence may contribute to a Dynamic without being the Dynamic itself. A Loop may produce one or several Dynamics. A Dynamic may emerge across several Loops through shared state/incentives without merging them.
-
-A Dynamic can change which Strategies are attractive; a Strategy is what the player plans/does in response and can in turn strengthen, weaken or redirect a Dynamic.
+A Situation consequence may contribute to a Dynamic without being the Dynamic itself. A Loop may produce one or several Dynamics. A Dynamic may emerge across several Loops without merging them.
 
 ## 14. Scenario
 
 > **Scenario is a concrete chronological model of play which selects a path through Gameplay Situations and one or more Gameplay Loops, while also preserving Gameplay Events and the execution, observation, waiting, transition, consequence, payoff and recovery periods between meaningful decisions.**
 
-Routine and breathing-room periods can also be preserved when meaningful to the concrete chronology.
+Routine and breathing-room periods can also be preserved when meaningful.
 
-A Scenario is therefore not only a list of Situation nodes. It may contain routine, execution and breathing room where no new meaningful decision occurs.
+A Scenario is not only a list of Situation nodes. It may contain routine, execution and breathing room where no new meaningful decision occurs.
 
-A selected Scenario branch is useful for planning, implementation and testing. It does not claim that every valid playthrough follows the same path.
+A selected Scenario branch is useful for planning, implementation and testing. It does not claim every valid playthrough follows the same path.
+
+### Scenario / reusable-owner boundary
+
+A Scenario may contain concrete low-level manifestations directly. Reusable owners expand beyond one selected chronology.
+
+Example only:
+
+```text
+Scenario:
+  this newcomer is conditionally admitted
+  → this work assignment begins
+  → this symptom report arrives.
+
+Reusable owners may later expand:
+  Admission Situation;
+  examination Execution;
+  symptom-report Event;
+  related Domain rules.
+```
+
+Extraction into reusable owners does not erase the concrete occurrences from the Scenario.
 
 ## 15. Scenario Beat
 
 A `Scenario Beat` is a chronological portion of one concrete Scenario.
 
-Possible beat roles include:
+Possible Beat roles include:
 
 ```text
 Situation Instance;
@@ -454,35 +494,28 @@ This is not a closed taxonomy.
 
 One Beat may capture one coherent causal-temporal moment containing a decision, changes to other active Situations, ongoing Loop execution and newly visible information.
 
-```text
-a decision in Situation A occurs;
-active Situation B changes because of it;
-execution from Loop C continues;
-new information becomes visible.
-```
-
-Do not split one coherent moment mechanically merely to satisfy a taxonomy.
+Do not split one coherent moment mechanically merely to satisfy taxonomy.
 
 ## 16. Visual Context Boundary
 
-`Visual Context` is the broader planning term used when a presentation context matters visually but does not necessarily contain a new meaningful Gameplay Situation.
+`Visual Context` is a broader planning term used when a presentation context matters visually but does not necessarily contain a new meaningful Gameplay Situation.
 
-Examples can include routine operation, system execution, waiting, aftermath, store-first-look or another stable presentation context.
+Examples include routine operation, system execution, waiting, aftermath, store-first-look or another stable presentation context.
 
 ```text
 Visual Context
 ≠ Gameplay Situation automatically.
 ```
 
-The detailed visual method owns how Visual Contexts are analysed. This definition exists here to keep the gameplay ontology and visual-planning terminology from silently using the same word `Situation` for two different concepts.
+The detailed visual method owns Visual Context analysis.
 
 ## 17. Concurrency In A Scenario
 
-A Scenario may track Active Situation count, Active Loop count, ongoing executions, time-sensitive decisions, specific tight dependencies and decision-order effects.
+A Scenario may track Active Situation count, Active Loop count, ongoing executions, time-sensitive decisions, tight dependencies and decision-order effects.
 
-The counts are observations, not automatic verdicts. Do not introduce another formal Loop category or universal load formula solely to make the count look precise. Record the concrete Active Loops that make sense in the Scenario and interpret the number from the example.
+Counts are observations, not automatic verdicts.
 
-> **The number of simultaneously active Situations and Loops can be used as one indicator of gameplay load, pacing and challenge. The number itself does not prove that the player is overloaded or challenged; interpret it in the concrete Scenario.**
+> **The number of simultaneously active Situations and Loops can be used as one indicator of gameplay load, pacing and challenge. The number itself does not prove overload or challenge; interpret it in the concrete Scenario.**
 
 ## 18. Causal Understanding And Strategy
 
@@ -510,14 +543,15 @@ This does not require perfect information or exact hidden numbers. It requires e
 - Do not broaden Situation to every decisionless Experience moment.
 - Do not treat every reusable contextual change as a new Situation Type automatically.
 - Do not use Situation Version as a delta against a mandatory main record.
-- Do not use `Version` as another word for alternative design.
-- Do not generalize the Situation-specific contextual Version meaning to Loop/Dynamic/Scenario without separate review.
+- Do not use `Version` as another word for alternative design or document revision.
+- Do not require every gameplay entity/scale to have Versions.
 - Do not turn every downstream state effect into an explicit Situation edge.
 - Do not treat the whole simulation as one giant Loop merely because systems share state.
 - Do not require Loop Situations to be adjacent in time.
 - Do not treat a decisionless Event chain as a Gameplay Loop automatically.
 - Do not turn execution/waiting into fake Situations solely to keep a Scenario as a decision-node list.
-- Do not infer that one Scenario path is the only valid playthrough.
+- Do not infer one Scenario path is the only valid playthrough.
+- Do not remove concrete occurrences from a Scenario merely because reusable owners are developed.
 - Do not call one consequence/state change/metric movement a Dynamic.
 - Do not equate a Gameplay Loop with the Dynamics it may produce.
 - Do not equate Player Strategy with a Dynamic.

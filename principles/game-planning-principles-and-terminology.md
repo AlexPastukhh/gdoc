@@ -1,7 +1,7 @@
 # Game Planning — Principles And Terminology
 
 Status: active reusable principle-and-terminology owner
-Scope: stable principles for maintaining game directions from rough seeds and multiple possible Concepts through high-level planning, detailed planning, evidence and revision.
+Scope: stable principles for maintaining game directions from rough seeds and multiple possible Concepts through Scenario/Spine planning, reusable planning units, Ideas, evidence and revision.
 
 ## 1. Purpose And Authority
 
@@ -9,17 +9,19 @@ This file owns reusable planning meanings that apply across game projects regard
 
 It owns:
 
-- `Game Planning Draft`;
 - `Concept`;
 - `Design Direction`;
 - `Brainstorm Prompt`;
 - scoped `Idea workspace`;
+- `Low-Level Element`;
 - `Idea Variant` and `Planning Unit Variant`;
+- reusable contextual `Version` across planning entities when useful;
 - `Content Premise`;
 - integration review / optional lightweight `Integration Probe` wording;
 - Local / Integrated / Combination Evaluation distinctions;
 - `Game Domain` as a planning ownership boundary;
-- high-level owner versus detail-owner boundaries;
+- owner/detail boundaries and independent-owner criterion;
+- legacy/transitional `Game Planning Draft` responsibility;
 - flexible planning depth and valid entry points;
 - evidence and decision states used during game planning;
 - treatment of directional or incomplete design input;
@@ -28,14 +30,45 @@ It owns:
 It does not own:
 
 - the complete zero-to-one creation route — use [`Game Creation Workflow`](../game-creation-workflow.md);
-- the complete ongoing planning route — use [`Game Development Planning Workflow`](../game-development-planning-workflow.md);
+- the complete Scenario/Spine route — use [`Scenario / Spine Planning Workflow`](../game-planning-spine-workflow.md);
+- element-level working procedure — use [`Low-Level Element Planning Workflow`](../low-level-element-planning-workflow.md);
 - Gameplay Situation / Event / Loop / Scenario terminology — use [`Gameplay Situations, Loops And Scenarios`](gameplay-situations-loops-and-scenarios-principles-and-terminology.md);
 - the canonical definition of Gameplay Dynamic — use [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md);
 - detailed structural, experience or visual question sets — use [`Game Analysis Reference`](../game-analysis-reference/README.md);
 - a complete Game Domain template, economy methodology, Balance methodology, Strategy schema or Implementation Slice template;
 - project-specific accepted meaning.
 
-## 2. Concept
+## 2. Documentation Meaning Versus Example
+
+When a reusable concept or boundary is difficult to understand abstractly, use a concrete example where it materially improves clarity.
+
+Preserve:
+
+```text
+canonical definition / invariant
+  → owns the reusable meaning;
+
+illustrative example
+  → explains that meaning;
+
+full practical example
+  → may later demonstrate a complete real artifact;
+
+project artifact
+  → owns actual project meaning/status.
+```
+
+Example:
+
+```text
+"restricted admission" in an illustrative example
+≠ a required mechanic for every project
+≠ accepted Survivor Base content automatically.
+```
+
+Examples should reduce ambiguity, not silently create rules.
+
+## 3. Concept
 
 A `Concept` is a compact representation of one possible **whole game**.
 
@@ -56,9 +89,9 @@ demo / visual / production feasibility;
 important unresolved questions.
 ```
 
-A Concept is not a small duplicate of the full Game Planning Draft.
+A Concept is not a small duplicate of every detailed project owner.
 
-Several Concepts may exist simultaneously while the designer explores possible games. Their candidate/open status should normally be visible from their owner/location/status. Do not rename the reusable object `Concept Candidate` merely because several Concepts are being compared.
+Several Concepts may exist simultaneously while the designer explores possible games. Their candidate/open status should remain visible from owner/location/status. Do not rename the reusable object `Concept Candidate` merely because several Concepts are being compared.
 
 ### Broad Core Loop inside a Concept
 
@@ -71,9 +104,9 @@ what kinds of decisions recur;
 what execution / feedback changes the next decision state.
 ```
 
-That broad design thesis does not automatically equal one concrete `Gameplay Loop`. Concrete recurrent causal processes remain owned by the Loop methodology.
+That broad design thesis does not automatically equal one concrete `Gameplay Loop`.
 
-## 3. Need / Problem Framing
+## 4. Need / Problem Framing
 
 Before solving a local task, keep it traceable to the underlying need.
 
@@ -91,7 +124,7 @@ What evidence says the problem is here?
 
 A `Need Chain` is a reasoning aid, not a mandatory record type.
 
-When changing an existing solution, reference, subsystem or planning object, decompose it before generating replacement answers when that decomposition matters:
+When changing an existing solution, reference, subsystem or planning object, decompose it when useful:
 
 ```text
 responsibilities;
@@ -103,13 +136,13 @@ required vs accidental parts;
 transformation target.
 ```
 
-Preserve the stable principle:
+Preserve:
 
 > **Do not lose the fundamental task while solving a local subproblem.**
 
 The result may legitimately be `do not change this object` when another route satisfies the underlying need better.
 
-## 4. Design Direction, Brainstorm Prompt And Scoped Ideas
+## 5. Design Direction, Brainstorm Prompt And Scoped Ideas
 
 ### Design Direction
 
@@ -123,13 +156,13 @@ Raid Information;
 Visual Readability.
 ```
 
-It is an optional navigation/exploration container. It is not a decision status, it is not the same thing as the whole project's current game direction, and it is **not required before every Prompt or Idea workspace can exist**.
+It is an optional navigation/exploration container. It is not a decision status, not the same thing as the whole project's current direction, and not required before every Prompt or Idea workspace.
 
 ### Brainstorm Prompt
 
 A `Brainstorm Prompt` is one bounded piece of answer-seeking work.
 
-It may live inside a Design Direction or arise directly from a material local question/problem owned by a Situation, Domain, Loop, Dynamic, Scenario or another justified planning object.
+It may live inside a Design Direction or arise directly from a material local question/problem owned by a Domain, Situation, Loop, Scenario, Variant, Version or another justified planning object.
 
 Useful Prompt types include:
 
@@ -140,13 +173,13 @@ Requirement;
 Problem.
 ```
 
-The type list is a working vocabulary, not a mandatory enum.
+The type list is working vocabulary, not a mandatory enum.
 
-A useful Idea may appear before any Prompt exists. The documentation must not block spontaneous ideation by requiring a designer to classify a thought first.
+A useful Idea may appear before any Prompt exists. Do not block spontaneous ideation by requiring classification first.
 
 ### Planning Surfaces As Question-Discovery Lenses
 
-When the next useful question is unclear, inspect only relevant planning surfaces/fields to discover it.
+When the next useful question is unclear, inspect only relevant planning surfaces/fields.
 
 Possible surfaces include:
 
@@ -163,7 +196,7 @@ Reference analysis;
 other justified fields.
 ```
 
-Preserve the distinction:
+Preserve:
 
 ```text
 Need / Problem Framing
@@ -176,7 +209,7 @@ Brainstorm Prompt
   → WHAT ANSWER is being sought now?
 ```
 
-Do not require a fixed Situation → Loop → Dynamic → Scenario traversal. Stop when no additional material question is found.
+Do not require a fixed Situation → Loop → Dynamic → Scenario traversal.
 
 ### Scoped Idea Workspace
 
@@ -197,15 +230,87 @@ Current Conclusion.
 
 `Idea workspace` is not a gameplay scale and not an acceptance state.
 
-It may exist at project scope for cross-cutting/unrouted work or beside a meaningful owner such as a Domain, Situation, Planning Unit Variant, Situation Version, Loop, Dynamic or Scenario.
+It may exist at project scope or beside the narrowest owner whose unresolved question it serves. Keep one primary home for one planning question. Use links/relations for cross-cutting relevance rather than divergent copies.
 
-Keep one primary home for one planning question. Use links/categories/relations for cross-cutting relevance rather than maintaining divergent duplicated copies.
+Example:
 
-Place the workspace at the highest scope where its question remains genuinely shared; specialize lower only when the meaning differs.
+```text
+shared question across all Situation Versions
+  → Situation-level Idea workspace;
 
-## 5. Variants
+question only changes Variant B
+  → Variant B-local workspace;
 
-Keep two useful scopes distinguishable.
+question only changes Siege Version of Variant B
+  → that Version-local workspace.
+```
+
+## 6. Low-Level Element
+
+A `Low-Level Element` is a meaningful design part/question **inside a planning unit** that is smaller than the whole unit and does not currently require independent reusable-unit ownership.
+
+Examples can include:
+
+```text
+inside a Situation:
+  one option;
+  one occurrence driver;
+  one information-source rule;
+  one consequence relation;
+  one activation/salience question;
+
+inside an Execution:
+  one interruption rule;
+  one intermediate state;
+  one feedback-delay question;
+
+inside a Scenario:
+  one handoff;
+  one Beat-level information reveal;
+  one pacing/attention concern;
+
+inside a Domain:
+  one operation precondition;
+  one invariant;
+  one resource-conversion question.
+```
+
+These examples are illustrative, not a mandatory element taxonomy.
+
+Preserve:
+
+```text
+Low-Level Element
+≠ separate planning entity automatically;
+
+record field
+≠ mandatory file/folder;
+
+material local question
+→ may use scoped Idea methodology;
+
+independent reuse/review/research/testing/change lifecycle
+→ may justify extraction into a real owner.
+```
+
+Concrete example:
+
+```text
+Parent Situation:
+  Admission Under Uncertain Risk
+
+Low-Level Element:
+  exact restrictions of "restricted admission".
+
+Possible work:
+  generate several Idea Variants for that option
+  → compare them
+  → integrate the selected/current answer back into the Situation.
+```
+
+Use [`Low-Level Element Planning Workflow`](../low-level-element-planning-workflow.md) for the working route.
+
+## 7. Variants And Versions
 
 ### Idea Variant
 
@@ -224,30 +329,74 @@ combinations.
 
 ### Planning Unit Variant
 
-A `Planning Unit Variant` is an **integrated alternative design of the whole planning unit** being compared.
+A `Planning Unit Variant` is an **integrated alternative design of the whole planning unit/entity** being compared.
 
-A whole-unit Variant can combine several local Idea Variants and may exist, when useful, for a Situation, Loop, Dynamic, Scenario or another meaningful planning unit.
+A whole-unit Variant can combine several local Idea Variants and may exist, when useful, for a Situation, Loop, Dynamic, Scenario, Execution, Domain or another meaningful planning entity.
 
-This general Variant distinction does **not** automatically establish a contextual `Version` concept at every scale. The current Situation-specific `Variant / Version / Instance` distinction is owned by the gameplay terminology.
+### Planning Entity Version
+
+A `Version` is a **complete materially different reusable context/configuration of the same entity/design**.
+
+The distinction is reusable across planning entities when useful; it is not limited to Gameplay Situations.
+
+Preserve:
+
+```text
+Variant
+  → alternative design;
+
+Version
+  → different reusable context/configuration
+    of the same design;
+
+Document Revision
+  → edit/revision history of a document;
+
+Version
+≠ Variant
+≠ document revision.
+```
+
+Not every entity needs Versions.
+
+Examples only:
+
+```text
+Situation Variant A
+  → Version: normal operation
+  → Version: siege;
+
+Execution Variant A
+  → Version: manual staffing context
+  → Version: automated staffing context;
+
+Scenario Variant A
+  → Version for another coherent target-game configuration,
+    only if that contextual distinction is independently useful.
+```
+
+A Version is a complete contextual record, not merely a delta/patch against a mandatory base record.
+
+### Scoped Child Work
+
+When Variants or Versions coexist, child work remains scoped to the narrowest context where it is true.
+
+```text
+shared across entity
+  → entity-level child work;
+
+only Variant A
+  → Variant A-local work;
+
+only Version X of Variant A
+  → Version X-local work.
+```
+
+A Variant/Version may have its own Ideas, lower-level planning units and Low-Level Elements where useful. Do not silently lift local meaning into sibling alternatives.
 
 A Variant remains exploratory until explicitly selected or otherwise promoted with the appropriate evidence/decision state.
 
-Questions discovered while evaluating a Variant may belong to different scopes:
-
-```text
-Prompt-Level Question
-  → uncertainty about the current question/task/requirement itself;
-
-Variant Question
-  → uncertainty about one particular answer;
-
-Cross-System Question
-  → wider uncertainty exposed only after integration.
-```
-
-Use these labels only when helpful. They are not mandatory standalone object types.
-
-## 6. Content Premise
+## 8. Content Premise
 
 A `Content Premise` is a sufficiently concrete **playable/content unit** worth preserving and evaluating independently before its full chronology is defined.
 
@@ -270,22 +419,13 @@ Scenario
 
 A Content Premise may depend on unresolved mechanics and does not itself accept them.
 
-```text
-Content Premise
-≠ accepted generic mechanic
-≠ accepted cross-cutting Draft meaning
-≠ detailed Scenario.
-```
-
-Project-local owners may keep candidate Content Premises when independent preservation/review is useful. Detailed Scenario chronology belongs to the reusable Scenario method and the justified project Scenario owner.
-
-## 7. Integration And Evaluation Layers
+## 9. Integration And Evaluation Layers
 
 Integration asks:
 
 > If this local answer were used, what does the relevant wider planning unit become?
 
-The current preferred route is:
+Preferred route:
 
 ```text
 local Idea Variant
@@ -294,11 +434,11 @@ local Idea Variant
 → compare / combine / revise / reject / select.
 ```
 
-Do not require a separate family of `PROBE-SIT`, `PROBE-LOOP`, `PROBE-DYN`, `PROBE-SCN`, `PROBE-CONTENT` or `PROBE-CONCEPT` artifacts.
+Do not require a separate family of `PROBE-*` artifacts.
 
-The phrase `Integration Probe` may still be used operationally for a temporary **integration review/activity** when useful, but it does not create a separate planning ontology or exempt the resulting candidate unit from normal status/ownership rules.
+`Integration Probe` may be used operationally for a temporary integration review/activity, but it does not create a separate planning ontology.
 
-Promotion from exploratory work into a normal planning-unit candidate is **not acceptance**. Acceptance remains an explicit evidence/decision-state change.
+Promotion from exploratory work into a normal planning-unit candidate is **not acceptance**.
 
 Keep evaluation layers distinct:
 
@@ -313,8 +453,6 @@ Integrated Evaluation
 Combination Evaluation
   → how do several Variants work together?
 ```
-
-Risks, questions, pros/cons, evidence and refinement ideas belong to the evaluation context; they are not the Variant itself.
 
 ### Cross-Unit Relations
 
@@ -334,22 +472,16 @@ supersedes.
 
 When material, preserve the condition/reason for the relation rather than only a bare label.
 
-A formal Alternative Set / configuration constraint object remains optional/unresolved and is not required by this principle.
+## 10. Evidence Context For Ideas And Variants
 
-## 8. Evidence Context For Ideas And Variants
-
-For substantial exploration, preserve the scope of evidence rather than treating any reference as validation of the whole answer.
-
-A proportional `Evidence Context` may contain:
+For substantial exploration, preserve evidence scope:
 
 ```text
 References / Analogues
 Research Evidence
 Prototype / Simulation / Playtest Results
-
 What This Evidence Supports
 What It Does Not Establish
-
 Conflicting Evidence
 Remaining Assumptions
 Current Evidence-Based Conclusion
@@ -358,22 +490,15 @@ Current Evidence-Based Conclusion
 Preserve:
 
 ```text
-reference exists
-≠ Variant validated;
-
-prototype worked technically
-≠ gameplay value proven;
-
-one Scenario supports a manifestation
-≠ Dynamic proven;
-
-evidence supports one claim
-≠ evidence proves the entire Variant.
+reference exists ≠ Variant validated;
+prototype worked technically ≠ gameplay value proven;
+one Scenario manifestation ≠ Dynamic proven;
+evidence supports one claim ≠ whole Variant proven.
 ```
 
-Do not duplicate the detailed test/result classification owned by [`Prototypes, Hypotheses And Tests`](prototypes-hypotheses-and-tests-principles-and-terminology.md).
+Detailed test/result classification remains owned by [`Prototypes, Hypotheses And Tests`](prototypes-hypotheses-and-tests-principles-and-terminology.md).
 
-## 9. Game Domain Ownership
+## 11. Game Domain Ownership
 
 A `Game Domain` is a named semantic area that owns reusable game truth needed by several gameplay/planning contexts.
 
@@ -390,9 +515,7 @@ resource / economic meaning;
 allowed transitions and results.
 ```
 
-Prefer coherent semantic areas over mechanically splitting the whole game into global technical buckets such as `entities/`, `rules/`, `resources/` and `mechanics/` when that would fragment one concept's meaning.
-
-DDD-like consistency is a semantic goal: planning language and later C#/Unity domain language should not silently diverge. Documentation structure and code structure do not have to mirror one another.
+Prefer coherent semantic areas over mechanically splitting the whole game into global technical buckets when that would fragment one concept's meaning.
 
 For state/operation ownership:
 
@@ -408,68 +531,63 @@ operation
   → preserves applicable state invariants.
 ```
 
-Meaningful mutable Domain state should preferably change through owned Domain operations rather than arbitrary unrelated mutation when that distinction is useful to the model.
+Canonical reusable rule/value ownership remains in the Domain. A Situation/Scenario may reference/project the relevant value or rule without becoming a second canonical owner.
 
-Canonical reusable rule/value ownership remains in the Domain. A Situation may reference/project the relevant value or rule without becoming a second canonical owner.
+## 12. Legacy / Transitional Game Planning Draft
 
-```text
-Domain canonical rule/value
-→ referenced/projected into Situation
-→ broader analysis / Balance may reveal a tuning need
-→ accepted tuning changes the Domain owner
-→ dependent representations are refreshed/reconciled.
-```
+A `Game Planning Draft` may exist as an evolving consolidated high-level artifact in a project imported from an earlier workflow.
 
-A copied/derived summary that is not a live projection should retain enough source relation to trigger reconciliation when its source changes.
-
-The exact Domain folder taxonomy, record template and economy methodology remain separate open design work.
-
-## 10. Game Planning Draft
-
-A `Game Planning Draft` is the evolving readable **high-level picture of one current game direction**.
-
-It should make the current game understandable enough to review:
+Its current useful responsibilities can include:
 
 ```text
-what game is currently being pursued;
-what experience / promise matters;
-what broad gameplay and production picture supports it;
-what is accepted, inferred, unresolved or risky;
-which detail owners contain deeper work;
-what evidence or next planning depth matters now.
+existing consolidated project meaning;
+accepted/preliminary/candidate status history;
+source/provenance continuity;
+high-level migration context while newer owners are built.
 ```
 
-A project normally keeps one current high-level Draft for one active direction rather than several competing canonical summaries.
+The target reusable architecture does **not** require one permanent monolithic Draft.
 
-Before one direction is selected, several Concepts may coexist outside the Draft or in another clearly non-canonical workspace. Once one direction becomes the current game, accepted cross-cutting meaning should be reconciled into the Draft.
-
-### Flexible structure
-
-The Draft needs logical structure, not one universal section template.
+For a project migrating from a Draft:
 
 ```text
-same responsibility
-≠ same headings in every project.
+legacy Draft
+→ consult current source/status/provenance
+→ build/refine Scenario / Spine
+→ develop concrete low-level manifestations
+→ extract/develop reusable owners
+→ work on Low-Level Elements through Ideas when useful
+→ retain legacy source until routing/provenance is safe.
 ```
 
-A concept-heavy game may organize around promise, experience, gameplay and feasibility. A systemic project may need stronger state/system sections. A project currently driven by a concrete Scenario may foreground that Scenario and link outward.
+Do not require every new owner-local clarification to be back-written into the Draft. Back-writing is needed only when explicit migration compatibility/provenance responsibility requires it.
 
-Use the structure that makes the **current game** easiest to understand and update.
+Concrete example:
 
-## 11. Planning Depth Is Flexible
+```text
+Draft says newcomers are handled through an intake boundary.
+
+Spine makes one concrete arrival/intake chronology explicit.
+
+Reusable Situation owner later expands multiple ways
+that uncertain-risk admission can arise and resolve.
+
+The Draft remains a source for original project meaning,
+but is not the permanent owner of all new reusable detail.
+```
+
+## 13. Planning Depth Is Flexible
 
 Planning does not require a fixed progression from broad to detailed.
 
 Useful starting points include:
 
 ```text
-idea;
+Idea;
 reference;
 Concept;
 desired Player Experience;
-fantasy;
 mechanic;
-market observation;
 interesting risk / trade-off;
 concrete Gameplay Situation;
 Gameplay Loop;
@@ -479,7 +597,7 @@ production or implementation uncertainty;
 prototype result.
 ```
 
-Two common routes are both valid:
+Common routes include:
 
 ```text
 Creation / synthesis:
@@ -487,39 +605,38 @@ seed / reference
 → scoped Ideas / Variants
 → one or more Concepts
 → deeper planning / evidence
-→ select or revise the direction.
+→ select or revise direction.
 
-Current-direction planning:
-current Draft
-→ material question discovery
-→ scoped detailed planning / evidence
-→ Draft revision.
-```
+Scenario / Spine-centered:
+current project meaning / migration sources
+→ one concrete selected chronology
+→ concrete low-level manifestations
+→ reusable owners / Low-Level Elements
+→ revised/new Scenarios.
 
-Detailed work may also start first:
-
-```text
+Detail-first:
 concrete Situation / experience / risk / reference
 → detailed planning
-→ mechanics / requirements / Loops / questions become clearer
-→ Concept or Draft is created/revised.
+→ mechanics / requirements / questions become clearer
+→ integrate into relevant project owners / Scenario.
 ```
 
-These are not project modes. Work may move between them repeatedly.
+These are not exclusive project modes.
 
-## 12. Detail Owners And Idea Retention
+## 14. Detail Owners And Idea Retention
 
-Create a separate detail owner only when independent review, linking, reuse, testing, change tracking, parallel work or navigation justifies the coordination cost.
+Create a separate owner only when independent review, linking, reuse, research, testing, change tracking, parallel work or navigation justifies the coordination cost.
 
 ```text
-high-level Draft
-  → current cross-cutting meaning and navigation;
+Scenario / Spine
+  → concrete selected chronology;
 
-detail owner
-  → complete meaning inside one justified narrower responsibility.
+reusable owner
+  → complete meaning inside one independently useful responsibility;
+
+Low-Level Element
+  → smaller parent detail unless independence emerges.
 ```
-
-A detail owner may become more precise than the high-level Draft. If that precision changes an accepted cross-cutting game decision, update the Draft rather than allowing the two to diverge silently.
 
 Candidate/exploratory workspaces do not gain canonical authority merely by existing.
 
@@ -530,20 +647,42 @@ selected/current meaning
   → semantic owner;
 
 material decision rationale
-  → compact durable rationale if it remains useful;
+  → compact durable rationale if useful;
 
 full research/exploration
-  → retain only when the reasoning itself remains useful;
+  → retain only when reasoning remains useful;
 
 exploration-only material
   → may be removed after safe reconciliation.
 ```
 
-The exact durable `decisions/` / `rationale/` filesystem owner is not fixed here.
+Do not copy a complete detail body into another high-level file merely to keep it “complete.” Link it and preserve only the consequence appropriate to that owner.
 
-Do not copy a complete detail body into the Draft merely to keep it “complete.” Link it and preserve the high-level consequence.
+## 15. Authority And Content Status
 
-## 13. Evidence And Decision States
+Always separate two questions:
+
+```text
+Authority / Ownership:
+  Where does this meaning belong?
+
+Content Status:
+  How strongly is this meaning currently established?
+```
+
+Example:
+
+```text
+project scenarios.md
+  = Scenario owner;
+
+Scenario X
+  = may still be working / representative / candidate.
+```
+
+Owner ≠ accepted meaning.
+
+## 16. Evidence And Decision States
 
 Keep these states distinct:
 
@@ -585,7 +724,7 @@ Content Premise ≠ accepted generic mechanic;
 integrated candidate Planning Unit Variant ≠ accepted planning unit.
 ```
 
-## 14. Directional And Incomplete Design Input
+## 17. Directional And Incomplete Design Input
 
 Useful design input may be directional before it is precise.
 
@@ -594,18 +733,16 @@ Examples:
 ```text
 "I want a vibe like X";
 "this should feel more procedural";
-"something between A and B, but not exactly either";
-"the base should feel alive, but I do not yet know
- what visual treatment creates that".
+"something between A and B, but not exactly either".
 ```
 
-Preserve exact incoming wording and separate it from interpretation:
+Preserve:
 
 ```text
 explicit wording
-  → confirmed source fact: the requester expressed this direction;
+  → confirmed source fact that requester expressed this direction;
 
-our interpretation
+interpretation
   → inference;
 
 material ambiguity
@@ -621,40 +758,23 @@ explicitly selected formulation
   → decision.
 ```
 
-A temporarily open search space is not a planning failure. Prematurely turning one interpretation into a requirement is.
+Prematurely turning one interpretation into a requirement is a planning error.
 
-A useful clarification route is:
+## 18. Planning Is Iterative And Not Append-Only
 
-```text
-raw / directional request
-→ preserve wording
-→ expose important ambiguity
-→ form plausible interpretations / Variants
-→ inspect references / alternatives when useful
-→ compare what value each interpretation preserves
-→ integrate promising answers
-→ narrow when evidence or explicit preference justifies it
-→ promote clearer accepted meaning into the current plan.
-```
-
-## 15. Planning Is Iterative And Not Append-Only
-
-New evidence or an explicit decision may supersede earlier current meaning.
+New evidence or explicit decisions may supersede earlier current meaning.
 
 ```text
 new information
 → review affected meaning
-→ update current owner
-→ preserve evidence / rationale / historical provenance
-→ stop presenting disproven or superseded meaning
-  as a competing current answer.
+→ update real owner
+→ preserve evidence / rationale / provenance
+→ stop presenting superseded meaning as competing current truth.
 ```
 
-Do not preserve every historical formulation as if it remained current. Do preserve enough provenance to understand why a material decision changed.
+An Idea workspace may intentionally retain unresolved alternatives longer than selected current meaning. That is its exploration responsibility.
 
-An Idea workspace may intentionally retain unresolved alternatives longer than the current Draft. That is its exploration responsibility, not an exception to Draft consistency.
-
-## 16. Requirements, Realizations And Implementation Ideas
+## 19. Requirements, Realizations And Implementation Ideas
 
 Keep different planning levels separate:
 
@@ -665,55 +785,48 @@ design requirement
   ≠ accepted implementation decision.
 ```
 
-The same requirement may have several viable realizations. A technically convenient implementation does not automatically justify the requirement that it appears to satisfy.
+The same requirement may have several viable realizations.
 
-An unresolved local visual problem may live in an owner-local `ideas/visual/` workspace. When a visual/presentation solution becomes reusable accepted meaning, move/promote that realization to the appropriate project visual/presentation owner when independent ownership is useful; the gameplay owner keeps the requirement and relation rather than duplicating the presentation body.
+## 20. Player Strategy Boundary
 
-## 17. Player Strategy Boundary
+Canonical Dynamic ↔ Player Behavior / Strategy relation remains in [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md).
 
-The canonical causal relationship between Gameplay Dynamics and Player Behavior / Strategy remains in [`Mechanics Create Dynamics`](mechanics-create-dynamics-principles-and-terminology.md). This file keeps only the planning boundary needed for routing and owner separation.
-
-Operationally, keep the minimal distinction:
+Operationally:
 
 ```text
 Gameplay / System Dynamic
   → what the operative system tends to do / become over time;
 
 Player Strategy
-  → deliberate player-authored plan/policy across decisions and time,
-    based on a model of how the system behaves.
+  → deliberate player-authored plan/policy across decisions/time.
 ```
 
-A Dynamic can change which strategies are advantageous. Player Strategy/Behavior can in turn strengthen, weaken, redirect or counter a Dynamic.
+The complete Strategy planning schema/filesystem remains open methodology work.
 
-The complete Strategy planning schema/filesystem and its relation to current Loop/session concepts remain open methodology work.
+## 21. Next Depth And Minimum Evidence
 
-## 18. Next Depth And Minimum Evidence
-
-Choose the next planning or evidence depth from the uncertainty with greatest effect on value, direction, cost or late-change risk.
+Choose next planning/evidence depth from the uncertainty with greatest effect on value, direction, cost or late-change risk.
 
 Possible next depths include:
 
 ```text
 generate / compare Concepts;
 frame Need / problem;
-discover material questions through relevant planning surfaces;
+discover material questions;
 form a Brainstorm Prompt;
 generate / compare Idea Variants;
-build / compare a candidate Planning Unit Variant;
+work on a Low-Level Element;
+build / compare a Planning Unit Variant;
+create / compare Versions;
 reference analysis;
 Gameplay Situation / Event / Loop / Dynamic / Scenario planning;
 visual requirement planning;
-broader Balance questions;
-interaction/system prototype;
-production spike;
-market test;
-post-design Implementation Slice planning when design is ready.
+prototype / research / market evidence.
 ```
 
 Do not build a large roadmap when one smaller question is the actual blocker.
 
-## 19. Source / Discussion Provenance
+## 22. Source / Discussion Provenance
 
 Long discussions may use a supporting message/source ledger.
 
@@ -728,25 +841,24 @@ acceptance/refinement relation;
 consolidation status.
 ```
 
-The ledger is supporting provenance, not a competing canonical planning owner.
+The ledger is supporting provenance, not a competing canonical owner.
 
-Preserve exact source wording when available. If an older contribution can only be reconstructed from a summary/generated working file, mark it as reconstructed rather than presenting it as verbatim.
+Preserve exact source wording when available. Reconstructed material must be marked as reconstructed rather than presented as verbatim.
 
-When a later message accepts prior wording, preserve the scope of what was accepted. When a later user correction contradicts an earlier proposal, the later correction supersedes it.
-
-## 20. Do Not
+## 23. Do Not
 
 - Do not require template-ordered input.
 - Do not require a complete broad Draft before useful detailed planning.
+- Do not require a permanent monolithic Draft in the target architecture.
 - Do not require a Design Direction before every Brainstorm Prompt or Idea workspace.
 - Do not require a Brainstorm Prompt before a spontaneous Idea may be saved.
 - Do not call every Idea a Concept.
 - Do not treat a Content Premise as a detailed Scenario or accepted generic mechanic.
 - Do not rename `Concept` to `Concept Candidate` just to signal uncertainty.
-- Do not allow detail work to drift away from the high-level current direction without reconciliation.
-- Do not create a new file for every heading, Prompt, Variant or temporary concern.
+- Do not make every Low-Level Element a separate owner/file/entity.
+- Do not use `Version` as another word for Variant or document revision.
+- Do not require every planning entity to have Variants/Versions.
 - Do not create mandatory `PROBE-*` artifacts for integration.
 - Do not silently promote inferences, examples or Variants into decisions.
 - Do not treat planning as append-only accumulation.
-- Do not duplicate canonical Domain rules merely because one Situation displays them.
-- Do not silently introduce exact Balance, Strategy, Domain, Version or Implementation-Slice structures that remain open.
+- Do not duplicate canonical Domain rules merely because one Situation/Scenario displays them.

@@ -1,7 +1,7 @@
 # Game Development Planning Workflow
 
 Status: active reusable workflow
-Scope: orchestration from Concepts/current game direction through detailed planning, evidence, revision and the next useful depth of work.
+Scope: orchestration from Concepts/current project meaning through Scenario/Spine planning, reusable owners, evidence, revision and the next useful depth of work.
 
 ## 1. Purpose And Authority
 
@@ -15,7 +15,9 @@ Use [`Game Creation Workflow`](game-creation-workflow.md) when the main problem 
 
 > How do I invent/transform several possible answers or whole-game Concepts?
 
-Use [`Game-Planning Documentation — Use-Case Registry`](game-planning-use-case-registry.md) when the current documentation capability/route itself is unclear.
+Use [`Game Planning — Use-Case Map`](game-planning-use-case-map.md) when the practical capability/read route itself is unclear.
+
+Use [`Scenario / Spine Planning Workflow`](game-planning-spine-workflow.md) when one concrete Scenario is the main temporal/integration surface. Use [`Low-Level Element Planning Workflow`](low-level-element-planning-workflow.md) when the current question is smaller than the whole planning unit.
 
 This workflow coordinates, but does not replace, principle-and-terminology owners and detailed planning/analysis references.
 
@@ -37,34 +39,51 @@ Detailed reusable planning and analysis methods remain in [`Game Analysis Refere
 
 A project may have several open `Concepts` while comparing possible whole games.
 
-Once one direction is the active current game, planning normally maintains one evolving, readable high-level `Game Planning Draft`.
+Once one direction is active, planning does **not** require a permanent monolithic high-level Draft. The target reusable model is:
 
 ```text
 seed / references / Ideas
         ↓
 Game Creation Workflow
         ↓
-one or more Concepts
+one or more Concepts / current direction
         ↓
-select / pursue current direction
-        ↓
-Game Planning Draft
-  current high-level picture
+current project owners / migration sources
         ↕
-justified detail owners
+Scenario / Spine
+  concrete selected chronology
+        ↕
+reusable planning owners
+  broader possibility-space
+        ↕
+Low-Level Elements / Ideas / Variants / Versions
         ↕
 analysis / prototypes / research / tests
         ↓
-revised current meaning
+revised real owners / revised or new Scenarios
         ↓
 next useful depth.
 ```
 
-Do not force every exploratory Variant into the Draft. Scoped Idea work may stay beside the owner whose unresolved question it serves.
+A legacy consolidated `Game Planning Draft` may still be consulted in an existing project while responsibility is migrated. It is a source/migration artifact, not a required permanent integration center.
+
+Scoped Idea work may stay beside the owner whose unresolved question it serves. A Low-Level Element normally remains parent detail unless independent reuse, review, research, testing, change tracking or navigation makes separate ownership useful.
 
 A separate file is justified only when independent review, linking, reuse, research, testing, change tracking, parallel work or navigation makes the extra owner useful.
 
 Planning is iterative and not append-only. Later evidence or explicit decisions can supersede earlier current meaning while preserving provenance and rationale.
+
+Illustrative architecture:
+
+```text
+Scenario A
+→ discovers a concrete admission decision
+→ reusable Situation expands alternative entry paths/options
+→ one option's exact restrictions are explored as a Low-Level Element
+→ clarified Situation is reused in Scenario B.
+```
+
+The example is intentionally incomplete; complete Scenario/Situation fields remain in their detailed method owners.
 
 ## 3. Valid Starting Points
 
@@ -84,6 +103,7 @@ a Gameplay Situation;
 a Gameplay Loop;
 a Gameplay Dynamic;
 a Scenario / Content Premise;
+a Low-Level Element inside an existing planning unit;
 a production concern;
 a prototype or playtest result;
 a material unknown.
@@ -108,13 +128,13 @@ That workflow may return one or more Concepts or a new Brainstorm Prompt.
 ### Common current-direction route
 
 ```text
-current Concept / Game Planning Draft
+current Concept / project meaning / migration source
 → identify the most influential uncertainty / underlying need
 → if the concrete question is unclear, inspect relevant planning surfaces
 → form the material question / scoped Idea workspace
 → choose the detailed planning / analysis / evidence scale
-→ record material findings
-→ reconcile accepted cross-cutting changes
+→ record material findings in the real affected owners
+→ revise affected Scenario / owner / direction when needed
 → select next uncertainty.
 ```
 
@@ -157,15 +177,15 @@ OR mechanic
 OR content need
 OR concrete decision idea
         ↓
-candidate planning unit
+candidate planning unit / concrete Scenario occurrence
         ↓
 detailed Situation / Loop / Dynamic / Scenario work
         ↓
 structural + experience + visual review as useful
         ↓
-mechanics / requirements / questions become clearer
+mechanics / requirements / Low-Level Elements / questions become clearer
         ↓
-revise Concept / Draft
+revise the affected real owners / Concept
         ↓
 integrate through Scenario / evidence when useful.
 ```
@@ -174,25 +194,39 @@ Routes can alternate repeatedly.
 
 ### Scenario-driven Spine route
 
-When chronology is the clearest way to expose low-level design dependencies, use one concrete Scenario as a `Spine Scenario`:
+When chronology is the clearest way to expose low-level design dependencies, use [`Scenario / Spine Planning Workflow`](game-planning-spine-workflow.md) with one concrete Scenario as a `Spine Scenario`:
 
 ```text
-current planning question / Draft
+current planning question / project meaning / migration source
 → choose a concrete Scenario as Spine
 → set one relevant Player Context
 → select one concrete path
-→ identify concrete Events / decisions / executions /
-  state-information-player changes
-→ hand independently useful meaning to low-level owners
-→ develop those owners with reusable alternatives / variants / depth
-→ feed clarified meaning back into the Spine
+→ preserve concrete Events / decisions / executions /
+  state-information-player changes inside that chronology
+→ identify material Low-Level Elements and owner handoffs
+→ develop independently useful reusable owners
+  with broader alternatives / Variants / Versions / depth
+→ compare clarified meaning back against the Spine
 → continue until the current planning question is answered
 → derive Loops/Dynamics later only from sufficient recurrent/tendency evidence.
 ```
 
-`Spine Scenario` is a planning role of a normal Scenario, not a new gameplay scale and not a synonym for a short Scenario. The selected branch is concrete; the local owner expands alternatives that one chronology cannot exhaustively contain.
+`Spine Scenario` is a planning role of a normal Scenario, not a new gameplay scale and not a synonym for a short Scenario. The selected branch is concrete; the reusable owner expands possibility-space that one chronology cannot exhaustively contain.
+
+Extraction into a reusable owner does **not** remove the concrete occurrence from the Spine.
 
 For a selected decision in the Spine, preserve why **this concrete Player Context** selected it. If two choices are genuinely similarly plausible, both may be noted, but one branch is still selected to continue chronology.
+
+The reusable architecture is iterative:
+
+```text
+Scenario / Spine
+↔ reusable owners
+↔ Low-Level Elements / Ideas / Variants / Versions
+↔ revised or new Scenarios.
+```
+
+A project may still choose a chronology-first tactic for one pass. Do not universalize that staging into a rule that every Scenario must fully stabilize before reusable owner work begins.
 
 Use [`active-planning-goal-map.md`](active-planning-goal-map.md) as the operational current-work surface. When a concern closes, preserve durable meaning in its real owner and remove it from the active Goal Map.
 
@@ -219,7 +253,8 @@ implementation idea ≠ accepted architecture;
 prototype candidate ≠ build decision;
 generated explanation ≠ canonical documentation automatically;
 Idea / Variant ≠ accepted game meaning;
-integrated candidate Planning Unit Variant ≠ accepted planning unit.
+integrated candidate Planning Unit Variant ≠ accepted planning unit;
+project owner authority ≠ content acceptance status.
 ```
 
 ### Directional and incomplete design input
@@ -238,9 +273,11 @@ Preserve source wording, expose ambiguity and keep interpretations as inference/
 
 ## 5. Build And Revise The High-Level Game Picture
 
-The Game Planning Draft should hold enough current high-level meaning to make the active direction reviewable.
+The current game direction should remain reviewable, but that does **not** require one permanent file type or one monolithic Draft.
 
-Depending on the project, useful areas can include:
+Depending on the project, the high-level picture may be assembled from a project README, Scenario/Spine, key reusable owners/Domains, Experience/Motivation owners, reference responsibilities, visual/production owners, evidence state and — during migration — a legacy consolidated Draft.
+
+Useful areas can include:
 
 ```text
 Game Concept And Current State;
@@ -260,7 +297,9 @@ Next Action.
 
 These are responsibilities, not mandatory headings.
 
-The Draft may summarize a broad Core Loop thesis, but concrete Gameplay Loops remain detailed recurrent-causal objects and should be planned separately when their causality matters.
+The high-level picture may summarize a broad Core Loop thesis, but concrete Gameplay Loops remain detailed recurrent-causal objects and should be planned separately when their causality matters.
+
+For an existing imported project, consult a legacy Draft for established source/status/provenance while responsibility is migrated. Do not require every new owner-local clarification to be back-written into that Draft unless explicit migration compatibility/provenance responsibility requires it.
 
 ### Promise triangle
 
@@ -308,6 +347,8 @@ Use deeper reference analysis when:
 
 If a supposed secondary reference changes core gameplay, audience anchor and session structure together, review whether the project is selecting a new baseline.
 
+A material uncertainty may later become a specialized Research Question. The detailed Specialized Reference Research workflow remains deferred; do not invent it inside this workflow.
+
 ## 7. Detailed Gameplay Routing
 
 Use [`Gameplay Planning — Situations, Loops, Dynamics And Scenarios`](game-analysis-reference/gameplay-planning/README.md).
@@ -322,12 +363,29 @@ Choose the scale from the current uncertainty:
 | What recurrent functionally coherent causal process exists? | Gameplay Loop | [`Loops`](game-analysis-reference/gameplay-planning/loops.md) |
 | What systemic tendency / state-opportunity trajectory develops over time? | Gameplay Dynamic | [`Dynamics`](game-analysis-reference/gameplay-planning/dynamics.md) |
 | What concretely happens through time when systems, decisions and consequences interact? | Scenario | [`Scenarios`](game-analysis-reference/gameplay-planning/scenarios.md) |
+| What smaller design question exists inside one of these owners? | Low-Level Element | [`Low-Level Element Planning Workflow`](low-level-element-planning-workflow.md) + parent unit method |
 
 These scales can be entered in any useful order and revisited.
 
 `Core Loop`, `Session Loop` and `Long-Term Loop` remain useful broad views, but one high-level Core Loop thesis does not replace concrete Gameplay Loop analysis.
 
 A Scenario is a selected planning/test chronology, not the only valid playthrough. It may expose a Dynamic manifestation without proving the Dynamic is stable.
+
+Across planning entities, keep the general distinction from [`Game Planning`](principles/game-planning-principles-and-terminology.md):
+
+```text
+Variant
+  → alternative integrated design;
+
+Version
+  → materially different reusable context/configuration
+    of the same design;
+
+Document Revision
+  → document edit history.
+```
+
+Not every entity needs Variants or Versions. Variant- or Version-specific child work remains scoped to the narrowest context where it is true.
 
 ## 8. Causal-Basis Routing Across Scales
 
@@ -375,7 +433,7 @@ Use each as a discovery surface:
 inspect relevant concerns
 → record material findings
 → do not invent content merely to fill the surface
-→ return accepted cross-cutting change to the Draft.
+→ return accepted cross-cutting change to the affected real owner(s) and revise Scenario/high-level direction when needed.
 ```
 
 An abstract Dynamic does not automatically require a full visual pass. Route a real visual-legibility problem through concrete Scenarios/Visual Contexts or another justified study.
@@ -427,7 +485,7 @@ cumulative timing / overlap / integration pressure
 Broader Balance work may need to aggregate across:
 
 ```text
-multiple Situations / Situation Versions;
+multiple Situations / planning-entity Versions when relevant;
 Game Domain / economy state and flows;
 Player Strategies;
 Dynamics;
@@ -498,7 +556,7 @@ material unknown
   → choose earliest / cheapest useful evidence
   → observe and classify result
   → update affected owner
-  → reconcile accepted cross-cutting change
+  → revise affected Scenario / direction when needed
   → choose next decision/depth.
 ```
 
@@ -519,7 +577,7 @@ local Idea Variant
 
 The phrase `integration review` may be used as lightweight activity wording when useful, but it does not create a separate ontology. A candidate unit can use the full detailed method without being accepted project meaning.
 
-Promotion from exploration into a normal candidate owner is not acceptance. Only explicit accepted meaning enters the current Draft.
+Promotion from exploration into a normal candidate owner is not acceptance. Only explicit accepted meaning enters the appropriate current project owner(s).
 
 ## 15. Full-Picture Views
 
@@ -547,7 +605,7 @@ A matrix or derived view is not a second canonical body.
 
 ### Optional Cross-View Matrix
 
-When it materially improves review, the current Draft may use a compact cross-view matrix rather than several separate projection files:
+When it materially improves review, the current high-level planning picture may use a compact cross-view matrix rather than several separate projection files:
 
 | Game / flow point | Player Experience And Gameplay | Implementation And Production | Questions / Validation | Evidence / status / next action |
 |---|---|---|---|---|
@@ -568,7 +626,7 @@ demo proof;
 content production.
 ```
 
-Keep cells concise and link to independently useful detail owners rather than duplicating their full bodies. The matrix is optional and remains part of the current high-level planning picture; it does not justify a project-wide `views/` layer by itself.
+Keep cells concise and link to independently useful detail owners rather than duplicating their full bodies. The matrix is optional and remains a derived part of the current high-level planning picture; it does not justify a project-wide `views/` layer by itself.
 
 ## 16. Select The Next Evidence Or Depth
 
@@ -585,6 +643,9 @@ design Prompt has no good answer
 
 promising Variant may have wide consequences
   → candidate Planning Unit Variant / integration review;
+
+one local element has unresolved alternatives
+  → Low-Level Element workflow / scoped Ideas;
 
 concept baseline conflicts
   → revise audience / promise / experience / reference;
@@ -605,7 +666,7 @@ references conflict
   → clarify responsibilities and test the conflict point;
 
 systems individually plausible but timing/integration unknown
-  → Scenario planning;
+  → Scenario / Spine planning;
 
 session payoff uncertain
   → session-scale Scenario / representative session test;
@@ -697,9 +758,9 @@ Then:
 1. classify the result;
 2. update affected hypotheses;
 3. update causal records;
-4. update relevant detail owners;
+4. update relevant real owners;
 5. update audience/reference/implementation interpretation where affected;
-6. reconcile accepted cross-cutting changes into the Game Planning Draft;
+6. revise relevant Scenario/Spine or high-level direction when composition/chronology changes;
 7. state the next decision or depth.
 
 Planning is not append-only.
@@ -749,22 +810,28 @@ Check proportionally:
 - expected Dynamics are distinguished from observed evidence;
 - implementation ideas are not accepted automatically;
 - integrated candidate Planning Unit Variants remain hypothetical until explicitly accepted;
+- owner authority is not confused with content acceptance status;
+- Low-Level Elements are not promoted mechanically;
+- Variants, Versions and document revisions remain distinct;
 - prototype/evidence scope matches uncertainty;
 - visual direction supports readability and feasible asset strategy when relevant;
-- the Game Planning Draft remains the active high-level entry point once a direction is selected;
+- project navigation makes the current real owners and any legacy migration source clear;
 - extra files were not created mechanically;
 - current conclusion and next action/depth are explicit.
 
 ## 21. Do Not
 
 - Do not treat the common broad-first route as mandatory.
-- Do not require a complete Draft before useful detailed work.
+- Do not require a complete or permanent monolithic Draft before useful detailed work.
 - Do not use this workflow as a competing terminology/analysis/reference/prototype owner.
 - Do not copy complete owner schemas/checklists here.
 - Do not mix references without assigned responsibilities.
 - Do not build a polished slice to answer a cheap fundamental question.
 - Do not force every project into many files.
-- Do not treat an Idea workspace, matrix, integrated candidate planning unit or derived view as a second canonical Draft.
+- Do not create a new planning unit for every Low-Level Element.
+- Do not use `Version` as another word for Variant or document revision.
+- Do not universalize one project's chronology-first staging tactic.
+- Do not treat an Idea workspace, matrix, integrated candidate planning unit or derived view as a second canonical body.
 - Do not confuse implementation verification with game validation.
 - Do not invent evidence, deadlines, final mechanics, balance numbers or production certainty.
 - Do not keep disproven current meaning merely because it was documented earlier.
