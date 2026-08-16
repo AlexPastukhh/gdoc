@@ -21,7 +21,7 @@ This workflow owns the **creative synthesis route**. It does not replace:
 - detailed Game Structure, Player Experience or visual analysis;
 - future specialized brainstorming methods.
 
-Use the semantic capability map in [`Game-Planning Documentation — Use-Case Registry`](game-planning-use-case-registry.md) when the current task is unclear.
+Use [`Game Planning — Use-Case Map`](game-planning-use-case-map.md) when the current task or required read route is unclear.
 
 ## 2. Core Working Objects
 
@@ -45,7 +45,7 @@ demo / visual / production feasibility;
 main unresolved questions.
 ```
 
-A Concept is not a small copy of the full Game Planning Draft.
+A Concept is not a small copy of every detailed project owner.
 
 Several Concepts may coexist while the designer compares possible whole games. The fact that a Concept is one option should normally be clear from its location/status; do not rename the entity `Concept Candidate`.
 
@@ -725,24 +725,27 @@ value still uncertain after planning
 
 Detailed work creates new questions. Return those questions to the appropriate scoped Idea workspace / Design Direction / Brainstorm Prompt and repeat the cycle.
 
-## 17. Relationship To The Game Planning Draft
+## 17. Relationship To Current Project Owners
 
 Several Concepts may exist while comparing possible games.
 
-Once one direction becomes the active current game, maintain its cross-cutting current meaning in the project `Game Planning Draft`.
+Once one direction becomes the active current game, accepted/current meaning belongs in the real owner whose responsibility it changes. A project may still have a legacy consolidated `Game Planning Draft` during migration; that file is a source/provenance aid, not the required permanent integration center.
 
 ```text
 Ideas / Idea Variants / candidate Planning Unit Variants
-  ≠ accepted Draft meaning;
+  ≠ accepted project meaning;
 
 selected cross-cutting decision
-  → reconcile into Draft;
+  → reconcile into affected real owner(s);
 
 detail owner discovers a project-wide accepted change
-  → reconcile into Draft.
+  → update every affected real owner / Scenario / high-level navigation as needed;
+
+legacy Draft back-write
+  → only when migration compatibility/provenance responsibility requires it.
 ```
 
-Do not use an Idea workspace or an integration-review candidate as a competing canonical Game Planning Draft.
+Do not use an Idea workspace or an integration-review candidate as a competing accepted project owner/body.
 
 ## 18. Discussion / Source Consolidation
 
@@ -775,4 +778,4 @@ Explicit acceptance such as `согласен`, `фиксируй` or a user edi
 - Do not treat an integrated candidate Planning Unit Variant as accepted Situation/Loop/Dynamic/Scenario content merely because the integration is coherent.
 - Do not evaluate only locally when the Variant materially changes wider gameplay.
 - Do not force every shortlisted Variant through every planning scale.
-- Do not turn the Idea workspace into a second canonical Draft.
+- Do not turn the Idea workspace into a competing accepted project owner/body.

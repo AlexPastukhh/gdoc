@@ -2,13 +2,13 @@
 
 **Status:** active project-local qualitative/detail planning owner; exact unit schemas remain working/provisional
 **Project entry point:** [`../README.md`](../README.md)
-**Canonical high-level project owner:** [`../game-planning-draft.md`](../game-planning-draft.md)
+**Legacy source/status context:** [`../game-planning-draft.md`](../game-planning-draft.md)
 **Reusable planning method:** [`../../../game-analysis-reference/player-experience-motivation-planning.md`](../../../game-analysis-reference/player-experience-motivation-planning.md)
 **Reusable Experience-family / anti-experience checks:** [`../../../game-analysis-reference/player-experience-and-anti-experience.md`](../../../game-analysis-reference/player-experience-and-anti-experience.md)
 
 ## 1. Responsibility
 
-This area owns independently useful project-specific Experience / Motivation detail for Survivor Base when such detail is worth preserving outside the high-level Draft.
+This area owns independently useful project-specific Experience / Motivation detail for Survivor Base when that responsibility is worth preserving in its own project owner.
 
 Possible units when justified:
 
@@ -20,7 +20,7 @@ candidate Doubt / Concern;
 owner-local Ideas / Variants.
 ```
 
-This README establishes working ownership/routing only. It does **not** populate concrete Survivor Base units from the Draft in this update and does not override the canonical Draft.
+This README establishes working ownership/routing only. It does **not** populate concrete Survivor Base units automatically from the legacy Draft, and the existence of this owner does not promote any concrete unit or status.
 
 ## 2. Working Boundaries
 
@@ -97,7 +97,8 @@ working Experience / Motivation / Promise / Doubt
 → project-local detail/exploration;
 
 explicit accepted cross-cutting consequence
-→ reconcile into game-planning-draft.md;
+→ reconcile into affected real owner(s);
+→ back-write legacy game-planning-draft.md only when migration/source/provenance responsibility requires it;
 
 evidence/test result
 → update relevant hypothesis/decision responsibility;

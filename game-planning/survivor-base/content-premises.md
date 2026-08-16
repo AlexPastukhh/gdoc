@@ -1,7 +1,8 @@
 # Survivor Base — Content Premises
 
 **Status:** active project-local preliminary content workspace
-**Canonical project owner:** [`game-planning-draft.md`](game-planning-draft.md)
+**Project entry point:** [`README.md`](README.md)
+**Legacy source/status context:** [`game-planning-draft.md`](game-planning-draft.md)
 **Idea workspace:** [`ideas.md`](ideas.md)
 **Scenario detail owner:** [`scenarios.md`](scenarios.md)
 **Source ledger:** [`../../chat-history/survivor-base-branch-01.md`](../../chat-history/survivor-base-branch-01.md)
@@ -41,7 +42,7 @@ Content Premise
 ≠ detailed Scenario.
 ```
 
-If developing a premise requires new general mechanics/system meaning, discuss and accept that meaning in the appropriate owner and reconcile accepted cross-cutting changes into the Game Planning Draft.
+If developing a premise requires new general mechanics/system meaning, discuss and accept that meaning in the appropriate real owner(s). Back-write the legacy Draft only when migration compatibility/provenance responsibility requires it.
 
 If a premise becomes sufficiently defined to need chronology/integration work, expand it through the reusable Scenario method and place the detailed representative Scenario in [`scenarios.md`](scenarios.md) or another justified project Scenario owner.
 
@@ -221,7 +222,8 @@ incoming / embedded idea
 → keep / refine / defer / reject
 
 if new cross-cutting game meaning is required:
-  discuss → decide → reconcile into Game Planning Draft
+  discuss → decide → reconcile into affected real owner(s)
+  → legacy Draft only when migration/provenance requires it
 
 if chronology/integration detail is useful:
   expand through Scenario planning

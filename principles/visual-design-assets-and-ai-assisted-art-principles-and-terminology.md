@@ -24,7 +24,7 @@ It does not own:
 - final legal judgement about an asset or training source;
 - a validated research synthesis for every art discipline.
 
-Project-specific visual decisions belong in the current Game Planning Draft or a justified project-local detail owner.
+Project-specific visual decisions belong in the appropriate project-local visual/detail owner(s). A legacy consolidated Draft may summarize source/status during migration, but it is not the required permanent visual owner.
 
 ## 2. Core Position
 
@@ -524,7 +524,7 @@ Uncontrolled divergence of palette, shape, detail, materials or readability duri
 
 ## 19. Consequences For Game Planning
 
-When visual direction is important, the Game Planning Draft may preserve:
+When visual direction is important, the current project visual/high-level owners may preserve, proportionally:
 
 ```text
 visual design brief;

@@ -1,7 +1,8 @@
 # Survivor Base — Ideas
 
 **Status:** active project-local creative workspace
-**Canonical project owner:** [`game-planning-draft.md`](game-planning-draft.md)
+**Project entry point:** [`README.md`](README.md)
+**Legacy source/status context:** [`game-planning-draft.md`](game-planning-draft.md)
 **Content-premise owner:** [`content-premises.md`](content-premises.md)
 **Source ledger:** [`../../chat-history/survivor-base-branch-01.md`](../../chat-history/survivor-base-branch-01.md)
 
@@ -26,10 +27,10 @@ Working rule:
 ```text
 Idea
 ≠ decision
-≠ canonical Game Planning Draft meaning.
+≠ accepted project meaning.
 ```
 
-When an Idea becomes an explicit accepted cross-cutting game rule, reconcile it into [`game-planning-draft.md`](game-planning-draft.md).
+When an Idea becomes explicitly accepted, reconcile it into the real owner(s) whose responsibility it changes. Back-write the legacy Draft only when migration compatibility/provenance responsibility requires it.
 
 When an embedded content example becomes useful as an independently reviewable playable/content unit, it may be copied or moved to [`content-premises.md`](content-premises.md). Hybrid entries stay here by default until that split is useful.
 
@@ -821,5 +822,5 @@ Preserve the conflict explicitly. Do not select fixed protagonists, story-light 
 - `OPEN-FIRST` preserves the selected context order and its presentation/narrative alternatives; it does not yet create the detailed opening Spine.
 - The affected-animal group scene remains an embedded presentation example, not a Content Premise.
 - `INF-PHYS-P01` refines already-preserved smell attraction/reduced avoidance rather than duplicating it as a new rule.
-- `INF-PHYS-P02` remains an open cross-system gameplay Idea and does not update the accepted Draft/workforce/ecology owners.
+- `INF-PHYS-P02` remains an open cross-system gameplay Idea and does not update accepted project meaning or the relevant workforce/ecology owners.
 - Detailed brainstorming techniques are intentionally not defined in this project file; use the reusable [`Game Creation Workflow`](../../game-creation-workflow.md) and future brainstorming-method owners.

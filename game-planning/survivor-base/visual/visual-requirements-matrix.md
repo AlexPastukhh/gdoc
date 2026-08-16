@@ -1,7 +1,8 @@
 # Survivor Base — Visual Requirements Matrix
 
 **Status:** active project-local visual requirements owner\
-**Canonical project source:** [`../game-planning-draft.md`](../game-planning-draft.md)\
+**Project entry point:** [`../README.md`](../README.md)\
+**Legacy source/status context:** [`../game-planning-draft.md`](../game-planning-draft.md)\
 **Gameplay Loop detail:** [`../gameplay-loops.md`](../gameplay-loops.md)\
 **Representative scenarios:** [`../scenarios.md`](../scenarios.md)\
 **Reusable visual method:** [`../../../game-analysis-reference/visual-design-analysis-and-planning.md`](../../../game-analysis-reference/visual-design-analysis-and-planning.md)

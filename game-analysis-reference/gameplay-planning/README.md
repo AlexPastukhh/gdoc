@@ -71,7 +71,7 @@ Scenario
      without proving that the Dynamic is stable.
 ```
 
-A project can start at whichever scale makes the current problem clearer. Important accepted cross-cutting findings must still be reconciled into the high-level Game Planning Draft.
+A project can start at whichever scale makes the current problem clearer. Important accepted cross-cutting findings must be reconciled into the affected real project owner(s); when composition or chronology changes, revise the relevant Scenario as well. A legacy Draft is back-written only when migration compatibility/provenance responsibility requires it.
 
 ## 4. Shared Causal-Basis Concern
 

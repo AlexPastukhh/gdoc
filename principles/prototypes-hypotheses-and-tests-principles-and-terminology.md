@@ -222,13 +222,14 @@ Evidence should update affected:
 - implementation ideas;
 - scope;
 - decisions;
-- Game Planning Draft.
+- affected current project owners / representative Scenarios;
+- a legacy Draft only when migration compatibility/provenance responsibility requires it.
 
 Planning is not append-only. Correct meanings that evidence disproves.
 
 ## 18. Separate Prototype Artifacts
 
-Keep a prototype inline in the Game Planning Draft when the record is small.
+Keep a prototype inline in the nearest relevant current project owner when the record is small and separate prototype ownership is not useful.
 
 Create a separate prototype plan or result only when setup, execution, evidence, reuse or review has an independent lifecycle.
 

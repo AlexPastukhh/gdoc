@@ -221,23 +221,15 @@ Do not turn this file into a second methodology document or historical backlog. 
 **Closed when:** real unit count/reuse makes smallest clear structure obvious.
 **Next check:** create no empty mirroring structure; split only when owner/workspace actually needs it.
 
-### Game Planning Use-Case Map / Bootstrap
-
-**Status:** active documentation/navigation update; no longer deferred.
-**Why it matters:** a new chat should learn the system from practical capabilities it will actually perform, with exact required repository paths and read order.
-**Current owner:** `game-planning-use-case-map.md`; old `game-planning-use-case-registry.md` remains only a compatibility redirect.
-**Working rule:** Map owns navigation only; workflows own process; principles/invariants own stable meanings; detailed methods own fields/questions; project files own actual game meaning.
-**Closed when:** Bootstrap + core Spine/unit/Idea/element/Variant/Version use cases route to exact current files without duplicating their content.
-**Next check:** run a fresh-chat assimilation through UC-01 and selected gameplay use cases after package application.
-
 ### Documentation Examples / Hardening
 
 **Status:** active documentation-quality rule.
 **Why it matters:** abstractly correct docs can still systematically produce wrong inferences.
 **Working rule:** use concrete examples wherever they materially reduce ambiguity; short examples stay inline; separate full practical example files are reserved for complete real artifacts. High-level examples remain useful even after full examples exist.
-**Current examples:** target Spine/Unit/Low-Level Element high-level examples in new workflow/principle owners.
+**Current examples:** target Spine/Unit/Low-Level Element high-level examples in current workflow/principle owners.
+**Validation:** the Use-Case Map/bootstrap implementation is complete; use fresh-chat assimilation through UC-01 and selected gameplay use cases as one recurring hardening test rather than as a separate implementation concern.
 **Closed when:** key boundaries have useful examples/counterexamples and fresh-chat review no longer repeats the same misunderstandings.
-**Next check:** whenever a chat makes a reasonable wrong inference, inspect docs/navigation and add the smallest useful clarification.
+**Next check:** when a chat makes a reasonable wrong inference, inspect docs/navigation and add the smallest useful clarification; periodically rerun a fresh-chat bootstrap check.
 
 ## 4. Deferred / Next-Order Methodology Concerns
 
@@ -292,11 +284,10 @@ These are recognized gaps. They do not block current staged Spine pass unless th
 
 ## 5. Immediate Next Work
 
-After this documentation architecture update is applied/reviewed:
+Current next planning sequence:
 
 ```text
-use game-planning-use-case-map.md for bootstrap/routing
-→ continue selected non-branching opening Spine
+continue selected non-branching opening Spine
 → consult relevant legacy Draft Planning Items/status/provenance
 → state Target Game Version / Scope
 → set one explicit Player Context
@@ -311,5 +302,7 @@ use game-planning-use-case-map.md for bootstrap/routing
 → compare owners back against Spine
 → later use reusable units to construct/test other Scenario combinations.
 ```
+
+Use `game-planning-use-case-map.md` to bootstrap new chats or resolve required read routes; it is navigation, not a mandatory first step in every planning pass.
 
 In parallel, note only concrete template opportunities, literal-sync/Reference Object candidates, Research Questions and unresolved owner questions as they appear. Their later implementation/research passes are not a mandatory linear tail of the Spine sequence.

@@ -1,26 +1,30 @@
 # Survivor Base — Gameplay Loops
 
 **Status:** active project-local Gameplay Loop detail owner
-**Canonical project source:** [`game-planning-draft.md`](game-planning-draft.md)
+**Project entry point:** [`README.md`](README.md)
+**Legacy source/status context:** [`game-planning-draft.md`](game-planning-draft.md)
 **Reusable method:** [`../../game-analysis-reference/gameplay-planning/loops.md`](../../game-analysis-reference/gameplay-planning/loops.md)
 **Scenario detail:** [`scenarios.md`](scenarios.md)
 
 ## 1. Responsibility And Authority
 
-This file exists only for recurrent causal gameplay structures that are useful to review independently from the high-level Draft.
+This file exists only for recurrent causal gameplay structures that are useful to review independently from the broader current project picture.
 
-It does **not** maintain a second broad Core / Session / Long-Term summary of the whole game merely to restate the Draft.
+It does **not** maintain a second broad Core / Session / Long-Term summary of the whole game merely to restate other current owners or the legacy Draft.
 
 ```text
-project-wide high-level current meaning
-  → game-planning-draft.md;
+project-wide current meaning
+  → appropriate real project owner(s);
+
+still-unrouted imported meaning / provenance
+  → game-planning-draft.md during migration;
 
 independently useful recurrent causal process
   → this file;
 
 candidate Loop
   ≠ accepted Loop automatically
-  ≠ canonical Draft meaning automatically.
+  ≠ accepted cross-cutting project meaning automatically.
 ```
 
 Use the reusable Loop method for recurrence, Causal Basis, transitions, carryover, feedback, interaction, balance and evidence questions.
@@ -93,6 +97,6 @@ The current direction also expects raid squads and some base-response squads to 
 
 ## 3. Broad Loop Views
 
-The project may still use broad Core Loop, Session Loop or Long-Term Loop wording inside the canonical Draft or a Concept when it helps explain the game.
+The project may still use broad Core Loop, Session Loop or Long-Term Loop wording inside a Concept, another high-level current project summary, or the legacy Draft during migration when it helps explain the game.
 
 Do not create another project file solely to mirror those broad views. Add another record here only when a concrete recurrent causal process needs independent planning, comparison, validation or implementation coordination.

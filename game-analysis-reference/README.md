@@ -72,7 +72,7 @@ The reference does not replace:
 - [`Player Experience First`](../principles/player-experience-first-principles-and-terminology.md);
 - [`Reference First And Controlled Transformation`](../principles/reference-first-and-controlled-transformation-principles-and-terminology.md);
 - [`Game Development Planning Workflow`](../game-development-planning-workflow.md);
-- project-specific evidence, decisions or a Game Planning Draft.
+- project-specific evidence, decisions or current project planning owners.
 
 ## 4. Reusable Planning Pass Coverage
 

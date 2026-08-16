@@ -1,7 +1,8 @@
 # Survivor Base — Scenarios
 
 **Status:** active project-local Scenario detail owner\
-**Canonical project source:** [`game-planning-draft.md`](game-planning-draft.md)\
+**Project entry point:** [`README.md`](README.md)\
+**Legacy source/status context:** [`game-planning-draft.md`](game-planning-draft.md)\
 **Candidate content input:** [`content-premises.md`](content-premises.md)\
 **Related Loop detail:** [`gameplay-loops.md`](gameplay-loops.md)\
 **Reusable method:** [`../../game-analysis-reference/gameplay-planning/scenarios.md`](../../game-analysis-reference/gameplay-planning/scenarios.md)\
@@ -104,7 +105,7 @@ If the Scenario cannot be made legible and interesting with these blocks, that i
 
 ### Relationship To Recurrent Gameplay
 
-For integration review, this Scenario traverses a broad operating-cycle synthesis of current Draft meaning:
+For integration review, this Scenario traverses a broad operating-cycle synthesis of current project meaning, including still-relevant legacy Draft source material:
 
 ```text
 read current state

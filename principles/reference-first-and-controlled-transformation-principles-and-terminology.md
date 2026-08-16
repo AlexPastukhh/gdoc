@@ -398,7 +398,7 @@ A Concept should make visible proportionally:
 - demo/visual feasibility assumptions;
 - unresolved compatibility risks.
 
-A Game Planning Draft should make visible the **current selected direction**:
+The **current selected project direction** should make visible:
 
 - reference baseline;
 - causal records that matter to the active concept;
@@ -407,7 +407,7 @@ A Game Planning Draft should make visible the **current selected direction**:
 - unresolved compatibility risks;
 - prototype or research needs.
 
-Detailed alternative references/Variants may remain in a project Idea/creative workspace rather than making the Draft unreadable.
+Detailed alternative references/Variants may remain in a project Idea/creative workspace rather than making the current project owners unreadable.
 
 ## 18. Do Not
 

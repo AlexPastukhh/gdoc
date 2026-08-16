@@ -206,7 +206,7 @@ current confidence;
 decision affected.
 ```
 
-Small hypotheses may remain inline in a Game Planning Draft.
+Small hypotheses may remain inline in the nearest relevant current project owner when separate evidence ownership is not useful.
 
 A project-specific Experience planning unit and an `Experience Hypothesis` are related but not identical: the first describes the concrete Experience being designed; the second owns a testable delivery/evidence claim. Keep them combined proportionally when simple, but do not maintain competing evidence owners.
 
@@ -223,7 +223,7 @@ A project-specific Experience planning unit and an `Experience Hypothesis` are r
 
 ## 11. Consequences For Game Planning
 
-A Game Planning Draft should identify:
+The current project planning picture should identify:
 
 - the central target experience;
 - supporting experience families when important;

@@ -1,12 +1,13 @@
 # Survivor Base — Visual Planning
 
 **Status:** active project-local visual planning detail owner\
-**Canonical project planning owner:** [`../game-planning-draft.md`](../game-planning-draft.md)\
+**Project entry point:** [`../README.md`](../README.md)\
+**Legacy source/status context:** [`../game-planning-draft.md`](../game-planning-draft.md)\
 **Reusable method:** [`../../../game-analysis-reference/visual-design-analysis-and-planning.md`](../../../game-analysis-reference/visual-design-analysis-and-planning.md)
 
 ## 1. Responsibility
 
-This directory owns detailed visual-planning work for Survivor Base when that detail would make the high-level Game Planning Draft harder to review.
+This directory owns detailed visual-planning work for Survivor Base when visual requirements, realization questions or evidence have independent review/change responsibility.
 
 Current depth begins with requirements rather than an accepted art direction:
 
@@ -21,7 +22,7 @@ Gameplay Situation / Loop or Loop Phase / Scenario or Scenario Beat / Visual Con
 
 A `Visual Context` is a project-local visual-planning context that may matter even when no new meaningful Gameplay Situation begins there. Routine operation, system execution, waiting and aftermath can therefore remain valid visual inputs without being promoted into Gameplay Situations.
 
-The visual files do not silently override `CHAT-PI-*` meanings. New accepted project decisions should be reflected back into the canonical planning draft when they materially change current game meaning.
+The visual files do not silently override `CHAT-PI-*` meanings. Accepted visual realization belongs in the appropriate visual owner; when it materially changes gameplay or broader project meaning, update the affected real owner(s). Back-write the legacy Draft only when migration compatibility/provenance responsibility requires it.
 
 ## 2. Current Files
 

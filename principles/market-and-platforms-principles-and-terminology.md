@@ -213,7 +213,7 @@ Metrics reduce uncertainty; they do not automatically decide design.
 
 ## 13. Consequences For Game Planning
 
-The Game Planning Draft should preserve:
+The current project planning owners should make visible, proportionally:
 
 - target platform assumptions;
 - comparison set;
