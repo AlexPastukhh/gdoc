@@ -3,7 +3,9 @@
 **Status:** active project-local visual planning detail owner\
 **Project entry point:** [`../README.md`](../README.md)\
 **Legacy source/status context:** [`../game-planning-draft.md`](../game-planning-draft.md)\
-**Reusable method:** [`../../../game-analysis-reference/visual-design-analysis-and-planning.md`](../../../game-analysis-reference/visual-design-analysis-and-planning.md)
+**Reusable direction:** [`../../visual/README.md`](../../visual/README.md)\
+**Reusable method:** [`../../../game-analysis-reference/visual-design-analysis-and-planning.md`](../../../game-analysis-reference/visual-design-analysis-and-planning.md)\
+**Idea workspace:** [`ideas/README.md`](ideas/README.md)
 
 ## 1. Responsibility
 
@@ -29,6 +31,7 @@ The visual files do not silently override `CHAT-PI-*` meanings. Accepted visual 
 | File | Responsibility | Status |
 |---|---|---|
 | [`visual-requirements-matrix.md`](visual-requirements-matrix.md) | Working visual-context/element requirements and coverage map | Active working owner |
+| [`ideas/README.md`](ideas/README.md) | Survivor Base-specific unresolved visual questions / Brainstorm Prompts / Idea Variants | Active exploratory workspace navigation |
 
 ## 3. Current Boundary
 

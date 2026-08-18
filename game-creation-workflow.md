@@ -19,7 +19,7 @@ This workflow owns the **creative synthesis route**. It does not replace:
 - detailed reference rules in [`Reference First And Controlled Transformation`](principles/reference-first-and-controlled-transformation-principles-and-terminology.md);
 - Situation / Loop / Dynamic / Scenario methods in [`Gameplay Planning`](game-analysis-reference/gameplay-planning/README.md);
 - detailed Game Structure, Player Experience or visual analysis;
-- future specialized brainstorming methods.
+- the working game-planning brainstorming direction in [`game-planning/brainstorming/README.md`](game-planning/brainstorming/README.md), where deeper specialized techniques can be developed without duplicating this synthesis workflow.
 
 Use [`Game Planning — Use-Case Map`](game-planning-use-case-map.md) when the current task or required read route is unclear.
 
@@ -427,7 +427,7 @@ Reference-backed answers are often useful because they carry inspectable evidenc
 
 Novelty remains valid when the Prompt cannot be solved well by known references.
 
-This section only defines answer sources. Detailed brainstorming techniques are intentionally deferred to a future methodology owner.
+This section only defines answer sources. Deeper game-planning brainstorming techniques are developed through [`game-planning/brainstorming/README.md`](game-planning/brainstorming/README.md); do not duplicate their eventual technique detail here.
 
 ## 10. Capture Variants Without Premature Commitment
 

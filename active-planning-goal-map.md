@@ -5,24 +5,39 @@ Scope: current planning direction, open concerns, next validation work and defer
 
 ## 1. Current Goal
 
-Validate and refine the low-level gameplay-planning model through one staged concrete Survivor Base pass while also making the reusable documentation route clear enough for new chats to follow safely.
+Validate the **Survivor Base whole-game Concept end to end** while continuing to refine the low-level gameplay-planning model and establishing the missing planning-direction workspaces needed to inspect the game beyond gameplay chronology alone.
+
+Survivor Base currently has substantial gameplay/detail work, but the whole-game Concept and several cross-cutting directions were not examined deeply enough before detailed Spine work became the main focus. Therefore the current game direction remains a **working Concept**, not a sufficiently validated Concept merely because a detailed project workspace exists.
+
+Current validation route:
 
 ```text
-legacy Draft as migration/source context
-→ coherent detailed Survivor Base Spine Scenario
+whole-game Concept
+→ initial cross-lens review
+   Structure / Gameplay
+   Experience / Motivation
+   Visual
+   Audience / Marketing
+   References / Comparison
+   Production / Feasibility
+→ coherent representative Survivor Base Spine Scenario
 → concrete low-level unit manifestations inside the Spine
+   using applicable fields of their detailed methods
+   for this selected run
 → Low-Level Elements / candidate responsibilities / handoffs
 → separate reusable low-level expansion where independent ownership is useful
 → compare clarified owners back against the Spine
+→ compare resulting gameplay + cross-lens evidence back against the Concept
+→ deliberately retain / revise / transform / reject Concept meaning
 → later recombine reusable units into additional Scenarios.
 ```
 
-The current Survivor Base pass first keeps one selected non-branching Scenario coherent enough to review as chronology. During that work, preserve material responsibilities, concrete unit manifestations, Low-Level Elements and candidate handoffs, but do not immediately expand every candidate into its full reusable possibility-space. After chronology stabilizes enough, expand independently useful reusable owners separately and compare them back against the Spine.
+For the current Survivor Base Concept-validation pass, one representative Spine should be walked from beginning to persistent adaptation with material local units detailed deeply enough to expose the actual gameplay rather than remaining only Beat headings. This is a **current validation gate for Survivor Base**, not a universal rule that every future Concept must complete one whole Spine before any other planning work.
 
-This is a **current-work tactic**, not the universal reusable sequence. General architecture remains iterative:
+General reusable architecture remains iterative:
 
 ```text
-Scenario / Spine ↔ reusable owners ↔ Ideas / Variants / Versions ↔ new Scenarios.
+Concept ↔ planning lenses ↔ Scenario / Spine ↔ reusable owners ↔ Ideas / Variants / Versions ↔ new Scenarios.
 ```
 
 ## 2. Goal-Map Lifecycle
@@ -54,6 +69,25 @@ Do not turn this file into a second methodology document or historical backlog. 
 
 ## 3. Active Concerns — Close Through The Next Staged Spine Pass
 
+
+### Survivor Base Concept End-To-End Validation
+
+**Status:** active primary validation gate; Survivor Base remains a working whole-game Concept.
+**Why it matters:** detailed gameplay planning has progressed farther than systematic validation of the whole game across gameplay, Experience, Visual, Marketing, references and feasibility. The current Concept should not become trusted by inertia.
+**Current owners / working files:** `game-planning/concepts/survivor-base.md`, `game-analysis-reference/game-concept-analysis-and-planning.md`, `game-planning/survivor-base/README.md`, current opening Spine and direction-specific owners.
+**Working rule:** concept-level review and concrete gameplay proof inform each other. The current Spine must be completed through material local-unit detail, and its findings must be reconciled back into the Concept rather than treated as isolated gameplay documentation.
+**Closed when:** one representative end-to-end pass has reached persistent adaptation; material local units have enough scenario-scoped detail to expose real decisions/executions/consequences; major Experience/Visual/Marketing/feasibility implications are explicit; and the Concept has received a deliberate review conclusion about what to retain, revise, transform or reject.
+**Next check:** perform an initial Concept lens pass, then continue the existing opening Spine without restarting its selected backbone; use each detailed section as evidence about the whole game.
+
+### Major Planning Direction Workspaces
+
+**Status:** active infrastructure/navigation clarification.
+**Why it matters:** Concept, Visual, Marketing and Brainstorming need durable work areas instead of appearing only as scattered fields inside gameplay/project files.
+**Current owners:** `game-planning/concepts/`, `game-planning/visual/`, `game-planning/marketing/`, `game-planning/brainstorming/`; each direction keeps `ideas/` for unresolved exploratory work and may add dedicated owners as real material grows.
+**Boundary:** direction-level work does not replace project-local owners. Survivor Base-specific Visual/Marketing meaning remains under the Survivor Base project workspace, while whole-game Concept integration is summarized in the Concept record.
+**Closed when:** the areas route new work unambiguously and real use confirms whether any additional dedicated owners are actually worth splitting.
+**Next check:** use the new direction owners during Survivor Base Concept validation rather than pre-creating more empty ontology.
+
 ### Current Opening Spine Selection / Gameplay Entry
 
 **Status:** active working selection; backbone selected for current methodology pass, concrete details not frozen project truth.
@@ -71,10 +105,10 @@ Do not turn this file into a second methodology document or historical backlog. 
 **Status:** active.
 **Why it matters:** Spine must remain readable as one concrete chronology while carrying enough information to discover and feed low-level owners/elements.
 **Current owners:** `game-planning-spine-workflow.md`, `game-analysis-reference/gameplay-planning/scenarios.md`.
-**Working boundary:** Spine contains concrete low-level manifestations itself; reusable owners expand broader possibility-space across Scenarios. Extraction into a reusable owner does not remove the concrete occurrence from Spine.
+**Working boundary:** Spine contains concrete low-level manifestations itself; when material, those manifestations use the applicable fields of their detailed unit methods **for this concrete Scenario/run**. Reusable owners expand broader possibility-space across Scenarios. Extraction into a reusable owner does not remove the concrete occurrence from Spine, and a reusable owner is not required before deep scenario-local detail is allowed.
 **Questions:** Does `Spine Scenario` remain a useful named planning role? Is `Timeline + expandable Beat / Step / Interval detail` convenient? How much selected-branch detail stays inline? Which temporal tracks recur?
 **Closed when:** one real staged pass is readable as coherent chronology and by independently useful reusable owner without important duplication or missing handoffs.
-**Next check:** preserve concrete manifestations, candidate responsibilities and handoffs while building detailed Spine; expand full reusable alternatives only after chronology stabilizes enough for review.
+**Next check:** preserve concrete manifestations, candidate responsibilities and handoffs while building the detailed Spine; for each material local unit, use enough applicable unit-method fields to understand the selected run; expand full reusable alternatives only when independent reusable ownership becomes useful.
 
 ### Low-Level Elements
 
@@ -235,6 +269,12 @@ Do not turn this file into a second methodology document or historical backlog. 
 
 These are recognized gaps. They do not block current staged Spine pass unless they become load-bearing.
 
+### Game-Planning Brainstorming Methodology
+**Status:** deferred methodology development; direction workspace created now.
+**Concern:** develop explicit brainstorming techniques not only for generic ideation but for Concept questions, planning-unit design, Low-Level Elements, Experience, Visual, Marketing and other game-planning needs. Preserve Prompt / Idea Variant / evaluation boundaries and avoid turning technique taxonomies into mandatory ceremony.
+**Current working area:** `game-planning/brainstorming/`; `game-creation-workflow.md` still owns the current high-level answer-source route until deeper techniques are validated.
+**Resume when:** a real planning Prompt needs more than the existing independent thought / reference borrowing / transformation / recombination / novel / hybrid answer-source route, or repeated sessions expose a useful technique worth documenting.
+
 ### Gameplay Loop Validation
 **Status:** deferred.
 **Concern:** empirical/source-backed Loop-boundary validation; recurrence wording; extracting Loops from recurrent causality rather than one Scenario chronology.
@@ -287,19 +327,25 @@ These are recognized gaps. They do not block current staged Spine pass unless th
 Current next planning sequence:
 
 ```text
-continue selected non-branching opening Spine in game-planning/survivor-base/scenarios/opening-spine.md
+open / update the working Survivor Base whole-game Concept record
+→ run an initial Concept lens pass
+   gameplay/structure + Experience + Visual + Marketing + references + feasibility
+→ continue selected non-branching opening Spine in game-planning/survivor-base/scenarios/opening-spine.md
 → consult relevant legacy Draft Planning Items/status/provenance
 → state Target Game Version / Scope
 → set one explicit Player Context
 → walk coherent chronology through persistent adaptation
 → preserve Before → Inside → After / Handoff continuity
-→ record concrete unit manifestations
+→ for each material local Situation / Event / Execution / other unit,
+   use applicable fields of its detailed method for THIS Scenario manifestation
 → identify material Low-Level Elements / candidate responsibilities / handoffs
 → use scoped Idea work for element-level uncertainty when useful
-→ preserve Domain + Visual handoffs
+→ preserve Domain + Experience + Visual + Marketing/communication implications
 → trace Loop/Dynamic candidates only when recurrence/tendency appears
-→ after chronology stabilizes enough, expand independently useful reusable owners
+→ expand independently useful reusable owners where justified
 → compare owners back against Spine
+→ compare the completed detailed pass back against the whole-game Concept
+→ deliberately retain / revise / transform / reject Concept meaning
 → later use reusable units to construct/test other Scenario combinations.
 ```
 

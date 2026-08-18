@@ -91,9 +91,14 @@ Examples in this map are only navigation examples. High-level conceptual example
 2. [`game-analysis-reference/gameplay-planning/scenarios.md`](game-analysis-reference/gameplay-planning/scenarios.md)
 3. the detailed method matching the concrete unit, when independent detail is useful:
    - Situation → [`game-analysis-reference/gameplay-planning/situations.md`](game-analysis-reference/gameplay-planning/situations.md)
+   - Event → [`game-analysis-reference/gameplay-planning/README.md`](game-analysis-reference/gameplay-planning/README.md), `Supporting Gameplay Event Record`
    - Execution → [`game-analysis-reference/gameplay-planning/executions.md`](game-analysis-reference/gameplay-planning/executions.md)
    - Loop → [`game-analysis-reference/gameplay-planning/loops.md`](game-analysis-reference/gameplay-planning/loops.md)
    - Dynamic → [`game-analysis-reference/gameplay-planning/dynamics.md`](game-analysis-reference/gameplay-planning/dynamics.md)
+
+If no detailed method/supporting record exists yet for a material local responsibility, preserve enough concrete Scenario-local detail to understand the selected run and mark the method/owner gap. Do not invent a reusable schema merely to satisfy this use case.
+
+**Concrete-detail rule:** when a Situation Instance, Event occurrence, Execution occurrence, Loop manifestation or other low-level unit becomes material inside the selected Scenario, describe it using the **applicable/materially useful fields of that unit's detailed method**. Those answers are scoped to this concrete Scenario/run. They do not automatically define the reusable unit's complete record or possibility-space. Do not mechanically fill irrelevant fields.
 
 **Boundary:** a concrete unit/occurrence in the Spine remains part of that chronology even if a reusable owner is later extracted/developed from it.
 
@@ -127,9 +132,10 @@ Examples in this map are only navigation examples. High-level conceptual example
 
 1. [`principles/game-planning-principles-and-terminology.md`](principles/game-planning-principles-and-terminology.md)
 2. [`game-creation-workflow.md`](game-creation-workflow.md)
-3. [`game-planning/README.md`](game-planning/README.md) for project-local placement
+3. [`game-planning/README.md`](game-planning/README.md) for direction/project placement
+4. the nearest direction/project `README.md` when the Idea belongs to Concepts, Visual, Marketing, Brainstorming or a concrete game owner
 
-**Boundary:** Idea / Idea Variant ≠ accepted game rule. An Idea may exist before a formal Brainstorm Prompt.
+**Boundary:** Idea / Idea Variant ≠ accepted game rule. An Idea may exist before a formal Brainstorm Prompt. Put one planning question in one primary workspace; direction-level Ideas do not silently become project-local accepted meaning.
 
 ## UC-06 — Work On A Low-Level Element Through Ideas
 
@@ -173,6 +179,32 @@ Examples in this map are only navigation examples. High-level conceptual example
 
 **Boundary:** Version ≠ alternative design and ≠ document revision. Not every entity needs Versions.
 
+
+## UC-09 — Create, Analyze Or Validate A Game Concept
+
+**Purpose:** create or inspect one possible whole game, test whether its gameplay/experience/visual/market/production promises compose, and revise the Concept using evidence from representative detailed planning.
+
+**Required Reading:**
+
+1. [`game-creation-workflow.md`](game-creation-workflow.md)
+2. [`game-analysis-reference/game-concept-analysis-and-planning.md`](game-analysis-reference/game-concept-analysis-and-planning.md)
+3. [`game-planning/concepts/README.md`](game-planning/concepts/README.md)
+4. the current Concept record and concrete project README when project-specific
+
+**Optional / deeper reading:**
+
+- [`game-analysis-reference/game-structure-analysis.md`](game-analysis-reference/game-structure-analysis.md)
+- [`game-analysis-reference/player-experience-and-anti-experience.md`](game-analysis-reference/player-experience-and-anti-experience.md)
+- [`game-analysis-reference/player-experience-motivation-planning.md`](game-analysis-reference/player-experience-motivation-planning.md)
+- [`game-analysis-reference/visual-design-analysis-and-planning.md`](game-analysis-reference/visual-design-analysis-and-planning.md)
+- [`principles/audience-is-part-of-the-game-principles-and-terminology.md`](principles/audience-is-part-of-the-game-principles-and-terminology.md)
+- [`principles/market-and-platforms-principles-and-terminology.md`](principles/market-and-platforms-principles-and-terminology.md)
+- [`game-planning-spine-workflow.md`](game-planning-spine-workflow.md) + UC-02/UC-03 when representative concrete chronology is the next proof step
+
+**Project-local application:** `game-planning/concepts/<concept-record>` owns the compact whole-game Concept; the concrete game workspace owns detailed Scenarios, Experience, Visual, Marketing and other game-specific work.
+
+**Boundary:** Concept analysis is not a requirement to fill every lens before any gameplay work. A Concept may be revised while detailed planning proceeds. A representative Spine can provide strong validation evidence only when its material local units are detailed enough to expose the actual game rather than remaining headings.
+
 ## 2. Current Project Entry
 
 After selecting a use case, enter a concrete project through:
@@ -182,7 +214,8 @@ After selecting a use case, enter a concrete project through:
 
 For Survivor Base:
 
-- [`game-planning/survivor-base/README.md`](game-planning/survivor-base/README.md)
+- whole-game Concept: [`game-planning/concepts/survivor-base.md`](game-planning/concepts/survivor-base.md)
+- concrete game workspace: [`game-planning/survivor-base/README.md`](game-planning/survivor-base/README.md)
 
 The Survivor Base legacy Draft is still consulted as a migration/source artifact while the Spine, reusable units and low-level elements are being developed. This is project migration behavior, not a requirement that every future project maintain a monolithic Draft.
 

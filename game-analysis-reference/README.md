@@ -32,6 +32,7 @@ The reference is consulted while observing, playing or clarifying a concrete des
 | Owner | Responsibility |
 |---|---|
 | [`Gameplay Planning`](gameplay-planning/README.md) | Detailed methods for planning Situations, lightweight Events, Loops, Dynamics and Scenarios and for applying reusable passes at supported scales |
+| [`Game Concept Analysis And Planning`](game-concept-analysis-and-planning.md) | Cross-lens method for inspecting one possible whole game, connecting structure, Experience, Visual, audience/market, references, feasibility and representative Scenario evidence back into the Concept |
 | [`Game Structure Analysis`](game-structure-analysis.md) | Shared structural/systemic concern set for Situation / Loop / Dynamic / Scenario and whole-game review, including decisions, balance, state/opportunity trajectory, pacing, causal legibility, production and transfer |
 | [`Player Experience And Anti-Experience`](player-experience-and-anti-experience.md) | Experience families, supporting conditions, observable indicators and anti-experience checks |
 | [`Player Experience / Motivation Planning`](player-experience-motivation-planning.md) | Provisional project-specific Experience/Motivation records, availability/expectation relations, candidate Experience Promise/Doubt units and Player Context/Expertise links |
@@ -75,6 +76,8 @@ The reference does not replace:
 - project-specific evidence, decisions or current project planning owners.
 
 ## 4. Reusable Planning Pass Coverage
+
+Whole-game Concept review is coordinated by [`Game Concept Analysis And Planning`](game-concept-analysis-and-planning.md). It routes into existing structural, Experience, Visual, audience/market, reference and feasibility owners instead of copying their full methods.
 
 Detailed gameplay planning uses shared reusable surfaces with explicit scale coverage:
 
@@ -174,15 +177,16 @@ When practical use reveals a new reusable concern:
 
 1. Add it to the owner matching its responsibility.
 2. Keep a question in moment-flow only when its main value is knowing **when** to notice it.
-3. Keep structural/systemic questions in `game-structure-analysis.md`.
-4. Keep reusable Experience-family conditions/indicators/anti-experience checks in `player-experience-and-anti-experience.md`.
-5. Keep project-specific Experience/Motivation, availability/expectation and candidate Promise/Doubt detailed planning in `player-experience-motivation-planning.md` while that provisional responsibility remains useful.
-6. Keep visual planning questions in `visual-design-analysis-and-planning.md`.
-7. Keep Situation / Event-support / provisional Execution / Loop / Dynamic / Scenario record methods in `gameplay-planning/`.
-8. Check principle owners before introducing a new definition.
-9. Avoid maintaining two full copies of the same question set.
-10. If no clear owner exists, stage the question in [`Unrouted Questions And Concerns`](unrouted-questions-and-concerns.md).
-11. Create another file only when independent ownership/reuse/research/review/navigation justifies it.
+3. Keep whole-game Concept cross-lens review/routing in `game-concept-analysis-and-planning.md`.
+4. Keep structural/systemic questions in `game-structure-analysis.md`.
+5. Keep reusable Experience-family conditions/indicators/anti-experience checks in `player-experience-and-anti-experience.md`.
+6. Keep project-specific Experience/Motivation, availability/expectation and candidate Promise/Doubt detailed planning in `player-experience-motivation-planning.md` while that provisional responsibility remains useful.
+7. Keep visual planning questions in `visual-design-analysis-and-planning.md`.
+8. Keep Situation / Event-support / provisional Execution / Loop / Dynamic / Scenario record methods in `gameplay-planning/`.
+9. Check principle owners before introducing a new definition.
+10. Avoid maintaining two full copies of the same question set.
+11. If no clear owner exists, stage the question in [`Unrouted Questions And Concerns`](unrouted-questions-and-concerns.md).
+12. Create another file only when independent ownership/reuse/research/review/navigation justifies it.
 
 ## 8. Source Provenance
 

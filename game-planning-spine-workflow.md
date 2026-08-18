@@ -111,6 +111,35 @@ AFTER / HANDOFF:
 
 This example is intentionally incomplete. The complete Situation and Scenario records remain in their detailed methods.
 
+### Concrete Local Unit Detail Inside The Spine
+
+When a concrete Situation Instance, Event occurrence, Execution occurrence, Loop manifestation or other low-level planning-unit manifestation becomes material inside a Scenario/Spine, it may be described using the **applicable fields/questions of that unit's detailed planning method**.
+
+```text
+Scenario-local Situation Instance
+  → applicable Situation fields answered for this concrete people/state/information/options/branch;
+
+Scenario-local Execution occurrence
+  → applicable Execution fields answered for this concrete process/timing/participants/interruption/outcome;
+
+Scenario-local Event / Loop / other manifestation
+  → applicable detail needed to understand this selected run.
+```
+
+The scope boundary is essential:
+
+```text
+fields answered inside the Spine
+  = how this unit manifests HERE, in this selected chronology;
+
+reusable unit owner
+  = broader reusable truth / possibility-space across Scenarios and configurations.
+```
+
+A reusable owner is **not required before** the Scenario is allowed to contain deep local detail. If a reusable owner already exists, reference generic truth rather than copying it and keep only concrete manifestation detail in the Scenario. If no reusable owner exists yet, the Scenario may still carry enough applicable unit detail to make the occurrence fully understandable.
+
+Use all materially useful/applicable fields needed for the current planning question; do not mechanically fill every field in a method. Extraction into a reusable owner happens only when independent reuse/review/research/testing/change responsibility justifies it.
+
 ## 5. Concrete Occurrence → Reusable Unit
 
 A concrete unit inside a Spine answers:

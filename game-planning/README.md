@@ -1,11 +1,15 @@
-# Game Planning — Project-Local Work
+# Game Planning — Work Areas And Project-Local Planning
 
 Status: active project-planning navigation owner
-Scope: navigation and responsibility boundaries for game-specific planning stored under `game-planning/`.
+Scope: navigation and responsibility boundaries for major game-planning work areas and concrete game/project planning stored under `game-planning/`.
 
 ## 1. Purpose
 
-This area contains project-local planning meaning, including when justified:
+This area contains both **major game-planning work areas** and **concrete game/project-local planning**. The direction workspaces organize recurring work around whole-game Concepts, Visual planning, Marketing and game-planning Brainstorming. Concrete project directories own the actual game-specific meaning.
+
+Direction workspaces may contain working reusable process/navigation for that direction, but stable canonical terminology still belongs under [`../principles/README.md`](../principles/README.md). Detailed reusable analysis/planning lenses and entity methods normally belong under [`../game-analysis-reference/README.md`](../game-analysis-reference/README.md) when an independent method owner is useful; game-planning brainstorming process/technique methodology is intentionally developed under [`brainstorming/README.md`](brainstorming/README.md).
+
+Concrete project planning may include, when justified:
 
 ```text
 project decisions and decision candidates;
@@ -21,17 +25,43 @@ visual / presentation, production or other justified detail owners;
 legacy consolidated Game Planning Drafts during migration, when a project already has them.
 ```
 
-Reusable definitions do not originate here. Stable principles and terminology remain in [`../principles/README.md`](../principles/README.md), and reusable analysis/planning methods remain in [`../game-analysis-reference/README.md`](../game-analysis-reference/README.md).
-
 Use [`../game-planning-use-case-map.md`](../game-planning-use-case-map.md) to find the practical read route, [`../game-creation-workflow.md`](../game-creation-workflow.md) for zero-to-one synthesis, [`../game-development-planning-workflow.md`](../game-development-planning-workflow.md) for broad ongoing orchestration, [`../game-planning-spine-workflow.md`](../game-planning-spine-workflow.md) for Scenario/Spine-centered planning, and [`../low-level-element-planning-workflow.md`](../low-level-element-planning-workflow.md) for smaller-than-unit Idea work.
 
-## 2. Current Projects
+
+## 2. Major Planning Directions
+
+| Direction | Entry point | Responsibility |
+|---|---|---|
+| Concepts | [`concepts/README.md`](concepts/README.md) | Invent, compare, analyze and validate possible whole-game Concepts; keep Concept-level ideas/questions distinct from one project's lower-level Ideas |
+| Visual | [`visual/README.md`](visual/README.md) | Cross-project visual-planning direction, reusable visual-method routing and visual-planning Ideas |
+| Marketing | [`marketing/README.md`](marketing/README.md) | Audience/positioning/comparison/purchase-fantasy/proof planning as part of game and Concept validation |
+| Brainstorming | [`brainstorming/README.md`](brainstorming/README.md) | Game-planning-specific answer generation for Concepts, planning units, Low-Level Elements, Experience, Visual and other planning needs |
+
+Each direction starts with a `README.md` plus `ideas/`. Add more dedicated files/folders only when useful information gains independent review/navigation/change responsibility. The shared physical convention does **not** make every direction's ideas equivalent in scope.
+
+```text
+concepts/ideas/
+  → possible whole-game Concepts / Concept-level questions;
+
+visual/ideas/
+  → cross-project visual-planning ideas/questions;
+
+marketing/ideas/
+  → cross-project marketing/positioning planning ideas/questions;
+
+brainstorming/ideas/
+  → candidate brainstorming methods/prompts/techniques.
+```
+
+A concrete game may also own direction-local work, for example `survivor-base/visual/` or `survivor-base/marketing/`.
+
+## 3. Current Projects
 
 | Project | Entry point | Current navigation note |
 |---|---|---|
-| [`Survivor Base`](survivor-base/README.md) | [`survivor-base/README.md`](survivor-base/README.md) | Legacy consolidated Draft is still consulted as a migration/source artifact while Scenario/Spine and reusable owners are developed |
+| [`Survivor Base`](survivor-base/README.md) | [`survivor-base/README.md`](survivor-base/README.md) | Working whole-game Concept record: [`concepts/survivor-base.md`](concepts/survivor-base.md); legacy Draft remains migration/source context while the current end-to-end Concept/Spine validation pass is incomplete |
 
-## 3. Target Project Ownership Pattern
+## 4. Target Project Ownership Pattern
 
 Use the smallest structure that keeps ownership and review clear.
 
@@ -39,6 +69,10 @@ Use the smallest structure that keeps ownership and review clear.
 project README
   → navigation, current depth, authority/status notes
     and migration/source notes;
+
+whole-game Concept record, when the game is still being formed/validated
+  → compact integrated thesis + cross-lens status/evidence,
+    without copying all detailed owners;
 
 Scenario / Spine owner(s)
   → one selected concrete chronology / run manifestations;
@@ -63,7 +97,7 @@ Content-Premise workspace, when justified
   → concrete candidate content units before
     detailed Scenario chronology;
 
-justified visual / presentation / production detail owners
+justified visual / marketing / presentation / production detail owners
   → independently useful accepted or exploratory detail
     with its own review/change responsibility;
 
@@ -99,7 +133,7 @@ The concrete occurrence stays in the Spine. The reusable owner expands what one 
 A planning unit may remain one file while simple. Turn it into a folder only when independent review, navigation, reuse, research, testing, collaboration, scoped Ideas/Variants/Versions, production ownership or change tracking makes local structure useful.
 
 Do not pre-create empty folders merely to mirror a possible ontology.
-## 4. Scoped Ideas And Low-Level Elements
+## 5. Scoped Ideas And Low-Level Elements
 
 `ideas/` is a reusable **exploration mechanism**, not one special project-wide gameplay scale.
 
@@ -155,7 +189,7 @@ The exact category tree is project- and owner-specific. This repository does **n
 
 A typed temporal change or one record field inside a Scenario/Situation (state changed, information changed, Motivation changed, Execution progressed, one option, one information rule, etc.) is **not automatically a planning-unit owner**. Create a separate owner only when independent review, reuse, research, testing or change responsibility justifies it.
 
-## 5. Variants And Versions
+## 6. Variants And Versions
 
 Keep Idea-level and whole-unit alternatives distinguishable:
 
@@ -257,13 +291,13 @@ specific to Version X of Variant A
 ```
 
 Do not silently promote Variant/Version-specific meaning upward. Physical folder structure remains proportional.
-## 6. Project-Specific Categories
+## 7. Project-Specific Categories
 
 Project-specific Situation grouping should support **many-to-many navigation** when one Situation belongs to several meaningful concerns.
 
 Prefer category/link navigation over forcing every Situation into one physical category parent. The actual project taxonomy and whether any category also affects physical hierarchy remain project-specific decisions.
 
-## 7. Authority, Status And Promotion Boundary
+## 8. Authority, Status And Promotion Boundary
 
 Project-local exploratory files may be **current working artifacts** without being accepted project meaning.
 
@@ -329,8 +363,9 @@ Do not require every newly clarified owner-local decision to be back-written int
 
 Do not remove the legacy source merely because target ownership is clearer; migration/removal needs its own completeness check.
 
-## 8. Do Not
+## 9. Do Not
 
+- Do not treat direction-level `ideas/` as project canon or as a substitute for the affected real owner.
 - Do not treat project-local ownership as acceptance status.
 - Do not require a permanent Game Planning Draft in the target architecture.
 - Do not remove a legacy Draft before its still-useful meaning/provenance is safely routed.

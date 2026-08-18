@@ -20,6 +20,8 @@ Use [`game-creation-workflow.md`](game-creation-workflow.md) when the question i
 
 > How do I generate, transform, compare and integrate possible game ideas or whole-game Concepts rather than only analyze a direction that already exists?
 
+Use [`game-analysis-reference/game-concept-analysis-and-planning.md`](game-analysis-reference/game-concept-analysis-and-planning.md) when one whole-game Concept needs systematic cross-lens analysis/validation rather than only initial synthesis.
+
 Use [`low-level-element-planning-workflow.md`](low-level-element-planning-workflow.md) when one smaller element inside an existing planning unit needs its own scoped Idea work without automatically becoming a new reusable unit.
 
 ## Documentation Layers
@@ -33,7 +35,7 @@ Keep these responsibilities explicit:
 | Workflows | How repeated work proceeds through steps, branches, returns and handoffs | [`game-creation-workflow.md`](game-creation-workflow.md), [`game-development-planning-workflow.md`](game-development-planning-workflow.md), [`game-planning-spine-workflow.md`](game-planning-spine-workflow.md), [`low-level-element-planning-workflow.md`](low-level-element-planning-workflow.md) |
 | Detailed planning / analysis methods | Complete reusable questions, fields, schemas and lenses | [`game-analysis-reference/README.md`](game-analysis-reference/README.md) |
 | Practical examples | Concrete application examples; complete examples are separate only when a full real planning artifact is worth preserving | Linked from the owning method/use case when they exist |
-| Project-local planning | Current game-specific decisions, hypotheses, Ideas, Scenarios, reusable units, evidence and migration sources | [`game-planning/README.md`](game-planning/README.md) |
+| Game-planning work areas / project-local planning | Direction workspaces for Concepts, Visual, Marketing and Brainstorming plus current game-specific decisions, hypotheses, Ideas, Scenarios, reusable units, evidence and migration sources | [`game-planning/README.md`](game-planning/README.md) |
 
 Preserve:
 
@@ -85,13 +87,13 @@ practical question
 → project owner only when project meaning is needed.
 ```
 
-## Current Project Planning
+## Current Game-Planning Work
 
-Current project-local planning is indexed from [`game-planning/README.md`](game-planning/README.md).
+Game-planning directions and project-local work are indexed from [`game-planning/README.md`](game-planning/README.md). Current direction workspaces include Concepts, Visual, Marketing and Brainstorming. Each direction may keep its own scoped `ideas/` workspace and add dedicated owners as real work justifies them.
 
 The active project currently listed there is:
 
-- [`Survivor Base`](game-planning/survivor-base/README.md)
+- [`Survivor Base`](game-planning/survivor-base/README.md), with its whole-game Concept record at [`game-planning/concepts/survivor-base.md`](game-planning/concepts/survivor-base.md).
 
 Survivor Base still contains a legacy consolidated `game-planning-draft.md`. It remains a migration/source artifact while the Spine and reusable low-level owners are developed. Its current existence does **not** make a monolithic Draft a required target architecture for future projects.
 

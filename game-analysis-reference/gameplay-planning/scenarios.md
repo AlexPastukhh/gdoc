@@ -103,6 +103,25 @@ specific consequences.
 
 Do not duplicate every generic Situation rule when a reference is sufficient.
 
+### 4A. Scenario-Local Low-Level Unit Detail
+
+A concrete low-level unit inside a Scenario may be planned with the applicable questions/fields of its own detailed method even when no separate reusable owner has been created yet. The answers remain **Scenario-local manifestation detail**.
+
+Example:
+
+```text
+Situation Instance inside Scenario
+  → concrete people / state / information / options / selected branch / consequences;
+
+Execution occurrence inside Scenario
+  → concrete participants / progression / timing / interruption / outcome;
+
+reusable Situation or Execution owner
+  → broader alternatives, contexts, Variants, Versions and reusable rules.
+```
+
+Do not interpret a richly detailed Scenario-local record as the complete reusable design. Conversely, do not force extraction of a reusable file merely to gain access to that unit's useful planning fields. Use the detailed method proportionally and leave irrelevant fields empty.
+
 ## 5. Scenario Beat
 
 A `Scenario Beat` is a chronological portion of the Scenario.

@@ -2,21 +2,24 @@
 
 **Status:** active project-local planning entry point
 **Project-layer map:** [`../README.md`](../README.md)
+**Whole-game Concept record:** [`../concepts/survivor-base.md`](../concepts/survivor-base.md)
 **Current legacy consolidated source:** [`game-planning-draft.md`](game-planning-draft.md)
 **Current Scenario detail owner:** [`scenarios.md`](scenarios.md)
 **Current opening-Spine working owner:** [`scenarios/opening-spine.md`](scenarios/opening-spine.md)
 **Idea workspace:** [`ideas/README.md`](ideas/README.md)
 **Content-premise workspace:** [`content-premises.md`](content-premises.md)
 **Experience / Motivation planning:** [`experience-motivation/README.md`](experience-motivation/README.md)
+**Visual planning:** [`visual/README.md`](visual/README.md)
+**Marketing planning:** [`marketing/README.md`](marketing/README.md)
 **Source ledger:** [`../../chat-history/survivor-base-branch-01.md`](../../chat-history/survivor-base-branch-01.md)
 **Imported source:** `survivor-base-planning-draft-v0.12-tactical-raids-alarms-emergency-response.md`
 **Imported source SHA-256:** `d866e0d296da25d3377e363657bc6fdde871cc1101bea3e8c1b438dc4c01e933`
 
 ## 1. Responsibility
 
-This directory owns project-specific planning for the current **Survivor Base Infection Concept** direction.
+This directory owns detailed project-specific planning for the current **Survivor Base** game direction. The compact whole-game Concept and its cross-lens validation status are owned by [`../concepts/survivor-base.md`](../concepts/survivor-base.md).
 
-Survivor Base is currently in a **transition from a legacy consolidated Draft toward Scenario/Spine-centered planning with independently reusable low-level owners**.
+Survivor Base is currently a **working Concept under end-to-end validation**, not a sufficiently validated whole-game direction merely because detailed gameplay work already exists. It is also in a transition from a legacy consolidated Draft toward Scenario/Spine-centered planning with independently reusable low-level owners.
 
 ```text
 legacy game-planning-draft.md
@@ -63,23 +66,31 @@ Do not discard the Draft until still-useful meaning/provenance has been safely r
 | [`scenarios.md`](scenarios.md) | Project-local Scenario navigation, representative Scenario material and validation checkpoints | Active Scenario owner/navigation |
 | [`scenarios/opening-spine.md`](scenarios/opening-spine.md) | Cumulative selected first-play Spine chronology from First Contact through persistent adaptation | Active working Spine Scenario; concrete details remain working/open unless separately established |
 | [`experience-motivation/README.md`](experience-motivation/README.md) | Project Experience/Motivation and candidate Promise/Doubt planning | Active working owner; concrete units retain their own statuses |
+| [`marketing/README.md`](marketing/README.md) | Survivor Base audience/positioning/comparison/purchase-fantasy/proof planning | Active working owner; market hypotheses/evidence do not automatically change gameplay truth |
 | [`visual/README.md`](visual/README.md) | Visual-planning navigation, ownership and current depth | Project-local detail navigation |
 | [`visual/visual-requirements-matrix.md`](visual/visual-requirements-matrix.md) | What visual system must communicate/support across current contexts | Working visual requirements owner; does not override gameplay/project source status |
 
 ## 4. Current Target Planning Architecture
 
+The current gate is broader than finishing a chronology. Survivor Base remains a working Concept until a representative end-to-end pass has made the game concrete enough to compare the resulting gameplay/Experience/Visual/Marketing/feasibility evidence back against the whole-game Concept.
+
 For the current Survivor Base planning pass:
 
 ```text
-selected opening Spine
+whole-game Concept + cross-lens questions
+→ selected opening Spine
 → progressively detailed concrete chronology
 → concrete Situation / Event / Execution / state / information manifestations
 → Low-Level Elements where smaller questions matter
 → reusable owners where independent responsibility is useful
 → reusable alternatives / Variants / Versions
 → compare clarified owners back against the Spine
+→ compare the detailed run + Experience / Visual / Marketing / feasibility evidence back against the whole-game Concept
+→ retain / revise / transform / reject parts of the working Concept deliberately
 → later create/review other Scenario combinations.
 ```
+
+For material local units in the Spine, use the applicable fields of their detailed methods to describe the **concrete manifestation in this selected run**. This is not the same as building the unit's reusable possibility-space, and it does not require extracting a reusable owner first.
 
 The current pass is staged chronology-first for practical methodology validation. That does **not** establish a universal rule that all future projects must fully stabilize chronology before developing reusable owners.
 
@@ -206,4 +217,5 @@ A Visual Context such as routine operation, execution, waiting or aftermath does
 - Do not require back-writing every new low-level clarification into the Draft.
 - Do not treat a project owner as proof that all content inside it is accepted.
 - Do not create a standalone reusable owner for every concrete occurrence or Low-Level Element.
+- Do not treat current detailed gameplay work as proof that the whole-game Concept has already been sufficiently validated.
 - Do not turn the selected opening Spine into the only valid playthrough.
